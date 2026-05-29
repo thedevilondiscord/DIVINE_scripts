@@ -1,0 +1,114 @@
+--// OXR / ORION LEAKS GUI
+--// DELTA + SCRIPTBLOX FIXED VERSION
+
+local Rayfield = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Rayfield/main/source"))()
+
+local Window = Rayfield:CreateWindow({
+	Name = "OXR / ORION LEAKS by DIVINE",
+	LoadingTitle = "OXR / ORION LEAKS",
+	LoadingSubtitle = "by DIVINE",
+	ConfigurationSaving = {
+		Enabled = false
+	},
+	KeySystem = false
+})
+
+--// MAIN TAB
+local MainTab = Window:CreateTab("LEAKS", 4483362458)
+
+--// CLIPBOARD FUNCTION
+local function CopyToClipboard(text)
+	if setclipboard then
+		setclipboard(text)
+	elseif toclipboard then
+		toclipboard(text)
+	end
+end
+
+--// SECTION CREATOR
+local function CreateLeakSection(sectionName, link, hasLoadButton)
+
+	MainTab:CreateSection(sectionName)
+
+	if hasLoadButton then
+		MainTab:CreateButton({
+			Name = "Load",
+			Callback = function()
+
+				local success, err = pcall(function()
+					loadstring(game:HttpGet("https://pastebin.com/raw/q6sjKVgb"))()
+				end)
+
+				if not success then
+					Rayfield:Notify({
+						Title = "Error",
+						Content = tostring(err),
+						Duration = 5
+					})
+				end
+
+			end
+		})
+	end
+
+	MainTab:CreateButton({
+		Name = "Copy Link",
+		Callback = function()
+
+			CopyToClipboard(link)
+
+			Rayfield:Notify({
+				Title = "Copied",
+				Content = "Link copied to clipboard",
+				Duration = 3
+			})
+
+		end
+	})
+end
+
+--// SECTIONS
+CreateLeakSection(
+	"ORION X Piyush Leaked (fixed as well)",
+	"https://pastebin.com/raw/q6sjKVgb",
+	true
+)
+
+CreateLeakSection(
+	"OXR X TD5 SPAMMER Leaked",
+	"https://pastebin.com/raw/9bTrpA2F",
+	false
+)
+
+CreateLeakSection(
+	"OXR ETERNXZ SPAM / ORION spam Leaked",
+	"https://pastebin.com/raw/2kyHhSZA",
+	false
+)
+
+CreateLeakSection(
+	"OxR BERSERK prop troll Leaked",
+	"https://pastebin.com/raw/zk17xLyY",
+	false
+)
+
+--// MESSAGE TAB
+local MessageTab = Window:CreateTab("MESSAGE", 4483362458)
+
+MessageTab:CreateParagraph({
+	Title = "MESSAGE FROM DIVINE",
+	Content = [[
+You started this when you leaked my script.
+
+Now I’ve got your scripts deobfuscated too.
+
+Difference is, I didn’t need attention to prove a point.
+
+So think carefully before pulling anything again.
+
+No matter what you leak, crack, or post — it always ends with me.
+
+yours truly
+~DIVINE
+]]
+})
