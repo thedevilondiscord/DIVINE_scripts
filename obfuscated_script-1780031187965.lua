@@ -1,3 +1,4 @@
+-- WITH ALL STICKERSSSS V1
 -- LocalScript inside StarterPlayerScripts / StarterGui
 local Players = game:GetService("Players")
 local HttpService = game:GetService("HttpService")
@@ -14,35 +15,6 @@ local SERVER_JOB_ID = game.JobId ~= "" and game.JobId or "Studio_Local_Server"
 
 -- Custom Spoofed Name State
 local SpoofedDisplayName = nil
-
--- Profile Picture Local Storage & Persistence Configuration
-local PFP_SAVE_FILENAME = "KronosChat_PFP_Config.json"
-local DefaultPfpId = "rbxthumb://type=AvatarHeadShot&id=" .. tostring(LocalPlayer.UserId) .. "&w=150&h=150"
-local CurrentPfpId = DefaultPfpId
-
-local function LoadSavedPfp()
-    if readfile and isfile and isfile(PFP_SAVE_FILENAME) then
-        local success, result = pcall(function()
-            local decoded = HttpService:JSONDecode(readfile(PFP_SAVE_FILENAME))
-            if decoded and decoded.PfpId then
-                return decoded.PfpId
-            end
-        end)
-        if success and result then return result end
-    end
-    return DefaultPfpId
-end
-
-local function SavePfp(pfpId)
-    CurrentPfpId = pfpId
-    if writefile then
-        pcall(function()
-            writefile(PFP_SAVE_FILENAME, HttpService:JSONEncode({ PfpId = pfpId }))
-        end)
-    end
-end
-
-CurrentPfpId = LoadSavedPfp()
 
 -- Script Load Timestamp (Only show messages created after this execution)
 local ScriptStartTime = os.time()
@@ -576,7 +548,37 @@ local baseStickers = {
     "rbxthumb://type=Asset&id=10367063084&w=420&h=420",
     "rbxthumb://type=Asset&id=75074160606432&w=420&h=420",
     "rbxthumb://type=Asset&id=132266996382315&w=420&h=420",
-    "rbxthumb://type=Asset&id=11123209169&w=420&h=420"
+    "rbxthumb://type=Asset&id=11123209169&w=420&h=420",
+    -- Added Stickers
+    "rbxthumb://type=Asset&id=130605412870116&w=420&h=420",
+    "rbxthumb://type=Asset&id=123881607288205&w=420&h=420",
+    "rbxthumb://type=Asset&id=77982313163011&w=420&h=420",
+    "rbxthumb://type=Asset&id=71112430314329&w=420&h=420",
+    "rbxthumb://type=Asset&id=92850410471479&w=420&h=420",
+    "rbxthumb://type=Asset&id=133801475498371&w=420&h=420",
+    "rbxthumb://type=Asset&id=99340040246135&w=420&h=420",
+    "rbxthumb://type=Asset&id=128748009633926&w=420&h=420",
+    "rbxthumb://type=Asset&id=115496076924304&w=420&h=420",
+    "rbxthumb://type=Asset&id=113969372822195&w=420&h=420",
+    "rbxthumb://type=Asset&id=81071566386630&w=420&h=420",
+    "rbxthumb://type=Asset&id=136887113512942&w=420&h=420",
+    "rbxthumb://type=Asset&id=83606808239727&w=420&h=420",
+    "rbxthumb://type=Asset&id=137895709516187&w=420&h=420",
+    "rbxthumb://type=Asset&id=95097775871116&w=420&h=420",
+    "rbxthumb://type=Asset&id=112896137773535&w=420&h=420",
+    "rbxthumb://type=Asset&id=76312255766028&w=420&h=420",
+    "rbxthumb://type=Asset&id=128534124653098&w=420&h=420",
+    "rbxthumb://type=Asset&id=106808393141208&w=420&h=420",
+    "rbxthumb://type=Asset&id=87553190789546&w=420&h=420",
+    "rbxthumb://type=Asset&id=122820594186443&w=420&h=420",
+    "rbxthumb://type=Asset&id=98756307893472&w=420&h=420",
+    "rbxthumb://type=Asset&id=134238049027906&w=420&h=420",
+    "rbxthumb://type=Asset&id=126835535148309&w=420&h=420",
+    "rbxthumb://type=Asset&id=107542712869273&w=420&h=420",
+    "rbxthumb://type=Asset&id=137157157388660&w=420&h=420",
+    "rbxthumb://type=Asset&id=140484578433196&w=420&h=420",
+    "rbxthumb://type=Asset&id=124962139890506&w=420&h=420",
+    "rbxthumb://type=Asset&id=100982607210447&w=420&h=420"
 }
 
 local uniqueStickers = {}
@@ -903,8 +905,8 @@ HeaderCorner.Parent = HeaderBar
 
 local GlobalTabBtn = Instance.new("TextButton")
 GlobalTabBtn.Name = "GlobalTabBtn"
-GlobalTabBtn.Size = UDim2.new(0, 60, 0, 26)
-GlobalTabBtn.Position = UDim2.new(0, 6, 0, 5)
+GlobalTabBtn.Size = UDim2.new(0, 80, 0, 26)
+GlobalTabBtn.Position = UDim2.new(0, 8, 0, 5)
 GlobalTabBtn.BackgroundColor3 = Color3.fromRGB(200, 30, 30)
 GlobalTabBtn.BackgroundTransparency = 0.2
 GlobalTabBtn.Font = Enum.Font.GothamBold
@@ -919,8 +921,8 @@ GlobalTabCorner.Parent = GlobalTabBtn
 
 local ServerTabBtn = Instance.new("TextButton")
 ServerTabBtn.Name = "ServerTabBtn"
-ServerTabBtn.Size = UDim2.new(0, 60, 0, 26)
-ServerTabBtn.Position = UDim2.new(0, 70, 0, 5)
+ServerTabBtn.Size = UDim2.new(0, 80, 0, 26)
+ServerTabBtn.Position = UDim2.new(0, 93, 0, 5)
 ServerTabBtn.BackgroundColor3 = Color3.fromRGB(40, 40, 55)
 ServerTabBtn.BackgroundTransparency = 0.4
 ServerTabBtn.Font = Enum.Font.GothamBold
@@ -933,26 +935,10 @@ local ServerTabCorner = Instance.new("UICorner")
 ServerTabCorner.CornerRadius = UDim.new(0, 8)
 ServerTabCorner.Parent = ServerTabBtn
 
-local ProfileTabBtn = Instance.new("TextButton")
-ProfileTabBtn.Name = "ProfileTabBtn"
-ProfileTabBtn.Size = UDim2.new(0, 60, 0, 26)
-ProfileTabBtn.Position = UDim2.new(0, 134, 0, 5)
-ProfileTabBtn.BackgroundColor3 = Color3.fromRGB(40, 40, 55)
-ProfileTabBtn.BackgroundTransparency = 0.4
-ProfileTabBtn.Font = Enum.Font.GothamBold
-ProfileTabBtn.Text = "PROFILE"
-ProfileTabBtn.TextColor3 = Color3.fromRGB(180, 180, 190)
-ProfileTabBtn.TextSize = 10
-ProfileTabBtn.Parent = HeaderBar
-
-local ProfileTabCorner = Instance.new("UICorner")
-ProfileTabCorner.CornerRadius = UDim.new(0, 8)
-ProfileTabCorner.Parent = ProfileTabBtn
-
 local AboutTabBtn = Instance.new("TextButton")
 AboutTabBtn.Name = "AboutTabBtn"
-AboutTabBtn.Size = UDim2.new(0, 60, 0, 26)
-AboutTabBtn.Position = UDim2.new(0, 198, 0, 5)
+AboutTabBtn.Size = UDim2.new(0, 75, 0, 26)
+AboutTabBtn.Position = UDim2.new(0, 178, 0, 5)
 AboutTabBtn.BackgroundColor3 = Color3.fromRGB(40, 40, 55)
 AboutTabBtn.BackgroundTransparency = 0.4
 AboutTabBtn.Font = Enum.Font.GothamBold
@@ -1208,227 +1194,6 @@ for _, stickerUrl in ipairs(baseStickers) do
     end)
 end
 
--- ============================================================================
--- PROFILE SECTION CONFIGURATION (CUSTOM PFP OPTIONS & PREVIEW)
--- ============================================================================
-local ProfileFrame = Instance.new("Frame")
-ProfileFrame.Name = "ProfileFrame"
-ProfileFrame.Size = UDim2.new(1, -16, 1, -48)
-ProfileFrame.Position = UDim2.new(0, 8, 0, 40)
-ProfileFrame.BackgroundTransparency = 1
-ProfileFrame.Visible = false
-ProfileFrame.Parent = MainFrame
-
-local PfpPreviewCard = Instance.new("Frame")
-PfpPreviewCard.Name = "PfpPreviewCard"
-PfpPreviewCard.Size = UDim2.new(0, 110, 0, 110)
-PfpPreviewCard.Position = UDim2.new(0, 10, 0, 10)
-PfpPreviewCard.BackgroundColor3 = Color3.fromRGB(15, 15, 25)
-PfpPreviewCard.BackgroundTransparency = 0.3
-PfpPreviewCard.BorderSizePixel = 0
-PfpPreviewCard.Parent = ProfileFrame
-
-local PreviewCardCorner = Instance.new("UICorner")
-PreviewCardCorner.CornerRadius = UDim.new(0, 12)
-PreviewCardCorner.Parent = PfpPreviewCard
-
-local PreviewCardStroke = Instance.new("UIStroke")
-PreviewCardStroke.Thickness = 2
-PreviewCardStroke.Color = Color3.fromRGB(255, 0, 0)
-PreviewCardStroke.Parent = PfpPreviewCard
-
-local PfpPreviewImg = Instance.new("ImageLabel")
-PfpPreviewImg.Name = "PfpPreviewImg"
-PfpPreviewImg.Size = UDim2.new(1, -12, 1, -12)
-PfpPreviewImg.Position = UDim2.new(0, 6, 0, 6)
-PfpPreviewImg.BackgroundTransparency = 1
-PfpPreviewImg.Image = CurrentPfpId
-PfpPreviewImg.ScaleType = Enum.ScaleType.Crop
-PfpPreviewImg.Parent = PfpPreviewCard
-
-local PreviewImgCorner = Instance.new("UICorner")
-PreviewImgCorner.CornerRadius = UDim.new(0, 8)
-PreviewImgCorner.Parent = PfpPreviewImg
-
-local ProfileDetailsFrame = Instance.new("Frame")
-ProfileDetailsFrame.Name = "ProfileDetailsFrame"
-ProfileDetailsFrame.Size = UDim2.new(1, -140, 0, 110)
-ProfileDetailsFrame.Position = UDim2.new(0, 130, 0, 10)
-ProfileDetailsFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 25)
-ProfileDetailsFrame.BackgroundTransparency = 0.3
-ProfileDetailsFrame.BorderSizePixel = 0
-ProfileDetailsFrame.Parent = ProfileFrame
-
-local ProfileDetailsCorner = Instance.new("UICorner")
-ProfileDetailsCorner.CornerRadius = UDim.new(0, 12)
-ProfileDetailsCorner.Parent = ProfileDetailsFrame
-
-local PfpHeaderLabel = Instance.new("TextLabel")
-PfpHeaderLabel.Size = UDim2.new(1, -16, 0, 20)
-PfpHeaderLabel.Position = UDim2.new(0, 8, 0, 6)
-PfpHeaderLabel.BackgroundTransparency = 1
-PfpHeaderLabel.Font = Enum.Font.GothamBold
-PfpHeaderLabel.Text = "CUSTOM PROFILE PICTURE"
-PfpHeaderLabel.TextColor3 = Color3.fromRGB(255, 60, 60)
-PfpHeaderLabel.TextSize = 11
-PfpHeaderLabel.TextXAlignment = Enum.TextXAlignment.Left
-PfpHeaderLabel.Parent = ProfileDetailsFrame
-
-local PfpInput = Instance.new("TextBox")
-PfpInput.Name = "PfpInput"
-PfpInput.Size = UDim2.new(1, -16, 0, 32)
-PfpInput.Position = UDim2.new(0, 8, 0, 32)
-PfpInput.BackgroundColor3 = Color3.fromRGB(10, 10, 18)
-PfpInput.BackgroundTransparency = 0.3
-PfpInput.Font = Enum.Font.Gotham
-PfpInput.PlaceholderText = "Paste Asset ID / rbxassetid:// or rbxthumb://..."
-PfpInput.PlaceholderColor3 = Color3.fromRGB(130, 130, 140)
-PfpInput.Text = CurrentPfpId
-PfpInput.TextColor3 = Color3.fromRGB(240, 240, 250)
-PfpInput.TextSize = 10
-PfpInput.TextXAlignment = Enum.TextXAlignment.Left
-PfpInput.ClearTextOnFocus = false
-PfpInput.Parent = ProfileDetailsFrame
-
-local PfpInputCorner = Instance.new("UICorner")
-PfpInputCorner.CornerRadius = UDim.new(0, 6)
-PfpInputCorner.Parent = PfpInput
-
-local ApplyPfpBtn = Instance.new("TextButton")
-ApplyPfpBtn.Name = "ApplyPfpBtn"
-ApplyPfpBtn.Size = UDim2.new(0, 110, 0, 28)
-ApplyPfpBtn.Position = UDim2.new(0, 8, 0, 72)
-ApplyPfpBtn.BackgroundColor3 = Color3.fromRGB(200, 30, 30)
-ApplyPfpBtn.BackgroundTransparency = 0.2
-ApplyPfpBtn.Font = Enum.Font.GothamBold
-ApplyPfpBtn.Text = "SAVE PROFILE"
-ApplyPfpBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-ApplyPfpBtn.TextSize = 10
-ApplyPfpBtn.Parent = ProfileDetailsFrame
-
-local ApplyPfpCorner = Instance.new("UICorner")
-ApplyPfpCorner.CornerRadius = UDim.new(0, 6)
-ApplyPfpCorner.Parent = ApplyPfpBtn
-
-local ResetPfpBtn = Instance.new("TextButton")
-ResetPfpBtn.Name = "ResetPfpBtn"
-ResetPfpBtn.Size = UDim2.new(0, 80, 0, 28)
-ResetPfpBtn.Position = UDim2.new(0, 126, 0, 72)
-ResetPfpBtn.BackgroundColor3 = Color3.fromRGB(50, 50, 65)
-ResetPfpBtn.BackgroundTransparency = 0.2
-ResetPfpBtn.Font = Enum.Font.GothamBold
-ResetPfpBtn.Text = "RESET"
-ResetPfpBtn.TextColor3 = Color3.fromRGB(200, 200, 210)
-ResetPfpBtn.TextSize = 10
-ResetPfpBtn.Parent = ProfileDetailsFrame
-
-local ResetPfpCorner = Instance.new("UICorner")
-ResetPfpCorner.CornerRadius = UDim.new(0, 6)
-ResetPfpCorner.Parent = ResetPfpBtn
-
-local PresetLabel = Instance.new("TextLabel")
-PresetLabel.Size = UDim2.new(1, 0, 0, 18)
-PresetLabel.Position = UDim2.new(0, 10, 0, 128)
-PresetLabel.BackgroundTransparency = 1
-PresetLabel.Font = Enum.Font.GothamBold
-PresetLabel.Text = "QUICK PRESET AVATARS"
-PresetLabel.TextColor3 = Color3.fromRGB(180, 180, 190)
-PresetLabel.TextSize = 10
-PresetLabel.TextXAlignment = Enum.TextXAlignment.Left
-PresetLabel.Parent = ProfileFrame
-
-local PresetScroller = Instance.new("ScrollingFrame")
-PresetScroller.Name = "PresetScroller"
-PresetScroller.Size = UDim2.new(1, -20, 0, 115)
-PresetScroller.Position = UDim2.new(0, 10, 0, 148)
-PresetScroller.BackgroundColor3 = Color3.fromRGB(15, 15, 25)
-PresetScroller.BackgroundTransparency = 0.4
-PresetScroller.BorderSizePixel = 0
-PresetScroller.ScrollBarThickness = 3
-PresetScroller.ScrollBarImageColor3 = Color3.fromRGB(255, 0, 0)
-PresetScroller.Parent = ProfileFrame
-
-local PresetScrollerCorner = Instance.new("UICorner")
-PresetScrollerCorner.CornerRadius = UDim.new(0, 8)
-PresetScrollerCorner.Parent = PresetScroller
-
-local PresetGrid = Instance.new("UIGridLayout")
-PresetGrid.CellSize = UDim2.new(0, 50, 0, 50)
-PresetGrid.CellPadding = UDim2.new(0, 8, 0, 8)
-PresetGrid.SortOrder = Enum.SortOrder.LayoutOrder
-PresetGrid.Parent = PresetScroller
-
-local PresetPadding = Instance.new("UIPadding")
-PresetPadding.PaddingLeft = UDim.new(0, 8)
-PresetPadding.PaddingTop = UDim.new(0, 8)
-PresetPadding.Parent = PresetScroller
-
-PresetGrid:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
-    PresetScroller.CanvasSize = UDim2.new(0, 0, 0, PresetGrid.AbsoluteContentSize.Y + 16)
-end)
-
-local presetAvatars = {
-    DefaultPfpId,
-    "rbxthumb://type=AvatarHeadShot&id=1&w=150&h=150",
-    "rbxthumb://type=AvatarHeadShot&id=2&w=150&h=150",
-    "rbxthumb://type=AvatarHeadShot&id=156&w=150&h=150",
-    "rbxthumb://type=AvatarHeadShot&id=204259&w=150&h=150",
-    "rbxthumb://type=Asset&id=126155452969559&w=420&h=420",
-    "rbxthumb://type=Asset&id=107882158860216&w=420&h=420",
-    "rbxthumb://type=Asset&id=82732486060449&w=420&h=420",
-    "rbxthumb://type=Asset&id=250852269&w=420&h=420",
-    "rbxthumb://type=Asset&id=15805629980&w=420&h=420"
-}
-
-local function UpdatePfpSelection(newId)
-    local formattedId = newId
-    if tonumber(newId) then
-        formattedId = "rbxthumb://type=Asset&id=" .. newId .. "&w=420&h=420"
-    end
-    PfpInput.Text = formattedId
-    PfpPreviewImg.Image = formattedId
-    SavePfp(formattedId)
-end
-
-for _, avatarId in ipairs(presetAvatars) do
-    local presetBtn = Instance.new("ImageButton")
-    presetBtn.BackgroundColor3 = Color3.fromRGB(25, 25, 38)
-    presetBtn.BackgroundTransparency = 0.2
-    presetBtn.Image = avatarId
-    presetBtn.ScaleType = Enum.ScaleType.Crop
-    presetBtn.Parent = PresetScroller
-
-    local pCorner = Instance.new("UICorner")
-    pCorner.CornerRadius = UDim.new(0, 8)
-    pCorner.Parent = presetBtn
-
-    local pStroke = Instance.new("UIStroke")
-    pStroke.Thickness = 1
-    pStroke.Color = Color3.fromRGB(255, 255, 255)
-    pStroke.Transparency = 0.7
-    pStroke.Parent = presetBtn
-
-    presetBtn.MouseButton1Click:Connect(function()
-        UpdatePfpSelection(avatarId)
-    end)
-end
-
-ApplyPfpBtn.MouseButton1Click:Connect(function()
-    local text = PfpInput.Text
-    if text ~= "" then
-        UpdatePfpSelection(text)
-        ApplyPfpBtn.Text = "SAVED ✓"
-        ApplyPfpBtn.BackgroundColor3 = Color3.fromRGB(30, 180, 80)
-        task.wait(1.5)
-        ApplyPfpBtn.Text = "SAVE PROFILE"
-        ApplyPfpBtn.BackgroundColor3 = Color3.fromRGB(200, 30, 30)
-    end
-end)
-
-ResetPfpBtn.MouseButton1Click:Connect(function()
-    UpdatePfpSelection(DefaultPfpId)
-end)
-
 -- About Section Configuration
 local AboutFrame = Instance.new("Frame")
 AboutFrame.Name = "AboutFrame"
@@ -1542,10 +1307,10 @@ AboutTextLabel.Text = [[<b><font color='#FF3333' size='14'>KRONOS CHAT SYSTEM</f
 
 <b>[ CREDITS ]</b>
 • <b>Architect</b>: Kabir_Priv
-• <b>Stickers and Concept</b>: Ares / Riser / Mickey / Orion
+• <b>Stickers and Concept</b>: <font color='#FF0000'><b>ARES</b></font> / <font color='#800080'><b>Riser</b></font> / <font color='#FFD700'><b>Mickey</b></font> / <font color='#0000FF'><b>Orion</b></font>
 
 <b>[ ABOUT SYSTEM ]</b>
-KRONOS CHAT is a real-time cross-server chat infrastructure allowing seamless global and local server messaging with custom rank badges, stickers, custom profile pictures, privacy options, and instant requests.
+KRONOS CHAT is a real-time cross-server chat infrastructure allowing seamless global and local server messaging with custom rank badges, stickers, privacy options, and instant requests.
 
 <b>[ COMMANDS GUIDE ]</b>
 • <b>!tag</b> : Toggle your custom tag display ON or OFF.
@@ -1814,8 +1579,6 @@ local function SwitchTab(newTab)
     GlobalTabBtn.TextColor3 = Color3.fromRGB(180, 180, 190)
     ServerTabBtn.BackgroundColor3 = Color3.fromRGB(40, 40, 55)
     ServerTabBtn.TextColor3 = Color3.fromRGB(180, 180, 190)
-    ProfileTabBtn.BackgroundColor3 = Color3.fromRGB(40, 40, 55)
-    ProfileTabBtn.TextColor3 = Color3.fromRGB(180, 180, 190)
     AboutTabBtn.BackgroundColor3 = Color3.fromRGB(40, 40, 55)
     AboutTabBtn.TextColor3 = Color3.fromRGB(180, 180, 190)
 
@@ -1825,7 +1588,6 @@ local function SwitchTab(newTab)
 
         MessageContainer.Visible = true
         InputBarFrame.Visible = true
-        ProfileFrame.Visible = false
         AboutFrame.Visible = false
 
         for _, frame in pairs(ServerUIElements) do frame.Visible = false end
@@ -1836,33 +1598,22 @@ local function SwitchTab(newTab)
 
         MessageContainer.Visible = true
         InputBarFrame.Visible = true
-        ProfileFrame.Visible = false
         AboutFrame.Visible = false
 
         for _, frame in pairs(GlobalUIElements) do frame.Visible = false end
         for _, frame in pairs(ServerUIElements) do frame.Visible = true end
-    elseif newTab == "PROFILE" then
-        ProfileTabBtn.BackgroundColor3 = Color3.fromRGB(200, 30, 30)
-        ProfileTabBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-
-        MessageContainer.Visible = false
-        InputBarFrame.Visible = false
-        ProfileFrame.Visible = true
-        AboutFrame.Visible = false
     elseif newTab == "ABOUT" then
         AboutTabBtn.BackgroundColor3 = Color3.fromRGB(200, 30, 30)
         AboutTabBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
 
         MessageContainer.Visible = false
         InputBarFrame.Visible = false
-        ProfileFrame.Visible = false
         AboutFrame.Visible = true
     end
 end
 
 GlobalTabBtn.MouseButton1Click:Connect(function() SwitchTab("GLOBAL") end)
 ServerTabBtn.MouseButton1Click:Connect(function() SwitchTab("SERVER") end)
-ProfileTabBtn.MouseButton1Click:Connect(function() SwitchTab("PROFILE") end)
 AboutTabBtn.MouseButton1Click:Connect(function() SwitchTab("ABOUT") end)
 
 -- Context Menu Actions
@@ -1943,7 +1694,7 @@ local function RenderChatMessage(msgData, targetTab)
 
     local Card = Instance.new("Frame")
     Card.Name = key
-    Card.Size = isSticker and UDim2.new(1, 0, 0, 120) or UDim2.new(1, 0, 0, 28)
+    Card.Size = isSticker and UDim2.new(1, 0, 0, 120) or UDim2.new(1, 0, 0, 22)
     Card.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
     Card.BackgroundTransparency = 1
     Card.BorderSizePixel = 0
@@ -1956,29 +1707,9 @@ local function RenderChatMessage(msgData, targetTab)
     CardCorner.CornerRadius = UDim.new(0, 4)
     CardCorner.Parent = Card
 
-    -- Profile Picture Image Display in Message
-    local PfpImg = Instance.new("ImageLabel")
-    PfpImg.Name = "ProfilePicture"
-    PfpImg.Size = UDim2.new(0, 22, 0, 22)
-    PfpImg.Position = UDim2.new(0, 2, 0, 2)
-    PfpImg.BackgroundTransparency = 1
-    PfpImg.Image = msgData.PfpId or ("rbxthumb://type=AvatarHeadShot&id=" .. tostring(LocalPlayer.UserId) .. "&w=150&h=150")
-    PfpImg.ScaleType = Enum.ScaleType.Crop
-    PfpImg.Parent = Card
-
-    local PfpCorner = Instance.new("UICorner")
-    PfpCorner.CornerRadius = UDim.new(1, 0)
-    PfpCorner.Parent = PfpImg
-
-    local PfpStroke = Instance.new("UIStroke")
-    PfpStroke.Thickness = 1
-    PfpStroke.Color = Color3.fromRGB(255, 255, 255)
-    PfpStroke.Transparency = 0.7
-    PfpStroke.Parent = PfpImg
-
     local Label = Instance.new("TextLabel")
-    Label.Size = isSticker and UDim2.new(1, -34, 0, 20) or UDim2.new(1, -34, 1, 0)
-    Label.Position = UDim2.new(0, 30, 0, 0)
+    Label.Size = isSticker and UDim2.new(1, -8, 0, 20) or UDim2.new(1, -8, 1, 0)
+    Label.Position = UDim2.new(0, 4, 0, 0)
     Label.BackgroundTransparency = 1
     Label.Font = Enum.Font.Gotham
     Label.TextSize = 12
@@ -1991,7 +1722,7 @@ local function RenderChatMessage(msgData, targetTab)
         local StickerImg = Instance.new("ImageLabel")
         StickerImg.Name = "StickerImg"
         StickerImg.Size = UDim2.new(0, 100, 0, 100)
-        StickerImg.Position = UDim2.new(0, 30, 0, 20)
+        StickerImg.Position = UDim2.new(0, 4, 0, 20)
         StickerImg.BackgroundTransparency = 1
         StickerImg.Image = msgData.Text
         StickerImg.ScaleType = Enum.ScaleType.Fit
@@ -2141,7 +1872,6 @@ local function BroadcastJoinAlert()
     local payload = {
         Username = LocalPlayer.Name,
         DisplayName = GetFormattedDisplayName(LocalPlayer.DisplayName, true),
-        PfpId = CurrentPfpId,
         IsBotAlert = true,
         Timestamp = os.time()
     }
@@ -2276,7 +2006,6 @@ SendChatMessage = function()
             Username = "SYSTEM",
             DisplayName = "SYSTEM",
             Text = "[KRONOS CHAT] You are typing too fast! Please slow down.",
-            PfpId = CurrentPfpId,
             Timestamp = os.time()
         }, ActiveTab)
         return
@@ -2288,8 +2017,7 @@ SendChatMessage = function()
             RenderChatMessage({
                 Username = "SYSTEM",
                 DisplayName = "SYSTEM",
-                Text = "[KRONOS CHAT] Repeated message blocked.",
-                PfpId = CurrentPfpId,
+                Text = "[SYSTEM] : 🚫Spam Karne se Kya karogey , Chill karo🚫",
                 Timestamp = os.time()
             }, ActiveTab)
             return
@@ -2298,101 +2026,59 @@ SendChatMessage = function()
         LastSentMessageText = rawText
         ConsecutiveSpamCount = 0
     end
-
     LastMessageSendTime = currentTime
 
-    -- Command Processing Logic
-    local lowerText = string.lower(rawText)
-
-    if lowerText == "!tag" then
-        DisabledTags[LocalPlayer.Name] = not DisabledTags[LocalPlayer.Name]
-        MessageInput.Text = ""
-        RenderChatMessage({
-            Username = "SYSTEM",
-            DisplayName = "SYSTEM",
-            Text = "[KRONOS CHAT] Tag visibility toggled " .. (DisabledTags[LocalPlayer.Name] and "OFF" or "ON"),
-            PfpId = CurrentPfpId,
-            Timestamp = os.time()
-        }, ActiveTab)
-        return
-    end
-
-    if string.sub(lowerText, 1, 5) == "!tag " then
+    -- !tag Switcher logic for permitted players
+    if string.sub(rawText, 1, 5) == "!TAG " or string.sub(rawText, 1, 5) == "!tag " then
         local requestedTag = string.sub(rawText, 6)
-        MessageInput.Text = ""
+        local myRoles = AvailableUserRoles[LocalPlayer.Name] or {}
 
-        local available = AvailableUserRoles[LocalPlayer.Name] or {}
-        local matchFound = false
-
-        for _, role in ipairs(available) do
-            if string.lower(role) == string.lower(requestedTag) then
-                AssignedPlayerRoles[LocalPlayer.Name] = role
-                DisabledTags[LocalPlayer.Name] = false
-                matchFound = true
-                RenderChatMessage({
-                    Username = "SYSTEM",
-                    DisplayName = "SYSTEM",
-                    Text = "[KRONOS CHAT] Switched active tag to: " .. role,
-                    PfpId = CurrentPfpId,
-                    Timestamp = os.time()
-                }, ActiveTab)
+        local matchedRole = nil
+        for _, r in ipairs(myRoles) do
+            if string.lower(r) == string.lower(requestedTag) then
+                matchedRole = r
                 break
             end
         end
 
-        if not matchFound then
+        if matchedRole then
+            AssignedPlayerRoles[LocalPlayer.Name] = matchedRole
             RenderChatMessage({
                 Username = "SYSTEM",
                 DisplayName = "SYSTEM",
-                Text = "[KRONOS CHAT] You do not have permission to use the tag: " .. requestedTag,
-                PfpId = CurrentPfpId,
-                Timestamp = os.time()
-            }, ActiveTab)
-        end
-        return
-    end
-
-    if string.sub(lowerText, 1, 7) == "!spoof " then
-        local newName = string.sub(rawText, 8)
-        MessageInput.Text = ""
-
-        if CanUseSpoof(LocalPlayer.Name) then
-            SpoofedDisplayName = newName
-            RenderChatMessage({
-                Username = "SYSTEM",
-                DisplayName = "SYSTEM",
-                Text = "[KRONOS CHAT] Display Name spoofed to: " .. newName,
-                PfpId = CurrentPfpId,
+                Text = string.format("💬[KRONOS CHAT] Successfully switched active tag to '%s'.", matchedRole),
                 Timestamp = os.time()
             }, ActiveTab)
         else
             RenderChatMessage({
                 Username = "SYSTEM",
                 DisplayName = "SYSTEM",
-                Text = "[KRONOS CHAT] You lack permissions to use !spoof command.",
-                PfpId = CurrentPfpId,
+                Text = string.format("🚫[ERROR] Tag '%s' not found in your Permitted tags list.", requestedTag),
                 Timestamp = os.time()
             }, ActiveTab)
         end
+        MessageInput.Text = ""
         return
     end
 
-    if string.sub(lowerText, 1, 6) == "!role " then
-        local rest = string.sub(rawText, 7)
-        MessageInput.Text = ""
-
-        if HasAdminPermission(LocalPlayer.Name) then
-            local spaceIdx = string.find(rest, " ")
-            if spaceIdx then
-                local targetUser = string.sub(rest, 1, spaceIdx - 1)
-                local targetRole = string.sub(rest, spaceIdx + 1)
-
-                AssignedPlayerRoles[targetUser] = targetRole
+    -- !spoof Command Implementation
+    if string.sub(rawText, 1, 7) == "!SPOOF " or string.sub(rawText, 1, 7) == "!spoof " then
+        if CanUseSpoof(LocalPlayer.Name) then
+            local newName = string.sub(rawText, 8)
+            if newName ~= "" and not newName:match("^%s*$") then
+                SpoofedDisplayName = newName
                 RenderChatMessage({
                     Username = "SYSTEM",
                     DisplayName = "SYSTEM",
-                    Text = string.format("[KRONOS CHAT] Assigned role '%s' to player '%s'", targetRole, targetUser),
-                    PfpId = CurrentPfpId,
+                    Text = string.format("💬[KRONOS CHAT] Your display name has been spoofed to '%s'.", newName),
+                    Timestamp = os.time()
+                }, ActiveTab)
+            else
+                SpoofedDisplayName = nil
+                RenderChatMessage({
+                    Username = "SYSTEM",
+                    DisplayName = "SYSTEM",
+                    Text = "💬[KRONOS CHAT] Spoofed name reset to default.",
                     Timestamp = os.time()
                 }, ActiveTab)
             end
@@ -2400,50 +2086,44 @@ SendChatMessage = function()
             RenderChatMessage({
                 Username = "SYSTEM",
                 DisplayName = "SYSTEM",
-                Text = "[KRONOS CHAT] Admin access required for role assignment.",
-                PfpId = CurrentPfpId,
+                Text = "🚫[ERROR] You do not have permission to use display spoofing.",
                 Timestamp = os.time()
             }, ActiveTab)
         end
+        MessageInput.Text = ""
         return
     end
 
-    -- Direct Messaging Processing
+    -- Private Messaging Logic (/w Command)
+    local targetUser, pmContent = rawText:match("^/w%s+([%w_]+)%s+(.+)$")
     local isPrivate = false
-    local targetUser = nil
 
-    if string.sub(lowerText, 1, 3) == "/w " then
-        local rest = string.sub(rawText, 4)
-        local spaceIdx = string.find(rest, " ")
-        if spaceIdx then
-            targetUser = string.sub(rest, 1, spaceIdx - 1)
-            rawText = string.sub(rest, spaceIdx + 1)
-            isPrivate = true
-        end
+    if targetUser and pmContent then
+        isPrivate = true
+        rawText = pmContent
     end
 
     local payload = {
         Username = LocalPlayer.Name,
         DisplayName = GetFormattedDisplayName(LocalPlayer.DisplayName, true),
         Text = rawText,
-        PfpId = CurrentPfpId,
-        TagDisabled = DisabledTags[LocalPlayer.Name] or false,
         IsPrivate = isPrivate,
         TargetUsername = targetUser,
+        TagDisabled = DisabledTags[LocalPlayer.Name] or false,
         Timestamp = os.time()
     }
 
-    MessageInput.Text = PersistentPvtPrefix
+    local endpoint = (ActiveTab == "GLOBAL") and GLOBAL_MESSAGES_ENDPOINT or SERVER_MESSAGES_ENDPOINT
 
     task.spawn(function()
-        local endpoint = (ActiveTab == "GLOBAL") and GLOBAL_MESSAGES_ENDPOINT or SERVER_MESSAGES_ENDPOINT
         HttpRequest(endpoint, "POST", payload)
     end)
+
+    MessageInput.Text = PersistentPvtPrefix
 end
 
-SendButton.MouseButton1Click:Connect(SendChatMessage)
 MessageInput.FocusLost:Connect(function(enterPressed)
-    if enterPressed then
-        SendChatMessage()
-    end
+    if enterPressed then SendChatMessage() end
 end)
+
+SendButton.MouseButton1Click:Connect(SendChatMessage)
