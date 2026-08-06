@@ -1677,321 +1677,273 @@ AboutTextLabel.TextYAlignment = Enum.TextYAlignment.Top
 AboutTextLabel.RichText = true
 AboutTextLabel.TextWrapped = true
 AboutTextLabel.Text = [[<b><font color='#FF3333' size='14'>KRONOS CHAT SYSTEM</font></b>
-<font color='#888899'>Version 2.5 • Developed for Cross-Server Communication</font>
+A cross-server real-time communication framework built for seamless interaction across game instances.
 
-<b>[ CREDITS ]</b>
-• <b>Architect</b>: Kabir_Priv
-• <b>Stickers and Concept</b>: <font color='#FF0000'><b>ARES</b></font> / <font color='#800080'><b>Riser</b></font> / <font color='#FFD700'><b>Mickey</b></font> / <font color='#0000FF'><b>Orion</b></font>
+<b>Key Commands & Syntax:</b>
+• <b>!tag [RoleName]</b> - Equip an authorized tag/role.
+• <b>!spoof [Name]</b> - Change your displayed chat alias (Authorized users).
+• <b>/w [User] [Message]</b> - Send a encrypted private whisper.
 
-<b>[ ABOUT SYSTEM ]</b>
-KRONOS CHAT is a real-time cross-server chat infrastructure allowing seamless global and local server messaging with custom rank badges, stickers, privacy options, and instant requests.
-
-<b>[ COMMANDS GUIDE ]</b>
-• <b>!tag</b> : Toggle your custom tag display ON or OFF.
-• <b>!tag [RoleName]</b> : Switch to another tag if you are in the permitted players list for that role.
-• <b>!spoof [NewName]</b> : Change your chat Display Name.
-• <b>!role [User] [Role]</b> : Assign roles (Restricted Permission).
-• <b>/w [User] [Message]</b> : Send direct private messages.]]
+<b>Features:</b>
+• Global & Server-Specific Chat Channels
+• Custom Animated Badges & Role Hierarchy
+• Persistent Profile Customization
+• Built-in Anti-Spam Mitigation Systems]]
 AboutTextLabel.Parent = AboutInfoScroll
 
 AboutTextLabel:GetPropertyChangedSignal("AbsoluteSize"):Connect(function()
     AboutInfoScroll.CanvasSize = UDim2.new(0, 0, 0, AboutTextLabel.AbsoluteSize.Y + 16)
 end)
 
-local RequestContainer = Instance.new("Frame")
-RequestContainer.Name = "RequestContainer"
-RequestContainer.Size = UDim2.new(1, 0, 0, 98)
-RequestContainer.Position = UDim2.new(0, 0, 0, 172)
-RequestContainer.BackgroundColor3 = Color3.fromRGB(15, 15, 25)
-RequestContainer.BackgroundTransparency = 0.4
-RequestContainer.BorderSizePixel = 0
-RequestContainer.Parent = AboutFrame
+-- Input Bar Elements
+local BottomBar = Instance.new("Frame")
+BottomBar.Name = "BottomBar"
+BottomBar.Size = UDim2.new(1, -16, 0, 36)
+BottomBar.Position = UDim2.new(0, 8, 1, -44)
+BottomBar.BackgroundColor3 = Color3.fromRGB(15, 15, 25)
+BottomBar.BackgroundTransparency = 0.3
+BottomBar.BorderSizePixel = 0
+BottomBar.Parent = MainFrame
 
-local RequestCorner = Instance.new("UICorner")
-RequestCorner.CornerRadius = UDim.new(0, 8)
-RequestCorner.Parent = RequestContainer
+local BottomCorner = Instance.new("UICorner")
+BottomCorner.CornerRadius = UDim.new(0, 10)
+BottomCorner.Parent = BottomBar
 
-local RequestHeader = Instance.new("TextLabel")
-RequestHeader.Size = UDim2.new(1, -10, 0, 18)
-RequestHeader.Position = UDim2.new(0, 8, 0, 4)
-RequestHeader.BackgroundTransparency = 1
-RequestHeader.Font = Enum.Font.GothamBold
-RequestHeader.Text = "SUBMIT TAG REQUEST / SUGGESTION"
-RequestHeader.TextColor3 = Color3.fromRGB(255, 60, 60)
-RequestHeader.TextSize = 10
-RequestHeader.TextXAlignment = Enum.TextXAlignment.Left
-RequestHeader.Parent = RequestContainer
+local StickerBtn = Instance.new("TextButton")
+StickerBtn.Name = "StickerBtn"
+StickerBtn.Size = UDim2.new(0, 28, 0, 28)
+StickerBtn.Position = UDim2.new(0, 4, 0, 4)
+StickerBtn.BackgroundColor3 = Color3.fromRGB(25, 25, 38)
+StickerBtn.BackgroundTransparency = 0.3
+StickerBtn.Font = Enum.Font.GothamBold
+StickerBtn.Text = "☺"
+StickerBtn.TextColor3 = Color3.fromRGB(255, 200, 50)
+StickerBtn.TextSize = 16
+StickerBtn.Parent = BottomBar
 
-local RequestInput = Instance.new("TextBox")
-RequestInput.Name = "RequestInput"
-RequestInput.Size = UDim2.new(1, -16, 0, 44)
-RequestInput.Position = UDim2.new(0, 8, 0, 22)
-RequestInput.BackgroundColor3 = Color3.fromRGB(10, 10, 18)
-RequestInput.BackgroundTransparency = 0.3
-RequestInput.Font = Enum.Font.Gotham
-RequestInput.PlaceholderText = "Enter your custom tag request or bug report..."
-RequestInput.PlaceholderColor3 = Color3.fromRGB(130, 130, 140)
-RequestInput.Text = ""
-RequestInput.TextColor3 = Color3.fromRGB(240, 240, 250)
-RequestInput.TextSize = 11
-RequestInput.TextXAlignment = Enum.TextXAlignment.Left
-RequestInput.TextYAlignment = Enum.TextYAlignment.Top
-RequestInput.ClearTextOnFocus = false
-RequestInput.TextWrapped = true
-RequestInput.Parent = RequestContainer
+local StickerBtnCorner = Instance.new("UICorner")
+StickerBtnCorner.CornerRadius = UDim.new(0, 6)
+StickerBtnCorner.Parent = StickerBtn
 
-local RequestInputCorner = Instance.new("UICorner")
-RequestInputCorner.CornerRadius = UDim.new(0, 6)
-RequestInputCorner.Parent = RequestInput
-
-local SubmitRequestBtn = Instance.new("TextButton")
-SubmitRequestBtn.Name = "SubmitRequestBtn"
-SubmitRequestBtn.Size = UDim2.new(0, 110, 0, 22)
-SubmitRequestBtn.Position = UDim2.new(1, -118, 0, 70)
-SubmitRequestBtn.BackgroundColor3 = Color3.fromRGB(200, 30, 30)
-SubmitRequestBtn.BackgroundTransparency = 0.2
-SubmitRequestBtn.Font = Enum.Font.GothamBold
-SubmitRequestBtn.Text = "SUBMIT"
-SubmitRequestBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-SubmitRequestBtn.TextSize = 10
-SubmitRequestBtn.Parent = RequestContainer
-
-local SubmitCorner = Instance.new("UICorner")
-SubmitCorner.CornerRadius = UDim.new(0, 6)
-SubmitCorner.Parent = SubmitRequestBtn
-
-SubmitRequestBtn.MouseButton1Click:Connect(function()
-    local text = RequestInput.Text
-    if text == "" or text:match("^%s*$") then return end
-
-    SubmitRequestBtn.Text = "SENDING..."
-    SubmitRequestBtn.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
-
-    local payload = {
-        Username = LocalPlayer.Name,
-        DisplayName = GetFormattedDisplayName(LocalPlayer.DisplayName, true),
-        UserId = LocalPlayer.UserId,
-        RequestText = text,
-        Timestamp = os.time()
-    }
-
-    task.spawn(function()
-        local res = HttpRequest(REQUEST_ENDPOINT, "POST", payload)
-        if res then
-            SubmitRequestBtn.Text = "SENT ✓"
-            SubmitRequestBtn.BackgroundColor3 = Color3.fromRGB(30, 180, 80)
-            RequestInput.Text = ""
-        else
-            SubmitRequestBtn.Text = "FAILED ✗"
-            SubmitRequestBtn.BackgroundColor3 = Color3.fromRGB(180, 30, 30)
-        end
-
-        task.wait(2)
-        SubmitRequestBtn.Text = "SUBMIT"
-        SubmitRequestBtn.BackgroundColor3 = Color3.fromRGB(200, 30, 30)
-    end)
-end)
-
--- Input Setup
-local InputBarFrame = Instance.new("Frame")
-InputBarFrame.Name = "InputBarFrame"
-InputBarFrame.Size = UDim2.new(1, -16, 0, 38)
-InputBarFrame.Position = UDim2.new(0, 8, 1, -44)
-InputBarFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 30)
-InputBarFrame.BackgroundTransparency = 0.4
-InputBarFrame.BorderSizePixel = 0
-InputBarFrame.Parent = MainFrame
-
-local InputCorner = Instance.new("UICorner")
-InputCorner.CornerRadius = UDim.new(0, 12)
-InputCorner.Parent = InputBarFrame
-
-MessageInput = Instance.new("TextBox")
-MessageInput.Name = "MessageInput"
-MessageInput.Size = UDim2.new(1, -95, 1, -8)
-MessageInput.Position = UDim2.new(0, 10, 0, 4)
-MessageInput.BackgroundTransparency = 1
-MessageInput.Font = Enum.Font.GothamMedium
-MessageInput.PlaceholderText = "Type !tag or !tag [TagName] / Longpress a Message for Options."
-MessageInput.PlaceholderColor3 = Color3.fromRGB(150, 150, 160)
-MessageInput.Text = ""
-MessageInput.TextColor3 = Color3.fromRGB(240, 240, 245)
-MessageInput.TextSize = 13
-MessageInput.TextXAlignment = Enum.TextXAlignment.Left
-MessageInput.ClearTextOnFocus = false
-MessageInput.Parent = InputBarFrame
-
-local StickerToggleButton = Instance.new("TextButton")
-StickerToggleButton.Name = "StickerToggleButton"
-StickerToggleButton.Size = UDim2.new(0, 34, 1, -8)
-StickerToggleButton.Position = UDim2.new(1, -80, 0, 4)
-StickerToggleButton.BackgroundColor3 = Color3.fromRGB(220, 30, 30)
-StickerToggleButton.BackgroundTransparency = 0.2
-StickerToggleButton.Font = Enum.Font.GothamBold
-StickerToggleButton.Text = "😁"
-StickerToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-StickerToggleButton.TextSize = 14
-StickerToggleButton.Parent = InputBarFrame
-
-local StickerToggleCorner = Instance.new("UICorner")
-StickerToggleCorner.CornerRadius = UDim.new(0, 8)
-StickerToggleCorner.Parent = StickerToggleButton
-
-local emojiList = {"😁","😀","😉","🥰","🤩","🤗","😎","😥","😣","🤔","😫","🤤","😭","😨","😮‍💨","🤑"}
-task.spawn(function()
-    local idx = 1
-    while true do
-        task.wait(1)
-        idx = (idx % #emojiList) + 1
-        StickerToggleButton.Text = emojiList[idx]
-    end
-end)
-
-StickerToggleButton.MouseButton1Click:Connect(function()
+StickerBtn.MouseButton1Click:Connect(function()
     StickerPanel.Visible = not StickerPanel.Visible
 end)
 
-local SendButton = Instance.new("TextButton")
-SendButton.Name = "SendButton"
-SendButton.Size = UDim2.new(0, 38, 1, -8)
-SendButton.Position = UDim2.new(1, -42, 0, 4)
-SendButton.BackgroundColor3 = Color3.fromRGB(220, 30, 30)
-SendButton.BackgroundTransparency = 0.2
-SendButton.Font = Enum.Font.GothamBold
-SendButton.Text = ">"
-SendButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-SendButton.TextSize = 14
-SendButton.Parent = InputBarFrame
+MessageInput = Instance.new("TextBox")
+MessageInput.Name = "MessageInput"
+MessageInput.Size = UDim2.new(1, -90, 1, -8)
+MessageInput.Position = UDim2.new(0, 36, 0, 4)
+MessageInput.BackgroundTransparency = 1
+MessageInput.Font = Enum.Font.Gotham
+MessageInput.PlaceholderText = "Type a message or command..."
+MessageInput.PlaceholderColor3 = Color3.fromRGB(120, 120, 130)
+MessageInput.Text = ""
+MessageInput.TextColor3 = Color3.fromRGB(255, 255, 255)
+MessageInput.TextSize = 12
+MessageInput.TextXAlignment = Enum.TextXAlignment.Left
+MessageInput.ClearTextOnFocus = false
+MessageInput.Parent = BottomBar
+
+local SendBtn = Instance.new("TextButton")
+SendBtn.Name = "SendBtn"
+SendBtn.Size = UDim2.new(0, 46, 0, 28)
+SendBtn.Position = UDim2.new(1, -50, 0, 4)
+SendBtn.BackgroundColor3 = Color3.fromRGB(200, 30, 30)
+SendBtn.BackgroundTransparency = 0.2
+SendBtn.Font = Enum.Font.GothamBold
+SendBtn.Text = "SEND"
+SendBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+SendBtn.TextSize = 10
+SendBtn.Parent = BottomBar
 
 local SendCorner = Instance.new("UICorner")
-SendCorner.CornerRadius = UDim.new(0, 8)
-SendCorner.Parent = SendButton
+SendCorner.CornerRadius = UDim.new(0, 6)
+SendCorner.Parent = SendBtn
 
-local AutoCompleteFrame = Instance.new("ScrollingFrame")
-AutoCompleteFrame.Name = "AutoCompleteFrame"
-AutoCompleteFrame.Size = UDim2.new(0, 200, 0, 120)
-AutoCompleteFrame.Position = UDim2.new(0, 8, 1, -170)
-AutoCompleteFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 25)
-AutoCompleteFrame.BackgroundTransparency = 0.2
-AutoCompleteFrame.BorderSizePixel = 0
-AutoCompleteFrame.ScrollBarThickness = 3
-AutoCompleteFrame.ScrollBarImageColor3 = Color3.fromRGB(255, 0, 0)
-AutoCompleteFrame.Visible = false
-AutoCompleteFrame.ZIndex = 30
-AutoCompleteFrame.Parent = MainFrame
+-- Dynamic Autocomplete Box
+local AutoCompleteBox = Instance.new("Frame")
+AutoCompleteBox.Name = "AutoCompleteBox"
+AutoCompleteBox.Size = UDim2.new(1, -16, 0, 0)
+AutoCompleteBox.Position = UDim2.new(0, 8, 1, -48)
+AutoCompleteBox.BackgroundColor3 = Color3.fromRGB(15, 15, 25)
+AutoCompleteBox.BackgroundTransparency = 0.2
+AutoCompleteBox.BorderSizePixel = 0
+AutoCompleteBox.Visible = false
+AutoCompleteBox.ZIndex = 10
+AutoCompleteBox.Parent = MainFrame
 
 local AutoCompleteCorner = Instance.new("UICorner")
 AutoCompleteCorner.CornerRadius = UDim.new(0, 8)
-AutoCompleteCorner.Parent = AutoCompleteFrame
+AutoCompleteCorner.Parent = AutoCompleteBox
 
 local AutoCompleteLayout = Instance.new("UIListLayout")
 AutoCompleteLayout.SortOrder = Enum.SortOrder.LayoutOrder
 AutoCompleteLayout.Padding = UDim.new(0, 2)
-AutoCompleteLayout.Parent = AutoCompleteFrame
+AutoCompleteLayout.Parent = AutoCompleteBox
 
-AutoCompleteLayout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
-    AutoCompleteFrame.CanvasSize = UDim2.new(0, 0, 0, AutoCompleteLayout.AbsoluteContentSize.Y + 6)
-end)
+-- ============================================================================
+-- RENDER & CHAT MESSAGE LOGIC
+-- ============================================================================
+local function CreateMessageBubble(msgData)
+    local isClient = (msgData.Username == LocalPlayer.Name)
+    local isSystem = (msgData.Username == "System" or msgData.IsSystem)
+    
+    local messageCard = Instance.new("Frame")
+    messageCard.Name = "MessageCard"
+    messageCard.AutomaticSize = Enum.AutomaticSize.Y
+    messageCard.Size = UDim2.new(1, 0, 0, 0)
+    messageCard.BackgroundColor3 = isSystem and Color3.fromRGB(30, 30, 45) or Color3.fromRGB(15, 15, 25)
+    messageCard.BackgroundTransparency = 0.4
+    messageCard.BorderSizePixel = 0
+    messageCard.Parent = MessageContainer
 
-local ContextMenu = Instance.new("Frame")
-ContextMenu.Name = "ContextMenu"
-ContextMenu.Size = UDim2.new(0, 160, 0, 105)
-ContextMenu.BackgroundColor3 = Color3.fromRGB(15, 15, 25)
-ContextMenu.BackgroundTransparency = 0.2
-ContextMenu.BorderSizePixel = 0
-ContextMenu.Visible = false
-ContextMenu.ZIndex = 20
-ContextMenu.Parent = ScreenGui
+    local cardCorner = Instance.new("UICorner")
+    cardCorner.CornerRadius = UDim.new(0, 8)
+    cardCorner.Parent = messageCard
 
-local ContextCorner = Instance.new("UICorner")
-ContextCorner.CornerRadius = UDim.new(0, 10)
-ContextCorner.Parent = ContextMenu
+    local cardPadding = Instance.new("UIPadding")
+    cardPadding.PaddingBottom = UDim.new(0, 6)
+    cardPadding.PaddingLeft = UDim.new(0, 8)
+    cardPadding.PaddingRight = UDim.new(0, 8)
+    cardPadding.PaddingTop = UDim.new(0, 6)
+    cardPadding.Parent = messageCard
 
-local ContextList = Instance.new("UIListLayout")
-ContextList.SortOrder = Enum.SortOrder.LayoutOrder
-ContextList.Parent = ContextMenu
+    local pfpImg = Instance.new("ImageLabel")
+    pfpImg.Name = "PfpImg"
+    pfpImg.Size = UDim2.new(0, 28, 0, 28)
+    pfpImg.Position = UDim2.new(0, 0, 0, 0)
+    pfpImg.BackgroundColor3 = Color3.fromRGB(25, 25, 35)
+    pfpImg.Image = msgData.PfpUrl or DefaultPfpUrl
+    pfpImg.Parent = messageCard
 
--- Draggable Logic
-local function MakeDraggable(frame, dragHandle)
-    local dragging, dragInput, dragStart, startPos
-    dragHandle = dragHandle or frame
+    local pfpCorner = Instance.new("UICorner")
+    pfpCorner.CornerRadius = UDim.new(1, 0)
+    pfpCorner.Parent = pfpImg
 
-    dragHandle.InputBegan:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-            dragging = true
-            dragStart = input.Position
-            startPos = frame.Position
+    local HeaderFrame = Instance.new("Frame")
+    HeaderFrame.Name = "HeaderFrame"
+    HeaderFrame.Size = UDim2.new(1, -36, 0, 16)
+    HeaderFrame.Position = UDim2.new(0, 36, 0, 0)
+    HeaderFrame.BackgroundTransparency = 1
+    HeaderFrame.Parent = messageCard
 
-            input.Changed:Connect(function()
-                if input.UserInputState == Enum.UserInputState.End then dragging = false end
-            end)
-        end
-    end)
+    local HeaderLayout = Instance.new("UIListLayout")
+    HeaderLayout.FillDirection = Enum.FillDirection.Horizontal
+    HeaderLayout.SortOrder = Enum.SortOrder.LayoutOrder
+    HeaderLayout.Padding = UDim.new(0, 6)
+    HeaderLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+    HeaderLayout.Parent = HeaderFrame
 
-    dragHandle.InputChanged:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-            dragInput = input
-        end
-    end)
+    local roleName = msgData.Role or GetAssignedOrCalculatedRole(msgData.Username)
+    local style = RANK_STYLES[roleName] or { Start = Color3.fromRGB(180, 180, 180), End = Color3.fromRGB(100, 100, 100), Name = Color3.fromRGB(255, 255, 255), Speed = 1.0 }
 
-    UserInputService.InputChanged:Connect(function(input)
-        if input == dragInput and dragging then
-            local delta = input.Position - dragStart
-            frame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-        end
-    end)
+    if not DisabledTags[msgData.Username] then
+        local tagBadge = Instance.new("TextLabel")
+        tagBadge.Name = "TagBadge"
+        tagBadge.AutomaticSize = Enum.AutomaticSize.X
+        tagBadge.Size = UDim2.new(0, 0, 0, 14)
+        tagBadge.BackgroundColor3 = Color3.fromRGB(25, 25, 35)
+        tagBadge.BackgroundTransparency = 0.2
+        tagBadge.Font = Enum.Font.GothamBold
+        tagBadge.Text = " " .. string.upper(roleName) .. " "
+        tagBadge.TextColor3 = style.Start
+        tagBadge.TextSize = 8
+        tagBadge.LayoutOrder = 1
+        tagBadge.Parent = HeaderFrame
+
+        local tagCorner = Instance.new("UICorner")
+        tagCorner.CornerRadius = UDim.new(0, 4)
+        tagCorner.Parent = tagBadge
+
+        local tagStroke = Instance.new("UIStroke")
+        tagStroke.Thickness = 1
+        tagStroke.Color = style.Start
+        tagStroke.Transparency = 0.5
+        tagStroke.Parent = tagBadge
+    end
+
+    local nameLabel = Instance.new("TextLabel")
+    nameLabel.Name = "NameLabel"
+    nameLabel.AutomaticSize = Enum.AutomaticSize.X
+    nameLabel.Size = UDim2.new(0, 0, 0, 16)
+    nameLabel.BackgroundTransparency = 1
+    nameLabel.Font = Enum.Font.GothamBold
+    
+    local rawDisplayName = msgData.DisplayName or msgData.Username or "Unknown"
+    nameLabel.Text = GetFormattedDisplayName(rawDisplayName, isClient)
+    nameLabel.TextColor3 = style.Name or Color3.fromRGB(255, 255, 255)
+    nameLabel.TextSize = 11
+    nameLabel.LayoutOrder = 2
+    nameLabel.Parent = HeaderFrame
+
+    local textContent = msgData.Text or ""
+    local isSticker = string.sub(textContent, 1, 11) == "rbxthumb://" or string.sub(textContent, 1, 13) == "rbxassetid://"
+
+    if isSticker then
+        local stickerImg = Instance.new("ImageLabel")
+        stickerImg.Name = "StickerMsg"
+        stickerImg.Size = UDim2.new(0, 60, 0, 60)
+        stickerImg.Position = UDim2.new(0, 36, 0, 20)
+        stickerImg.BackgroundTransparency = 1
+        stickerImg.Image = textContent
+        stickerImg.ScaleType = Enum.ScaleType.Fit
+        stickerImg.Parent = messageCard
+    else
+        local bodyLabel = Instance.new("TextLabel")
+        bodyLabel.Name = "BodyLabel"
+        bodyLabel.AutomaticSize = Enum.AutomaticSize.Y
+        bodyLabel.Size = UDim2.new(1, -36, 0, 0)
+        bodyLabel.Position = UDim2.new(0, 36, 0, 18)
+        bodyLabel.BackgroundTransparency = 1
+        bodyLabel.Font = Enum.Font.Gotham
+        bodyLabel.Text = textContent
+        bodyLabel.TextColor3 = msgData.IsPrivate and Color3.fromRGB(255, 150, 200) or Color3.fromRGB(220, 220, 230)
+        bodyLabel.TextSize = 11
+        bodyLabel.TextXAlignment = Enum.TextXAlignment.Left
+        bodyLabel.TextYAlignment = Enum.TextYAlignment.Top
+        bodyLabel.TextWrapped = true
+        bodyLabel.RichText = true
+        bodyLabel.Parent = messageCard
+    end
+
+    return messageCard
 end
 
-MakeDraggable(MainFrame, HeaderBar)
-
--- TAB SWITCHING SYSTEM
-local function SwitchTab(tabName)
-    ActiveTab = tabName
-    GlobalTabBtn.BackgroundColor3 = Color3.fromRGB(40, 40, 55)
-    GlobalTabBtn.TextColor3 = Color3.fromRGB(180, 180, 190)
-
-    ServerTabBtn.BackgroundColor3 = Color3.fromRGB(40, 40, 55)
-    ServerTabBtn.TextColor3 = Color3.fromRGB(180, 180, 190)
-
-    ProfileTabBtn.BackgroundColor3 = Color3.fromRGB(40, 40, 55)
-    ProfileTabBtn.TextColor3 = Color3.fromRGB(180, 180, 190)
-
-    AboutTabBtn.BackgroundColor3 = Color3.fromRGB(40, 40, 55)
-    AboutTabBtn.TextColor3 = Color3.fromRGB(180, 180, 190)
-
-    MessageContainer.Visible = false
-    AboutFrame.Visible = false
-    ProfileFrame.Visible = false
-    InputBarFrame.Visible = true
-
-    if tabName == "GLOBAL" then
-        GlobalTabBtn.BackgroundColor3 = Color3.fromRGB(200, 30, 30)
-        GlobalTabBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-        MessageContainer.Visible = true
-    elseif tabName == "SERVER" then
-        ServerTabBtn.BackgroundColor3 = Color3.fromRGB(200, 30, 30)
-        ServerTabBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-        MessageContainer.Visible = true
-    elseif tabName == "PROFILE" then
-        ProfileTabBtn.BackgroundColor3 = Color3.fromRGB(200, 30, 30)
-        ProfileTabBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-        ProfileFrame.Visible = true
-        InputBarFrame.Visible = false
-    elseif tabName == "ABOUT" then
-        AboutTabBtn.BackgroundColor3 = Color3.fromRGB(200, 30, 30)
-        AboutTabBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-        AboutFrame.Visible = true
-        InputBarFrame.Visible = false
+local function RedrawMessageContainer()
+    for _, child in ipairs(MessageContainer:GetChildren()) do
+        if child:IsA("Frame") then child:Destroy() end
     end
 
-    -- Clear message view when switching tabs
-    for _, item in ipairs(MessageContainer:GetChildren()) do
-        if item:IsA("Frame") then item.Visible = false end
-    end
+    local sourceCache = (ActiveTab == "GLOBAL") and GlobalCachedMessages or ServerCachedMessages
 
-    local targetElements = (tabName == "GLOBAL") and GlobalUIElements or ServerUIElements
-    for _, frame in pairs(targetElements) do
-        frame.Visible = true
+    for _, msgData in ipairs(sourceCache) do
+        CreateMessageBubble(msgData)
+    end
+end
+
+-- Tab Switcher Handler
+local function SwitchTab(newTab)
+    ActiveTab = newTab
+    
+    GlobalTabBtn.BackgroundColor3 = (ActiveTab == "GLOBAL") and Color3.fromRGB(200, 30, 30) or Color3.fromRGB(40, 40, 55)
+    GlobalTabBtn.TextColor3 = (ActiveTab == "GLOBAL") and Color3.fromRGB(255, 255, 255) or Color3.fromRGB(180, 180, 190)
+    
+    ServerTabBtn.BackgroundColor3 = (ActiveTab == "SERVER") and Color3.fromRGB(200, 30, 30) or Color3.fromRGB(40, 40, 55)
+    ServerTabBtn.TextColor3 = (ActiveTab == "SERVER") and Color3.fromRGB(255, 255, 255) or Color3.fromRGB(180, 180, 190)
+
+    ProfileTabBtn.BackgroundColor3 = (ActiveTab == "PROFILE") and Color3.fromRGB(200, 30, 30) or Color3.fromRGB(40, 40, 55)
+    ProfileTabBtn.TextColor3 = (ActiveTab == "PROFILE") and Color3.fromRGB(255, 255, 255) or Color3.fromRGB(180, 180, 190)
+
+    AboutTabBtn.BackgroundColor3 = (ActiveTab == "ABOUT") and Color3.fromRGB(200, 30, 30) or Color3.fromRGB(40, 40, 55)
+    AboutTabBtn.TextColor3 = (ActiveTab == "ABOUT") and Color3.fromRGB(255, 255, 255) or Color3.fromRGB(180, 180, 190)
+
+    MessageContainer.Visible = (ActiveTab == "GLOBAL" or ActiveTab == "SERVER")
+    BottomBar.Visible = (ActiveTab == "GLOBAL" or ActiveTab == "SERVER")
+    ProfileFrame.Visible = (ActiveTab == "PROFILE")
+    AboutFrame.Visible = (ActiveTab == "ABOUT")
+
+    if ActiveTab == "GLOBAL" or ActiveTab == "SERVER" then
+        RedrawMessageContainer()
     end
 end
 
@@ -2000,321 +1952,174 @@ ServerTabBtn.MouseButton1Click:Connect(function() SwitchTab("SERVER") end)
 ProfileTabBtn.MouseButton1Click:Connect(function() SwitchTab("PROFILE") end)
 AboutTabBtn.MouseButton1Click:Connect(function() SwitchTab("ABOUT") end)
 
--- ============================================================================
--- RENDER CHAT MESSAGES WITH CIRCULAR PFPs & TIMINGS
--- ============================================================================
-local function CreateChatMessageUI(msgData, container)
-    local msgFrame = Instance.new("Frame")
-    msgFrame.Name = "MessageRow"
-    msgFrame.Size = UDim2.new(1, 0, 0, 0)
-    msgFrame.AutomaticSize = Enum.AutomaticSize.Y
-    msgFrame.BackgroundTransparency = 1
-    msgFrame.Parent = container
-
-    local isClient = (msgData.Username == LocalPlayer.Name)
-    local formattedDisplayName = GetFormattedDisplayName(msgData.DisplayName or msgData.Username, isClient)
-    local assignedRole = GetAssignedOrCalculatedRole(msgData.Username)
-    local roleStyle = RANK_STYLES[assignedRole] or RANK_STYLES["VIP"]
-
-    -- Layout Container
-    local horizontalLayout = Instance.new("UIListLayout")
-    horizontalLayout.FillDirection = Enum.FillDirection.Horizontal
-    horizontalLayout.SortOrder = Enum.SortOrder.LayoutOrder
-    horizontalLayout.VerticalAlignment = Enum.VerticalAlignment.Top
-    horizontalLayout.Padding = UDim.new(0, 6)
-    horizontalLayout.Parent = msgFrame
-
-    -- [NEW REQUIREMENT] Circular Profile Picture Frame
-    local pfpImage = Instance.new("ImageLabel")
-    pfpImage.Name = "UserPFP"
-    pfpImage.Size = UDim2.new(0, 22, 0, 22)
-    pfpImage.BackgroundColor3 = Color3.fromRGB(20, 20, 30)
-    pfpImage.Image = msgData.PfpID or DefaultPfpUrl
-    pfpImage.LayoutOrder = 1
-    pfpImage.Parent = msgFrame
-
-    local pfpCorner = Instance.new("UICorner")
-    pfpCorner.CornerRadius = UDim.new(1, 0)
-    pfpCorner.Parent = pfpImage
-
-    local pfpStroke = Instance.new("UIStroke")
-    pfpStroke.Thickness = 1
-    pfpStroke.Color = Color3.fromRGB(255, 255, 255)
-    pfpStroke.Transparency = 0.5
-    pfpStroke.Parent = pfpImage
-
-    -- Content Wrapper
-    local contentWrapper = Instance.new("Frame")
-    contentWrapper.Name = "ContentWrapper"
-    contentWrapper.Size = UDim2.new(1, -30, 0, 0)
-    contentWrapper.AutomaticSize = Enum.AutomaticSize.Y
-    contentWrapper.BackgroundTransparency = 1
-    contentWrapper.LayoutOrder = 2
-    contentWrapper.Parent = msgFrame
-
-    local wrapperLayout = Instance.new("UIListLayout")
-    wrapperLayout.SortOrder = Enum.SortOrder.LayoutOrder
-    wrapperLayout.Padding = UDim.new(0, 2)
-    wrapperLayout.Parent = contentWrapper
-
-    -- Tag & Username Header Line
-    local headerFrame = Instance.new("Frame")
-    headerFrame.Name = "HeaderFrame"
-    headerFrame.Size = UDim2.new(1, 0, 0, 18)
-    headerFrame.BackgroundTransparency = 1
-    headerFrame.Parent = contentWrapper
-
-    local headerLayout = Instance.new("UIListLayout")
-    headerLayout.FillDirection = Enum.FillDirection.Horizontal
-    headerLayout.SortOrder = Enum.SortOrder.LayoutOrder
-    headerLayout.Padding = UDim.new(0, 4)
-    headerLayout.VerticalAlignment = Enum.VerticalAlignment.Center
-    headerLayout.Parent = headerFrame
-
-    -- Custom Tag Badge
-    if not DisabledTags[msgData.Username] then
-        local tagBadge = Instance.new("TextLabel")
-        tagBadge.Name = "RoleTag"
-        tagBadge.AutomaticSize = Enum.AutomaticSize.X
-        tagBadge.Size = UDim2.new(0, 0, 0, 16)
-        tagBadge.BackgroundColor3 = Color3.fromRGB(20, 20, 30)
-        tagBadge.BackgroundTransparency = 0.2
-        tagBadge.Font = Enum.Font.GothamBold
-        tagBadge.Text = " " .. string.upper(assignedRole) .. " "
-        tagBadge.TextColor3 = roleStyle.Start
-        tagBadge.TextSize = 9
-        tagBadge.Parent = headerFrame
-
-        local tagCorner = Instance.new("UICorner")
-        tagCorner.CornerRadius = UDim.new(0, 4)
-        tagCorner.Parent = tagBadge
-
-        local tagStroke = Instance.new("UIStroke")
-        tagStroke.Thickness = 1
-        tagStroke.Color = roleStyle.Start
-        tagStroke.Transparency = 0.5
-        tagStroke.Parent = tagBadge
+-- Autocomplete Handler
+MessageInput:GetPropertyChangedSignal("Text"):Connect(function()
+    local text = MessageInput.Text
+    for _, child in ipairs(AutoCompleteBox:GetChildren()) do
+        if child:IsA("TextButton") then child:Destroy() end
     end
 
-    -- Display Name Text
-    local nameLabel = Instance.new("TextLabel")
-    nameLabel.Name = "NameLabel"
-    nameLabel.AutomaticSize = Enum.AutomaticSize.X
-    nameLabel.Size = UDim2.new(0, 0, 1, 0)
-    nameLabel.BackgroundTransparency = 1
-    nameLabel.Font = Enum.Font.GothamBold
-    nameLabel.Text = formattedDisplayName
-    nameLabel.TextColor3 = roleStyle.Name or Color3.fromRGB(255, 255, 255)
-    nameLabel.TextSize = 11
-    nameLabel.Parent = headerFrame
-
-    -- Timings Display
-    local timestampText = os.date("%I:%M %p", msgData.Timestamp or os.time())
-    local timeLabel = Instance.new("TextLabel")
-    timeLabel.Name = "TimeLabel"
-    timeLabel.AutomaticSize = Enum.AutomaticSize.X
-    timeLabel.Size = UDim2.new(0, 0, 1, 0)
-    timeLabel.BackgroundTransparency = 1
-    timeLabel.Font = Enum.Font.Gotham
-    timeLabel.Text = " • " .. timestampText
-    timeLabel.TextColor3 = Color3.fromRGB(120, 120, 130)
-    timeLabel.TextSize = 9
-    timeLabel.Parent = headerFrame
-
-    -- Message Body / Sticker Render
-    local text = msgData.Text or ""
-    if string.sub(text, 1, 11) == "rbxthumb://" or string.sub(text, 1, 13) == "rbxassetid://" then
-        local stickerImg = Instance.new("ImageLabel")
-        stickerImg.Name = "StickerMessage"
-        stickerImg.Size = UDim2.new(0, 75, 0, 75)
-        stickerImg.BackgroundTransparency = 1
-        stickerImg.Image = text
-        stickerImg.ScaleType = Enum.ScaleType.Fit
-        stickerImg.Parent = contentWrapper
-    else
-        local textLabel = Instance.new("TextLabel")
-        textLabel.Name = "TextMessage"
-        textLabel.Size = UDim2.new(1, 0, 0, 0)
-        textLabel.AutomaticSize = Enum.AutomaticSize.Y
-        textLabel.BackgroundTransparency = 1
-        textLabel.Font = Enum.Font.Gotham
-        textLabel.Text = text
-        textLabel.TextColor3 = msgData.IsPrivate and Color3.fromRGB(255, 100, 255) or Color3.fromRGB(230, 230, 240)
-        textLabel.TextSize = 11
-        textLabel.TextXAlignment = Enum.TextXAlignment.Left
-        textLabel.TextWrapped = true
-        textLabel.RichText = true
-        textLabel.Parent = contentWrapper
+    if text == "" then
+        AutoCompleteBox.Visible = false
+        AutoCompleteBox.Size = UDim2.new(1, -16, 0, 0)
+        return
     end
 
-    -- Interactive Options context long-press / click
-    local hitBtn = Instance.new("TextButton")
-    hitBtn.Name = "HitBtn"
-    hitBtn.Size = UDim2.new(1, 0, 1, 0)
-    hitBtn.BackgroundTransparency = 1
-    hitBtn.Text = ""
-    hitBtn.Parent = msgFrame
-
-    hitBtn.MouseButton2Click:Connect(function()
-        ContextMenu.Position = UDim2.new(0, UserInputService:GetMouseLocation().X, 0, UserInputService:GetMouseLocation().Y)
-        ContextMenu.Visible = true
-
-        for _, c in ipairs(ContextMenu:GetChildren()) do
-            if c:IsA("TextButton") then c:Destroy() end
+    local matches = {}
+    for _, opt in ipairs(ALL_AUTOCOMPLETE_OPTIONS) do
+        if string.find(string.lower(opt), string.lower(text), 1, true) then
+            table.insert(matches, opt)
         end
+    end
 
-        local whisperBtn = Instance.new("TextButton")
-        whisperBtn.Size = UDim2.new(1, 0, 0, 25)
-        whisperBtn.Text = "Whisper User"
-        whisperBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-        whisperBtn.BackgroundTransparency = 0.5
-        whisperBtn.Parent = ContextMenu
-        whisperBtn.MouseButton1Click:Connect(function()
-            ContextMenu.Visible = false
-            if MessageInput then
-                MessageInput.Text = "/w " .. msgData.Username .. " "
+    if #matches > 0 then
+        AutoCompleteBox.Visible = true
+        local height = math.min(#matches * 22 + 4, 88)
+        AutoCompleteBox.Size = UDim2.new(1, -16, 0, height)
+        AutoCompleteBox.Position = UDim2.new(0, 8, 1, -48 - height)
+
+        for _, matchText in ipairs(matches) do
+            local btn = Instance.new("TextButton")
+            btn.Name = "AutoOpt"
+            btn.Size = UDim2.new(1, 0, 0, 20)
+            btn.BackgroundTransparency = 1
+            btn.Font = Enum.Font.Gotham
+            btn.Text = "  " .. matchText
+            btn.TextColor3 = Color3.fromRGB(200, 200, 210)
+            btn.TextSize = 10
+            btn.TextXAlignment = Enum.TextXAlignment.Left
+            btn.Parent = AutoCompleteBox
+
+            btn.MouseButton1Click:Connect(function()
+                MessageInput.Text = matchText .. " "
                 MessageInput:CaptureFocus()
-            end
-        end)
+                AutoCompleteBox.Visible = false
+            end)
+        end
+    else
+        AutoCompleteBox.Visible = false
+    end
+end)
 
-        local copyMsgBtn = Instance.new("TextButton")
-        copyMsgBtn.Size = UDim2.new(1, 0, 0, 25)
-        copyMsgBtn.Text = "Copy Message"
-        copyMsgBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-        copyMsgBtn.BackgroundTransparency = 0.5
-        copyMsgBtn.Parent = ContextMenu
-        copyMsgBtn.MouseButton1Click:Connect(function()
-            ContextMenu.Visible = false
-            if setclipboard then setclipboard(msgData.Text) end
-        end)
-    end)
-
-    return msgFrame
-end
-
--- ============================================================================
--- MESSAGE POLLING & SENDER CORE
--- ============================================================================
+-- Send Message Implementation
 SendChatMessage = function()
-    local input = MessageInput.Text
-    if input == "" or input:match("^%s*$") then return end
+    local text = MessageInput.Text
+    if not text or string.gsub(text, "%s+", "") == "" then return end
 
-    -- Check Anti-Spam Limits
-    local currentTime = os.time()
-    if input == LastSentMessageText and (currentTime - LastMessageSendTime) < 3 then
+    -- Check for Command Inputs
+    if string.sub(text, 1, 5) == "!tag " or string.sub(text, 1, 6) == "!role " then
+        local chosenRole = string.sub(text, string.find(text, " ") + 1)
+        if RANK_STYLES[chosenRole] then
+            AssignedPlayerRoles[LocalPlayer.Name] = chosenRole
+            MessageInput.Text = ""
+            AutoCompleteBox.Visible = false
+            RedrawMessageContainer()
+            return
+        end
+    elseif string.sub(text, 1, 7) == "!spoof " then
+        if CanUseSpoof(LocalPlayer.Name) then
+            local newAlias = string.sub(text, 8)
+            SpoofedDisplayName = newAlias
+            MessageInput.Text = ""
+            AutoCompleteBox.Visible = false
+            RedrawMessageContainer()
+            return
+        end
+    end
+
+    -- Anti Spam Rules
+    local now = os.time()
+    if text == LastSentMessageText and (now - LastMessageSendTime) < 3 then
         ConsecutiveSpamCount = ConsecutiveSpamCount + 1
         if ConsecutiveSpamCount >= 3 then
             MessageInput.Text = ""
-            MessageInput.PlaceholderText = "Slow down! Anti-spam active..."
-            task.delay(2, function()
-                MessageInput.PlaceholderText = "Type !tag or !tag [TagName] / Longpress a Message for Options."
-            end)
             return
         end
     else
         ConsecutiveSpamCount = 0
     end
 
-    LastSentMessageText = input
-    LastMessageSendTime = currentTime
-
-    -- Command Processing
-    if string.sub(input, 1, 5) == "!tag " then
-        local tagArg = string.sub(input, 6)
-        if RANK_STYLES[tagArg] then
-            AssignedPlayerRoles[LocalPlayer.Name] = tagArg
-            MessageInput.Text = ""
-            return
-        end
-    elseif input == "!tag" then
-        DisabledTags[LocalPlayer.Name] = not DisabledTags[LocalPlayer.Name]
-        MessageInput.Text = ""
-        return
-    elseif string.sub(input, 1, 7) == "!spoof " then
-        if CanUseSpoof(LocalPlayer.Name) then
-            SpoofedDisplayName = string.sub(input, 8)
-        end
-        MessageInput.Text = ""
-        return
-    end
-
-    -- Create Message Payload with PfpID
-    local isPrivate = false
-    local recipient = nil
-    if string.sub(input, 1, 3) == "/w " then
-        local spacePos = string.find(input, " ", 4)
-        if spacePos then
-            recipient = string.sub(input, 4, spacePos - 1)
-            input = string.sub(input, spacePos + 1)
-            isPrivate = true
-        end
-    end
+    LastSentMessageText = text
+    LastMessageSendTime = now
 
     local payload = {
         Username = LocalPlayer.Name,
-        DisplayName = GetFormattedDisplayName(LocalPlayer.DisplayName, true),
-        Text = input,
-        PfpID = CurrentSelectedPfp, -- Send active circular PFP cross-server
-        Timestamp = os.time(),
-        IsPrivate = isPrivate,
-        Recipient = recipient
+        DisplayName = SpoofedDisplayName or LocalPlayer.DisplayName,
+        Role = GetAssignedOrCalculatedRole(LocalPlayer.Name),
+        PfpUrl = CurrentSelectedPfp,
+        Text = text,
+        Timestamp = now,
+        IsPrivate = string.sub(text, 1, 3) == "/w "
     }
 
-    local endpoint = (ActiveTab == "GLOBAL") and GLOBAL_MESSAGES_ENDPOINT or SERVER_MESSAGES_ENDPOINT
-
-    task.spawn(function()
-        HttpRequest(endpoint, "POST", payload)
-    end)
-
     MessageInput.Text = ""
+    AutoCompleteBox.Visible = false
+
+    local endpoint = (ActiveTab == "GLOBAL") and GLOBAL_MESSAGES_ENDPOINT or SERVER_MESSAGES_ENDPOINT
+    HttpRequest(endpoint, "POST", payload)
 end
 
-SendButton.MouseButton1Click:Connect(SendChatMessage)
+SendBtn.MouseButton1Click:Connect(SendChatMessage)
 MessageInput.FocusLost:Connect(function(enterPressed)
     if enterPressed then SendChatMessage() end
 end)
 
--- Real-Time Firebase Synchronizer
-local function PollMessages()
-    while true do
-        local globalData = HttpRequest(GLOBAL_MESSAGES_ENDPOINT, "GET")
-        if globalData and type(globalData) == "table" then
-            for msgId, msg in pairs(globalData) do
-                if msg.Timestamp and msg.Timestamp >= ScriptStartTime then
-                    if not GlobalCachedMessages[msgId] then
-                        GlobalCachedMessages[msgId] = msg
-                        if not msg.IsPrivate or msg.Recipient == LocalPlayer.Name or msg.Username == LocalPlayer.Name then
-                            local elem = CreateChatMessageUI(msg, MessageContainer)
-                            elem.Visible = (ActiveTab == "GLOBAL")
-                            GlobalUIElements[msgId] = elem
-                            DisplayNewMessageNotif(msg)
-                        end
+-- Polling & Real-time Update Loop
+local lastGlobalPoll = 0
+local lastServerPoll = 0
+
+RunService.Heartbeat:Connect(function()
+    local now = os.time()
+
+    if now - lastGlobalPoll >= 2 then
+        lastGlobalPoll = now
+        task.spawn(function()
+            local data = HttpRequest(GLOBAL_MESSAGES_ENDPOINT, "GET")
+            if data and type(data) == "table" then
+                local newList = {}
+                for id, msg in pairs(data) do
+                    if type(msg) == "table" and (msg.Timestamp or 0) >= ScriptStartTime then
+                        table.insert(newList, msg)
                     end
                 end
-            end
-        end
+                table.sort(newList, function(a, b) return (a.Timestamp or 0) < (b.Timestamp or 0) end)
 
-        local serverData = HttpRequest(SERVER_MESSAGES_ENDPOINT, "GET")
-        if serverData and type(serverData) == "table" then
-            for msgId, msg in pairs(serverData) do
-                if msg.Timestamp and msg.Timestamp >= ScriptStartTime then
-                    if not ServerCachedMessages[msgId] then
-                        ServerCachedMessages[msgId] = msg
-                        if not msg.IsPrivate or msg.Recipient == LocalPlayer.Name or msg.Username == LocalPlayer.Name then
-                            local elem = CreateChatMessageUI(msg, MessageContainer)
-                            elem.Visible = (ActiveTab == "SERVER")
-                            ServerUIElements[msgId] = elem
-                            DisplayNewMessageNotif(msg)
-                        end
-                    end
+                if #newList > #GlobalCachedMessages then
+                    local newMsg = newList[#newList]
+                    DisplayNewMessageNotif(newMsg)
                 end
-            end
-        end
 
-        task.wait(2)
+                GlobalCachedMessages = newList
+                if ActiveTab == "GLOBAL" then RedrawMessageContainer() end
+            end
+        end)
     end
-end
 
-task.spawn(PollMessages)
+    if now - lastServerPoll >= 2 then
+        lastServerPoll = now
+        task.spawn(function()
+            local data = HttpRequest(SERVER_MESSAGES_ENDPOINT, "GET")
+            if data and type(data) == "table" then
+                local newList = {}
+                for id, msg in pairs(data) do
+                    if type(msg) == "table" and (msg.Timestamp or 0) >= ScriptStartTime then
+                        table.insert(newList, msg)
+                    end
+                end
+                table.sort(newList, function(a, b) return (a.Timestamp or 0) < (b.Timestamp or 0) end)
+
+                if #newList > #ServerCachedMessages then
+                    local newMsg = newList[#newList]
+                    DisplayNewMessageNotif(newMsg)
+                end
+
+                ServerCachedMessages = newList
+                if ActiveTab == "SERVER" then RedrawMessageContainer() end
+            end
+        end)
+    end
+end)
+
+-- Initial Sync
 task.spawn(FetchRemoteRankStyles)
 task.spawn(FetchRemoteRoles)
