@@ -392,10 +392,10 @@ local customRPName = " ᴋʀᴏɴᴏs ᴄʜᴀᴛ "
 local customRPBio  = " ωєℓ¢σмє вα¢к, " .. GetFormattedDisplayName(lplr.DisplayName, true) .. " "
 
 local function applyRPProfile()
-    local reFolder = ReplicatedStorage:WaitForChild("RE", 10)
+    local reFolder = ReplicatedStorage:WaitForChild("RE", 5)
     if not reFolder then return end
 
-    local rpRemote = reFolder:WaitForChild("1RPNam1eTex1t", 5)
+    local rpRemote = reFolder:WaitForChild("1RPNam1eTex1t", 3)
                   or reFolder:FindFirstChild("RPNameText")
                   or reFolder:FindFirstChild("RPName")
 
@@ -406,12 +406,12 @@ local function applyRPProfile()
         end
 
         task.spawn(function()
-            for i = 1, 5 do
+            for i = 1, 2 do
                 pcall(function()
                     rpRemote:FireServer("RolePlayName", customRPName)
                     rpRemote:FireServer("RolePlayBio", customRPBio)
                 end)
-                task.wait(0.5)
+                task.wait(1.5)
             end
         end)
     end
@@ -423,11 +423,11 @@ lplr.CharacterAdded:Connect(function()
     applyRPProfile()
 end)
 
--- Custom Color Loop
+-- Custom Color Loop (Rate-limited to prevent anti-cheat remote spam triggers)
 task.spawn(function()
-    local reFolder = ReplicatedStorage:WaitForChild("RE", 10)
+    local reFolder = ReplicatedStorage:WaitForChild("RE", 5)
     if reFolder then
-        local colorRemote = reFolder:WaitForChild("1RPNam1eColo1r", 5) or reFolder:FindFirstChild("RPNameColor")
+        local colorRemote = reFolder:WaitForChild("1RPNam1eColo1r", 3) or reFolder:FindFirstChild("RPNameColor")
         if colorRemote then
             local frequency = 0.8
             local brightRed = Color3.fromRGB(255, 0, 0)
@@ -443,7 +443,7 @@ task.spawn(function()
                     colorRemote:FireServer("PickingRPNameColor", lerpedNameColor)
                     colorRemote:FireServer("PickingRPBioColor", pureWhite)
                 end)
-                task.wait(0.1)
+                task.wait(2.0)
             end
         end
     end
@@ -645,7 +645,6 @@ local baseStickers = {
     "rbxthumb://type=Asset&id=77115548103922&w=420&h=420",
     "rbxthumb://type=Asset&id=6892957751&w=420&h=420",
     "rbxthumb://type=Asset&id=95112780943766&w=420&h=420",
-    -- Extra shuffled entries preserved from original list
     "rbxthumb://type=Asset&id=126155452969559&w=420&h=420",
     "rbxthumb://type=Asset&id=76528918733148&w=420&h=420",
     "rbxthumb://type=Asset&id=139746534721570&w=420&h=420",
@@ -979,14 +978,6 @@ end
 -- ============================================================================
 -- GLASSMORPHIC UI BUILDER
 -- ============================================================================
-local BlurEffect = Lighting:FindFirstChild("Kronos_GlassBlur") or Instance.new("DepthOfFieldEffect")
-BlurEffect.Name = "Kronos_GlassBlur"
-BlurEffect.FarIntensity = 0.1
-BlurEffect.FocusDistance = 0
-BlurEffect.InFocusRadius = 30
-BlurEffect.NearIntensity = 0.75
-BlurEffect.Parent = Lighting
-
 ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Name = "Kronos_Chat_Gui"
 ScreenGui.ResetOnSpawn = false
@@ -1036,7 +1027,9 @@ BorderGradient.Color = ColorSequence.new({
 BorderGradient.Parent = MainStroke
 
 RunService.RenderStepped:Connect(function(dt)
-    BorderGradient.Rotation = (BorderGradient.Rotation + (40 * dt)) % 360
+    if MainStroke and MainStroke.Parent then
+        BorderGradient.Rotation = (BorderGradient.Rotation + (40 * dt)) % 360
+    end
 end)
 
 local HeaderBar = Instance.new("Frame")
@@ -1130,11 +1123,11 @@ task.spawn(function()
     local blackColor = Color3.fromRGB(0, 0, 0)
     local brightRedColor = Color3.fromRGB(255, 0, 0)
     local frequency = 1.0
-    while true do
+    while KronosHeaderLabel and KronosHeaderLabel.Parent do
         local elapsed = tick()
         local factor = (math.sin(elapsed * frequency) + 1) / 2
         KronosHeaderLabel.TextColor3 = blackColor:Lerp(brightRedColor, factor)
-        task.wait(0.03)
+        task.wait(0.05)
     end
 end)
 
@@ -1799,7 +1792,7 @@ StickerToggleCorner.Parent = StickerToggleButton
 local emojiList = {"😁","😀","😉","🥰","🤩","🤗","😎","😥","😣","🤔","😫","🤤","😭","😨","😮‍💨","🤑"}
 task.spawn(function()
     local idx = 1
-    while true do
+    while StickerToggleButton and StickerToggleButton.Parent do
         task.wait(1)
         idx = (idx % #emojiList) + 1
         StickerToggleButton.Text = emojiList[idx]
