@@ -84,7 +84,7 @@ local function GetFormattedDisplayName(displayName, isClient)
     else
         displayName = displayName or ""
     end
-   
+
     if string.len(displayName) > 20 then
         return string.sub(displayName, 1, 20) .. "..."
     end
@@ -98,27 +98,6 @@ local function TruncateText(text, maxChars)
         return string.sub(text, 1, maxChars) .. "..."
     end
     return text
-end
-
--- Font mapping for Mathematical Small Capital Font requested
-local SMALL_CAPS_MAP = {
-    ["a"] = "ᴀ", ["b"] = "ʙ", ["c"] = "ᴄ", ["d"] = "ᴅ", ["e"] = "ᴇ", ["f"] = "ꜰ", ["g"] = "ɢ",
-    ["h"] = "ʜ", ["i"] = "ɪ", ["j"] = "ᴊ", ["k"] = "ᴋ", ["l"] = "ʟ", ["m"] = "ᴍ", ["n"] = "ɴ",
-    ["o"] = "ᴏ", ["p"] = "ᴘ", ["q"] = "Q", ["r"] = "ʀ", ["s"] = "ꜱ", ["t"] = "ᴛ", ["u"] = "ᴜ",
-    ["v"] = "ᴠ", ["w"] = "ᴡ", ["x"] = "x", ["y"] = "ʏ", ["z"] = "ᴢ",
-    ["A"] = "ᴀ", ["B"] = "ʙ", ["C"] = "ᴄ", ["D"] = "ᴅ", ["E"] = "ᴇ", ["F"] = "ꜰ", ["G"] = "ɢ",
-    ["H"] = "ʜ", ["I"] = "ɪ", ["J"] = "ᴊ", ["K"] = "ᴋ", ["L"] = "ʟ", ["M"] = "ᴍ", ["N"] = "ɴ",
-    ["O"] = "ᴏ", ["P"] = "ᴘ", ["Q"] = "Q", ["R"] = "ʀ", ["S"] = "ꜱ", ["T"] = "ᴛ", ["U"] = "ᴜ",
-    ["V"] = "ᴠ", ["W"] = "ᴡ", ["X"] = "x", ["Y"] = "ʏ", ["Z"] = "ᴢ"
-}
-
-local function ToSmallCaps(text)
-    local result = ""
-    for i = 1, #text do
-        local char = string.sub(text, i, i)
-        result = result .. (SMALL_CAPS_MAP[char] or char)
-    end
-    return result
 end
 
 -- ========================================================================
@@ -156,6 +135,7 @@ CardCorner.CornerRadius = UDim.new(0, 12)
 CardCorner.Parent = IntroMainCard
 
 local CardStroke = Instance.new("UIStroke")
+CardStroke.Thickness = 4
 CardStroke.Thickness = 3
 CardStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 CardStroke.Color = Color3.fromRGB(255, 255, 255)
@@ -286,6 +266,7 @@ CircleCorner.CornerRadius = UDim.new(1, 0)
 CircleCorner.Parent = PercentCircle
 
 local CircleStroke = Instance.new("UIStroke")
+CircleStroke.Thickness = 3
 CircleStroke.Thickness = 2
 CircleStroke.Color = Color3.fromRGB(40, 40, 50)
 CircleStroke.Parent = PercentCircle
@@ -358,6 +339,7 @@ local function runIntro()
             local pulseTween = TweenService:Create(
                 CardStroke,
                 TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, true),
+                { Thickness = 6 }
                 { Thickness = 5 }
             )
             pulseTween:Play()
@@ -661,64 +643,65 @@ for _, v in ipairs(baseStickers) do
 end
 baseStickers = uniqueStickers
 
--- Speed presets: Flashing = 5.0 (rapid strobe), Fast = 2.5, Medium = 1.2, Slow = 0.5
+-- ============================================================================
+-- HARDCODED RANKS & DEFAULT STYLES
+-- ============================================================================
 local RANK_STYLES = {
-["1. Dark Passenger"]   = { Start = Color3.fromRGB(128, 0, 32),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 5.0 },
-["2. Obsession"]        = { Start = Color3.fromRGB(112, 128, 144), End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 1.2 },
-["3. Soul Reaper"]      = { Start = Color3.fromRGB(0, 255, 255),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 2.5 },
-["4. Infinite Void"]    = { Start = Color3.fromRGB(75, 0, 130),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 0.5 },
-["5. Hunter"]           = { Start = Color3.fromRGB(255, 69, 0),   End = Color3.fromRGB(255, 255, 255), Name = Color3.fromRGB(255, 255, 255), Speed = 2.5 },
-["6. Hokage"]           = { Start = Color3.fromRGB(135, 206, 235), End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 1.2 },
-["7. Pirate Emperor"]   = { Start = Color3.fromRGB(64, 224, 208),  End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 2.5 },
-["8. KIRA"]             = { Start = Color3.fromRGB(54, 69, 79),   End = Color3.fromRGB(255, 255, 255), Name = Color3.fromRGB(255, 255, 255), Speed = 0.5 },
-["9. Overlord"]         = { Start = Color3.fromRGB(0, 255, 255),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 1.2 },
-["10. Jobless Sage"]    = { Start = Color3.fromRGB(138, 43, 226),  End = Color3.fromRGB(255, 255, 255), Name = Color3.fromRGB(255, 255, 255), Speed = 0.5 },
-["11. Saiyan"]          = { Start = Color3.fromRGB(0, 191, 255),   End = Color3.fromRGB(255, 255, 255), Name = Color3.fromRGB(255, 255, 255), Speed = 2.5 },
-["12. Monarch"]         = { Start = Color3.fromRGB(0, 0, 139),    End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 0.5 },
-["13. Devil"]           = { Start = Color3.fromRGB(183, 65, 14),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 2.5 },
-["14. Hashira"]         = { Start = Color3.fromRGB(0, 128, 128),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 2.5 },
-["15. Heroic"]          = { Start = Color3.fromRGB(255, 140, 0),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 2.5 },
-["16. Conqueror"]       = { Start = Color3.fromRGB(255, 191, 0),   End = Color3.fromRGB(255, 255, 255), Name = Color3.fromRGB(255, 255, 255), Speed = 1.2 },
-["17. Warlord"]         = { Start = Color3.fromRGB(205, 127, 50),  End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 2.5 },
-["18. Psychopath"]      = { Start = Color3.fromRGB(114, 47, 55),   End = Color3.fromRGB(54, 69, 79),   Name = Color3.fromRGB(255, 255, 255), Speed = 5.0 },
-["19. Manipulator"]     = { Start = Color3.fromRGB(184, 115, 51),  End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 5.0 },
-["20. Narcissist"]      = { Start = Color3.fromRGB(224, 17, 95),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 2.5 },
-["21. Com-God"]         = { Start = Color3.fromRGB(229, 228, 226), End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 0.5 },
-["22. Disbander"]       = { Start = Color3.fromRGB(178, 190, 181), End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 1.2 },
-["23. Lover"]           = { Start = Color3.fromRGB(128, 0, 32),   End = Color3.fromRGB(255, 255, 255), Name = Color3.fromRGB(255, 255, 255), Speed = 0.5 },
-["24. Malkin"]          = { Start = Color3.fromRGB(255, 0, 255),   End = Color3.fromRGB(255, 255, 255), Name = Color3.fromRGB(255, 182, 193), Speed = 0.5, Pulse = true },
-["25. Badmosh"]         = { Start = Color3.fromRGB(255, 255, 0),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 2.5 },
-["26. Badnam"]          = { Start = Color3.fromRGB(255, 219, 88),  End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 5.0 },
-["27. Batman"]          = { Start = Color3.fromRGB(25, 25, 112),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 1.2 },
-["28. Homelander"]      = { Start = Color3.fromRGB(0, 33, 165),    End = Color3.fromRGB(255, 255, 255), Name = Color3.fromRGB(255, 255, 255), Speed = 0.5 },
-["29. Viltramite"]      = { Start = Color3.fromRGB(0, 71, 171),    End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 1.2 },
+["Architect"]          = { Start = Color3.fromRGB(255, 30, 30),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 30, 30),   Speed = 1.5, IsAdmin = true },
+["Overseer"]           = { Start = Color3.fromRGB(255, 30, 30),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 30, 30),   Speed = 1.5, IsAdmin = true },
+["Critic"]             = { Start = Color3.fromRGB(30, 144, 255),  End = Color3.fromRGB(0, 0, 139),     Name = Color3.fromRGB(30, 144, 255),  Speed = 1.5, IsAdmin = true },
+["Recruit"]            = { Start = Color3.fromRGB(255, 105, 180), End = Color3.fromRGB(255, 255, 255), Name = Color3.fromRGB(255, 105, 180), Speed = 1.2 },
+["Agent"]              = { Start = Color3.fromRGB(0, 191, 255),   End = Color3.fromRGB(255, 255, 255), Name = Color3.fromRGB(0, 191, 255),   Speed = 1.2 },
+["Regent of Codes"]    = { Start = Color3.fromRGB(30, 255, 30),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(30, 255, 30),   Speed = 1.2 },
+["Regent of Clans"]    = { Start = Color3.fromRGB(255, 215, 0),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 215, 0),   Speed = 1.2 },
+["Regent of Havoc"]    = { Start = Color3.fromRGB(186, 85, 211),  End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(186, 85, 211),  Speed = 1.2 },
+["VIP"]                = { Start = Color3.fromRGB(255, 215, 0),   End = Color3.fromRGB(139, 69, 19),   Name = Color3.fromRGB(255, 215, 0),   Speed = 1.5 },
+["ELITE"]              = { Start = Color3.fromRGB(186, 85, 211),  End = Color3.fromRGB(75, 0, 130),    Name = Color3.fromRGB(186, 85, 211),  Speed = 1.5 },
+["OG"]                 = { Start = Color3.fromRGB(255, 69, 0),    End = Color3.fromRGB(128, 0, 0),     Name = Color3.fromRGB(255, 69, 0),    Speed = 1.0 },
+["Dark Passenger"]     = { Start = Color3.fromRGB(128, 0, 32),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(128, 0, 32),   Speed = 2.0 },
+["Obsession"]          = { Start = Color3.fromRGB(112, 128, 144), End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 1.5 },
+["Soul Reaper"]        = { Start = Color3.fromRGB(0, 255, 255),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(0, 255, 255),   Speed = 1.5 },
+["Infinite Void"]      = { Start = Color3.fromRGB(75, 0, 130),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(75, 0, 130),   Speed = 1.0 },
+["Hunter"]             = { Start = Color3.fromRGB(255, 69, 0),   End = Color3.fromRGB(255, 255, 255), Name = Color3.fromRGB(255, 255, 255), Speed = 1.5 },
+["Hokage"]             = { Start = Color3.fromRGB(135, 206, 235), End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(135, 206, 235), Speed = 1.5 },
+["Pirate Emperor"]     = { Start = Color3.fromRGB(64, 224, 208),  End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(64, 224, 208),  Speed = 1.5 },
+["KIRA"]               = { Start = Color3.fromRGB(54, 69, 79),   End = Color3.fromRGB(255, 255, 255), Name = Color3.fromRGB(255, 255, 255), Speed = 1.0 },
+["Overlord"]           = { Start = Color3.fromRGB(0, 255, 255),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(0, 255, 255),   Speed = 1.5 },
+["Jobless Sage"]       = { Start = Color3.fromRGB(138, 43, 226),  End = Color3.fromRGB(255, 255, 255), Name = Color3.fromRGB(255, 255, 255), Speed = 1.0 },
+["Saiyan"]             = { Start = Color3.fromRGB(0, 191, 255),   End = Color3.fromRGB(255, 255, 255), Name = Color3.fromRGB(255, 255, 255), Speed = 1.5 },
+["Monarch"]            = { Start = Color3.fromRGB(0, 0, 139),    End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(0, 0, 139),     Speed = 1.0 },
+["Devil"]              = { Start = Color3.fromRGB(183, 65, 14),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(183, 65, 14),   Speed = 1.5 },
+["Hashira"]            = { Start = Color3.fromRGB(0, 128, 128),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(0, 128, 128),   Speed = 1.5 },
+["Heroic"]             = { Start = Color3.fromRGB(255, 140, 0),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 140, 0),   Speed = 1.5 },
+["Conqueror"]          = { Start = Color3.fromRGB(255, 191, 0),   End = Color3.fromRGB(255, 255, 255), Name = Color3.fromRGB(255, 255, 255), Speed = 1.5 },
+["Warlord"]            = { Start = Color3.fromRGB(205, 127, 50),  End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(205, 127, 50),  Speed = 1.5 },
+["Psychopath"]         = { Start = Color3.fromRGB(114, 47, 55),   End = Color3.fromRGB(54, 69, 79),   Name = Color3.fromRGB(114, 47, 55),   Speed = 2.0 },
+["Manipulator"]        = { Start = Color3.fromRGB(184, 115, 51),  End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(184, 115, 51),  Speed = 2.0 },
+["Narcissist"]         = { Start = Color3.fromRGB(224, 17, 95),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(224, 17, 95),   Speed = 1.5 },
+["Com-God"]            = { Start = Color3.fromRGB(229, 228, 226), End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(229, 228, 226), Speed = 1.0 },
+["Disbander"]          = { Start = Color3.fromRGB(178, 190, 181), End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(178, 190, 181), Speed = 1.5 },
+["Lover"]              = { Start = Color3.fromRGB(128, 0, 32),   End = Color3.fromRGB(255, 255, 255), Name = Color3.fromRGB(255, 255, 255), Speed = 1.0 },
+["Malkin"]             = { Start = Color3.fromRGB(255, 0, 255),   End = Color3.fromRGB(255, 255, 255), Name = Color3.fromRGB(255, 182, 193), Speed = 1.0 },
+["Badmosh"]            = { Start = Color3.fromRGB(255, 255, 0),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 0),   Speed = 1.5 },
+["Badnam"]             = { Start = Color3.fromRGB(255, 219, 88),  End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 219, 88),  Speed = 2.0 },
+["Batman"]             = { Start = Color3.fromRGB(25, 25, 112),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(25, 25, 112),   Speed = 1.5 },
+["Homelander"]         = { Start = Color3.fromRGB(0, 33, 165),    End = Color3.fromRGB(255, 255, 255), Name = Color3.fromRGB(255, 255, 255), Speed = 1.0 },
+["Viltramite"]         = { Start = Color3.fromRGB(0, 71, 171),    End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(0, 71, 171),    Speed = 1.5 },
 
--- Other Ranks
-["Recruit"]             = { Start = Color3.fromRGB(255, 255, 255), End = Color3.fromRGB(255, 255, 255), Name = Color3.fromRGB(255, 255, 255), Speed = 0 },
-["Agent"]               = { Start = Color3.fromRGB(255, 255, 255), End = Color3.fromRGB(255, 255, 255), Name = Color3.fromRGB(255, 255, 255), Speed = 0 },
-["Architect"]           = { Start = Color3.fromRGB(255, 30, 30),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 1.2, IsAdmin = true },
-["Overseer"]            = { Start = Color3.fromRGB(255, 30, 30),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 1.2, IsAdmin = true },
-["Regent of Codes"]     = { Start = Color3.fromRGB(30, 255, 30),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 0.5 },
-["Regent of Clans"]     = { Start = Color3.fromRGB(255, 215, 0),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 1.2 },
-["Regent of Havoc"]     = { Start = Color3.fromRGB(186, 85, 211),  End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 1.2 },
-["HACKER"]              = { Start = Color3.fromRGB(0, 255, 0),     End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 2.5 },
-
-["Critic"]              = { Start = Color3.fromRGB(30, 144, 255),  End = Color3.fromRGB(0, 0, 139),     Name = Color3.fromRGB(255, 255, 255), Speed = 1.2, IsAdmin = true },
-["VIP"]                 = { Start = Color3.fromRGB(255, 215, 0),   End = Color3.fromRGB(139, 69, 19),   Name = Color3.fromRGB(255, 255, 255), Speed = 1.2 },
-["ELITE"]               = { Start = Color3.fromRGB(186, 85, 211),  End = Color3.fromRGB(75, 0, 130),    Name = Color3.fromRGB(255, 255, 255), Speed = 1.2 },
-["OG"]                  = { Start = Color3.fromRGB(255, 69, 0),    End = Color3.fromRGB(128, 0, 0),     Name = Color3.fromRGB(255, 255, 255), Speed = 1.0 },
-["POOKIE🎀"]            = { Start = Color3.fromRGB(128, 0, 0),     End = Color3.fromRGB(255, 255, 255), Name = Color3.fromRGB(255, 255, 255), Speed = 1.2 },
-["EMPRESS👑"]           = { Start = Color3.fromRGB(218, 165, 32),  End = Color3.fromRGB(128, 0, 128),   Name = Color3.fromRGB(255, 255, 255), Speed = 1.2 },
-["EMPERROR👑"]          = { Start = Color3.fromRGB(255, 215, 0),   End = Color3.fromRGB(75, 0, 130),    Name = Color3.fromRGB(255, 255, 255), Speed = 1.2 },
-["Boni🤏"]              = { Start = Color3.fromRGB(255, 182, 193), End = Color3.fromRGB(255, 105, 180), Name = Color3.fromRGB(255, 255, 255), Speed = 1.2 },
-["FLYING DUTCHMAN🐐"]   = { Start = Color3.fromRGB(0, 255, 127),   End = Color3.fromRGB(15, 30, 15),    Name = Color3.fromRGB(255, 255, 255), Speed = 1.8 },
-["CR7🐐"]               = { Start = Color3.fromRGB(255, 215, 0),   End = Color3.fromRGB(220, 20, 60),   Name = Color3.fromRGB(255, 255, 255), Speed = 1.8 },
-["Serial Killer🔪"]      = { Start = Color3.fromRGB(255, 0, 0),     End = Color3.fromRGB(255, 255, 255), Name = Color3.fromRGB(255, 255, 255), Speed = 4.0 },
-["GOD"]                 = { Start = Color3.fromRGB(255, 255, 220), End = Color3.fromRGB(255, 215, 0),   Name = Color3.fromRGB(255, 255, 255), Speed = 1.2 },
-["GOAT"]                = { Start = Color3.fromRGB(255, 215, 0),   End = Color3.fromRGB(192, 192, 192), Name = Color3.fromRGB(255, 255, 255), Speed = 1.2 },
-["MUTHAL"]              = { Start = Color3.fromRGB(169, 169, 169), End = Color3.fromRGB(105, 105, 105), Name = Color3.fromRGB(255, 255, 255), Speed = 1.2 },
-["DADDY"]               = { Start = Color3.fromRGB(255, 140, 0),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 255, 255), Speed = 1.2 },
-["STEPDADDY"]           = { Start = Color3.fromRGB(255, 69, 0),    End = Color3.fromRGB(47, 79, 79),    Name = Color3.fromRGB(255, 255, 255), Speed = 1.2 },
+-- NEWLY ADDED ROLES
+["HACKER"]             = { Start = Color3.fromRGB(0, 255, 0),     End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(0, 255, 0),     Speed = 2.0 },
+["POOKIE🎀"]           = { Start = Color3.fromRGB(128, 0, 0),     End = Color3.fromRGB(255, 255, 255), Name = Color3.fromRGB(255, 192, 203), Speed = 1.5 },
+["EMPRESS👑"]          = { Start = Color3.fromRGB(218, 165, 32),  End = Color3.fromRGB(128, 0, 128),   Name = Color3.fromRGB(255, 215, 0),   Speed = 1.5 },
+["EMPERROR👑"]         = { Start = Color3.fromRGB(255, 215, 0),   End = Color3.fromRGB(75, 0, 130),    Name = Color3.fromRGB(255, 215, 0),   Speed = 1.5 },
+["Boni🤏"]             = { Start = Color3.fromRGB(255, 182, 193), End = Color3.fromRGB(255, 105, 180), Name = Color3.fromRGB(255, 192, 203), Speed = 1.2 },
+["FLYING DUTCHMAN🐐"]  = { Start = Color3.fromRGB(0, 255, 127),   End = Color3.fromRGB(15, 30, 15),    Name = Color3.fromRGB(0, 255, 127),   Speed = 1.8 },
+["CR7🐐"]              = { Start = Color3.fromRGB(255, 215, 0),   End = Color3.fromRGB(220, 20, 60),   Name = Color3.fromRGB(255, 215, 0),   Speed = 1.8 },
+["Serial Killer🔪"]     = { Start = Color3.fromRGB(255, 0, 0),     End = Color3.fromRGB(255, 255, 255), Name = Color3.fromRGB(200, 0, 0),     Speed = 4.0 },
+["GOD"]                = { Start = Color3.fromRGB(255, 255, 220), End = Color3.fromRGB(255, 215, 0),   Name = Color3.fromRGB(255, 255, 255), Speed = 1.2 },
+["GOAT"]               = { Start = Color3.fromRGB(255, 215, 0),   End = Color3.fromRGB(192, 192, 192), Name = Color3.fromRGB(255, 215, 0),   Speed = 1.5 },
+["MUTHAL"]             = { Start = Color3.fromRGB(169, 169, 169), End = Color3.fromRGB(105, 105, 105), Name = Color3.fromRGB(211, 211, 211), Speed = 1.2 },
+["DADDY"]              = { Start = Color3.fromRGB(255, 140, 0),   End = Color3.fromRGB(0, 0, 0),       Name = Color3.fromRGB(255, 140, 0),   Speed = 1.5 },
+["STEPDADDY"]          = { Start = Color3.fromRGB(255, 69, 0),    End = Color3.fromRGB(47, 79, 79),    Name = Color3.fromRGB(255, 99, 71),   Speed = 1.5 },
 }
 
 local ALL_AUTOCOMPLETE_OPTIONS = { "!tag", "!role", "!spoof", "/w " }
@@ -733,11 +716,11 @@ local ServerCachedMessages, ServerUIElements = {}, {}
 
 local function RefreshAllRoleAutocomplete()
     local optionsMap = { ["!tag"] = true, ["!role"] = true, ["!spoof"] = true, ["/w "] = true }
-   
+
     for rankName, _ in pairs(RANK_STYLES) do
         optionsMap[rankName] = true
     end
-   
+
     for playerName, roles in pairs(AvailableUserRoles) do
         for _, roleName in ipairs(roles) do
             optionsMap[roleName] = true
@@ -750,167 +733,6 @@ local function RefreshAllRoleAutocomplete()
     end
 end
 RefreshAllRoleAutocomplete()
-
--- Helper function to render a Glassmorphic Black Role Tag with two-color animated background transitions
-local function CreateRoleTag(roleName)
-    local style = RANK_STYLES[roleName] or {
-        Start = Color3.fromRGB(100, 100, 100),
-        End = Color3.fromRGB(0, 0, 0),
-        Name = Color3.fromRGB(255, 255, 255),
-        Speed = 1.0
-    }
-
-    local tagFrame = Instance.new("Frame")
-    tagFrame.Name = "RoleTagFrame"
-    tagFrame.AutomaticSize = Enum.AutomaticSize.X
-    tagFrame.Size = UDim2.new(0, 0, 0, 18)
-    tagFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-    tagFrame.BackgroundTransparency = 0.5
-    tagFrame.BorderSizePixel = 0
-
-    local tagCorner = Instance.new("UICorner")
-    tagCorner.CornerRadius = UDim.new(0, 5)
-    tagCorner.Parent = tagFrame
-
-    local tagStroke = Instance.new("UIStroke")
-    tagStroke.Thickness = 1.5
-    tagStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-    tagStroke.Color = style.Start
-    tagStroke.Parent = tagFrame
-
-    local formattedText = ToSmallCaps(roleName)
-    local tagLabel = Instance.new("TextLabel")
-    tagLabel.Name = "RoleTagLabel"
-    tagLabel.AutomaticSize = Enum.AutomaticSize.X
-    tagLabel.Size = UDim2.new(0, 0, 1, 0)
-    tagLabel.BackgroundTransparency = 1
-    tagLabel.Font = Enum.Font.GothamBold
-    tagLabel.Text = " " .. formattedText .. " "
-    tagLabel.TextColor3 = style.Name or Color3.fromRGB(255, 255, 255)
-    tagLabel.TextSize = 10
-    tagLabel.Parent = tagFrame
-
-    if style.Speed and style.Speed > 0 then
-        task.spawn(function()
-            local startTime = tick()
-            while tagFrame and tagFrame.Parent do
-                local elapsed = tick() - startTime
-                local factor = (math.sin(elapsed * style.Speed) + 1) / 2
-                
-                if style.Pulse then
-                    tagFrame.BackgroundTransparency = 0.3 + (factor * 0.4)
-                    tagStroke.Color = style.Start:Lerp(style.End, factor)
-                else
-                    tagStroke.Color = style.Start:Lerp(style.End, factor)
-                end
-                
-                task.wait(0.03)
-            end
-        end)
-    end
-
-    return tagFrame
-end
-
--- Function to handle building message cards with customized Private Message Red Borders
-local function BuildMessageCard(msgData)
-    local card = Instance.new("Frame")
-    card.Name = "MessageCard"
-    card.Size = UDim2.new(1, 0, 0, 0)
-    card.AutomaticSize = Enum.AutomaticSize.Y
-    card.BackgroundColor3 = Color3.fromRGB(15, 15, 25)
-    card.BackgroundTransparency = 0.4
-    card.BorderSizePixel = 0
-
-    local cardCorner = Instance.new("UICorner")
-    cardCorner.CornerRadius = UDim.new(0, 8)
-    cardCorner.Parent = card
-
-    if msgData.IsPrivate then
-        local pvtStroke = Instance.new("UIStroke")
-        pvtStroke.Name = "PrivateRedBorder"
-        pvtStroke.Thickness = 2
-        pvtStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-        pvtStroke.Color = Color3.fromRGB(255, 0, 0)
-        pvtStroke.Parent = card
-    end
-
-    local pfpImg = Instance.new("ImageLabel")
-    pfpImg.Name = "Pfp"
-    pfpImg.Size = UDim2.new(0, 28, 0, 28)
-    pfpImg.Position = UDim2.new(0, 4, 0, 4)
-    pfpImg.BackgroundColor3 = Color3.fromRGB(25, 25, 35)
-    pfpImg.Image = "rbxthumb://type=Asset&id=" .. (msgData.PfpId or DefaultPfpId) .. "&w=150&h=150"
-    pfpImg.Parent = card
-
-    local pfpCorner = Instance.new("UICorner")
-    pfpCorner.CornerRadius = UDim.new(1, 0)
-    pfpCorner.Parent = pfpImg
-
-    local contentFrame = Instance.new("Frame")
-    contentFrame.Name = "ContentFrame"
-    contentFrame.Size = UDim2.new(1, -38, 0, 0)
-    contentFrame.Position = UDim2.new(0, 36, 0, 4)
-    contentFrame.AutomaticSize = Enum.AutomaticSize.Y
-    contentFrame.BackgroundTransparency = 1
-    contentFrame.Parent = card
-
-    local headerLayout = Instance.new("UIListLayout")
-    headerLayout.FillDirection = Enum.FillDirection.Horizontal
-    headerLayout.SortOrder = Enum.SortOrder.LayoutOrder
-    headerLayout.Padding = UDim.new(0, 5)
-    headerLayout.VerticalAlignment = Enum.VerticalAlignment.Center
-    headerLayout.Parent = contentFrame
-
-    local isClient = (msgData.Username == LocalPlayer.Name)
-    local formattedName = GetFormattedDisplayName(msgData.DisplayName or msgData.Username, isClient)
-
-    local nameLabel = Instance.new("TextButton")
-    nameLabel.Name = "NameLabel"
-    nameLabel.AutomaticSize = Enum.AutomaticSize.X
-    nameLabel.Size = UDim2.new(0, 0, 0, 18)
-    nameLabel.BackgroundTransparency = 1
-    nameLabel.Font = Enum.Font.GothamBold
-    nameLabel.Text = formattedName
-    nameLabel.TextColor3 = Color3.fromRGB(220, 220, 230)
-    nameLabel.TextSize = 11
-    nameLabel.Parent = contentFrame
-
-    -- Tapping display name to direct private message or toggling off
-    nameLabel.MouseButton1Click:Connect(function()
-        if MessageInput then
-            local pvtPrefix = "/pvt " .. (msgData.DisplayName or msgData.Username) .. ": "
-            if string.sub(MessageInput.Text, 1, string.len(pvtPrefix)) == pvtPrefix then
-                MessageInput.Text = string.sub(MessageInput.Text, string.len(pvtPrefix) + 1)
-                PersistentPvtPrefix = ""
-            else
-                MessageInput.Text = pvtPrefix
-                PersistentPvtPrefix = pvtPrefix
-            end
-        end
-    end)
-
-    if not DisabledTags[msgData.Username] and msgData.Role and RANK_STYLES[msgData.Role] then
-        local roleTag = CreateRoleTag(msgData.Role)
-        roleTag.Parent = contentFrame
-    end
-
-    local textLabel = Instance.new("TextLabel")
-    textLabel.Name = "TextMessage"
-    textLabel.Size = UDim2.new(1, 0, 0, 0)
-    textLabel.Position = UDim2.new(0, 0, 0, 22)
-    textLabel.AutomaticSize = Enum.AutomaticSize.Y
-    textLabel.BackgroundTransparency = 1
-    textLabel.Font = Enum.Font.Gotham
-    textLabel.Text = msgData.Text or ""
-    textLabel.TextColor3 = Color3.fromRGB(240, 240, 250)
-    textLabel.TextSize = 11
-    textLabel.TextXAlignment = Enum.TextXAlignment.Left
-    textLabel.TextWrapped = true
-    textLabel.Parent = card
-
-    return card
-end
 
 -- ============================================================================
 -- ENCODING UTILITY
@@ -1059,6 +881,7 @@ local function FetchRemoteRoles()
 end
 
 -- ============================================================================
+-- IMAGE BACKGROUND UI BUILDER
 -- GLASSMORPHIC UI BUILDER
 -- ============================================================================
 local BlurEffect = Lighting:FindFirstChild("Kronos_GlassBlur") or Instance.new("DepthOfFieldEffect")
@@ -1076,10 +899,13 @@ ScreenGui.IgnoreGuiInset = true
 ScreenGui.Enabled = false
 ScreenGui.Parent = LocalPlayer:WaitForChild("PlayerGui")
 
+local MainFrame = Instance.new("ImageLabel")
 local MainFrame = Instance.new("Frame")
 MainFrame.Name = "MainFrame"
 MainFrame.Size = UDim2.new(0, 450, 0, 320)
 MainFrame.Position = UDim2.new(0.02, 0, 0.55, 0)
+MainFrame.Image = "rbxassetid://104258173613415"
+MainFrame.ScaleType = Enum.ScaleType.Crop
 MainFrame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
 MainFrame.BackgroundTransparency = 0.35
 MainFrame.BorderSizePixel = 0
@@ -1103,6 +929,7 @@ GlossCorner.CornerRadius = UDim.new(0, 16)
 GlossCorner.Parent = GlassGloss
 
 local MainStroke = Instance.new("UIStroke")
+MainStroke.Thickness = 4
 MainStroke.Thickness = 2.5
 MainStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 MainStroke.Transparency = 0.2
@@ -1238,6 +1065,7 @@ ToggleCorner.CornerRadius = UDim.new(0, 12)
 ToggleCorner.Parent = ToggleButton
 
 local ToggleStroke = Instance.new("UIStroke")
+ToggleStroke.Thickness = 3.5
 ToggleStroke.Thickness = 2.5
 ToggleStroke.Color = Color3.fromRGB(255, 0, 0)
 ToggleStroke.Parent = ToggleButton
@@ -1315,6 +1143,7 @@ local function DisplayNewMessageNotif(msgData)
     notifCorner.Parent = notifBtn
 
     local notifStroke = Instance.new("UIStroke")
+    notifStroke.Thickness = 2.5
     notifStroke.Thickness = 1.5
     notifStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
     notifStroke.Color = Color3.fromRGB(255, 255, 255)
@@ -1385,6 +1214,7 @@ StickerPanelCorner.CornerRadius = UDim.new(0, 10)
 StickerPanelCorner.Parent = StickerPanel
 
 local StickerPanelStroke = Instance.new("UIStroke")
+StickerPanelStroke.Thickness = 2.5
 StickerPanelStroke.Thickness = 1.5
 StickerPanelStroke.Color = Color3.fromRGB(220, 30, 30)
 StickerPanelStroke.Transparency = 0.4
@@ -1426,6 +1256,7 @@ for _, stickerUrl in ipairs(baseStickers) do
     cardCorner.Parent = stickerCard
 
     local cardStroke = Instance.new("UIStroke")
+    cardStroke.Thickness = 2
     cardStroke.Thickness = 1
     cardStroke.Color = Color3.fromRGB(255, 255, 255)
     cardStroke.Transparency = 0.8
@@ -1475,6 +1306,7 @@ PfpCorner.CornerRadius = UDim.new(1, 0)
 PfpCorner.Parent = CurrentPfpImg
 
 local PfpStroke = Instance.new("UIStroke")
+PfpStroke.Thickness = 2.5
 PfpStroke.Thickness = 1.5
 PfpStroke.Color = Color3.fromRGB(255, 0, 0)
 PfpStroke.Parent = CurrentPfpImg
@@ -1595,6 +1427,7 @@ local function BuildPfpSection(title, list, layoutOrder)
         bCorner.Parent = btn
 
         local bStroke = Instance.new("UIStroke")
+        bStroke.Thickness = 2
         bStroke.Thickness = 1
         bStroke.Color = Color3.fromRGB(255, 255, 255)
         bStroke.Transparency = 0.8
@@ -1674,6 +1507,7 @@ local function PopulateTagBar()
         tagCorner.Parent = tagBtn
 
         local tagStroke = Instance.new("UIStroke")
+        tagStroke.Thickness = 2
         tagStroke.Thickness = 1
         tagStroke.Color = style.Start
         tagStroke.Transparency = 0.5
@@ -1732,7 +1566,7 @@ KRONOS CHAT is a real-time cross-server chat infrastructure allowing seamless gl
 • <b>!tag [RoleName]</b> : Switch to another tag if you are in the permitted players list for that role.
 • <b>!spoof [NewName]</b> : Change your chat Display Name.
 • <b>!role [User] [Role]</b> : Assign roles (Restricted Permission).
-• <b>/w [User] [Message]</b> or <b>/pvt [User]: [Message]</b> : Send direct private messages.]]
+• <b>/w [User] [Message]</b> : Send direct private messages.]]
 AboutTextLabel.Parent = AboutInfoScroll
 
 AboutTextLabel:GetPropertyChangedSignal("AbsoluteSize"):Connect(function()
@@ -1931,153 +1765,149 @@ AutoCompleteLayout.Padding = UDim.new(0, 2)
 AutoCompleteLayout.Parent = AutoCompleteFrame
 
 AutoCompleteLayout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
-    AutoCompleteFrame.CanvasSize = UDim2.new(0, 0, 0, AutoCompleteLayout.AbsoluteContentSize.Y + 4)
+    AutoCompleteFrame.CanvasSize = UDim2.new(0, 0, 0, AutoCompleteLayout.AbsoluteContentSize.Y + 6)
 end)
 
-local function FilterAutoComplete(text)
-    for _, child in ipairs(AutoCompleteFrame:GetChildren()) do
-        if child:IsA("TextButton") then child:Destroy() end
-    end
+local ContextMenu = Instance.new("Frame")
+ContextMenu.Name = "ContextMenu"
+ContextMenu.Size = UDim2.new(0, 160, 0, 105)
+ContextMenu.BackgroundColor3 = Color3.fromRGB(15, 15, 25)
+ContextMenu.BackgroundTransparency = 0.2
+ContextMenu.BorderSizePixel = 0
+ContextMenu.Visible = false
+ContextMenu.ZIndex = 20
+ContextMenu.ZIndex = 50
+ContextMenu.Parent = ScreenGui
 
-    if text == "" then
-        AutoCompleteFrame.Visible = false
-        return
-    end
+local ContextCorner = Instance.new("UICorner")
+ContextCorner.CornerRadius = UDim.new(0, 10)
+ContextCorner.Parent = ContextMenu
 
-    local lastWord = text:match("%S+$") or text
-    if not lastWord or lastWord == "" then
-        AutoCompleteFrame.Visible = false
-        return
-    end
+local ContextList = Instance.new("UIListLayout")
+ContextList.SortOrder = Enum.SortOrder.LayoutOrder
+ContextList.Parent = ContextMenu
 
-    local matches = {}
-    for _, opt in ipairs(ALL_AUTOCOMPLETE_OPTIONS) do
-        if string.sub(string.lower(opt), 1, string.len(string.lower(lastWord))) == string.lower(lastWord) then
-            table.insert(matches, opt)
-        end
-    end
+-- Context Menu Actions Hook setup
+local CurrentContextData = nil
 
-    if #matches == 0 then
-        AutoCompleteFrame.Visible = false
-        return
-    end
-
-    for _, match in ipairs(matches) do
-        local btn = Instance.new("TextButton")
-        btn.Size = UDim2.new(1, 0, 0, 22)
-        btn.BackgroundTransparency = 1
-        btn.Font = Enum.Font.Gotham
-        btn.Text = " " .. match
-        btn.TextColor3 = Color3.fromRGB(220, 220, 230)
-        btn.TextSize = 11
-        btn.TextXAlignment = Enum.TextXAlignment.Left
-        btn.ZIndex = 31
-        btn.Parent = AutoCompleteFrame
-
-        btn.MouseButton1Click:Connect(function()
-            local prefix = string.sub(text, 1, #text - #lastWord)
-            MessageInput.Text = prefix .. match .. " "
-            MessageInput:CaptureFocus()
-            AutoCompleteFrame.Visible = false
-        end)
-    end
-
-    AutoCompleteFrame.Visible = true
+local function HideContextMenu()
+    ContextMenu.Visible = false
+    CurrentContextData = nil
 end
 
-MessageInput:GetPropertyChangedSignal("Text"):Connect(function()
-    FilterAutoComplete(MessageInput.Text)
+local function CreateContextBtn(text, onClick)
+    local btn = Instance.new("TextButton")
+    btn.Size = UDim2.new(1, 0, 0, 35)
+    btn.BackgroundTransparency = 0.8
+    btn.BackgroundColor3 = Color3.fromRGB(30, 30, 45)
+    btn.Font = Enum.Font.GothamBold
+    btn.Text = text
+    btn.TextColor3 = Color3.fromRGB(240, 240, 250)
+    btn.TextSize = 11
+    btn.ZIndex = 51
+    btn.Parent = ContextMenu
+
+    btn.MouseButton1Click:Connect(function()
+        onClick()
+        HideContextMenu()
+    end)
+end
+
+CreateContextBtn("Copy Message", function()
+    if CurrentContextData and CurrentContextData.Text then
+        if setclipboard then
+            setclipboard(CurrentContextData.Text)
+        end
+    end
 end)
 
--- Message Sending Execution Logic
-SendChatMessage = function()
-    local text = MessageInput.Text
-    if text == "" or text:match("^%s*$") then return end
-
-    local now = os.time()
-    if text == LastSentMessageText and (now - LastMessageSendTime) < 5 then
-        ConsecutiveSpamCount = ConsecutiveSpamCount + 1
-        if ConsecutiveSpamCount >= 3 then
-            MessageInput.Text = ""
-            return
-        end
-    else
-        ConsecutiveSpamCount = 0
+CreateContextBtn("Pvt Msg", function()
+    if CurrentContextData and CurrentContextData.DisplayName then
+        PersistentPvtPrefix = "/pvt " .. CurrentContextData.DisplayName .. " : "
+        MessageInput.Text = PersistentPvtPrefix
+        MessageInput:CaptureFocus()
     end
-    LastSentMessageText = text
-    LastMessageSendTime = now
+end)
 
-    -- Handling Commands
-    if string.sub(text, 1, 5) == "!spoof" then
-        local newName = string.sub(text, 8)
-        if CanUseSpoof(LocalPlayer.Name) then
-            if newName and newName ~= "" then
-                SpoofedDisplayName = newName
-            else
-                SpoofedDisplayName = nil
+CreateContextBtn("Reply", function()
+    if CurrentContextData and CurrentContextData.DisplayName then
+        MessageInput.Text = "@" .. CurrentContextData.DisplayName .. " : "
+        MessageInput:CaptureFocus()
+    end
+end)
+
+UserInputService.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        if ContextMenu.Visible then
+            local pos = input.Position
+            local cPos = ContextMenu.AbsolutePosition
+            local cSize = ContextMenu.AbsoluteSize
+            if pos.X < cPos.X or pos.X > cPos.X + cSize.X or pos.Y < cPos.Y or pos.Y > cPos.Y + cSize.Y then
+                HideContextMenu()
             end
         end
-        MessageInput.Text = ""
-        return
-    elseif string.sub(text, 1, 4) == "!tag" then
-        local targetTag = string.sub(text, 6)
-        if targetTag == "" then
-            DisabledTags[LocalPlayer.Name] = not DisabledTags[LocalPlayer.Name]
-        else
-            local allowed = AvailableUserRoles[LocalPlayer.Name] or {}
-            for _, r in ipairs(allowed) do
-                if string.lower(r) == string.lower(targetTag) then
-                    AssignedPlayerRoles[LocalPlayer.Name] = r
-                    DisabledTags[LocalPlayer.Name] = false
-                    break
-                end
-            end
-        end
-        MessageInput.Text = ""
-        return
     end
+end)
 
-    local endpoint = (ActiveTab == "GLOBAL") and GLOBAL_MESSAGES_ENDPOINT or SERVER_MESSAGES_ENDPOINT
-    local payload = {
-        Username = LocalPlayer.Name,
-        DisplayName = SpoofedDisplayName or LocalPlayer.DisplayName,
-        Role = GetAssignedOrCalculatedRole(LocalPlayer.Name),
-        PfpId = CurrentPfpId,
-        Text = text,
-        Timestamp = os.time(),
-        IsPrivate = (string.sub(text, 1, 3) == "/w " or string.sub(text, 1, 5) == "/pvt")
-    }
+-- Draggable Logic
+local function MakeDraggable(frame, dragHandle)
+    local dragging, dragInput, dragStart, startPos
+    dragHandle = dragHandle or frame
 
-    task.spawn(function()
-        HttpRequest(endpoint, "POST", payload)
+    dragHandle.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+            dragging = true
+            dragStart = input.Position
+            startPos = frame.Position
+
+            input.Changed:Connect(function()
+                if input.UserInputState == Enum.UserInputState.End then dragging = false end
+            end)
+        end
     end)
 
-    MessageInput.Text = ""
-    PersistentPvtPrefix = ""
-    AutoCompleteFrame.Visible = false
+    dragHandle.InputChanged:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+            dragInput = input
+        end
+    end)
+
+    UserInputService.InputChanged:Connect(function(input)
+        if input == dragInput and dragging then
+            local delta = input.Position - dragStart
+            frame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+        end
+    end)
 end
 
-SendButton.MouseButton1Click:Connect(SendChatMessage)
-MessageInput.FocusLost:Connect(function(enterPressed)
-    if enterPressed then SendChatMessage() end
-end)
+MakeDraggable(MainFrame, HeaderBar)
+MakeDraggable(ToggleButton, ToggleButton)
 
--- Switch Tab Management Logic
-local function SwitchTab(tab)
-    ActiveTab = tab
-    GlobalTabBtn.BackgroundColor3 = (tab == "GLOBAL") and Color3.fromRGB(200, 30, 30) or Color3.fromRGB(40, 40, 55)
-    ServerTabBtn.BackgroundColor3 = (tab == "SERVER") and Color3.fromRGB(200, 30, 30) or Color3.fromRGB(40, 40, 55)
-    ProfileTabBtn.BackgroundColor3 = (tab == "PROFILE") and Color3.fromRGB(200, 30, 30) or Color3.fromRGB(40, 40, 55)
-    AboutTabBtn.BackgroundColor3 = (tab == "ABOUT") and Color3.fromRGB(200, 30, 30) or Color3.fromRGB(40, 40, 55)
+-- ============================================================================
+-- TAB SWITCHING ROUTINE
+-- ============================================================================
+local function SwitchTab(newTab)
+    ActiveTab = newTab
+    MessageContainer.Visible = (newTab == "GLOBAL" or newTab == "SERVER")
+    InputBarFrame.Visible = (newTab == "GLOBAL" or newTab == "SERVER")
+    AboutFrame.Visible = (newTab == "ABOUT")
+    ProfileFrame.Visible = (newTab == "PROFILE")
+    StickerPanel.Visible = false
+    AboutFrame.Visible = (newTab == "ABOUT")
+    InputBarFrame.Visible = (newTab == "GLOBAL" or newTab == "SERVER")
 
-    MessageContainer.Visible = (tab == "GLOBAL" or tab == "SERVER")
-    InputBarFrame.Visible = (tab == "GLOBAL" or tab == "SERVER")
-    ProfileFrame.Visible = (tab == "PROFILE")
-    AboutFrame.Visible = (tab == "ABOUT")
+    GlobalTabBtn.BackgroundColor3 = (newTab == "GLOBAL") and Color3.fromRGB(200, 30, 30) or Color3.fromRGB(40, 40, 55)
+    ServerTabBtn.BackgroundColor3 = (newTab == "SERVER") and Color3.fromRGB(200, 30, 30) or Color3.fromRGB(40, 40, 55)
+    ProfileTabBtn.BackgroundColor3 = (newTab == "PROFILE") and Color3.fromRGB(200, 30, 30) or
+    ProfileTabBtn.BackgroundColor3 = (newTab == "PROFILE") and Color3.fromRGB(200, 30, 30) or Color3.fromRGB(40, 40, 55)
+    AboutTabBtn.BackgroundColor3 = (newTab == "ABOUT") and Color3.fromRGB(200, 30, 30) or Color3.fromRGB(40, 40, 55)
 
-    if tab == "GLOBAL" or tab == "SERVER" then
-        for _, elem in pairs(GlobalUIElements) do elem.Parent = (tab == "GLOBAL") and MessageContainer or nil end
-        for _, elem in pairs(ServerUIElements) do elem.Parent = (tab == "SERVER") and MessageContainer or nil end
+    -- Hide/Clear message elements according to active tab
+    for _, elem in pairs(GlobalUIElements) do
+        elem.Visible = (newTab == "GLOBAL")
+    end
+    for _, elem in pairs(ServerUIElements) do
+        elem.Visible = (newTab == "SERVER")
     end
 end
 
@@ -2086,43 +1916,356 @@ ServerTabBtn.MouseButton1Click:Connect(function() SwitchTab("SERVER") end)
 ProfileTabBtn.MouseButton1Click:Connect(function() SwitchTab("PROFILE") end)
 AboutTabBtn.MouseButton1Click:Connect(function() SwitchTab("ABOUT") end)
 
--- Initial Sync Data Polling
-task.spawn(function()
-    FetchRemoteRankStyles()
-    FetchRemoteRoles()
+-- ============================================================================
+-- CHAT CARD RENDER ENGINE
+-- ============================================================================
+local function CreateMessageCard(msgData, targetTab)
+    local isClient = (msgData.Username == LocalPlayer.Name)
+    local rawName = msgData.DisplayName or msgData.Username or "Unknown"
+    local formattedDisplayName = GetFormattedDisplayName(rawName, isClient)
+    local userRole = msgData.Role or GetAssignedOrCalculatedRole(msgData.Username)
+    local style = RANK_STYLES[userRole] or RANK_STYLES["VIP"]
 
-    while true do
-        pcall(function()
-            local gData = HttpRequest(GLOBAL_MESSAGES_ENDPOINT, "GET")
-            if gData and type(gData) == "table" then
-                for id, msg in pairs(gData) do
-                    if not GlobalCachedMessages[id] and (msg.Timestamp or 0) >= ScriptStartTime then
-                        GlobalCachedMessages[id] = msg
-                        local card = BuildMessageCard(msg)
-                        GlobalUIElements[id] = card
-                        if ActiveTab == "GLOBAL" then
-                            card.Parent = MessageContainer
-                        end
-                        DisplayNewMessageNotif(msg)
-                    end
-                end
-            end
+    local msgCard = Instance.new("Frame")
+    msgCard.Name = "MessageCard"
+    msgCard.Size = UDim2.new(1, 0, 0, 0)
+    msgCard.AutomaticSize = Enum.AutomaticSize.Y
+    msgCard.BackgroundColor3 = Color3.fromRGB(15, 15, 22)
+    msgCard.BackgroundTransparency = 0.4
+    msgCard.BorderSizePixel = 0
+    msgCard.Visible = (ActiveTab == targetTab)
+    msgCard.Parent = MessageContainer
 
-            local sData = HttpRequest(SERVER_MESSAGES_ENDPOINT, "GET")
-            if sData and type(sData) == "table" then
-                for id, msg in pairs(sData) do
-                    if not ServerCachedMessages[id] and (msg.Timestamp or 0) >= ScriptStartTime then
-                        ServerCachedMessages[id] = msg
-                        local card = BuildMessageCard(msg)
-                        ServerUIElements[id] = card
-                        if ActiveTab == "SERVER" then
-                            card.Parent = MessageContainer
-                        end
-                        DisplayNewMessageNotif(msg)
-                    end
+    local cardCorner = Instance.new("UICorner")
+    cardCorner.CornerRadius = UDim.new(0, 8)
+    cardCorner.Parent = msgCard
+
+    local cardStroke = Instance.new("UIStroke")
+    cardStroke.Thickness = 1
+    cardStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+    cardStroke.Color = msgData.IsPrivate and Color3.fromRGB(255, 0, 0) or Color3.fromRGB(40, 40, 60)
+    cardStroke.Parent = msgCard
+
+    if msgData.IsPrivate then
+        cardStroke.Thickness = 2
+    end
+
+    local pfpImg = Instance.new("ImageLabel")
+    pfpImg.Name = "PfpImage"
+    pfpImg.Size = UDim2.new(0, 28, 0, 28)
+    pfpImg.Position = UDim2.new(0, 6, 0, 6)
+    pfpImg.BackgroundColor3 = Color3.fromRGB(25, 25, 35)
+    pfpImg.Image = "rbxthumb://type=Asset&id=" .. (msgData.PfpId or DefaultPfpId) .. "&w=150&h=150"
+    pfpImg.Parent = msgCard
+
+    local pfpCorner = Instance.new("UICorner")
+    pfpCorner.CornerRadius = UDim.new(1, 0)
+    pfpCorner.Parent = pfpImg
+
+    local roleBadge = Instance.new("Frame")
+    roleBadge.Name = "RoleBadge"
+    roleBadge.AutomaticSize = Enum.AutomaticSize.X
+    roleBadge.Size = UDim2.new(0, 0, 0, 16)
+    roleBadge.Position = UDim2.new(0, 40, 0, 6)
+    roleBadge.BackgroundColor3 = style.Start
+    roleBadge.BorderSizePixel = 0
+    roleBadge.Visible = not msgData.TagDisabled
+    roleBadge.Parent = msgCard
+
+    local badgeCorner = Instance.new("UICorner")
+    badgeCorner.CornerRadius = UDim.new(0, 4)
+    badgeCorner.Parent = roleBadge
+
+    local badgeText = Instance.new("TextLabel")
+    badgeText.Name = "BadgeText"
+    badgeText.Size = UDim2.new(1, 0, 1, 0)
+    badgeText.BackgroundTransparency = 1
+    badgeText.Font = Enum.Font.GothamBold
+    badgeText.Text = "  " .. string.upper(userRole) .. "  "
+    badgeText.TextColor3 = Color3.fromRGB(255, 255, 255)
+    badgeText.TextSize = 9
+    badgeText.Parent = roleBadge
+
+    local nameLabel = Instance.new("TextLabel")
+    nameLabel.Name = "NameLabel"
+    nameLabel.AutomaticSize = Enum.AutomaticSize.X
+    nameLabel.Size = UDim2.new(0, 0, 0, 16)
+    nameLabel.Position = msgData.TagDisabled and UDim2.new(0, 40, 0, 6) or UDim2.new(0, roleBadge.AbsoluteSize.X + 46, 0, 6)
+    nameLabel.BackgroundTransparency = 1
+    nameLabel.Font = Enum.Font.GothamBold
+    nameLabel.Text = formattedDisplayName
+    nameLabel.TextColor3 = style.Name
+    nameLabel.TextSize = 11
+    nameLabel.Parent = msgCard
+
+    roleBadge:GetPropertyChangedSignal("AbsoluteSize"):Connect(function()
+        if not msgData.TagDisabled then
+            nameLabel.Position = UDim2.new(0, roleBadge.AbsoluteSize.X + 46, 0, 6)
+        end
+    end)
+
+    local msgText = msgData.Text or ""
+    local isSticker = string.sub(msgText, 1, 11) == "rbxthumb://" or string.sub(msgText, 1, 13) == "rbxassetid://"
+
+    if isSticker then
+        local stickerImg = Instance.new("ImageLabel")
+        stickerImg.Name = "StickerMsg"
+        stickerImg.Size = UDim2.new(0, 80, 0, 80)
+        stickerImg.Position = UDim2.new(0, 40, 0, 26)
+        stickerImg.BackgroundTransparency = 1
+        stickerImg.Image = msgText
+        stickerImg.ScaleType = Enum.ScaleType.Fit
+        stickerImg.Parent = msgCard
+
+        local spacer = Instance.new("Frame")
+        spacer.Size = UDim2.new(1, 0, 0, 110)
+        spacer.BackgroundTransparency = 1
+        spacer.Parent = msgCard
+    else
+        local contentLabel = Instance.new("TextLabel")
+        contentLabel.Name = "ContentLabel"
+        contentLabel.Size = UDim2.new(1, -50, 0, 0)
+        contentLabel.Position = UDim2.new(0, 40, 0, 24)
+        contentLabel.AutomaticSize = Enum.AutomaticSize.Y
+        contentLabel.BackgroundTransparency = 1
+        contentLabel.Font = Enum.Font.Gotham
+        contentLabel.Text = msgText
+        contentLabel.TextColor3 = Color3.fromRGB(230, 230, 240)
+        contentLabel.TextSize = 12
+        contentLabel.TextXAlignment = Enum.TextXAlignment.Left
+        contentLabel.TextYAlignment = Enum.TextYAlignment.Top
+        contentLabel.TextWrapped = true
+        contentLabel.Parent = msgCard
+
+        local pad = Instance.new("UIPadding")
+        pad.PaddingBottom = UDim.new(0, 6)
+        pad.Parent = msgCard
+    end
+
+    -- Long Press / Touch / Click Handler
+    local pressStartTime = 0
+    local isPressing = false
+
+    local function TriggerContextMenu(pos)
+        CurrentContextData = {
+            Text = msgText,
+            DisplayName = rawName,
+            Username = msgData.Username
+        }
+        ContextMenu.Position = UDim2.new(0, pos.X, 0, pos.Y)
+        ContextMenu.Visible = true
+    end
+
+    msgCard.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton2 then
+            TriggerContextMenu(input.Position)
+        elseif input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+            isPressing = true
+            pressStartTime = tick()
+            task.delay(0.5, function()
+                if isPressing and (tick() - pressStartTime >= 0.45) then
+                    isPressing = false
+                    TriggerContextMenu(input.Position)
                 end
+            end)
+        end
+    end)
+
+    msgCard.InputEnded:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+            isPressing = false
+        end
+    end)
+
+    -- Highlight logic for receiving replies
+    if not isClient and string.find(msgText, "@" .. GetFormattedDisplayName(LocalPlayer.DisplayName, true)) then
+        msgCard.BackgroundColor3 = Color3.fromRGB(80, 20, 20)
+        task.delay(7, function()
+            if msgCard and msgCard.Parent then
+                TweenService:Create(msgCard, TweenInfo.new(1), { BackgroundColor3 = Color3.fromRGB(15, 15, 22) }):Play()
             end
         end)
-        task.wait(2)
+    end
+
+    if targetTab == "GLOBAL" then
+        table.insert(GlobalUIElements, msgCard)
+    else
+        table.insert(ServerUIElements, msgCard)
+    end
+
+    DisplayNewMessageNotif(msgData)
+end
+
+-- Persistent /pvt state handler for Input text box
+MessageInput:GetPropertyChangedSignal("Text"):Connect(function()
+    if PersistentPvtPrefix ~= "" and not string.sub(MessageInput.Text, 1, #PersistentPvtPrefix) == PersistentPvtPrefix then
+        PersistentPvtPrefix = ""
+    end
+
+    -- Autocomplete Check
+    local text = MessageInput.Text
+    local lastWord = text:match("%S+$") or ""
+    if string.len(lastWord) > 0 then
+        local matches = {}
+        for _, opt in ipairs(ALL_AUTOCOMPLETE_OPTIONS) do
+            if string.sub(string.lower(opt), 1, string.len(lastWord)) == string.lower(lastWord) then
+                table.insert(matches, opt)
+            end
+        end
+
+        for _, child in ipairs(AutoCompleteFrame:GetChildren()) do
+            if child:IsA("TextButton") then child:Destroy() end
+        end
+
+        if #matches > 0 and MessageInput:IsFocused() then
+            AutoCompleteFrame.Visible = true
+            for _, match in ipairs(matches) do
+                local acBtn = Instance.new("TextButton")
+                acBtn.Size = UDim2.new(1, 0, 0, 24)
+                acBtn.BackgroundColor3 = Color3.fromRGB(25, 25, 38)
+                acBtn.BackgroundTransparency = 0.3
+                acBtn.Font = Enum.Font.Gotham
+                acBtn.Text = " " .. match
+                acBtn.TextColor3 = Color3.fromRGB(240, 240, 250)
+                acBtn.TextSize = 11
+                acBtn.TextXAlignment = Enum.TextXAlignment.Left
+                acBtn.Parent = AutoCompleteFrame
+
+                acBtn.MouseButton1Click:Connect(function()
+                    local prefix = string.sub(text, 1, string.len(text) - string.len(lastWord))
+                    MessageInput.Text = prefix .. match .. " "
+                    AutoCompleteFrame.Visible = false
+                    MessageInput:CaptureFocus()
+                end)
+            end
+        else
+            AutoCompleteFrame.Visible = false
+        end
+    else
+        AutoCompleteFrame.Visible = false
+    end
+end)
+
+-- Message Sending Engine
+SendChatMessage = function()
+    local text = MessageInput.Text
+    if text == "" or text:match("^%s*$") then return end
+
+    -- Handle Persistent Pvt Prefix / One-time Reply Prefix
+    local targetPvtUser = nil
+    local targetPvtDisplay = nil
+    local isPvt = false
+
+    if string.sub(text, 1, 5) == "/pvt " then
+        local pvtUser, remainingText = text:match("^/pvt%s+([^:]+)%s*:%s*(.*)$")
+        if pvtUser and remainingText then
+            targetPvtDisplay = pvtUser
+            text = remainingText
+            isPvt = true
+        end
+    end
+
+    if not isPvt and string.sub(text, 1, 3) == "/w " then
+        local pvtUser, remainingText = text:match("^/w%s+(%S+)%s+(.*)$")
+        if pvtUser and remainingText then
+            targetPvtDisplay = pvtUser
+            text = remainingText
+            isPvt = true
+        end
+    end
+
+    -- Commands handling
+    if string.sub(text, 1, 5) == "!tag " then
+        local newRole = string.sub(text, 6)
+        if RANK_STYLES[newRole] then
+            AssignedPlayerRoles[LocalPlayer.Name] = newRole
+        end
+        MessageInput.Text = PersistentPvtPrefix
+        return
+    elseif text == "!tag" then
+        DisabledTags[LocalPlayer.Name] = not DisabledTags[LocalPlayer.Name]
+        MessageInput.Text = PersistentPvtPrefix
+        return
+    elseif string.sub(text, 1, 7) == "!spoof " and CanUseSpoof(LocalPlayer.Name) then
+        SpoofedDisplayName = string.sub(text, 8)
+        MessageInput.Text = PersistentPvtPrefix
+        return
+    end
+
+    local endpoint = (ActiveTab == "GLOBAL") and GLOBAL_MESSAGES_ENDPOINT or SERVER_MESSAGES_ENDPOINT
+
+    local payload = {
+        Username = LocalPlayer.Name,
+        DisplayName = GetFormattedDisplayName(LocalPlayer.DisplayName, true),
+        Text = text,
+        PfpId = CurrentPfpId,
+        Role = GetAssignedOrCalculatedRole(LocalPlayer.Name),
+        TagDisabled = DisabledTags[LocalPlayer.Name] or false,
+        Timestamp = os.time(),
+        IsPrivate = isPvt,
+        TargetDisplay = targetPvtDisplay
+    }
+
+    task.spawn(function()
+        HttpRequest(endpoint, "POST", payload)
+    end)
+
+    if PersistentPvtPrefix ~= "" then
+        MessageInput.Text = PersistentPvtPrefix
+    else
+        MessageInput.Text = ""
+    end
+end
+
+SendButton.MouseButton1Click:Connect(SendChatMessage)
+MessageInput.FocusLost:Connect(function(enterPressed)
+    if enterPressed then SendChatMessage() end
+end)
+
+-- Fetching Loop
+task.spawn(function()
+    while true do
+        FetchRemoteRankStyles()
+        FetchRemoteRoles()
+
+        local globalData = HttpRequest(GLOBAL_MESSAGES_ENDPOINT, "GET")
+        if globalData and type(globalData) == "table" then
+            for id, msg in pairs(globalData) do
+                if type(msg) == "table" and msg.Timestamp and msg.Timestamp >= ScriptStartTime then
+                    if not GlobalCachedMessages[id] then
+                        local showMsg = true
+                        if msg.IsPrivate then
+                            showMsg = (msg.Username == LocalPlayer.Name) or (msg.TargetDisplay == GetFormattedDisplayName(LocalPlayer.DisplayName, true)) or (msg.TargetDisplay == LocalPlayer.Name)
+                        end
+
+                        if showMsg then
+                            GlobalCachedMessages[id] = msg
+                            CreateMessageCard(msg, "GLOBAL")
+                        end
+                    end
+                end
+            end
+        end
+
+        local serverData = HttpRequest(SERVER_MESSAGES_ENDPOINT, "GET")
+        if serverData and type(serverData) == "table" then
+            for id, msg in pairs(serverData) do
+                if type(msg) == "table" and msg.Timestamp and msg.Timestamp >= ScriptStartTime then
+                    if not ServerCachedMessages[id] then
+                        local showMsg = true
+                        if msg.IsPrivate then
+                            showMsg = (msg.Username == LocalPlayer.Name) or (msg.TargetDisplay == GetFormattedDisplayName(LocalPlayer.DisplayName, true)) or (msg.TargetDisplay == LocalPlayer.Name)
+                        end
+
+                        if showMsg then
+                            ServerCachedMessages[id] = msg
+                            CreateMessageCard(msg, "SERVER")
+                        end
+                    end
+                end
+            end
+        end
+
+        task.wait(1.5)
     end
 end)
