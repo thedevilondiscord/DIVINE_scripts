@@ -1,3 +1,4 @@
+-- ORIGNINAL K_C WIP
 -- LocalScript inside StarterPlayerScripts / StarterGui
 local Players = game:GetService("Players")
 local HttpService = game:GetService("HttpService")
