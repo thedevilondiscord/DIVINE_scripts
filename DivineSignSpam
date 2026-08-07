@@ -472,11 +472,184 @@ local ActiveTab = "GLOBAL"
 -- STICKER REGISTRY
 -- ============================================================================
 local baseStickers = {
+    "rbxthumb://type=Asset&id=125983689093696&w=420&h=420",
+    "rbxthumb://type=Asset&id=75506307767417&w=420&h=420",
+    "rbxthumb://type=Asset&id=116836682474524&w=420&h=420",
+    "rbxthumb://type=Asset&id=102568342129627&w=420&h=420",
+    "rbxthumb://type=Asset&id=95097775871116&w=420&h=420",
+    "rbxthumb://type=Asset&id=112745447456329&w=420&h=420",
+    "rbxthumb://type=Asset&id=106977485921472&w=420&h=420",
+    "rbxthumb://type=Asset&id=121310984106237&w=420&h=420",
+    "rbxthumb://type=Asset&id=107564048134950&w=420&h=420",
+    "rbxthumb://type=Asset&id=79650418792128&w=420&h=420",
+    "rbxthumb://type=Asset&id=139765908340185&w=420&h=420",
+    "rbxthumb://type=Asset&id=126499608563370&w=420&h=420",
+    "rbxthumb://type=Asset&id=85967915168146&w=420&h=420",
+    "rbxthumb://type=Asset&id=11484353402&w=420&h=420",
+    "rbxthumb://type=Asset&id=128534124653098&w=420&h=420",
+    "rbxthumb://type=Asset&id=77449075537615&w=420&h=420",
+    "rbxthumb://type=Asset&id=90254884478832&w=420&h=420",
+    "rbxthumb://type=Asset&id=123559079959222&w=420&h=420",
+    "rbxthumb://type=Asset&id=9253566749&w=420&h=420",
+    "rbxthumb://type=Asset&id=127674638208277&w=420&h=420",
+    "rbxthumb://type=Asset&id=107949395268622&w=420&h=420",
+    "rbxthumb://type=Asset&id=134008967452916&w=420&h=420",
+    "rbxthumb://type=Asset&id=137895709516187&w=420&h=420",
+    "rbxthumb://type=Asset&id=109694830487207&w=420&h=420",
+    "rbxthumb://type=Asset&id=108796531608917&w=420&h=420",
+    "rbxthumb://type=Asset&id=80436863872204&w=420&h=420",
+    "rbxthumb://type=Asset&id=72997216799063&w=420&h=420",
+    "rbxthumb://type=Asset&id=112896137773535&w=420&h=420",
+    "rbxthumb://type=Asset&id=11600511955&w=420&h=420",
+    "rbxthumb://type=Asset&id=124145396344946&w=420&h=420",
+    "rbxthumb://type=Asset&id=124306223039740&w=420&h=420",
+    "rbxthumb://type=Asset&id=130026784817133&w=420&h=420",
+    "rbxthumb://type=Asset&id=78581194773132&w=420&h=420",
+    "rbxthumb://type=Asset&id=100722574482118&w=420&h=420",
+    "rbxthumb://type=Asset&id=137640259267057&w=420&h=420",
+    "rbxthumb://type=Asset&id=113969372822195&w=420&h=420",
+    "rbxthumb://type=Asset&id=140367998030901&w=420&h=420",
+    "rbxthumb://type=Asset&id=120378246672337&w=420&h=420",
+    "rbxthumb://type=Asset&id=116132850112023&w=420&h=420",
+    "rbxthumb://type=Asset&id=87553190789546&w=420&h=420",
+    "rbxthumb://type=Asset&id=9724585364&w=420&h=420",
+    "rbxthumb://type=Asset&id=124047412639555&w=420&h=420",
+    "rbxthumb://type=Asset&id=106808393141208&w=420&h=420",
+    "rbxthumb://type=Asset&id=78606018239829&w=420&h=420",
+    "rbxthumb://type=Asset&id=112484785272486&w=420&h=420",
+    "rbxthumb://type=Asset&id=12727213926&w=420&h=420",
+    "rbxthumb://type=Asset&id=98756307893472&w=420&h=420",
+    "rbxthumb://type=Asset&id=78558780997877&w=420&h=420",
+    "rbxthumb://type=Asset&id=126996930963081&w=420&h=420",
+    "rbxthumb://type=Asset&id=115062400395026&w=420&h=420",
+    "rbxthumb://type=Asset&id=90286953844894&w=420&h=420",
+    "rbxthumb://type=Asset&id=73924170108274&w=420&h=420",
+    "rbxthumb://type=Asset&id=111616336841381&w=420&h=420",
+    "rbxthumb://type=Asset&id=112758420253845&w=420&h=420",
+    "rbxthumb://type=Asset&id=126835535148309&w=420&h=420",
+    "rbxthumb://type=Asset&id=93292021532883&w=420&h=420",
+    "rbxthumb://type=Asset&id=130819442854007&w=420&h=420",
+    "rbxthumb://type=Asset&id=138527421116380&w=420&h=420",
+    "rbxthumb://type=Asset&id=107542712869273&w=420&h=420",
+    "rbxthumb://type=Asset&id=107563628196607&w=420&h=420",
+    "rbxthumb://type=Asset&id=9077479347&w=420&h=420",
+    "rbxthumb://type=Asset&id=108283809544243&w=420&h=420",
+    "rbxthumb://type=Asset&id=125437592584677&w=420&h=420",
+    "rbxthumb://type=Asset&id=88450780656334&w=420&h=420",
+    "rbxthumb://type=Asset&id=76757365751988&w=420&h=420",
+    "rbxthumb://type=Asset&id=128965568153551&w=420&h=420",
+    "rbxthumb://type=Asset&id=81437059666138&w=420&h=420",
+    "rbxthumb://type=Asset&id=134676873059671&w=420&h=420",
+    "rbxthumb://type=Asset&id=16780417621&w=420&h=420",
+    "rbxthumb://type=Asset&id=81071566386630&w=420&h=420",
+    "rbxthumb://type=Asset&id=100703525294618&w=420&h=420",
+    "rbxthumb://type=Asset&id=86278563388796&w=420&h=420",
+    "rbxthumb://type=Asset&id=87239554144904&w=420&h=420",
+    "rbxthumb://type=Asset&id=129607195776931&w=420&h=420",
+    "rbxthumb://type=Asset&id=99467189295335&w=420&h=420",
+    "rbxthumb://type=Asset&id=106503865025496&w=420&h=420",
+    "rbxthumb://type=Asset&id=71112430314329&w=420&h=420",
+    "rbxthumb://type=Asset&id=98946997706325&w=420&h=420",
+    "rbxthumb://type=Asset&id=95770046851932&w=420&h=420",
+    "rbxthumb://type=Asset&id=73107616141016&w=420&h=420",
+    "rbxthumb://type=Asset&id=117686693787446&w=420&h=420",
+    "rbxthumb://type=Asset&id=15613479805&w=420&h=420",
+    "rbxthumb://type=Asset&id=97531898393056&w=420&h=420",
+    "rbxthumb://type=Asset&id=116963906560222&w=420&h=420",
+    "rbxthumb://type=Asset&id=124962139890506&w=420&h=420",
+    "rbxthumb://type=Asset&id=97109606724496&w=420&h=420",
+    "rbxthumb://type=Asset&id=95541335353452&w=420&h=420",
+    "rbxthumb://type=Asset&id=74143981281416&w=420&h=420",
+    "rbxthumb://type=Asset&id=87427671653674&w=420&h=420",
+    "rbxthumb://type=Asset&id=137157157388660&w=420&h=420",
+    "rbxthumb://type=Asset&id=134368064124456&w=420&h=420",
+    "rbxthumb://type=Asset&id=115496076924304&w=420&h=420",
+    "rbxthumb://type=Asset&id=102923210652647&w=420&h=420",
+    "rbxthumb://type=Asset&id=9703752867&w=420&h=420",
+    "rbxthumb://type=Asset&id=17285946660&w=420&h=420",
+    "rbxthumb://type=Asset&id=115766338835906&w=420&h=420",
+    "rbxthumb://type=Asset&id=71036015366121&w=420&h=420",
+    "rbxthumb://type=Asset&id=87693756574279&w=420&h=420",
+    "rbxthumb://type=Asset&id=107639548994590&w=420&h=420",
+    "rbxthumb://type=Asset&id=123881607288205&w=420&h=420",
+    "rbxthumb://type=Asset&id=105612301516352&w=420&h=420",
+    "rbxthumb://type=Asset&id=117799232246450&w=420&h=420",
+    "rbxthumb://type=Asset&id=137162029636088&w=420&h=420",
+    "rbxthumb://type=Asset&id=96967420548620&w=420&h=420",
+    "rbxthumb://type=Asset&id=119307188585682&w=420&h=420",
+    "rbxthumb://type=Asset&id=109467891240625&w=420&h=420",
+    "rbxthumb://type=Asset&id=126255767092322&w=420&h=420",
+    "rbxthumb://type=Asset&id=12604237076&w=420&h=420",
+    "rbxthumb://type=Asset&id=91059306531671&w=420&h=420",
+    "rbxthumb://type=Asset&id=186505196&w=420&h=420",
+    "rbxthumb://type=Asset&id=113540856419753&w=420&h=420",
+    "rbxthumb://type=Asset&id=77982313163011&w=420&h=420",
+    "rbxthumb://type=Asset&id=136413255954959&w=420&h=420",
+    "rbxthumb://type=Asset&id=97878152712841&w=420&h=420",
+    "rbxthumb://type=Asset&id=10851678031&w=420&h=420",
+    "rbxthumb://type=Asset&id=107712985832036&w=420&h=420",
+    "rbxthumb://type=Asset&id=89724301020249&w=420&h=420",
+    "rbxthumb://type=Asset&id=15228440984&w=420&h=420",
+    "rbxthumb://type=Asset&id=123774516974893&w=420&h=420",
+    "rbxthumb://type=Asset&id=101322904869821&w=420&h=420",
+    "rbxthumb://type=Asset&id=124967996816135&w=420&h=420",
+    "rbxthumb://type=Asset&id=96486531955234&w=420&h=420",
+    "rbxthumb://type=Asset&id=129040222524985&w=420&h=420",
+    "rbxthumb://type=Asset&id=110742598347676&w=420&h=420",
+    "rbxthumb://type=Asset&id=6892957089&w=420&h=420",
+    "rbxthumb://type=Asset&id=86402817297314&w=420&h=420",
+    "rbxthumb://type=Asset&id=11123209169&w=420&h=420",
+    "rbxthumb://type=Asset&id=122820594186443&w=420&h=420",
+    "rbxthumb://type=Asset&id=105698532231334&w=420&h=420",
+    "rbxthumb://type=Asset&id=114620995901131&w=420&h=420",
+    "rbxthumb://type=Asset&id=85407192167743&w=420&h=420",
+    "rbxthumb://type=Asset&id=98702128731326&w=420&h=420",
+    "rbxthumb://type=Asset&id=102113722816584&w=420&h=420",
+    "rbxthumb://type=Asset&id=83606808239727&w=420&h=420",
+    "rbxthumb://type=Asset&id=94283114531364&w=420&h=420",
+    "rbxthumb://type=Asset&id=9589322578&w=420&h=420",
+    "rbxthumb://type=Asset&id=76312255766028&w=420&h=420",
+    "rbxthumb://type=Asset&id=83060513543110&w=420&h=420",
+    "rbxthumb://type=Asset&id=136887113512942&w=420&h=420",
+    "rbxthumb://type=Asset&id=135700976643537&w=420&h=420",
+    "rbxthumb://type=Asset&id=106330502110486&w=420&h=420",
+    "rbxthumb://type=Asset&id=75030286063678&w=420&h=420",
+    "rbxthumb://type=Asset&id=14750467200&w=420&h=420",
+    "rbxthumb://type=Asset&id=91965007204396&w=420&h=420",
+    "rbxthumb://type=Asset&id=128748009633926&w=420&h=420",
+    "rbxthumb://type=Asset&id=169900042&w=420&h=420",
+    "rbxthumb://type=Asset&id=72793460663497&w=420&h=420",
+    "rbxthumb://type=Asset&id=140484578433196&w=420&h=420",
+    "rbxthumb://type=Asset&id=112907096812107&w=420&h=420",
+    "rbxthumb://type=Asset&id=92850410471479&w=420&h=420",
+    "rbxthumb://type=Asset&id=130605412870116&w=420&h=420",
+    "rbxthumb://type=Asset&id=75588875972100&w=420&h=420",
+    "rbxthumb://type=Asset&id=134202774319269&w=420&h=420",
+    "rbxthumb://type=Asset&id=84718406053016&w=420&h=420",
+    "rbxthumb://type=Asset&id=96930545429149&w=420&h=420",
+    "rbxthumb://type=Asset&id=17343896730&w=420&h=420",
+    "rbxthumb://type=Asset&id=71442089462191&w=420&h=420",
+    "rbxthumb://type=Asset&id=99802803824359&w=420&h=420",
+    "rbxthumb://type=Asset&id=100982607210447&w=420&h=420",
+    "rbxthumb://type=Asset&id=6158261961&w=420&h=420",
+    "rbxthumb://type=Asset&id=99340040246135&w=420&h=420",
+    "rbxthumb://type=Asset&id=29347007&w=420&h=420",
+    "rbxthumb://type=Asset&id=133801475498371&w=420&h=420",
+    "rbxthumb://type=Asset&id=15757126814&w=420&h=420",
+    "rbxthumb://type=Asset&id=129493127513840&w=420&h=420",
+    "rbxthumb://type=Asset&id=134238049027906&w=420&h=420",
+    "rbxthumb://type=Asset&id=90357041968118&w=420&h=420",
+    "rbxthumb://type=Asset&id=116671713835756&w=420&h=420",
+    "rbxthumb://type=Asset&id=360554424&w=420&h=420",
+    "rbxthumb://type=Asset&id=72982331023306&w=420&h=420",
+    "rbxthumb://type=Asset&id=77115548103922&w=420&h=420",
+    "rbxthumb://type=Asset&id=6892957751&w=420&h=420",
+    "rbxthumb://type=Asset&id=95112780943766&w=420&h=420",
+    -- Extra shuffled entries preserved from original list
     "rbxthumb://type=Asset&id=126155452969559&w=420&h=420",
     "rbxthumb://type=Asset&id=76528918733148&w=420&h=420",
     "rbxthumb://type=Asset&id=139746534721570&w=420&h=420",
     "rbxthumb://type=Asset&id=107882158860216&w=420&h=420",
-    "rbxthumb://type=Asset&id=99467189295335&w=420&h=420",
     "rbxthumb://type=Asset&id=114738142020573&w=420&h=420",
     "rbxthumb://type=Asset&id=100644268219896&w=420&h=420",
     "rbxthumb://type=Asset&id=82732486060449&w=420&h=420",
@@ -496,11 +669,7 @@ local baseStickers = {
     "rbxthumb://type=Asset&id=31325913&w=420&h=420",
     "rbxthumb://type=Asset&id=15805629980&w=420&h=420",
     "rbxthumb://type=Asset&id=16022747924&w=420&h=420",
-    "rbxthumb://type=Asset&id=87693756574279&w=420&h=420",
-    "rbxthumb://type=Asset&id=72793460663497&w=420&h=420",
     "rbxthumb://type=Asset&id=72687512455219&w=420&h=420",
-    "rbxthumb://type=Asset&id=95112780943766&w=420&h=420",
-    "rbxthumb://type=Asset&id=130819442854007&w=420&h=420",
     "rbxthumb://type=Asset&id=15995320422&w=420&h=420",
     "rbxthumb://type=Asset&id=81506012118866&w=420&h=420",
     "rbxthumb://type=Asset&id=97857646756275&w=420&h=420",
@@ -509,15 +678,11 @@ local baseStickers = {
     "rbxthumb://type=Asset&id=947554872&w=420&h=420",
     "rbxthumb://type=Asset&id=7077501904&w=420&h=420",
     "rbxthumb://type=Asset&id=22743612&w=420&h=420",
-    "rbxthumb://type=Asset&id=90357041968118&w=420&h=420",
-    "rbxthumb://type=Asset&id=97531898393056&w=420&h=420",
     "rbxthumb://type=Asset&id=125942884957668&w=420&h=420",
     "rbxthumb://type=Asset&id=131728403495824&w=420&h=420",
     "rbxthumb://type=Asset&id=213127981&w=420&h=420",
     "rbxthumb://type=Asset&id=74300261807862&w=420&h=420",
     "rbxthumb://type=Asset&id=15908931002&w=420&h=420",
-    "rbxthumb://type=Asset&id=99802803824359&w=420&h=420",
-    "rbxthumb://type=Asset&id=75506307767417&w=420&h=420",
     "rbxthumb://type=Asset&id=18932008974&w=420&h=420",
     "rbxthumb://type=Asset&id=126392350195389&w=420&h=420",
     "rbxthumb://type=Asset&id=1301532317&w=420&h=420",
@@ -532,45 +697,12 @@ local baseStickers = {
     "rbxthumb://type=Asset&id=83677040163363&w=420&h=420",
     "rbxthumb://type=Asset&id=92982112921274&w=420&h=420",
     "rbxthumb://type=Asset&id=75985897964190&w=420&h=420",
-    "rbxthumb://type=Asset&id=100722574482118&w=420&h=420",
-    "rbxthumb://type=Asset&id=77449075537615&w=420&h=420",
     "rbxthumb://type=Asset&id=91965007204396&w=420&h=420",
-    "rbxthumb://type=Asset&id=87239554144904&w=420&h=420",
     "rbxthumb://type=Asset&id=108550928457595&w=420&h=420",
     "rbxthumb://type=Asset&id=112758420253845&w=420&h=420",
     "rbxthumb://type=Asset&id=135700976643537&w=420&h=420",
     "rbxthumb://type=Asset&id=124145396344946&w=420&h=420",
-    "rbxthumb://type=Asset&id=105612301516352&w=420&h=420",
-    "rbxthumb://type=Asset&id=71442089462191&w=420&h=420",
-    "rbxthumb://type=Asset&id=116671713835756&w=420&h=420",
-    "rbxthumb://type=Asset&id=86278563388796&w=420&h=420",
-    "rbxthumb://type=Asset&id=134676873059671&w=420&h=420",
-    "rbxthumb://type=Asset&id=107991336904158&w=420&h=420",
-    "rbxthumb://type=Asset&id=90286953844894&w=420&h=420",
-    "rbxthumb://type=Asset&id=124047412639555&w=420&h=420",
-    "rbxthumb://type=Asset&id=95770046851932&w=420&h=420",
-    "rbxthumb://type=Asset&id=85407192167743&w=420&h=420",
-    "rbxthumb://type=Asset&id=108796531608917&w=420&h=420",
-    "rbxthumb://type=Asset&id=129040222524985&w=420&h=420",
-    "rbxthumb://type=Asset&id=107679067587993&w=420&h=420",
-    "rbxthumb://type=Asset&id=75030286063678&w=420&h=420",
-    "rbxthumb://type=Asset&id=106503865025496&w=420&h=420",
-    "rbxthumb://type=Asset&id=107949395268622&w=420&h=420",
-    "rbxthumb://type=Asset&id=127600871692693&w=420&h=420",
-    "rbxthumb://type=Asset&id=102923210652647&w=420&h=420",
-    "rbxthumb://type=Asset&id=76757365751988&w=420&h=420",
-    "rbxthumb://type=Asset&id=81437059666138&w=420&h=420",
     "rbxthumb://type=Asset&id=83671542566237&w=420&h=420",
-    "rbxthumb://type=Asset&id=74143981281416&w=420&h=420",
-    "rbxthumb://type=Asset&id=136413255954959&w=420&h=420",
-    "rbxthumb://type=Asset&id=115062400395026&w=420&h=420",
-    "rbxthumb://type=Asset&id=96930545429149&w=420&h=420",
-    "rbxthumb://type=Asset&id=128965568153551&w=420&h=420",
-    "rbxthumb://type=Asset&id=86402817297314&w=420&h=420",
-    "rbxthumb://type=Asset&id=113540856419753&w=420&h=420",
-    "rbxthumb://type=Asset&id=111616336841381&w=420&h=420",
-    "rbxthumb://type=Asset&id=98946997706325&w=420&h=420",
-    "rbxthumb://type=Asset&id=108283809544243&w=420&h=420",
     "rbxthumb://type=Asset&id=6569741166&w=420&h=420",
     "rbxthumb://type=Asset&id=11607296674&w=420&h=420",
     "rbxthumb://type=Asset&id=5726383129&w=420&h=420",
@@ -580,7 +712,6 @@ local baseStickers = {
     "rbxthumb://type=Asset&id=3512459976&w=420&h=420",
     "rbxthumb://type=Asset&id=9897870796&w=420&h=420",
     "rbxthumb://type=Asset&id=19478788&w=420&h=420",
-    "rbxthumb://type=Asset&id=17285946660&w=420&h=420",
     "rbxthumb://type=Asset&id=11345695781&w=420&h=420",
     "rbxthumb://type=Asset&id=6991349714&w=420&h=420",
     "rbxthumb://type=Asset&id=6615496255&w=420&h=420",
@@ -596,40 +727,8 @@ local baseStickers = {
     "rbxthumb://type=Asset&id=2311956970&w=420&h=420",
     "rbxthumb://type=Asset&id=10367063084&w=420&h=420",
     "rbxthumb://type=Asset&id=75074160606432&w=420&h=420",
-    "rbxthumb://type=Asset&id=132266996382315&w=420&h=420",
-    "rbxthumb://type=Asset&id=11123209169&w=420&h=420",
-    -- Added Stickers
-    "rbxthumb://type=Asset&id=130605412870116&w=420&h=420",
-    "rbxthumb://type=Asset&id=123881607288205&w=420&h=420",
-    "rbxthumb://type=Asset&id=77982313163011&w=420&h=420",
-    "rbxthumb://type=Asset&id=71112430314329&w=420&h=420",
-    "rbxthumb://type=Asset&id=92850410471479&w=420&h=420",
-    "rbxthumb://type=Asset&id=133801475498371&w=420&h=420",
-    "rbxthumb://type=Asset&id=99340040246135&w=420&h=420",
-    "rbxthumb://type=Asset&id=128748009633926&w=420&h=420",
-    "rbxthumb://type=Asset&id=115496076924304&w=420&h=420",
-    "rbxthumb://type=Asset&id=113969372822195&w=420&h=420",
-    "rbxthumb://type=Asset&id=81071566386630&w=420&h=420",
-    "rbxthumb://type=Asset&id=136887113512942&w=420&h=420",
-    "rbxthumb://type=Asset&id=83606808239727&w=420&h=420",
-    "rbxthumb://type=Asset&id=137895709516187&w=420&h=420",
-    "rbxthumb://type=Asset&id=95097775871116&w=420&h=420",
-    "rbxthumb://type=Asset&id=112896137773535&w=420&h=420",
-    "rbxthumb://type=Asset&id=76312255766028&w=420&h=420",
-    "rbxthumb://type=Asset&id=128534124653098&w=420&h=420",
-    "rbxthumb://type=Asset&id=106808393141208&w=420&h=420",
-    "rbxthumb://type=Asset&id=87553190789546&w=420&h=420",
-    "rbxthumb://type=Asset&id=122820594186443&w=420&h=420",
-    "rbxthumb://type=Asset&id=98756307893472&w=420&h=420",
-    "rbxthumb://type=Asset&id=134238049027906&w=420&h=420",
-    "rbxthumb://type=Asset&id=126835535148309&w=420&h=420",
-    "rbxthumb://type=Asset&id=107542712869273&w=420&h=420",
-    "rbxthumb://type=Asset&id=137157157388660&w=420&h=420",
-    "rbxthumb://type=Asset&id=140484578433196&w=420&h=420",
-    "rbxthumb://type=Asset&id=124962139890506&w=420&h=420",
-    "rbxthumb://type=Asset&id=100982607210447&w=420&h=420"
+    "rbxthumb://type=Asset&id=132266996382315&w=420&h=420"
 }
-
 local uniqueStickers = {}
 local hash = {}
 for _, v in ipairs(baseStickers) do
@@ -1953,6 +2052,95 @@ local function CreateMessageCard(msgData, isGlobal)
 end
 
 -- ============================================================================
+-- [REMOVABLE MODULE] RESTRICTED TAG ACCESS AUTHORIZATION SYSTEM
+-- To edit out or remove easily, delete or comment out this block and its
+-- check call inside SendChatMessage().
+-- ============================================================================
+local RESTRICTED_TAGS_CHECK_URL = "https://raw.githubusercontent.com/thedevilondiscord/GC/refs/heads/main/GC_RoleList.json"
+
+local RESTRICTED_ROLES_LIST = {
+    ["architect"] = true,
+    ["overseer"] = true,
+    ["com-god"] = true,
+    ["com god"] = true,
+    ["regent of clans"] = true,
+    ["regent of havoc"] = true,
+    ["regent of codes"] = true,
+    ["hacker"] = true,
+    ["serial killer"] = true,
+    ["serial killer🔪"] = true,
+    ["god"] = true,
+}
+
+local function DisplayLocalErrorCard(errorText)
+    local errCard = CreateMessageCard({
+        Username = "System",
+        DisplayName = "SYSTEM",
+        Text = errorText,
+        Timestamp = os.time(),
+        Role = "Architect",
+        PfpId = DefaultPfpId,
+        IsPrivate = true
+    }, (ActiveTab == "GLOBAL"))
+    errCard.Visible = true
+    if ActiveTab == "GLOBAL" then
+        table.insert(GlobalUIElements, errCard)
+    else
+        table.insert(ServerUIElements, errCard)
+    end
+end
+
+local function CheckRestrictedTagAuthorization(requestedRole)
+    local reqLower = string.lower(requestedRole)
+    local isRestricted = false
+
+    for restRole, _ in pairs(RESTRICTED_ROLES_LIST) do
+        if reqLower == restRole or string.find(reqLower, restRole, 1, true) then
+            isRestricted = true
+            break
+        end
+    end
+
+    if not isRestricted then
+        return true
+    end
+
+    local jsonRoster = HttpRequest(RESTRICTED_TAGS_CHECK_URL, "GET")
+    if not jsonRoster or type(jsonRoster) ~= "table" then
+        DisplayLocalErrorCard("you are not authorized to use these tags")
+        return false
+    end
+
+    local myUsername = LocalPlayer.Name
+    local myEncodedId = EncodePlayerId(LocalPlayer.UserId)
+
+    for roleKey, playerList in pairs(jsonRoster) do
+        local keyLower = string.lower(roleKey)
+        if (keyLower == reqLower or string.find(reqLower, keyLower, 1, true)) and type(playerList) == "table" then
+            for _, entry in ipairs(playerList) do
+                local targetUsername = nil
+                local targetEncodedId = nil
+
+                if type(entry) == "table" then
+                    targetUsername = entry.Username
+                    targetEncodedId = tostring(entry.EncodedId or "")
+                elseif type(entry) == "string" then
+                    targetUsername = entry
+                end
+
+                if targetUsername == myUsername and (targetEncodedId == "" or targetEncodedId == myEncodedId) then
+                    return true
+                end
+            end
+        end
+    end
+
+    DisplayLocalErrorCard("you are not authorized to use these tags")
+    return false
+end
+-- ============================================================================
+
+-- ============================================================================
 -- FIREBASE POLLING & SENDING LOGIC
 -- ============================================================================
 SendChatMessage = function()
@@ -1962,6 +2150,13 @@ SendChatMessage = function()
     -- Command Processing
     if string.sub(text, 1, 5) == "!tag " then
         local newRole = string.sub(text, 6)
+
+        -- [REMOVABLE AUTHORIZATION CHECK]
+        if not CheckRestrictedTagAuthorization(newRole) then
+            MessageInput.Text = ""
+            return
+        end
+
         local allowedRoles = AvailableUserRoles[LocalPlayer.Name] or {}
         local isAdmin = HasAdminPermission(LocalPlayer.Name)
 
