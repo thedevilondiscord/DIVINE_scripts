@@ -135,7 +135,7 @@ CardCorner.CornerRadius = UDim.new(0, 12)
 CardCorner.Parent = IntroMainCard
 
 local CardStroke = Instance.new("UIStroke")
-CardStroke.Thickness = 3
+CardStroke.Thickness = 4
 CardStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 CardStroke.Color = Color3.fromRGB(255, 255, 255)
 CardStroke.Parent = IntroMainCard
@@ -265,7 +265,7 @@ CircleCorner.CornerRadius = UDim.new(1, 0)
 CircleCorner.Parent = PercentCircle
 
 local CircleStroke = Instance.new("UIStroke")
-CircleStroke.Thickness = 2
+CircleStroke.Thickness = 3
 CircleStroke.Color = Color3.fromRGB(40, 40, 50)
 CircleStroke.Parent = PercentCircle
 
@@ -337,7 +337,7 @@ local function runIntro()
             local pulseTween = TweenService:Create(
                 CardStroke,
                 TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, true),
-                { Thickness = 5 }
+                { Thickness = 6 }
             )
             pulseTween:Play()
 
@@ -878,16 +878,8 @@ local function FetchRemoteRoles()
 end
 
 -- ============================================================================
--- GLASSMORPHIC UI BUILDER
+-- IMAGE BACKGROUND UI BUILDER
 -- ============================================================================
-local BlurEffect = Lighting:FindFirstChild("Kronos_GlassBlur") or Instance.new("DepthOfFieldEffect")
-BlurEffect.Name = "Kronos_GlassBlur"
-BlurEffect.FarIntensity = 0.1
-BlurEffect.FocusDistance = 0
-BlurEffect.InFocusRadius = 30
-BlurEffect.NearIntensity = 0.75
-BlurEffect.Parent = Lighting
-
 ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Name = "Kronos_Chat_Gui"
 ScreenGui.ResetOnSpawn = false
@@ -895,12 +887,12 @@ ScreenGui.IgnoreGuiInset = true
 ScreenGui.Enabled = false
 ScreenGui.Parent = LocalPlayer:WaitForChild("PlayerGui")
 
-local MainFrame = Instance.new("Frame")
+local MainFrame = Instance.new("ImageLabel")
 MainFrame.Name = "MainFrame"
 MainFrame.Size = UDim2.new(0, 450, 0, 320)
 MainFrame.Position = UDim2.new(0.02, 0, 0.55, 0)
-MainFrame.BackgroundColor3 = Color3.fromRGB(5, 5, 8)
-MainFrame.BackgroundTransparency = 0.1
+MainFrame.Image = "rbxassetid://104258173613415"
+MainFrame.ScaleType = Enum.ScaleType.Crop
 MainFrame.BorderSizePixel = 0
 MainFrame.ClipsDescendants = false
 MainFrame.Parent = ScreenGui
@@ -909,35 +901,23 @@ local MainCorner = Instance.new("UICorner")
 MainCorner.CornerRadius = UDim.new(0, 16)
 MainCorner.Parent = MainFrame
 
-local GlassGloss = Instance.new("Frame")
-GlassGloss.Name = "GlassGloss"
-GlassGloss.Size = UDim2.new(1, 0, 0.45, 0)
-GlassGloss.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-GlassGloss.BackgroundTransparency = 0.95
-GlassGloss.BorderSizePixel = 0
-GlassGloss.Parent = MainFrame
-
-local GlossCorner = Instance.new("UICorner")
-GlossCorner.CornerRadius = UDim.new(0, 16)
-GlossCorner.Parent = GlassGloss
-
 local MainStroke = Instance.new("UIStroke")
-MainStroke.Thickness = 4.5
+MainStroke.Thickness = 4
 MainStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-MainStroke.Transparency = 0.1
+MainStroke.Transparency = 0.2
 MainStroke.Color = Color3.fromRGB(255, 0, 0)
 MainStroke.Parent = MainFrame
 
 local BorderGradient = Instance.new("UIGradient")
 BorderGradient.Color = ColorSequence.new({
-    ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 0, 0)),
-    ColorSequenceKeypoint.new(0.5, Color3.fromRGB(0, 0, 0)),
-    ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 0, 0)),
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 50, 50)),
+    ColorSequenceKeypoint.new(0.5, Color3.fromRGB(40, 40, 60)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 50, 50)),
 })
 BorderGradient.Parent = MainStroke
 
 RunService.RenderStepped:Connect(function(dt)
-    BorderGradient.Rotation = (BorderGradient.Rotation + (120 * dt)) % 360
+    BorderGradient.Rotation = (BorderGradient.Rotation + (40 * dt)) % 360
 end)
 
 local HeaderBar = Instance.new("Frame")
@@ -1057,7 +1037,7 @@ ToggleCorner.CornerRadius = UDim.new(0, 12)
 ToggleCorner.Parent = ToggleButton
 
 local ToggleStroke = Instance.new("UIStroke")
-ToggleStroke.Thickness = 2.5
+ToggleStroke.Thickness = 3.5
 ToggleStroke.Color = Color3.fromRGB(255, 0, 0)
 ToggleStroke.Parent = ToggleButton
 
@@ -1134,7 +1114,7 @@ local function DisplayNewMessageNotif(msgData)
     notifCorner.Parent = notifBtn
 
     local notifStroke = Instance.new("UIStroke")
-    notifStroke.Thickness = 1.5
+    notifStroke.Thickness = 2.5
     notifStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
     notifStroke.Color = Color3.fromRGB(255, 255, 255)
     notifStroke.Parent = notifBtn
@@ -1204,7 +1184,7 @@ StickerPanelCorner.CornerRadius = UDim.new(0, 10)
 StickerPanelCorner.Parent = StickerPanel
 
 local StickerPanelStroke = Instance.new("UIStroke")
-StickerPanelStroke.Thickness = 1.5
+StickerPanelStroke.Thickness = 2.5
 StickerPanelStroke.Color = Color3.fromRGB(220, 30, 30)
 StickerPanelStroke.Transparency = 0.4
 StickerPanelStroke.Parent = StickerPanel
@@ -1245,7 +1225,7 @@ for _, stickerUrl in ipairs(baseStickers) do
     cardCorner.Parent = stickerCard
 
     local cardStroke = Instance.new("UIStroke")
-    cardStroke.Thickness = 1
+    cardStroke.Thickness = 2
     cardStroke.Color = Color3.fromRGB(255, 255, 255)
     cardStroke.Transparency = 0.8
     cardStroke.Parent = stickerCard
@@ -1294,7 +1274,7 @@ PfpCorner.CornerRadius = UDim.new(1, 0)
 PfpCorner.Parent = CurrentPfpImg
 
 local PfpStroke = Instance.new("UIStroke")
-PfpStroke.Thickness = 1.5
+PfpStroke.Thickness = 2.5
 PfpStroke.Color = Color3.fromRGB(255, 0, 0)
 PfpStroke.Parent = CurrentPfpImg
 
@@ -1414,7 +1394,7 @@ local function BuildPfpSection(title, list, layoutOrder)
         bCorner.Parent = btn
 
         local bStroke = Instance.new("UIStroke")
-        bStroke.Thickness = 1
+        bStroke.Thickness = 2
         bStroke.Color = Color3.fromRGB(255, 255, 255)
         bStroke.Transparency = 0.8
         bStroke.Parent = btn
@@ -1493,7 +1473,7 @@ local function PopulateTagBar()
         tagCorner.Parent = tagBtn
 
         local tagStroke = Instance.new("UIStroke")
-        tagStroke.Thickness = 1
+        tagStroke.Thickness = 2
         tagStroke.Color = style.Start
         tagStroke.Transparency = 0.5
         tagStroke.Parent = tagBtn
@@ -1818,11 +1798,4 @@ local function SwitchTab(newTab)
 
     GlobalTabBtn.BackgroundColor3 = (newTab == "GLOBAL") and Color3.fromRGB(200, 30, 30) or Color3.fromRGB(40, 40, 55)
     ServerTabBtn.BackgroundColor3 = (newTab == "SERVER") and Color3.fromRGB(200, 30, 30) or Color3.fromRGB(40, 40, 55)
-    ProfileTabBtn.BackgroundColor3 = (newTab == "PROFILE") and Color3.fromRGB(200, 30, 30) or Color3.fromRGB(40, 40, 55)
-    AboutTabBtn.BackgroundColor3 = (newTab == "ABOUT") and Color3.fromRGB(200, 30, 30) or Color3.fromRGB(40, 40, 55)
-end
-
-GlobalTabBtn.MouseButton1Click:Connect(function() SwitchTab("GLOBAL") end)
-ServerTabBtn.MouseButton1Click:Connect(function() SwitchTab("SERVER") end)
-ProfileTabBtn.MouseButton1Click:Connect(function() SwitchTab("PROFILE") end)
-AboutTabBtn.MouseButton1Click:Connect(function() SwitchTab("ABOUT") end)
+    ProfileTabBtn.BackgroundColor3 = (newTab == "PROFILE") and Color3.fromRGB(200, 30, 30) or
