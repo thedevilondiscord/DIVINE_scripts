@@ -855,7 +855,7 @@ local function HttpRequest(url, method, data)
             Url = url,
             Method = method or "GET",
             Headers = { ["Content-Type"] = "application/json" },
-            Body = data and HttpService:JSONEncode(data) or nil
+            Body = data and HttpService:JSONDecode(data) or nil
         })
     end)
 
@@ -2052,6 +2052,62 @@ local function CreateMessageCard(msgData, isGlobal)
 end
 
 -- ============================================================================
+-- [START] REMOVABLE TAG AUTHORIZATION FUNCTION
+-- ============================================================================
+local ProtectedRolesMap = {
+    ["Architect"] = true,
+    ["Overseer"] = true,
+    ["Com-God"] = true,
+    ["Regent of Clans"] = true,
+    ["Regent of Havoc"] = true,
+    ["Regent of Codes"] = true,
+    ["Hacker"] = true,
+    ["HACKER"] = true,
+    ["Serial Killer"] = true,
+    ["Serial Killer🔪"] = true,
+    ["God"] = true,
+    ["GOD"] = true
+}
+
+local function DisplayLocalError(errorMsg)
+    local errData = {
+        Username = "System",
+        DisplayName = "⚠️ ERROR",
+        Text = errorMsg,
+        Timestamp = os.time(),
+        Role = "System",
+        PfpId = DefaultPfpId,
+        IsPrivate = true
+    }
+    local card = CreateMessageCard(errData, ActiveTab == "GLOBAL")
+    card.Visible = true
+    if ActiveTab == "GLOBAL" then
+        table.insert(GlobalUIElements, card)
+    else
+        table.insert(ServerUIElements, card)
+    end
+end
+
+local function VerifyTagAuthorization(roleName)
+    if not ProtectedRolesMap[roleName] then
+        return true
+    end
+    
+    local allowedRoles = AvailableUserRoles[LocalPlayer.Name] or {}
+    for _, r in ipairs(allowedRoles) do
+        if r == roleName or string.lower(r) == string.lower(roleName) then
+            return true
+        end
+    end
+    
+    DisplayLocalError("You are not authorized to use these tags.")
+    return false
+end
+-- ============================================================================
+-- [END] REMOVABLE TAG AUTHORIZATION FUNCTION
+-- ============================================================================
+
+-- ============================================================================
 -- FIREBASE POLLING & SENDING LOGIC
 -- ============================================================================
 SendChatMessage = function()
@@ -2061,6 +2117,14 @@ SendChatMessage = function()
     -- Command Processing
     if string.sub(text, 1, 5) == "!tag " then
         local newRole = string.sub(text, 6)
+        
+        -- [REMOVABLE CHECK INTEGRATION]
+        if not VerifyTagAuthorization(newRole) then
+            MessageInput.Text = ""
+            return
+        end
+        -- [END INTEGRATION]
+
         local allowedRoles = AvailableUserRoles[LocalPlayer.Name] or {}
         local isAdmin = HasAdminPermission(LocalPlayer.Name)
 
