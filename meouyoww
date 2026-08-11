@@ -1071,7 +1071,9 @@ local function AddEliteChatBannerFX(frame, roleName, style)
             tapeFolder.Parent = banner
 
             local segments = {}
-            local segmentCount = 24
+            -- Allocate enough segments for normal desktop and mobile cards.
+            -- The layout function hides unused segments when the card is small.
+            local segmentCount = 64
 
             for i = 1, segmentCount do
                 local segment = Instance.new("Frame")
@@ -3472,11 +3474,10 @@ CreateMessageCard = function(msgData, isGlobal)
         pad.Parent = frame
     end
 
-    -- Elite banner FX are added after the message content is constructed so
-    -- they never alter the existing message data or Firebase behaviour.
-    if eliteFx then
-        AddEliteChatBannerFX(frame, roleName, style)
-    end
+    -- IMPORTANT: Do not initialize banner FX until the message card is parented.
+    -- Some Roblox GUI properties (AbsoluteSize/Ancestry) are not fully resolved
+    -- while the card is still unparented. Initializing here used to cause the
+    -- elite-banner layer to fail during message construction.
 
     -- Transparent interaction layer: long-pressing any part of the message opens the options menu.
     local interactionButton = Instance.new("TextButton")
@@ -3510,6 +3511,18 @@ CreateMessageCard = function(msgData, isGlobal)
     end)
 
     frame.Parent = MessageContainer
+
+    -- Initialize cosmetic FX only after the card is in the live UI tree.
+    -- The banner function is additionally protected internally, so a cosmetic
+    -- API/property failure can never abort message creation.
+    if eliteFx then
+        task.defer(function()
+            if frame and frame.Parent then
+                AddEliteChatBannerFX(frame, roleName, style)
+            end
+        end)
+    end
+
     frame:SetAttribute("MessageTimestamp", msgData.Timestamp or 0)
     frame:SetAttribute("MessageUsername", msgData.Username or "")
 
