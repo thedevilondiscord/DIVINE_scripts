@@ -812,374 +812,379 @@ local RANK_STYLES = {
 -- ranks receive the additional animated banner, floating emoji and bold text.
 -- ============================================================================
 local CHAT_BANNER_FX = {
-    -- Bright red -> black moving border. Fast loop.
+    -- Fast bright-red -> black moving border. No extra emoji particles.
     ["Architect"] = {
-        Kind = "RED_BLACK",
+        Accent = Color3.fromRGB(255, 25, 25),
+        Accent2 = Color3.fromRGB(0, 0, 0),
+        BannerText = "⚡ ARCHITECT",
+        BorderSpeed = 210,
+        BorderThickness = 2.5,
+        Glass = false,
+        Style = "RED_BLACK",
+    },
+
+    ["Overseer"] = {
         Accent = Color3.fromRGB(255, 35, 35),
         Accent2 = Color3.fromRGB(0, 0, 0),
-        Speed = 0.32,
-        BannerText = "⚡ ARCHITECT",
-    },
-    ["Overseer"] = {
-        Kind = "RED_BLACK",
-        Accent = Color3.fromRGB(255, 55, 45),
-        Accent2 = Color3.fromRGB(0, 0, 0),
-        Speed = 0.36,
         BannerText = "◈ OVERSEER",
+        BorderSpeed = 210,
+        BorderThickness = 2.5,
+        Glass = false,
+        Style = "RED_BLACK",
     },
-    -- Yellow/black hazard-tape border. The pattern itself is made from
-    -- ColorSequence keys, not emoji, and continuously travels around the edge.
-    ["Moderator"] = {
-        Kind = "CRIME_TAPE",
-        Accent = Color3.fromRGB(255, 205, 0),
-        Accent2 = Color3.fromRGB(8, 8, 8),
-        Speed = 0.75,
-        BannerText = "🛡 MODERATOR",
-    },
-    -- Plain green -> black animated border. Medium/fast loop.
-    ["Hacker"] = {
-        Kind = "GREEN_BLACK",
-        Accent = Color3.fromRGB(0, 255, 75),
-        Accent2 = Color3.fromRGB(0, 0, 0),
-        Speed = 0.48,
-        BannerText = "🧑‍💻 🟩 HACKER 💀",
-    },
-    -- Keep the developer contribution identity from the previous banner system.
+
+    -- Developer remains as the existing cyan developer treatment.
     ["Developer"] = {
-        Kind = "DEV",
-        Accent = Color3.fromRGB(0, 225, 255),
-        Accent2 = Color3.fromRGB(0, 35, 85),
-        Speed = 0.7,
+        Accent = Color3.fromRGB(0, 220, 255),
+        Accent2 = Color3.fromRGB(0, 45, 100),
+        Emojis = {"</>", "⚙", "◆"},
+        ParticleCount = 3,
+        FloatSpeed = 1.2,
+        PulseSpeed = 1.0,
         BannerText = "🧑‍💻 DEV CONTRIBUTOR",
+        Style = "DEVELOPER",
     },
-    -- Yellow glassmorphic OG banner. ✨💫 travel clockwise around the border;
-    -- the crown sits enlarged and tilted over the upper-right corner.
+
+    -- Yellow/black hazard-tape border + enlarged hovering magnifying glass.
+    ["Moderator"] = {
+        Accent = Color3.fromRGB(255, 215, 0),
+        Accent2 = Color3.fromRGB(15, 15, 15),
+        BannerText = "🛡 MODERATOR",
+        BorderSpeed = 1.35,
+        BorderThickness = 3,
+        Glass = false,
+        Style = "CRIME_TAPE",
+    },
+
+    -- Medium-fast plain green -> black looping border.
+    ["Hacker"] = {
+        Accent = Color3.fromRGB(0, 255, 70),
+        Accent2 = Color3.fromRGB(0, 0, 0),
+        BannerText = "🧑‍💻 🟩 HACKER 💀",
+        BorderSpeed = 145,
+        BorderThickness = 2.5,
+        Glass = false,
+        Style = "GREEN_BLACK",
+    },
+
+    -- Yellow glassmorphic OG banner. Sparkles travel clockwise around the border,
+    -- while the crown sits enlarged and tilted over the upper-right corner.
     ["One of the OGs👑"] = {
-        Kind = "OG",
-        Accent = Color3.fromRGB(255, 220, 55),
-        Accent2 = Color3.fromRGB(135, 88, 0),
-        Speed = 1.65,
+        Accent = Color3.fromRGB(255, 220, 45),
+        Accent2 = Color3.fromRGB(105, 55, 0),
         BannerText = "🏅 ONE OF THE OGs",
-        OrbitEmojis = {"✨", "💫"},
+        BorderSpeed = 34,
+        BorderThickness = 2.5,
+        Glass = true,
+        Style = "OG_GOLD_GLASS",
+        BorderEmojis = {"✨", "💫", "✨", "💫", "✨", "💫", "✨", "💫"},
+        EmojiCount = 8,
+        Clockwise = true,
+        Crown = true,
     },
-    -- White glassmorphic Com-God banner. 💀🔗⛓️ orbit anti-clockwise around it.
+
+    -- White glassmorphic Com-God banner. Skull/chain emojis orbit anti-clockwise.
     ["COM-GOD⛓️"] = {
-        Kind = "COM_GOD",
         Accent = Color3.fromRGB(255, 255, 255),
-        Accent2 = Color3.fromRGB(125, 130, 140),
-        Speed = 1.35,
+        Accent2 = Color3.fromRGB(85, 85, 95),
         BannerText = "⛓️ COM-GOD",
-        OrbitEmojis = {"💀", "🔗", "⛓️"},
+        BorderSpeed = 43,
+        BorderThickness = 2.5,
+        Glass = true,
+        Style = "COM_GOD_GLASS",
+        BorderEmojis = {"💀", "🔗", "⛓️", "💀", "🔗", "⛓️", "💀", "🔗"},
+        EmojiCount = 8,
+        Clockwise = false,
     },
+
+    -- Explicitly no special chat banner for these roles.
+    ["Regent of Clan🔥"] = nil,
+    ["Carnage🩸"] = nil,
 }
 
-local function MakeGradientSequence(colors)
-    local keys = {}
-    local count = #colors
-    if count == 1 then
-        return ColorSequence.new(colors[1])
-    end
-    for i, color in ipairs(colors) do
-        keys[#keys + 1] = ColorSequenceKeypoint.new((i - 1) / (count - 1), color)
-    end
-    return ColorSequence.new(keys)
-end
-
-local function CreateMovingBannerBorder(banner, fx)
-    local stroke = Instance.new("UIStroke")
-    stroke.Name = "AnimatedRankBorder"
-    stroke.Thickness = 2
-    stroke.Transparency = 0.08
-    stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-    stroke.Color = fx.Accent
-    stroke.Parent = banner
-
-    local gradient = Instance.new("UIGradient")
-    gradient.Name = "MovingBorderGradient"
-
-    if fx.Kind == "CRIME_TAPE" then
-        -- Repeated yellow/black hazard tape pattern.
-        gradient.Color = MakeGradientSequence({
-            fx.Accent, fx.Accent,
-            fx.Accent2, fx.Accent2,
-            fx.Accent, fx.Accent,
-            fx.Accent2, fx.Accent2,
-            fx.Accent, fx.Accent,
-            fx.Accent2, fx.Accent2,
-            fx.Accent, fx.Accent,
-        })
-    elseif fx.Kind == "GREEN_BLACK" then
-        gradient.Color = MakeGradientSequence({
-            fx.Accent, fx.Accent, fx.Accent2, fx.Accent2, fx.Accent,
-        })
-    elseif fx.Kind == "RED_BLACK" then
-        gradient.Color = MakeGradientSequence({
-            fx.Accent, fx.Accent, fx.Accent2, fx.Accent2, fx.Accent,
-        })
-    elseif fx.Kind == "DEV" then
-        gradient.Color = MakeGradientSequence({
-            fx.Accent, fx.Accent2, fx.Accent, fx.Accent2, fx.Accent,
-        })
-    elseif fx.Kind == "OG" then
-        gradient.Color = MakeGradientSequence({
-            Color3.fromRGB(255, 245, 145),
-            fx.Accent,
-            Color3.fromRGB(255, 255, 215),
-            fx.Accent2,
-            fx.Accent,
-            Color3.fromRGB(255, 245, 145),
-        })
-    elseif fx.Kind == "COM_GOD" then
-        gradient.Color = MakeGradientSequence({
-            Color3.fromRGB(255, 255, 255),
-            Color3.fromRGB(190, 195, 205),
-            Color3.fromRGB(255, 255, 255),
-            Color3.fromRGB(105, 110, 120),
-            Color3.fromRGB(255, 255, 255),
-        })
-    end
-
-    gradient.Parent = stroke
-
-    task.spawn(function()
-        local direction = 1
-        while gradient and gradient.Parent do
-            gradient.Offset = Vector2.new(-0.9 * direction, 0)
-            local tween = TweenService:Create(
-                gradient,
-                TweenInfo.new(fx.Speed, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut),
-                {Offset = Vector2.new(0.9 * direction, 0)}
-            )
-            tween:Play()
-            tween.Completed:Wait()
-            direction = -direction
-        end
-    end)
-
-    return stroke
-end
-
-local function AnimateBorderOrbit(banner, fx, clockwise)
-    if not fx.OrbitEmojis then return end
-
-    local points = {
-        UDim2.new(0.10, 0, 0, 1),
-        UDim2.new(0.90, 0, 0, 1),
-        UDim2.new(0.90, 0, 1, -1),
-        UDim2.new(0.10, 0, 1, -1),
-    }
-
-    for index, emoji in ipairs(fx.OrbitEmojis) do
-        local icon = Instance.new("TextLabel")
-        icon.Name = "OrbitEmoji_" .. tostring(index)
-        icon.Size = UDim2.fromOffset(index == 1 and 22 or 18, index == 1 and 22 or 18)
-        icon.AnchorPoint = Vector2.new(0.5, 0.5)
-        icon.BackgroundTransparency = 1
-        icon.Text = emoji
-        icon.TextSize = index == 1 and 15 or 12
-        icon.Font = Enum.Font.GothamBold
-        icon.TextColor3 = fx.Accent
-        icon.TextStrokeTransparency = 0.25
-        icon.TextStrokeColor3 = fx.Accent2
-        icon.ZIndex = 4
-        icon.Position = points[((index - 1) % #points) + 1]
-        icon.Parent = banner
-
-        task.spawn(function()
-            local current = ((index - 1) % #points) + 1
-            task.wait((index - 1) * 0.18)
-            while icon and icon.Parent do
-                local nextPoint
-                if clockwise then
-                    nextPoint = (current % #points) + 1
-                else
-                    nextPoint = ((current - 2) % #points) + 1
-                end
-
-                local tween = TweenService:Create(
-                    icon,
-                    TweenInfo.new(fx.Speed, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut),
-                    {Position = points[nextPoint]}
-                )
-                tween:Play()
-                tween.Completed:Wait()
-                current = nextPoint
-            end
-        end)
-    end
-end
 
 local function AddEliteChatBannerFX(frame, roleName, style)
     local fx = CHAT_BANNER_FX[roleName]
-    if not fx or not frame then return end
+    if not fx or not frame or not frame.Parent then return end
 
     frame.ClipsDescendants = false
 
     local banner = Instance.new("Frame")
     banner.Name = "EliteRankBanner"
-    banner.Size = UDim2.new(1, -42, 0, 24)
+    banner.Size = UDim2.new(1, -38, 0, 24)
     banner.Position = UDim2.new(0, 38, 0, 2)
+    banner.BackgroundColor3 = fx.Accent2
+    banner.BackgroundTransparency = fx.Glass and 0.82 or 0.9
     banner.BorderSizePixel = 0
-    banner.ZIndex = 0
+    banner.ZIndex = 1
     banner.Parent = frame
 
-    local corner = Instance.new("UICorner")
-    corner.CornerRadius = UDim.new(0, 7)
-    corner.Parent = banner
+    local bannerCorner = Instance.new("UICorner")
+    bannerCorner.CornerRadius = UDim.new(0, 7)
+    bannerCorner.Parent = banner
 
-    -- Glassmorphic fills are deliberately used only for OG and Com-God.
-    if fx.Kind == "OG" then
-        banner.BackgroundColor3 = Color3.fromRGB(255, 215, 55)
-        banner.BackgroundTransparency = 0.72
-    elseif fx.Kind == "COM_GOD" then
-        banner.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        banner.BackgroundTransparency = 0.76
-    elseif fx.Kind == "CRIME_TAPE" then
-        banner.BackgroundColor3 = Color3.fromRGB(22, 22, 18)
-        banner.BackgroundTransparency = 0.15
-    else
-        banner.BackgroundColor3 = fx.Accent2
-        banner.BackgroundTransparency = 0.82
+    -- Glassmorphic highlight used by OGs and Com-God.
+    if fx.Glass then
+        local glassHighlight = Instance.new("Frame")
+        glassHighlight.Name = "GlassHighlight"
+        glassHighlight.Size = UDim2.new(1, 0, 0.52, 0)
+        glassHighlight.Position = UDim2.new(0, 0, 0, 0)
+        glassHighlight.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        glassHighlight.BackgroundTransparency = 0.88
+        glassHighlight.BorderSizePixel = 0
+        glassHighlight.ZIndex = 2
+        glassHighlight.Parent = banner
+
+        local glassCorner = Instance.new("UICorner")
+        glassCorner.CornerRadius = UDim.new(0, 7)
+        glassCorner.Parent = glassHighlight
+
+        local sheen = Instance.new("UIGradient")
+        sheen.Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 0.05),
+            NumberSequenceKeypoint.new(0.5, 0.78),
+            NumberSequenceKeypoint.new(1, 0.05),
+        })
+        sheen.Rotation = 90
+        sheen.Parent = glassHighlight
     end
 
-    local fillGradient = Instance.new("UIGradient")
-    if fx.Kind == "OG" then
-        fillGradient.Color = MakeGradientSequence({
-            Color3.fromRGB(255, 225, 75),
-            Color3.fromRGB(255, 250, 190),
-            Color3.fromRGB(210, 160, 35),
-            Color3.fromRGB(255, 235, 105),
-        })
-        fillGradient.Transparency = NumberSequence.new({
-            NumberSequenceKeypoint.new(0, 0.18),
-            NumberSequenceKeypoint.new(0.5, 0.42),
-            NumberSequenceKeypoint.new(1, 0.18),
-        })
-    elseif fx.Kind == "COM_GOD" then
-        fillGradient.Color = MakeGradientSequence({
-            Color3.fromRGB(255,255,255),
-            Color3.fromRGB(220,225,235),
-            Color3.fromRGB(255,255,255),
-        })
-        fillGradient.Transparency = NumberSequence.new({
-            NumberSequenceKeypoint.new(0, 0.2),
-            NumberSequenceKeypoint.new(0.5, 0.5),
-            NumberSequenceKeypoint.new(1, 0.2),
-        })
-    end
-    if fx.Kind == "OG" or fx.Kind == "COM_GOD" then
-        fillGradient.Parent = banner
-        task.spawn(function()
-            while fillGradient and fillGradient.Parent do
-                fillGradient.Offset = Vector2.new(-1, 0)
-                local tw = TweenService:Create(fillGradient, TweenInfo.new(1.8, Enum.EasingStyle.Linear), {Offset = Vector2.new(1, 0)})
-                tw:Play()
-                tw.Completed:Wait()
-            end
-        end)
-    end
-
-    CreateMovingBannerBorder(banner, fx)
-
-    -- The role tag and username remain the existing chat labels. This small
-    -- secondary label gives the banner an integrated identity without changing
-    -- the actual message text or Firebase payload.
     local bannerText = Instance.new("TextLabel")
-    bannerText.Name = "EliteBannerCaption"
+    bannerText.Name = "EliteBannerText"
     bannerText.Size = UDim2.new(1, -12, 1, 0)
     bannerText.Position = UDim2.new(0, 6, 0, 0)
     bannerText.BackgroundTransparency = 1
     bannerText.Text = fx.BannerText
     bannerText.TextColor3 = fx.Accent
-    bannerText.TextTransparency = 0.78
+    bannerText.TextTransparency = fx.Glass and 0.18 or 0.55
     bannerText.Font = Enum.Font.GothamBold
     bannerText.TextSize = 8
     bannerText.TextXAlignment = Enum.TextXAlignment.Right
     bannerText.TextYAlignment = Enum.TextYAlignment.Center
-    bannerText.ZIndex = 2
+    bannerText.ZIndex = 4
     bannerText.Parent = banner
 
-    if fx.Kind == "RED_BLACK" or fx.Kind == "GREEN_BLACK" or fx.Kind == "DEV" then
+    -- ================================================================
+    -- ARCHITECT / OVERSEER / HACKER: animated plain gradient borders
+    -- ================================================================
+    if fx.Style == "RED_BLACK" or fx.Style == "GREEN_BLACK" then
+        local stroke = Instance.new("UIStroke")
+        stroke.Name = "MovingGradientBorder"
+        stroke.Thickness = fx.BorderThickness or 2.5
+        stroke.Transparency = 0.05
+        stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+        stroke.Parent = banner
+
+        local gradient = Instance.new("UIGradient")
+        gradient.Color = ColorSequence.new({
+            ColorSequenceKeypoint.new(0.00, fx.Accent),
+            ColorSequenceKeypoint.new(0.28, fx.Accent),
+            ColorSequenceKeypoint.new(0.50, fx.Accent2),
+            ColorSequenceKeypoint.new(0.72, fx.Accent2),
+            ColorSequenceKeypoint.new(1.00, fx.Accent),
+        })
+        gradient.Parent = stroke
+
         task.spawn(function()
-            while bannerText and bannerText.Parent do
-                local t1 = TweenService:Create(bannerText, TweenInfo.new(fx.Speed, Enum.EasingStyle.Sine), {TextTransparency = 0.55})
-                t1:Play(); t1.Completed:Wait()
-                if not bannerText.Parent then break end
-                local t2 = TweenService:Create(bannerText, TweenInfo.new(fx.Speed, Enum.EasingStyle.Sine), {TextTransparency = 0.82})
-                t2:Play(); t2.Completed:Wait()
+            while gradient and gradient.Parent do
+                local dt = RunService.RenderStepped:Wait()
+                gradient.Rotation = (gradient.Rotation + fx.BorderSpeed * dt) % 360
             end
         end)
+
+        task.spawn(function()
+            while stroke and stroke.Parent do
+                local fade = TweenService:Create(stroke, TweenInfo.new(0.28, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {Transparency = 0.18})
+                fade:Play()
+                fade.Completed:Wait()
+                if not stroke or not stroke.Parent then break end
+                local restore = TweenService:Create(stroke, TweenInfo.new(0.28, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {Transparency = 0.02})
+                restore:Play()
+                restore.Completed:Wait()
+            end
+        end)
+        return
     end
 
-    if fx.Kind == "OG" then
-        local crown = Instance.new("TextLabel")
-        crown.Name = "OGCrown"
-        crown.Size = UDim2.fromOffset(34, 34)
-        crown.AnchorPoint = Vector2.new(0.5, 0.5)
-        crown.Position = UDim2.new(1, -4, 0, -5)
-        crown.BackgroundTransparency = 1
-        crown.Text = "👑"
-        crown.TextSize = 27
-        crown.Rotation = 16
-        crown.Font = Enum.Font.GothamBold
-        crown.TextColor3 = Color3.fromRGB(255, 235, 75)
-        crown.TextStrokeTransparency = 0.18
-        crown.TextStrokeColor3 = Color3.fromRGB(110, 65, 0)
-        crown.ZIndex = 6
-        crown.Parent = banner
+    -- ================================================================
+    -- MODERATOR: yellow/black hazard tape border + magnifying glass
+    -- ================================================================
+    if fx.Style == "CRIME_TAPE" then
+        local tapeFolder = Instance.new("Folder")
+        tapeFolder.Name = "CrimeSceneTapeBorder"
+        tapeFolder.Parent = banner
+
+        local segments = {}
+        local segmentCount = 16
+        for i = 1, segmentCount do
+            local segment = Instance.new("Frame")
+            segment.Name = "TapeSegment_" .. i
+            segment.BorderSizePixel = 0
+            segment.BackgroundColor3 = (i % 2 == 1) and fx.Accent or fx.Accent2
+            segment.ZIndex = 3
+            segment.Parent = tapeFolder
+            table.insert(segments, segment)
+        end
+
+        -- Four-sided repeating yellow/black tape.
+        local function placeSegment(segment, sideIndex, slot)
+            local longCount = 5
+            if sideIndex == 1 then
+                segment.Size = UDim2.new(0, 22, 0, 3)
+                segment.Position = UDim2.new(0, 3 + slot * 24, 0, 0)
+            elseif sideIndex == 2 then
+                segment.Size = UDim2.new(0, 22, 0, 3)
+                segment.Position = UDim2.new(0, 3 + slot * 24, 1, -3)
+            elseif sideIndex == 3 then
+                segment.Size = UDim2.new(0, 3, 0, 14)
+                segment.Position = UDim2.new(0, 0, 0, 5 + slot * 6)
+            else
+                segment.Size = UDim2.new(0, 3, 0, 14)
+                segment.Position = UDim2.new(1, -3, 0, 5 + slot * 6)
+            end
+        end
+
+        for i, segment in ipairs(segments) do
+            local side = math.floor((i - 1) / 4) + 1
+            local slot = (i - 1) % 4
+            placeSegment(segment, side, slot)
+        end
 
         task.spawn(function()
-            while crown and crown.Parent do
-                local tw = TweenService:Create(crown, TweenInfo.new(1.5, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {
-                    Rotation = 23,
-                    Size = UDim2.fromOffset(38, 38),
-                })
-                tw:Play(); tw.Completed:Wait()
-                if not crown.Parent then break end
-                local tw2 = TweenService:Create(crown, TweenInfo.new(1.5, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {
-                    Rotation = 10,
-                    Size = UDim2.fromOffset(34, 34),
-                })
-                tw2:Play(); tw2.Completed:Wait()
+            local phase = 0
+            while tapeFolder and tapeFolder.Parent do
+                local dt = RunService.RenderStepped:Wait()
+                phase = phase + fx.BorderSpeed * dt
+                if phase >= 1 then
+                    phase = phase - 1
+                    table.insert(segments, 1, table.remove(segments))
+                    for i, segment in ipairs(segments) do
+                        segment.BackgroundColor3 = (i % 2 == 1) and fx.Accent or fx.Accent2
+                    end
+                end
             end
         end)
 
-        AnimateBorderOrbit(banner, fx, true)
-    elseif fx.Kind == "COM_GOD" then
-        AnimateBorderOrbit(banner, fx, false)
-    elseif fx.Kind == "CRIME_TAPE" then
-        -- Enlarged glass/magnifier on the left side of the moderator banner.
-        local glass = Instance.new("TextLabel")
-        glass.Name = "ModeratorMagnifier"
-        glass.Size = UDim2.fromOffset(30, 30)
-        glass.AnchorPoint = Vector2.new(0.5, 0.5)
-        glass.Position = UDim2.new(0, -1, 0.5, 0)
-        glass.BackgroundTransparency = 1
-        glass.Text = "🔍"
-        glass.TextSize = 24
-        glass.Font = Enum.Font.GothamBold
-        glass.ZIndex = 5
-        glass.Parent = banner
+        local magnifier = Instance.new("TextLabel")
+        magnifier.Name = "ModeratorMagnifier"
+        magnifier.Size = UDim2.new(0, 30, 0, 30)
+        magnifier.Position = UDim2.new(0, -16, 0.5, -15)
+        magnifier.BackgroundTransparency = 1
+        magnifier.Text = "🔍"
+        magnifier.TextSize = 24
+        magnifier.Font = Enum.Font.GothamBold
+        magnifier.ZIndex = 6
+        magnifier.Parent = frame
 
         task.spawn(function()
-            while glass and glass.Parent do
-                local up = TweenService:Create(glass, TweenInfo.new(1.05, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {
-                    Position = UDim2.new(0, -1, 0.5, -4),
-                    Rotation = -5,
-                    Size = UDim2.fromOffset(33, 33),
-                })
-                up:Play(); up.Completed:Wait()
-                if not glass.Parent then break end
-                local down = TweenService:Create(glass, TweenInfo.new(1.05, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {
-                    Position = UDim2.new(0, -1, 0.5, 4),
-                    Rotation = 5,
-                    Size = UDim2.fromOffset(30, 30),
-                })
-                down:Play(); down.Completed:Wait()
+            local t = 0
+            while magnifier and magnifier.Parent do
+                local dt = RunService.RenderStepped:Wait()
+                t = t + dt
+                magnifier.Position = UDim2.new(0, -16, 0.5, -15 + math.sin(t * 2.2) * 3)
+                magnifier.Rotation = math.sin(t * 1.8) * 7
+            end
+        end)
+        return
+    end
+
+    -- ================================================================
+    -- OG / COM-GOD: glassmorphic borders with orbiting emojis
+    -- ================================================================
+    if fx.Style == "OG_GOLD_GLASS" or fx.Style == "COM_GOD_GLASS" then
+        local stroke = Instance.new("UIStroke")
+        stroke.Name = "GlassmorphicBorder"
+        stroke.Thickness = fx.BorderThickness or 2.5
+        stroke.Transparency = 0.08
+        stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+        stroke.Parent = banner
+
+        local gradient = Instance.new("UIGradient")
+        gradient.Color = ColorSequence.new({
+            ColorSequenceKeypoint.new(0, fx.Accent),
+            ColorSequenceKeypoint.new(0.5, Color3.fromRGB(255, 255, 255)),
+            ColorSequenceKeypoint.new(1, fx.Accent2),
+        })
+        gradient.Parent = stroke
+
+        -- Crown mounted over the OG banner's upper-right corner.
+        if fx.Crown then
+            local crown = Instance.new("TextLabel")
+            crown.Name = "OGCrown"
+            crown.Size = UDim2.new(0, 38, 0, 38)
+            crown.AnchorPoint = Vector2.new(0.5, 0.5)
+            crown.Position = UDim2.new(1, 3, 0, -4)
+            crown.BackgroundTransparency = 1
+            crown.Text = "👑"
+            crown.TextSize = 30
+            crown.Font = Enum.Font.GothamBold
+            crown.Rotation = 18
+            crown.ZIndex = 8
+            crown.Parent = frame
+
+            task.spawn(function()
+                while crown and crown.Parent do
+                    local grow = TweenService:Create(crown, TweenInfo.new(1.25, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {TextSize = 34, Rotation = 12})
+                    grow:Play()
+                    grow.Completed:Wait()
+                    if not crown or not crown.Parent then break end
+                    local shrink = TweenService:Create(crown, TweenInfo.new(1.25, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {TextSize = 30, Rotation = 18})
+                    shrink:Play()
+                    shrink.Completed:Wait()
+                end
+            end)
+        end
+
+        local orbiters = {}
+        local count = math.min(fx.EmojiCount or 8, #(fx.BorderEmojis or {}))
+        for i = 1, count do
+            local emoji = Instance.new("TextLabel")
+            emoji.Name = "BorderEmoji_" .. i
+            emoji.Size = UDim2.new(0, 18, 0, 18)
+            emoji.AnchorPoint = Vector2.new(0.5, 0.5)
+            emoji.BackgroundTransparency = 1
+            emoji.Text = fx.BorderEmojis[i]
+            emoji.TextSize = (i % 2 == 0) and 12 or 14
+            emoji.Font = Enum.Font.GothamBold
+            emoji.TextColor3 = fx.Accent
+            emoji.TextStrokeTransparency = 0.6
+            emoji.TextStrokeColor3 = fx.Accent2
+            emoji.ZIndex = 7
+            emoji.Parent = banner
+            table.insert(orbiters, emoji)
+        end
+
+        -- Clockwise for OG, anti-clockwise for Com-God. The orbit is deliberately
+        -- rectangular so the emojis visually stay on the banner border.
+        task.spawn(function()
+            local elapsed = math.random() * 10
+            local direction = fx.Clockwise == false and -1 or 1
+            while banner and banner.Parent do
+                local dt = RunService.RenderStepped:Wait()
+                elapsed = elapsed + dt * fx.BorderSpeed * direction
+                for i, emoji in ipairs(orbiters) do
+                    local p = ((elapsed + ((i - 1) / count) * 360) % 360) / 360
+                    local perimeter = 2 * (banner.AbsoluteSize.X + banner.AbsoluteSize.Y)
+                    local d = p * perimeter
+                    local x, y
+                    if d < banner.AbsoluteSize.X then
+                        x, y = d, 0
+                    elseif d < banner.AbsoluteSize.X + banner.AbsoluteSize.Y then
+                        x, y = banner.AbsoluteSize.X, d - banner.AbsoluteSize.X
+                    elseif d < 2 * banner.AbsoluteSize.X + banner.AbsoluteSize.Y then
+                        x, y = banner.AbsoluteSize.X - (d - banner.AbsoluteSize.X - banner.AbsoluteSize.Y), banner.AbsoluteSize.Y
+                    else
+                        x, y = 0, banner.AbsoluteSize.Y - (d - 2 * banner.AbsoluteSize.X - banner.AbsoluteSize.Y)
+                    end
+                    emoji.Position = UDim2.fromOffset(x, y)
+                    emoji.Rotation = math.sin(elapsed * 0.04 + i) * 8
+                end
+                gradient.Rotation = (gradient.Rotation + direction * 18 * dt) % 360
             end
         end)
     end
 end
+
 
 -- ============================================================================
 -- ROLE/TAG FONT ANIMATION
