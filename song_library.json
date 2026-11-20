@@ -1,0 +1,4604 @@
+{
+  "version": 1,
+  "description": "Song library extracted from the supplied playlist files. Each entry contains a display name and YouTube watch URL.",
+  "categories": {
+    "ENGLISH": [
+      {
+        "name": "Dominic Fike - Babydoll (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=-J2rSm8K9_Y"
+      },
+      {
+        "name": "Lady Gaga, Bruno Mars - Die With A Smile (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=zgaCZOQCpp8"
+      },
+      {
+        "name": "Bruno Mars - Risk It All (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=N7ETOxQ2KTE"
+      },
+      {
+        "name": "Alex Warren - Ordinary (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=byxFUKxhT3s"
+      },
+      {
+        "name": "Taylor Swift - The Fate of Ophelia",
+        "url": "https://www.youtube.com/watch?v=WNmsURkR2-w"
+      },
+      {
+        "name": "Doechii - Anxiety (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=1EF0VOd3WGA"
+      },
+      {
+        "name": "Temper City - Self Aware",
+        "url": "https://www.youtube.com/watch?v=gmUZHkdjlOI"
+      },
+      {
+        "name": "Justin Bieber, Nicki Minaj – Beauty And A Beat (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=J9abt3xpdDU"
+      },
+      {
+        "name": "Artemas - i like the way you kiss me (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=To7wHvDFu2M"
+      },
+      {
+        "name": "Sienna Spiro - Die On This Hill (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=nO0MxNJQT1E"
+      },
+      {
+        "name": "*NSYNC - Bye Bye Bye (Lyrics) (Deadpool 3 Soundtrack)",
+        "url": "https://www.youtube.com/watch?v=2ydCvkxuNm4"
+      },
+      {
+        "name": "Katy Perry - The One That Got Away (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=2ljKgfeDi-c"
+      },
+      {
+        "name": "Sabrina Carpenter - Please Please Please (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=dxWXJmsDHE8"
+      },
+      {
+        "name": "WizTheMc, bees & honey - Show Me Love (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=329iFlRszxs"
+      },
+      {
+        "name": "Post Malone & Morgan Wallen - I Had Some Help (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=KqVIjvBzGR0"
+      },
+      {
+        "name": "Tyla - CHANEL (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=HE20ic6Z6Ic"
+      },
+      {
+        "name": "Rihanna – Breakin' Dishes (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=Q6DqUEEJtMQ"
+      },
+      {
+        "name": "Tate McRae - TIT FOR TAT (Lyric Video)",
+        "url": "https://www.youtube.com/watch?v=u-HEopHeHb8"
+      },
+      {
+        "name": "Justin Bieber - Beauty And A Beat (Lyrics) ft. Nicki Minaj",
+        "url": "https://www.youtube.com/watch?v=2jTwoSFdfSI"
+      },
+      {
+        "name": "sombr - back to friends (lyrics)",
+        "url": "https://www.youtube.com/watch?v=Pb6r6I1dmJA"
+      },
+      {
+        "name": "ROSÉ & Bruno Mars - APT. (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=i_SsnRdgitA"
+      },
+      {
+        "name": "Man I Need - Olivia Dean (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=x1o2NuPWRCg"
+      },
+      {
+        "name": "Ruel - Another You ft. Sadie Jean (Official Visualizer)",
+        "url": "https://www.youtube.com/watch?v=BCUl7_HcYEA"
+      },
+      {
+        "name": "Dominic Fike - Babydoll (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=92GNL_85E1o"
+      },
+      {
+        "name": "Dua Lipa - Training Season (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=OHrI7VS7S4s"
+      },
+      {
+        "name": "Felix Green - Forgot To Love You (Official Lyric Video)",
+        "url": "https://www.youtube.com/watch?v=PSPjqtEPHq0"
+      },
+      {
+        "name": "KATSEYE - Animal (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=SyLtYUk9Ogg"
+      },
+      {
+        "name": "Ella Langley - Choosin' Texas (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=jlvl4gaHJpM"
+      },
+      {
+        "name": "Dominic Fike - White Keys (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=fAR_V7QyA58"
+      },
+      {
+        "name": "Hope Winter - So Easily (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=nD1TUFep9ko"
+      },
+      {
+        "name": "Olivia Dean - So Easy (To Fall In Love) (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=9JSn36U7d4w"
+      },
+      {
+        "name": "Malcolm Todd - Earrings (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=jJR9v1WwIuI"
+      },
+      {
+        "name": "Tame Impala - Loser",
+        "url": "https://www.youtube.com/watch?v=qmIo0F2uOGU"
+      },
+      {
+        "name": "Malcolm Todd - Earrings (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=iu70iC7yFts"
+      },
+      {
+        "name": "PinkPantheress - Stateside + Zara Larsson (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=Qhd6q7pH30o"
+      },
+      {
+        "name": "Gracie Abrams - That’s So True (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=K57UcxcvqnM"
+      },
+      {
+        "name": "Jah Vinci , Notnice - Clock It (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=-cqP1OpFRCw"
+      },
+      {
+        "name": "Bella Kay - iloveitiloveitiloveit (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=_mNTMz8JalU"
+      },
+      {
+        "name": "SIENNA SPIRO - Great Expectation",
+        "url": "https://www.youtube.com/watch?v=qvAjQ4ps19A"
+      },
+      {
+        "name": "ZLATA OGNEVICH - FIGHTER (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=YXKZ_74kkbY"
+      },
+      {
+        "name": "Alex Warren - FEVER DREAM (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=-yf_ra3HPKk"
+      },
+      {
+        "name": "Huntrix - Golden (Lyrics) KPop Demon Hunters",
+        "url": "https://www.youtube.com/watch?v=htk6MRjmcnQ"
+      },
+      {
+        "name": "Teddy Swims - Bad Dreams (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=qs3Pw97tXHQ"
+      },
+      {
+        "name": "76 Drums ft JC Kalinks - Beauty Station (WOW) (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=u_sjyElvhDM"
+      },
+      {
+        "name": "Ariana Grande - twilight zone (lyric visualizer)",
+        "url": "https://www.youtube.com/watch?v=5UE2kT5LxE0"
+      },
+      {
+        "name": "Justin Bieber - Yukon (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=7k-HUweT_4Q"
+      },
+      {
+        "name": "Sabrina Carpenter - Tears (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=AWvcILdlkmQ"
+      },
+      {
+        "name": "Elizabeth Nichols - Daughter",
+        "url": "https://www.youtube.com/watch?v=Ue7XVrbJDXQ"
+      },
+      {
+        "name": "Zara Larsson - Lush Life (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=aAXLhvrfaT8"
+      },
+      {
+        "name": "Shakira & Burna Boy - Dai Dai (Lyrics) World Cup Song 2026",
+        "url": "https://www.youtube.com/watch?v=Y3jq_WIHP9k"
+      },
+      {
+        "name": "Billie Eilish - BIRDS OF A FEATHER (Official Lyric Video)",
+        "url": "https://www.youtube.com/watch?v=d5gf9dXbPi0"
+      },
+      {
+        "name": "Harry Styles - American Girls (Official Lyric Video)",
+        "url": "https://www.youtube.com/watch?v=DcGVFWm5zsk"
+      },
+      {
+        "name": "Boom Boom Skeet Skeet",
+        "url": "https://www.youtube.com/watch?v=BDI8WszeFXw"
+      },
+      {
+        "name": "I Thought I Saw Your Face Today - She And Him (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=31IUfFDgtMs"
+      },
+      {
+        "name": "Djo - End Of Beginning (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=B3Z4XGAxJB0"
+      },
+      {
+        "name": "Lil Uzi Vert - What You Saying (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=c5-K9rIkPbI"
+      },
+      {
+        "name": "Gigi Perez – Sailor Song (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=f1FuAxuhvq4"
+      },
+      {
+        "name": "Ravyn Lenae - Love Me Not (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=NB7WuqWzDhw"
+      },
+      {
+        "name": "Tame Impala - Dracula (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=HWyzKmXquJk"
+      },
+      {
+        "name": "Saja Boys - Your Idol (Lyrics) KPop Demon Hunters",
+        "url": "https://www.youtube.com/watch?v=5QIQ5QHqDbw"
+      },
+      {
+        "name": "Chappell Roan - Good Luck, Babe! (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=tktfiY4kXZc"
+      },
+      {
+        "name": "HAVEN. - I RUN (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=hTHmk4_HnV4"
+      },
+      {
+        "name": "cassö, RAYE, D-Block Europe - Prada (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=ZOYg4VXojCc"
+      },
+      {
+        "name": "sombr - undressed (official lyric video)",
+        "url": "https://www.youtube.com/watch?v=CtRn6eqVnvY"
+      },
+      {
+        "name": "Alex Warren - Eternity (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=fz5gmZV9_so"
+      },
+      {
+        "name": "Taylor Swift - Opalite (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=DN0G0Lbj6os"
+      },
+      {
+        "name": "Dave, Tems - Raindance (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=bhoybya39QU"
+      },
+      {
+        "name": "Yung Gravy - BAEWATCH (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=CtasJUQ5A1A"
+      },
+      {
+        "name": "Lola Young - Messy (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=1hpkQ_ag470"
+      },
+      {
+        "name": "Michael Jackson - Human Nature (Lyrics Video) 🎤",
+        "url": "https://www.youtube.com/watch?v=UxnvqXGYpvY"
+      },
+      {
+        "name": "Zara Larsson - Midnight Sun",
+        "url": "https://www.youtube.com/watch?v=ZVwTBRL6LDM"
+      },
+      {
+        "name": "Miley Cyrus - Flowers (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=OCGpwIkkuXQ"
+      },
+      {
+        "name": "Sierra - You Broke Me (Music Video)",
+        "url": "https://www.youtube.com/watch?v=cX3c1ItAH6o"
+      },
+      {
+        "name": "Sabrina Carpenter - Espresso (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=D_hoEwdRo1I"
+      },
+      {
+        "name": "Lady Gaga - Abracadabra (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=lwOuEq_FoOo"
+      },
+      {
+        "name": "Eloise - It All Goes (Visualizer)",
+        "url": "https://www.youtube.com/watch?v=-xq36F92BDY"
+      },
+      {
+        "name": "Olivia Dean - A Couple Minutes (Lyric Video)",
+        "url": "https://www.youtube.com/watch?v=lrS1LC2cu-U"
+      },
+      {
+        "name": "Kendrick Lamar - luther (Lyrics) ft. SZA",
+        "url": "https://www.youtube.com/watch?v=0vPdpUiVWi8"
+      },
+      {
+        "name": "Sabrina Carpenter - Manchild (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=TAZkHYyio-M"
+      },
+      {
+        "name": "Tony Michael -   Sin Again [Official Videolizer]",
+        "url": "https://www.youtube.com/watch?v=IMtOe-z-04c"
+      },
+      {
+        "name": "Katy Perry - The One That Got Away (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=BwYRQc_4Bdw"
+      },
+      {
+        "name": "Darin feat. Eloise - Falling In love (Music Video)",
+        "url": "https://www.youtube.com/watch?v=nb39Ym4YwVs"
+      },
+      {
+        "name": "@sza - Saturn (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=eYalXJvJ2Mg"
+      },
+      {
+        "name": "yung kai - blue (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=4adZ7AguVcw"
+      },
+      {
+        "name": "Morgan Wallen - What I Want (feat. Tate McRae) (Lyric Video)",
+        "url": "https://www.youtube.com/watch?v=hNrwlzBeFN8"
+      },
+      {
+        "name": "Addison Rae - Diet Pepsi (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=XgSobzBJFtg"
+      },
+      {
+        "name": "Kehlani - Folded (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=BclvXp0t-G0"
+      },
+      {
+        "name": "Taylor Swift - Cruel Summer",
+        "url": "https://www.youtube.com/watch?v=JLJcHbYSlB8"
+      },
+      {
+        "name": "STELLA LEFTY - Boston (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=VrChRBLw3OQ"
+      },
+      {
+        "name": "Hozier - Too Sweet (Lyrics) \"i take my whiskey neat\"",
+        "url": "https://www.youtube.com/watch?v=Sg3hU_sdhKw"
+      },
+      {
+        "name": "Rema, Selena Gomez - Calm Down (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=G-D80U_u3sk"
+      },
+      {
+        "name": "The Weeknd, Ariana Grande - Die For You (Remix / Lyric Video)",
+        "url": "https://www.youtube.com/watch?v=YQ-qToZUybM"
+      },
+      {
+        "name": "Metito - On my mind (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=IHfmFfBhf5s"
+      },
+      {
+        "name": "James Arthur - Train Wreck (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=CveANi17YfU"
+      },
+      {
+        "name": "Tom Odell - Another Love (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=Jkj36B1YuDU"
+      },
+      {
+        "name": "James Arthur - Impossible (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=mzAwKKRGXSk"
+      },
+      {
+        "name": "Stephen Sanchez - Until I Found You (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=GhQxrCrVSyw"
+      },
+      {
+        "name": "Ella Langley - Be Her (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=BV9pJr7iyhg"
+      },
+      {
+        "name": "Billie Jean - Michael Jackson (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=QRidtXn0u7k"
+      },
+      {
+        "name": "The 046 x Nyxladd - COME MY WAY (Prod. Sefru)",
+        "url": "https://www.youtube.com/watch?v=krgr5MUBcPk"
+      },
+      {
+        "name": "Taylor Swift - Blank Space",
+        "url": "https://www.youtube.com/watch?v=e-ORhEE9VVg"
+      },
+      {
+        "name": "The Weeknd - Starboy ft. Daft Punk (Official Video) ft. Daft Punk",
+        "url": "https://www.youtube.com/watch?v=34Na4j8AVgA"
+      },
+      {
+        "name": "Naughty Boy - La la la ft. Sam Smith (Official Video)",
+        "url": "https://www.youtube.com/watch?v=3O1_3zBUKM8"
+      },
+      {
+        "name": "One Direction - Night Changes",
+        "url": "https://www.youtube.com/watch?v=syFZfO_wfMQ"
+      },
+      {
+        "name": "Ed Sheeran - Perfect (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=2Vv-BfVoq4g"
+      },
+      {
+        "name": "Post Malone, Swae Lee - Sunflower (Spider-Man: Into the Spider-Verse)",
+        "url": "https://www.youtube.com/watch?v=ApXoWvfEYVU"
+      },
+      {
+        "name": "The Black Eyed Peas - Rock That Body (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=nmnjL26OBcY"
+      },
+      {
+        "name": "Mark Ronson - Uptown Funk (Official Video) ft. Bruno Mars",
+        "url": "https://www.youtube.com/watch?v=OPf0YbXqDm0"
+      },
+      {
+        "name": "Luis Fonsi, Daddy Yankee - Despacito (Audio) ft. Justin Bieber",
+        "url": "https://www.youtube.com/watch?v=72UO0v5ESUo"
+      },
+      {
+        "name": "Adele - Rolling in the Deep (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=rYEDA3JcQqw"
+      },
+      {
+        "name": "Ed Sheeran - Shape of You (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=JGwWNGJdvx8"
+      },
+      {
+        "name": "Passenger | Let Her Go (Official Video)",
+        "url": "https://www.youtube.com/watch?v=RBumgq5yVrA"
+      },
+      {
+        "name": "Bruno Mars - The Lazy Song (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=fLexgOxsZu0"
+      },
+      {
+        "name": "Katy Perry - Roar",
+        "url": "https://www.youtube.com/watch?v=CevxZvSJLk8"
+      },
+      {
+        "name": "OneRepublic - Counting Stars",
+        "url": "https://www.youtube.com/watch?v=hT_nvWreIhg"
+      },
+      {
+        "name": "Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video]",
+        "url": "https://www.youtube.com/watch?v=3AtDnEC4zak"
+      },
+      {
+        "name": "Maroon 5 - Girls Like You ft. Cardi B (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=aJOTlE1K90k"
+      },
+      {
+        "name": "Billie Eilish, Khalid - lovely",
+        "url": "https://www.youtube.com/watch?v=V1Pl8CzNzCw"
+      },
+      {
+        "name": "twenty one pilots: Stressed Out [OFFICIAL VIDEO]",
+        "url": "https://www.youtube.com/watch?v=pXRviuL6vMY"
+      },
+      {
+        "name": "Alan Walker - Faded",
+        "url": "https://www.youtube.com/watch?v=60ItHLz5WEA"
+      },
+      {
+        "name": "Major Lazer & DJ Snake - Lean On (feat. MØ) [Official 4K Music Video]",
+        "url": "https://www.youtube.com/watch?v=YqeW9_5kURI"
+      },
+      {
+        "name": "One Direction - What Makes You Beautiful (Official Video)",
+        "url": "https://www.youtube.com/watch?v=QJO3ROT-A4E"
+      },
+      {
+        "name": "TONES AND I - DANCE MONKEY (OFFICIAL VIDEO)",
+        "url": "https://www.youtube.com/watch?v=q0hyYWKXF0Q"
+      },
+      {
+        "name": "Imagine Dragons - Believer (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=7wtfhZwyrcc"
+      },
+      {
+        "name": "Dua Lipa - New Rules (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=k2qgadSvNyU"
+      },
+      {
+        "name": "RoadRunna Bizzy - Pic (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=GahVHfUJVj4"
+      },
+      {
+        "name": "DJ Snake - Let Me Love You (Official Music Video) ft. Justin Bieber",
+        "url": "https://www.youtube.com/watch?v=euCqAq6BRa4"
+      },
+      {
+        "name": "Katy Perry - Dark Horse ft. Juicy J",
+        "url": "https://www.youtube.com/watch?v=0KSOMA3QBU0"
+      },
+      {
+        "name": "Lukas Graham - 7 Years [Official Music Video]",
+        "url": "https://www.youtube.com/watch?v=LHCob76kigA"
+      },
+      {
+        "name": "Journey To Fansipan, Sapa Vietnam PART 3/ Vlog Review No. 369",
+        "url": "https://www.youtube.com/watch?v=nCfsHnWrhsM"
+      },
+      {
+        "name": "Anne-Marie & James Arthur - Rewrite The Stars [from The Greatest Showman: Reimagined]",
+        "url": "https://www.youtube.com/watch?v=pRfmrE0ToTo"
+      },
+      {
+        "name": "Wiz Khalifa - See You Again ft. Charlie Puth [Official Video] Furious 7 Soundtrack",
+        "url": "https://www.youtube.com/watch?v=RgKAFK5djSk"
+      },
+      {
+        "name": "Christina Perri - A Thousand Years [Official Music Video]",
+        "url": "https://www.youtube.com/watch?v=rtOvBOTyX00"
+      },
+      {
+        "name": "ZAYN - Dusk Till Dawn (Official Video) ft. Sia",
+        "url": "https://www.youtube.com/watch?v=tt2k8PGm-TI"
+      },
+      {
+        "name": "Maroon 5 - Sugar (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=09R8_2nJtjg"
+      },
+      {
+        "name": "Gotye - Somebody That I Used To Know (feat. Kimbra) [Official Music Video]",
+        "url": "https://www.youtube.com/watch?v=8UVNT4wvIGY"
+      },
+      {
+        "name": "MAGIC! - Rude (Official Video)",
+        "url": "https://www.youtube.com/watch?v=PIh2xe4jnpk"
+      },
+      {
+        "name": "Arrhythmia (Love Me Tonight, Tonight)",
+        "url": "https://www.youtube.com/watch?v=bxl5pEBYctM"
+      },
+      {
+        "name": "Khalid - Better (Official Video)",
+        "url": "https://www.youtube.com/watch?v=x3bfa3DZ8JM"
+      },
+      {
+        "name": "Pharrell Williams - Happy (Official Video)",
+        "url": "https://www.youtube.com/watch?v=ZbZSe6N_BXs"
+      },
+      {
+        "name": "Dua Lipa - Don't Start Now (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=oygrmJFKYZY"
+      },
+      {
+        "name": "Juice WRLD - Lucid Dreams (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=mzB1VGEGcSU"
+      },
+      {
+        "name": "Journey To Fansipan, Sapa Vietnam PART 2/ Vlog Review No. 368",
+        "url": "https://www.youtube.com/watch?v=A11c1C0onY4"
+      },
+      {
+        "name": "Maroon 5 - Memories (Official Video)",
+        "url": "https://www.youtube.com/watch?v=SlPhMPnQ58k"
+      },
+      {
+        "name": "Drake - One Dance (Original)",
+        "url": "https://www.youtube.com/watch?v=m7fFVAu9eeg"
+      },
+      {
+        "name": "Post Malone - Circles",
+        "url": "https://www.youtube.com/watch?v=wXhTHyIgQ_U"
+      },
+      {
+        "name": "XXXTENTACION - SAD!",
+        "url": "https://www.youtube.com/watch?v=pgN-vvVVxMA"
+      },
+      {
+        "name": "DJ Snake - Taki Taki ft. Selena Gomez, Ozuna, Cardi B (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=ixkoVwKQaJg"
+      },
+      {
+        "name": "Lewis Capaldi - Someone You Loved",
+        "url": "https://www.youtube.com/watch?v=zABLecsR5UE"
+      },
+      {
+        "name": "Dark Ambient Music Meets Gothic Club — Nosferatu Voguing (Official Video)",
+        "url": "https://www.youtube.com/watch?v=U_jO1ZJeBGI"
+      },
+      {
+        "name": "Lil Nas X - Old Town Road (Official Video) ft. Billy Ray Cyrus",
+        "url": "https://www.youtube.com/watch?v=r7qovpFAGrQ"
+      },
+      {
+        "name": "Bajton - Bamboo Ride (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=mfpuotHG2Wg"
+      },
+      {
+        "name": "Anne-Marie - 2002 [Official Video]",
+        "url": "https://www.youtube.com/watch?v=Il-an3K9pjg"
+      },
+      {
+        "name": "Lady Gaga, Bradley Cooper - Shallow (from A Star Is Born) (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=bo_efYhYU2A"
+      },
+      {
+        "name": "Shawn Mendes, Camila Cabello - Señorita",
+        "url": "https://www.youtube.com/watch?v=Pkh8UtuejGw"
+      },
+      {
+        "name": "Journey To Fansipan, Sapa Vietnam PART 1/ Vlog Review No. 367",
+        "url": "https://www.youtube.com/watch?v=SnZl182edvU"
+      },
+      {
+        "name": "Drake - God's Plan",
+        "url": "https://www.youtube.com/watch?v=xpVfcZ0ZcFM"
+      },
+      {
+        "name": "Post Malone - Psycho (Official Music Video) ft. Ty Dolla $ign",
+        "url": "https://www.youtube.com/watch?v=au2n7VVGv_c"
+      },
+      {
+        "name": "Ed Sheeran & Justin Bieber - I Don't Care [Official Music Video]",
+        "url": "https://www.youtube.com/watch?v=y83x7MgzWOA"
+      },
+      {
+        "name": "Billie Eilish - bad guy",
+        "url": "https://www.youtube.com/watch?v=DyDfgMOUjCI"
+      },
+      {
+        "name": "Ariana Grande - thank u, next (Official Video)",
+        "url": "https://www.youtube.com/watch?v=gl1aHhXnN1k"
+      },
+      {
+        "name": "Busydakid - Wanna Know (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=6QQTXIYKKXs"
+      },
+      {
+        "name": "Halsey - Without Me",
+        "url": "https://www.youtube.com/watch?v=ZAfAud_M_mg"
+      },
+      {
+        "name": "Post Malone - Better Now",
+        "url": "https://www.youtube.com/watch?v=UYwF-jdcVjY"
+      },
+      {
+        "name": "Marshmello ft. Bastille - Happier (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=m7Bc3pLyij0"
+      },
+      {
+        "name": "Ava Max - Sweet but Psycho [Official Music Video]",
+        "url": "https://www.youtube.com/watch?v=WXBHCQYxwr0"
+      },
+      {
+        "name": "Clean Bandit - Solo (feat. Demi Lovato) [Official Video]",
+        "url": "https://www.youtube.com/watch?v=8JnfIa84TnU"
+      },
+      {
+        "name": "Ella Mai - Boo'd Up",
+        "url": "https://www.youtube.com/watch?v=6YNZlXfW6Ho"
+      },
+      {
+        "name": "Cardi B, Bad Bunny & J Balvin - I Like It [Official Music Video]",
+        "url": "https://www.youtube.com/watch?v=xTlNMmZKwpA"
+      },
+      {
+        "name": "Dua Lipa - IDGAF (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=Mgfe5tIwOj0"
+      },
+      {
+        "name": "The Grand Voyage At Grand World Hanoi / Vlog Review No. 366",
+        "url": "https://www.youtube.com/watch?v=vFuMz5quANQ"
+      },
+      {
+        "name": "Calum Scott - You Are The Reason (Official Video)",
+        "url": "https://www.youtube.com/watch?v=ShZ978fBl6Y"
+      },
+      {
+        "name": "Daisy Flow | Flower Rebels | Hippie Folk & Female Rap",
+        "url": "https://www.youtube.com/watch?v=22RJ_vERE28"
+      },
+      {
+        "name": "Post Malone - rockstar (Official Music Video) ft. 21 Savage",
+        "url": "https://www.youtube.com/watch?v=UceaB4D0jpo"
+      },
+      {
+        "name": "Sam Smith - Too Good At Goodbyes",
+        "url": "https://www.youtube.com/watch?v=J_ub7Etch2U"
+      },
+      {
+        "name": "Shawn Mendes - There's Nothing Holdin' Me Back (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=dT2owtxkU8k"
+      },
+      {
+        "name": "Harry Styles - Sign of the Times (Official Video)",
+        "url": "https://www.youtube.com/watch?v=qN4ooNx77u0"
+      },
+      {
+        "name": "Imagine Dragons - Thunder",
+        "url": "https://www.youtube.com/watch?v=fKopy74weus"
+      },
+      {
+        "name": "Charlie Puth - Attention [Official Video]",
+        "url": "https://www.youtube.com/watch?v=nfs8NYg7yQM"
+      },
+      {
+        "name": "Clean Bandit - Symphony (feat. Zara Larsson) [Official Video]",
+        "url": "https://www.youtube.com/watch?v=aatr_2MstrI"
+      },
+      {
+        "name": "DJ Khaled - I'm The One ft. Justin Bieber, Quavo, Chance the Rapper, Lil Wayne",
+        "url": "https://www.youtube.com/watch?v=weeI1G46q0o"
+      },
+      {
+        "name": "Bruno Mars - That’s What I Like [Official Music Video]",
+        "url": "https://www.youtube.com/watch?v=PMivT7MJ41M"
+      },
+      {
+        "name": "The Chainsmokers & Coldplay - Something Just Like This (Official Lyric Video)",
+        "url": "https://www.youtube.com/watch?v=FM7MFYoylVs"
+      },
+      {
+        "name": "Cocktail (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=o1vWoeG8XGg"
+      },
+      {
+        "name": "Clean Bandit - Rockabye (feat. Sean Paul & Anne-Marie) [Official Video]",
+        "url": "https://www.youtube.com/watch?v=papuvlVeZg8"
+      },
+      {
+        "name": "Maroon 5 - Don't Wanna Know (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=ANS9sSJA9Yc"
+      },
+      {
+        "name": "James Arthur - Say You Won't Let Go",
+        "url": "https://www.youtube.com/watch?v=0yW7w8F2TVA"
+      },
+      {
+        "name": "Rong May Glass Bridge (Sapa Glass Walk) / Vlog Review No. 363",
+        "url": "https://www.youtube.com/watch?v=Cf-QmYNDmjA"
+      },
+      {
+        "name": "Ariana Grande ft. Nicki Minaj - Side To Side (Official Video) ft. Nicki Minaj",
+        "url": "https://www.youtube.com/watch?v=SXiSVQZLje8"
+      },
+      {
+        "name": "Shawn Mendes - Treat You Better",
+        "url": "https://www.youtube.com/watch?v=lY2yjAdbvdQ"
+      },
+      {
+        "name": "twenty one pilots: Heathens (from Suicide Squad: The Album) [OFFICIAL VIDEO]",
+        "url": "https://www.youtube.com/watch?v=UprcpdwuwCg"
+      },
+      {
+        "name": "Calvin Harris, Rihanna - This Is What You Came For (Official Video)",
+        "url": "https://www.youtube.com/watch?v=kOkQ4T5WO9E"
+      },
+      {
+        "name": "Justin Timberlake - CAN'T STOP THE FEELING! (from DreamWorks Animation's \"TROLLS\") (Official Video)",
+        "url": "https://www.youtube.com/watch?v=ru0K8uYEZWw"
+      },
+      {
+        "name": "The Chainsmokers - Don't Let Me Down (Official Video) ft. Daya",
+        "url": "https://www.youtube.com/watch?v=Io0fBr1XBUA"
+      },
+      {
+        "name": "ARTIFICIAL WORLD by DEBORAH MANNAS - OFFICIAL MV",
+        "url": "https://www.youtube.com/watch?v=PraltDAgaM8"
+      },
+      {
+        "name": "Rihanna - Work (Explicit) ft. Drake",
+        "url": "https://www.youtube.com/watch?v=HL1UzIK-flA"
+      },
+      {
+        "name": "Sia - Cheap Thrills (Official Lyric Video) ft. Sean Paul",
+        "url": "https://www.youtube.com/watch?v=nYh-n7EOtMA"
+      },
+      {
+        "name": "Justin Bieber - Love Yourself (PURPOSE : The Movement)",
+        "url": "https://www.youtube.com/watch?v=oyEuk8j8imI"
+      },
+      {
+        "name": "Adele - Hello (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=YQHsXMglC9A"
+      },
+      {
+        "name": "DNCE - Cake By The Ocean",
+        "url": "https://www.youtube.com/watch?v=vWaRiD5ym74"
+      },
+      {
+        "name": "Selena Gomez - Same Old Love",
+        "url": "https://www.youtube.com/watch?v=9h30Bx4Klxg"
+      },
+      {
+        "name": "Charlie Puth - One Call Away [Official Video]",
+        "url": "https://www.youtube.com/watch?v=BxuY9FET9Y4"
+      },
+      {
+        "name": "R. City - Locked Away (Official Video) ft. Adam Levine",
+        "url": "https://www.youtube.com/watch?v=6GUm5g8SG4o"
+      },
+      {
+        "name": "Meghan Trainor - Like I'm Gonna Lose You (Official Video) ft. John Legend",
+        "url": "https://www.youtube.com/watch?v=2-MBfn8XjIU"
+      },
+      {
+        "name": "Hanoi Sky - Lotte Observation Deck / Vlog Review No. 365",
+        "url": "https://www.youtube.com/watch?v=y03lQys6PBE"
+      },
+      {
+        "name": "Shawn Mendes - Stitches (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=VbfpW0pbvaU"
+      },
+      {
+        "name": "Moving Dolly - JT Catalano [Official Music Video] [Country Pop / Country Rock]",
+        "url": "https://www.youtube.com/watch?v=gwCkiaEuA5g"
+      },
+      {
+        "name": "Little Mix - Black Magic (Official Video)",
+        "url": "https://www.youtube.com/watch?v=MkElfR_NPBI"
+      },
+      {
+        "name": "Rachel Platten - Fight Song (Official Video)",
+        "url": "https://www.youtube.com/watch?v=xo1VInw-SKc"
+      },
+      {
+        "name": "twenty one pilots - Ride (Official Video)",
+        "url": "https://www.youtube.com/watch?v=Pw-0pbY9JeU"
+      },
+      {
+        "name": "Ed Sheeran - Photograph (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=nSDgHBxUbVQ"
+      },
+      {
+        "name": "Ellie Goulding - Love Me Like You Do (Official Video)",
+        "url": "https://www.youtube.com/watch?v=AJtDXIazrMo"
+      },
+      {
+        "name": "Fifth Harmony - Worth It (Official Video) ft. Kid Ink",
+        "url": "https://www.youtube.com/watch?v=YBHQbu5rbdQ"
+      },
+      {
+        "name": "Jessie J - Bang Bang ft. Ariana Grande, Nicki Minaj",
+        "url": "https://www.youtube.com/watch?v=0HDdjwpPM3Y"
+      },
+      {
+        "name": "Taylor Swift - Shake It Off",
+        "url": "https://www.youtube.com/watch?v=nfWlot6h_JM"
+      },
+      {
+        "name": "Sam Smith - I'm Not The Only One (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=nCkpzqqog4k"
+      },
+      {
+        "name": "Ed Sheeran - Thinking Out Loud (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=lp-EO5I60KA"
+      },
+      {
+        "name": "MOJO | JT Catalano [Alternative Hip-Hop / Pop Rap]",
+        "url": "https://www.youtube.com/watch?v=rB67718MYIE"
+      },
+      {
+        "name": "Meghan Trainor - All About That Bass (Official Video)",
+        "url": "https://www.youtube.com/watch?v=7PCkvCPvDXk"
+      },
+      {
+        "name": "Jason Derulo - Wiggle feat. Snoop Dogg [Official Music Video]",
+        "url": "https://www.youtube.com/watch?v=hiP14ED28CA"
+      },
+      {
+        "name": "Sia - Chandelier (Official Video)",
+        "url": "https://www.youtube.com/watch?v=2vjPBrBU-TM"
+      },
+      {
+        "name": "Snow Play at Gransnow Okuibuki Near Kyoto & Osaka / Vlog Review No. 347",
+        "url": "https://www.youtube.com/watch?v=8lyjjw6nGP0"
+      },
+      {
+        "name": "Sam Smith - Stay With Me (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=pB-5XG-DbAA"
+      },
+      {
+        "name": "Iggy Azalea - Fancy ft. Charli XCX",
+        "url": "https://www.youtube.com/watch?v=O-zpOMYRi0w"
+      },
+      {
+        "name": "John Legend - All of Me (Official Video)",
+        "url": "https://www.youtube.com/watch?v=450p7goxZqg"
+      },
+      {
+        "name": "Miley Cyrus - Wrecking Ball (Official Video)",
+        "url": "https://www.youtube.com/watch?v=My2FRPA3Gf8"
+      },
+      {
+        "name": "One Direction - One Thing",
+        "url": "https://www.youtube.com/watch?v=Y1xs_xPb46M"
+      },
+      {
+        "name": "Lorde - Royals (US Version)",
+        "url": "https://www.youtube.com/watch?v=nlcIKh6sBtc"
+      },
+      {
+        "name": "P!nk - Just Give Me a Reason (Official Video) ft. Nate Ruess",
+        "url": "https://www.youtube.com/watch?v=OpQFFLBMEPI"
+      },
+      {
+        "name": "Imagine Dragons - Radioactive",
+        "url": "https://www.youtube.com/watch?v=ktvTqknDobU"
+      },
+      {
+        "name": "MACKLEMORE & RYAN LEWIS - THRIFT SHOP FEAT. WANZ (OFFICIAL VIDEO)",
+        "url": "https://www.youtube.com/watch?v=QK8mJJJvaes"
+      },
+      {
+        "name": "Carly Rae Jepsen - Call Me Maybe",
+        "url": "https://www.youtube.com/watch?v=fWNaR-rxAic"
+      },
+      {
+        "name": "Fun.: We Are Young ft. Janelle Monáe [OFFICIAL VIDEO]",
+        "url": "https://www.youtube.com/watch?v=Sv6dMFF_yts"
+      },
+      {
+        "name": "Rihanna - We Found Love ft. Calvin Harris",
+        "url": "https://www.youtube.com/watch?v=tg00YEETFzg"
+      },
+      {
+        "name": "Adele - Someone Like You (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=hLQl3WQQoQ0"
+      },
+      {
+        "name": "Maroon 5 - Moves Like Jagger ft. Christina Aguilera (Official Music Video) ft. Christina Aguilera",
+        "url": "https://www.youtube.com/watch?v=iEPTlhBmwRg"
+      },
+      {
+        "name": "Nicki Minaj - Super Bass (Official Video)",
+        "url": "https://www.youtube.com/watch?v=4JipHEz53sU"
+      },
+      {
+        "name": "Hanoi Train Street Part 1 /Vlog Review No. 362",
+        "url": "https://www.youtube.com/watch?v=ZjtbUlMprDk"
+      },
+      {
+        "name": "David Guetta - Titanium ft. Sia (Official Video)",
+        "url": "https://www.youtube.com/watch?v=JRfuAukYTKg"
+      },
+      {
+        "name": "Katy Perry - Firework (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=QGJuMBdaqIw"
+      },
+      {
+        "name": "Y2K, bbno$ - Lalala (Official Video)",
+        "url": "https://www.youtube.com/watch?v=N2Y2vQ-1m7M"
+      },
+      {
+        "name": "Bruno Mars - Grenade (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=SR6iYWJxHqs"
+      },
+      {
+        "name": "Sam Smith, Normani - Dancing With A Stranger (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=av5JD1dfj_c"
+      },
+      {
+        "name": "Ariana Grande - 7 rings (Official Video)",
+        "url": "https://www.youtube.com/watch?v=QYh6mYIJG2Y"
+      },
+      {
+        "name": "Justin Bieber - Sorry (PURPOSE : The Movement)",
+        "url": "https://www.youtube.com/watch?v=fRh_vgS2dFE"
+      },
+      {
+        "name": "Billie Eilish - when the party's over",
+        "url": "https://www.youtube.com/watch?v=pbMwTqkKSps"
+      },
+      {
+        "name": "Travis Scott - SICKO MODE (Official Video) ft. Drake",
+        "url": "https://www.youtube.com/watch?v=6ONRf7h3Mdk"
+      },
+      {
+        "name": "Panic! At The Disco - High Hopes (Official Video)",
+        "url": "https://www.youtube.com/watch?v=IPXIgEAGe4U"
+      },
+      {
+        "name": "Calvin Harris, Dua Lipa - One Kiss (Official Video)",
+        "url": "https://www.youtube.com/watch?v=DkeiKbqa02g"
+      },
+      {
+        "name": "Marshmello & Anne-Marie - FRIENDS (Music Video) *OFFICIAL FRIENDZONE ANTHEM*",
+        "url": "https://www.youtube.com/watch?v=jzD_yyEcp0M"
+      },
+      {
+        "name": "Selena Gomez, Marshmello - Wolves",
+        "url": "https://www.youtube.com/watch?v=cH4E_t3m3xM"
+      },
+      {
+        "name": "Taylor Swift - Look What You Made Me Do",
+        "url": "https://www.youtube.com/watch?v=3tmd-ClpJxA"
+      },
+      {
+        "name": "benny blanco, Halsey & Khalid – Eastside (official video)",
+        "url": "https://www.youtube.com/watch?v=56WBK4ZK_cw"
+      },
+      {
+        "name": "French Montana - Unforgettable (Mariah Carey Remix) (Audio) ft. Swae Lee, Mariah Carey",
+        "url": "https://www.youtube.com/watch?v=5jFwMW5937o"
+      },
+      {
+        "name": "J Balvin, Willy William - Mi Gente (Official Video)",
+        "url": "https://www.youtube.com/watch?v=wnJ6LuUFpMo"
+      },
+      {
+        "name": "Ariana Grande - no tears left to cry (Official Video)",
+        "url": "https://www.youtube.com/watch?v=ffxKSjUwKdU"
+      },
+      {
+        "name": "Justin Bieber - Beauty And A Beat (Official Music Video) ft. Nicki Minaj",
+        "url": "https://www.youtube.com/watch?v=Ys7-6_t7OEQ"
+      },
+      {
+        "name": "One Direction - Best Song Ever",
+        "url": "https://www.youtube.com/watch?v=o_v9MY_FMcw"
+      },
+      {
+        "name": "DJ Khaled - Wild Thoughts (Official Video) ft. Rihanna, Bryson Tiller",
+        "url": "https://www.youtube.com/watch?v=fyaI4-5849w"
+      },
+      {
+        "name": "Ayo & Teo - Rolex (Official Video)",
+        "url": "https://www.youtube.com/watch?v=lwk5OUII9Vc"
+      },
+      {
+        "name": "Jason Derulo - Swalla (feat. Nicki Minaj & Ty Dolla $ign) [Official Music Video]",
+        "url": "https://www.youtube.com/watch?v=NGLxoKOvzu4"
+      },
+      {
+        "name": "The Weeknd - I Feel It Coming ft. Daft Punk (Official Video)",
+        "url": "https://www.youtube.com/watch?v=qFLhGq0060w"
+      },
+      {
+        "name": "Bruno Mars - 24K Magic (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=UqyT8IEBkvY"
+      },
+      {
+        "name": "The Chainsmokers - Closer (Lyric) ft. Halsey",
+        "url": "https://www.youtube.com/watch?v=PT2_F-1esPk"
+      },
+      {
+        "name": "Marshmello - Alone (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=ALZHF5UqnU4"
+      },
+      {
+        "name": "Coldplay - Hymn For The Weekend (Official Video)",
+        "url": "https://www.youtube.com/watch?v=YykjpeuMNEk"
+      },
+      {
+        "name": "The Weeknd - Can't Feel My Face (Official Video)",
+        "url": "https://www.youtube.com/watch?v=KEI4qSrkPAs"
+      },
+      {
+        "name": "Adele - Send My Love (To Your New Lover)",
+        "url": "https://www.youtube.com/watch?v=fk4BbF7B29w"
+      },
+      {
+        "name": "Taylor Swift - Bad Blood ft. Kendrick Lamar",
+        "url": "https://www.youtube.com/watch?v=QcIy9NiNbmo"
+      },
+      {
+        "name": "Coldplay - A Sky Full Of Stars (Official Video)",
+        "url": "https://www.youtube.com/watch?v=VPRjCeoBqrI"
+      },
+      {
+        "name": "MACKLEMORE & RYAN LEWIS - CAN'T HOLD US FEAT. RAY DALTON (OFFICIAL MUSIC VIDEO)",
+        "url": "https://www.youtube.com/watch?v=2zNSgSzhBfM"
+      },
+      {
+        "name": "Bruno Mars - Just The Way You Are (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=LjhCEhWiKXk"
+      },
+      {
+        "name": "Selena Gomez - Lose You To Love Me (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=zlJDTxahav0"
+      },
+      {
+        "name": "Dan + Shay, Justin Bieber - 10,000 Hours (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=Y2E71oe0aSM"
+      },
+      {
+        "name": "Sam Smith - How Do You Sleep? (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=PmYypVozQb4"
+      },
+      {
+        "name": "Shawn Mendes - If I Can't Have You (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=oTJ-oqwxdZY"
+      },
+      {
+        "name": "Khalid - Talk (Official Video)",
+        "url": "https://www.youtube.com/watch?v=hE2Ira-Cwxo"
+      },
+      {
+        "name": "Jonas Brothers - Sucker (Official Video)",
+        "url": "https://www.youtube.com/watch?v=CnAmeh0-E-U"
+      },
+      {
+        "name": "Daniel Caesar & H.E.R. - Best Part, a Visual",
+        "url": "https://www.youtube.com/watch?v=hKgl5-lkT8U"
+      },
+      {
+        "name": "Bazzi - Mine [Official Music Video]",
+        "url": "https://www.youtube.com/watch?v=Gc71AmT_b2k"
+      },
+      {
+        "name": "Zedd, Maren Morris, Grey - The Middle (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=M3mJkSqZbX4"
+      },
+      {
+        "name": "Camila Cabello - Havana (Vertical Video) ft. Young Thug",
+        "url": "https://www.youtube.com/watch?v=pz95u3UVpaM"
+      },
+      {
+        "name": "P!NK - What About Us (Official Video)",
+        "url": "https://www.youtube.com/watch?v=ClU3fctbGls"
+      },
+      {
+        "name": "Lauv - I Like Me Better [Official Video]",
+        "url": "https://www.youtube.com/watch?v=BcqxLCWn-CE"
+      },
+      {
+        "name": "Selena Gomez - Bad Liar",
+        "url": "https://www.youtube.com/watch?v=NZKXkD6EgBk"
+      },
+      {
+        "name": "Liam Payne - Strip That Down ft. Quavo",
+        "url": "https://www.youtube.com/watch?v=vSW2M-BB1NE"
+      },
+      {
+        "name": "Jason Derulo - \"Want To Want Me\" (Official Video)",
+        "url": "https://www.youtube.com/watch?v=rClUOdS5Zyw"
+      },
+      {
+        "name": "WALK THE MOON - Shut Up and Dance (Official Video)",
+        "url": "https://www.youtube.com/watch?v=6JCLY0Rlx6Q"
+      },
+      {
+        "name": "Jessie J - Domino (Official Video)",
+        "url": "https://www.youtube.com/watch?v=UJtB55MaoD0"
+      },
+      {
+        "name": "Alan Walker & Ava Max - Alone, Pt. II",
+        "url": "https://www.youtube.com/watch?v=HhjHYkPQ8F0"
+      },
+      {
+        "name": "Chris Brown - No Guidance (Audio) ft. Drake",
+        "url": "https://www.youtube.com/watch?v=oOni4BMeMp0"
+      },
+      {
+        "name": "Katy Perry - Never Really Over (Official Video)",
+        "url": "https://www.youtube.com/watch?v=aEb5gNsmGJ8"
+      },
+      {
+        "name": "Shawn Mendes - In My Blood",
+        "url": "https://www.youtube.com/watch?v=36tggrpRoTI"
+      },
+      {
+        "name": "The Lumineers - Ho Hey (Official Video)",
+        "url": "https://www.youtube.com/watch?v=zvCBSSwgtg4"
+      },
+      {
+        "name": "The Chainsmokers - Roses (Official Lyric Video) ft. ROZES",
+        "url": "https://www.youtube.com/watch?v=mBZdHuZCfic"
+      },
+      {
+        "name": "Bazzi - Beautiful [Official Music Video]",
+        "url": "https://www.youtube.com/watch?v=-bx_vG94LSo"
+      },
+      {
+        "name": "Selena Gomez - The Heart Wants What It Wants (Official Video)",
+        "url": "https://www.youtube.com/watch?v=ij_0p_6qTss"
+      },
+      {
+        "name": "Andy Grammer - Fresh Eyes (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=5bgemCaaQkU"
+      },
+      {
+        "name": "Mariah Carey - Up Out My Face (Official Music Video) ft. Nicki Minaj",
+        "url": "https://www.youtube.com/watch?v=5i7GEMQC2IY"
+      },
+      {
+        "name": "Khalid & Normani - Love Lies (Official Video)",
+        "url": "https://www.youtube.com/watch?v=xYtsL9znopI"
+      },
+      {
+        "name": "Zedd, Alessia Cara - Stay (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=yWEK4v9AVKQ"
+      },
+      {
+        "name": "Major Lazer - Cold Water (feat. Justin Bieber & MØ) [Official Dance Video]",
+        "url": "https://www.youtube.com/watch?v=nBtDsQ4fhXY"
+      },
+      {
+        "name": "Kygo, Selena Gomez - It Ain't Me (Official Video)",
+        "url": "https://www.youtube.com/watch?v=u3VTKvdAuIY"
+      },
+      {
+        "name": "DJ Snake - Middle ft. Bipolar Sunshine",
+        "url": "https://www.youtube.com/watch?v=IvPT2QuCIOA"
+      },
+      {
+        "name": "Ed Sheeran - Castle On The Hill [Official Music Video]",
+        "url": "https://www.youtube.com/watch?v=K0ibBPhiaG0"
+      },
+      {
+        "name": "Chris Brown - New Flame (Official Video) ft. Usher, Rick Ross",
+        "url": "https://www.youtube.com/watch?v=HwctEiWLe84"
+      },
+      {
+        "name": "Post Malone - Congratulations (Official Music Video) ft. Quavo",
+        "url": "https://www.youtube.com/watch?v=SC4xMk98Pdc"
+      },
+      {
+        "name": "Alan Walker - Alone",
+        "url": "https://www.youtube.com/watch?v=1-xGerv5FOk"
+      },
+      {
+        "name": "Selena Gomez - Come & Get It",
+        "url": "https://www.youtube.com/watch?v=n-D1EB74Ckg"
+      },
+      {
+        "name": "Lightly Child",
+        "url": "https://www.youtube.com/watch?v=0XI9sWxm2T0"
+      },
+      {
+        "name": "ROMANI - FLESH (Official Video)",
+        "url": "https://www.youtube.com/watch?v=P9gRRtSurvk"
+      },
+      {
+        "name": "Eulogy by Axley Jade Blaze | Official Lyric Video",
+        "url": "https://www.youtube.com/watch?v=Gf5kqVBvfpw"
+      },
+      {
+        "name": "Lost in the Reverb | Deep Emotional Chill Beats  | Official Video by KnotYou.com.    Remix !",
+        "url": "https://www.youtube.com/watch?v=k_w_9WAKJVc"
+      },
+      {
+        "name": "Lia Wu - RUN (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=NdYMuJ7rLP4"
+      },
+      {
+        "name": "Ariana Grande - hate that i made you love me (official music video)",
+        "url": "https://www.youtube.com/watch?v=82-jTNka3uc"
+      },
+      {
+        "name": "Taylor Swift - The Fate of Ophelia (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=ko70cExuzZM"
+      },
+      {
+        "name": "Bruno Mars - I Just Might [Official Music Video]",
+        "url": "https://www.youtube.com/watch?v=mrV8kK5t0V8"
+      },
+      {
+        "name": "Lady Gaga, Bruno Mars - Die With A Smile (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=kPa7bsKwL-c"
+      },
+      {
+        "name": "sombr - Homewrecker (official video)",
+        "url": "https://www.youtube.com/watch?v=mQezde_qeXw"
+      },
+      {
+        "name": "Katy Perry - bandaids (Official Video)",
+        "url": "https://www.youtube.com/watch?v=2kelRnwRA4w"
+      },
+      {
+        "name": "Alex Warren - Ordinary (Official Video)",
+        "url": "https://www.youtube.com/watch?v=u2ah9tWTkmk"
+      },
+      {
+        "name": "Benson Boone - Mystical Magical (Official Lyric Video)",
+        "url": "https://www.youtube.com/watch?v=U8QhB8_0t2g"
+      },
+      {
+        "name": "Billie Eilish - BIRDS OF A FEATHER (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=V9PVRfjEBTI"
+      },
+      {
+        "name": "Olivia Rodrigo - stupid song (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=Rt9tW3cMLhI"
+      },
+      {
+        "name": "Martin Garrix & Ed Sheeran - Repeat It (Official Video)",
+        "url": "https://www.youtube.com/watch?v=Sf9NZF5qBak"
+      },
+      {
+        "name": "PinkPantheress - Stateside + Zara Larsson (Official Video)",
+        "url": "https://www.youtube.com/watch?v=lIxQe1R5hs0"
+      },
+      {
+        "name": "Laufey - Madwoman (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=yNa8jP4zoJo"
+      },
+      {
+        "name": "Dua Lipa - Training Season (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=ZjBZ8MUnB0E"
+      },
+      {
+        "name": "Bruno Mars - Risk It All [Official Music Video]",
+        "url": "https://www.youtube.com/watch?v=lY5V4hSLWY8"
+      },
+      {
+        "name": "Dave - Raindance (ft. Tems)",
+        "url": "https://www.youtube.com/watch?v=SOJpE1KMUbo"
+      },
+      {
+        "name": "David Guetta, Teddy Swims, Tones and I - Gone Gone Gone [Official Music Video]",
+        "url": "https://www.youtube.com/watch?v=8iT9DRe3cHE"
+      },
+      {
+        "name": "Lil Uzi Vert - What You Saying - [Official Music Video]",
+        "url": "https://www.youtube.com/watch?v=s_TUESTU7_4"
+      },
+      {
+        "name": "MILEY - Bass Persuades (Official Video)",
+        "url": "https://www.youtube.com/watch?v=aWpw-Ynl0Yc"
+      },
+      {
+        "name": "Olivia Rodrigo - the cure (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=B402rKl4bUg"
+      },
+      {
+        "name": "Nickelback - Make Me Love You (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=5l5OKWE3rbA"
+      },
+      {
+        "name": "Sosseé - Jack In The Box",
+        "url": "https://www.youtube.com/watch?v=F9z-TqmZ6yc"
+      },
+      {
+        "name": "Taylor Swift - I Knew It, I Knew You (from Toy Story 5)",
+        "url": "https://www.youtube.com/watch?v=hDU4GB1PTxc"
+      },
+      {
+        "name": "Taylor Swift - Patient Zero (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=mw3kSNIxjqo"
+      },
+      {
+        "name": "Pumpky - LA CALABAZA (Official Video)",
+        "url": "https://www.youtube.com/watch?v=0ZDQbnAm9MU"
+      },
+      {
+        "name": "Taylor Swift - Elizabeth Taylor (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=WqbJT_vC0rs"
+      },
+      {
+        "name": "ZEP - NOBODY (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=AYD1m8Fn3LU"
+      },
+      {
+        "name": "Olivia Rodrigo - expectations (feat. Chappell Roan) (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=gsZauX8gwxo"
+      },
+      {
+        "name": "Charlie Puth - Home (feat. Hikaru Utada)",
+        "url": "https://www.youtube.com/watch?v=fKsETSl_cyU"
+      },
+      {
+        "name": "HoodTrophyBino x BabyMoney - Fell 4 IT",
+        "url": "https://www.youtube.com/watch?v=7XjAnpxHoF8"
+      },
+      {
+        "name": "Madonna & Sabrina Carpenter - Bring Your Love (Official Video)",
+        "url": "https://www.youtube.com/watch?v=EHrt-gFgvXo"
+      },
+      {
+        "name": "Alex Warren - Eternity (Official Video)",
+        "url": "https://www.youtube.com/watch?v=jXqf3uqLkkU"
+      },
+      {
+        "name": "Harry Styles - American Girls (Official Video)",
+        "url": "https://www.youtube.com/watch?v=o6jQo3-iCao"
+      },
+      {
+        "name": "Benson Boone - Beautiful Things (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=Oa_RSwwpPaA"
+      },
+      {
+        "name": "ADÉLA - Nicole Kidman",
+        "url": "https://www.youtube.com/watch?v=3sB4Iv_tM7U"
+      },
+      {
+        "name": "Philthy Rich x HoodTrophy Bino - Bout That (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=NGz1tygZF50"
+      },
+      {
+        "name": "ZAYN - Die For Me (Official Video)",
+        "url": "https://www.youtube.com/watch?v=LoElk8clGVg"
+      },
+      {
+        "name": "Shakira, Burna Boy - Dai Dai (Official Video)",
+        "url": "https://www.youtube.com/watch?v=fcnDmrtj6Sk"
+      },
+      {
+        "name": "Lady Gaga, Doechii - RUNWAY (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=XXIX2WnfbpE"
+      },
+      {
+        "name": "KAROL G, Bruno Mars - Still (Official Video)",
+        "url": "https://www.youtube.com/watch?v=aQXq3ndLkHs"
+      },
+      {
+        "name": "Tems - What You Need (Official Video)",
+        "url": "https://www.youtube.com/watch?v=A__GXZsG3hk"
+      },
+      {
+        "name": "KATSEYE (캣츠아이) \"Animal\" Official MV",
+        "url": "https://www.youtube.com/watch?v=m7k9UMcHbr0"
+      },
+      {
+        "name": "Jean Deaux- IMMACULATE (Official Visualizer)",
+        "url": "https://www.youtube.com/watch?v=V7AwiC1kKBQ"
+      },
+      {
+        "name": "sombr - back to friends (official video)",
+        "url": "https://www.youtube.com/watch?v=c8zq4kAn_O0"
+      },
+      {
+        "name": "Tate McRae - Housewife (Official Video)",
+        "url": "https://www.youtube.com/watch?v=DPEodkHzH-s"
+      },
+      {
+        "name": "Ashe - Stop The Wedding! (Official Video)",
+        "url": "https://www.youtube.com/watch?v=DLV8FpyxZPQ"
+      },
+      {
+        "name": "Tyla - SHE DID IT AGAIN (Official Music Video) ft. Zara Larsson",
+        "url": "https://www.youtube.com/watch?v=rtwpk9rb1Dc"
+      },
+      {
+        "name": "Anyma, LISA - Bad Angel",
+        "url": "https://www.youtube.com/watch?v=dKmPEhJ4wjY"
+      },
+      {
+        "name": "Ayra Starr - Heaven Baby ft. ZAYN",
+        "url": "https://www.youtube.com/watch?v=2ZTcvsdMR1c"
+      },
+      {
+        "name": "Zara Larsson - Blue Moon (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=LB72Mbd88mU"
+      },
+      {
+        "name": "Tyla - CHANEL (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=xiZUf98A1Ts"
+      },
+      {
+        "name": "Alex Warren - FEVER DREAM (Official Video)",
+        "url": "https://www.youtube.com/watch?v=hkUSnrHQJHg"
+      },
+      {
+        "name": "GENER8ION - STORM starring Yung Lean",
+        "url": "https://www.youtube.com/watch?v=x6_mbnsh6VU"
+      },
+      {
+        "name": "RAYE - WHERE IS MY HUSBAND! (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=rK5TyISxZ_M"
+      },
+      {
+        "name": "Lady Gaga - Abracadabra (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=vBynw9Isr28"
+      },
+      {
+        "name": "Swae Lee, Jhené Aiko - MURAL",
+        "url": "https://www.youtube.com/watch?v=xPrzm9UU4iE"
+      },
+      {
+        "name": "Ella Langley - Be Her (Official Video)",
+        "url": "https://www.youtube.com/watch?v=Dg47eNL_Usw"
+      },
+      {
+        "name": "ADÉLA - Ain't In LA",
+        "url": "https://www.youtube.com/watch?v=0ijm2Xui5N8"
+      },
+      {
+        "name": "Temper City - Self Aware (Official Video)",
+        "url": "https://www.youtube.com/watch?v=mh4AQkw4Jjc"
+      },
+      {
+        "name": "F3miii - NOBLE (OFFICIAL MUSIC VIDEO)",
+        "url": "https://www.youtube.com/watch?v=Pz-SZlU4C10"
+      },
+      {
+        "name": "Lola Young - Messy (Official Video)",
+        "url": "https://www.youtube.com/watch?v=k-k2_Liofy8"
+      },
+      {
+        "name": "The Weeknd, Playboi Carti - Timeless",
+        "url": "https://www.youtube.com/watch?v=5EpyN_6dqyk"
+      },
+      {
+        "name": "Ayra Starr, Rema - Who’s Dat Girl",
+        "url": "https://www.youtube.com/watch?v=GodmYPfMaio"
+      },
+      {
+        "name": "ROSÉ & Bruno Mars - APT. (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=ekr2nIex040"
+      },
+      {
+        "name": "Madison Beer - bittersweet (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=YcpMVsvK8pk"
+      },
+      {
+        "name": "Bebe Rexha & Faithless - New Religion (Official Visual)",
+        "url": "https://www.youtube.com/watch?v=366CV87TguE"
+      },
+      {
+        "name": "Gracie Abrams - Hit the Wall (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=jFCTQ68gxoY"
+      },
+      {
+        "name": "Sabrina Carpenter - Manchild (Official Video)",
+        "url": "https://www.youtube.com/watch?v=aSugSGCC12I"
+      },
+      {
+        "name": "ANOTR ft. 54 Ultra - Talk To You [No Art]",
+        "url": "https://www.youtube.com/watch?v=ajUMhpotf8k"
+      },
+      {
+        "name": "KATSEYE (캣츠아이) 'Hootie Frutti' Official MV",
+        "url": "https://www.youtube.com/watch?v=is8UDe2PhKQ"
+      },
+      {
+        "name": "Justin Bieber - YUKON",
+        "url": "https://www.youtube.com/watch?v=fXivMSJm_kA"
+      },
+      {
+        "name": "yung kai - blue (official music video)",
+        "url": "https://www.youtube.com/watch?v=IpFX2vq8HKw"
+      },
+      {
+        "name": "Teddy Swims - Bad Dreams (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=Qh8QwVYOSVU"
+      },
+      {
+        "name": "Ravyn Lenae - Love Me Not (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=cswfR85D7jM"
+      },
+      {
+        "name": "Tate McRae - Just Keep Watching (From F1® The Movie) (Official Video)",
+        "url": "https://www.youtube.com/watch?v=dpvQqmX6SUI"
+      },
+      {
+        "name": "JENNIE - Mantra (Official Video)",
+        "url": "https://www.youtube.com/watch?v=bB3-CUMERIU"
+      },
+      {
+        "name": "Sabrina Carpenter - Espresso",
+        "url": "https://www.youtube.com/watch?v=eVli-tstM5E"
+      },
+      {
+        "name": "Tate McRae - Sports car (Official Video)",
+        "url": "https://www.youtube.com/watch?v=7InTkBxPtK4"
+      },
+      {
+        "name": "Sabrina Carpenter - Please Please Please",
+        "url": "https://www.youtube.com/watch?v=cF1Na4AIecM"
+      },
+      {
+        "name": "Teddy Swims - The Door (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=VSXT4a2kRHA"
+      },
+      {
+        "name": "Shaboozey - A Bar Song (Tipsy) [Official Visualizer]",
+        "url": "https://www.youtube.com/watch?v=t7bQwwqW-Hc"
+      },
+      {
+        "name": "Hozier - Too Sweet (Official Video)",
+        "url": "https://www.youtube.com/watch?v=NTpbbQUBbuo"
+      },
+      {
+        "name": "Kendrick Lamar - Not Like Us",
+        "url": "https://www.youtube.com/watch?v=H58vbez_m4E"
+      },
+      {
+        "name": "Artemas - i like the way you kiss me (official music video)",
+        "url": "https://www.youtube.com/watch?v=evJ6gX1lp2o"
+      },
+      {
+        "name": "Tommy Richman - MILLION DOLLAR BABY (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=Zf1d8SGuxfs"
+      },
+      {
+        "name": "Harry Styles - As It Was (Official Video)",
+        "url": "https://www.youtube.com/watch?v=H5v3kku4y6Q"
+      },
+      {
+        "name": "Rema, Selena Gomez - Calm Down (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=WcIcVapfqXw"
+      },
+      {
+        "name": "Miley Cyrus - Flowers (Official Video)",
+        "url": "https://www.youtube.com/watch?v=G7KNmW9a75Y"
+      },
+      {
+        "name": "Olivia Dean - Man I Need",
+        "url": "https://www.youtube.com/watch?v=oIv_Y2RPQ_A"
+      },
+      {
+        "name": "Harry Styles - Dance No More (Official Video)",
+        "url": "https://www.youtube.com/watch?v=-rkjE0xc730"
+      },
+      {
+        "name": "JENNIE & Dua Lipa - Handlebars (Official Video)",
+        "url": "https://www.youtube.com/watch?v=seARsMwjbEU"
+      }
+    ],
+    "HINDI": [
+      {
+        "name": "KR$NA - I Guess | Official Music Video",
+        "url": "https://www.youtube.com/watch?v=Qg9LxRHLbAk"
+      },
+      {
+        "name": "KR$NA - NO CAP (OFFICIAL VIDEO) | KALAMKAAR",
+        "url": "https://www.youtube.com/watch?v=PejQbGZraqg"
+      },
+      {
+        "name": "KR$NA - UNTITLED (FULL VIDEO) | KALAMKAAR",
+        "url": "https://www.youtube.com/watch?v=2KsrtJ3VtZs"
+      },
+      {
+        "name": "FREEVERSE FEAST (LANGAR) : KR$NA | Music By RAFTAAR | KALAMKAAR",
+        "url": "https://www.youtube.com/watch?v=z0yeFVUs-70"
+      },
+      {
+        "name": "KR$NA - Blowing Up | Official Music Video",
+        "url": "https://www.youtube.com/watch?v=AwhyFo5N0cg"
+      },
+      {
+        "name": "KR$NA - SAY MY NAME | HINDI VERSION | KALAMKAAR",
+        "url": "https://www.youtube.com/watch?v=vRIJaQsJts8"
+      },
+      {
+        "name": "KR$NA - Fall Off (Extended) | Official Music Video",
+        "url": "https://www.youtube.com/watch?v=lQy2e-aWTfY"
+      },
+      {
+        "name": "KR$NA Ft. Rashmeet Kaur - Living Legend | Official Music Video",
+        "url": "https://www.youtube.com/watch?v=lud7CUSTbyY"
+      },
+      {
+        "name": "KR$NA - OG (Official Video) | Kalamkaar",
+        "url": "https://www.youtube.com/watch?v=wz7fnQMmABg"
+      },
+      {
+        "name": "KR$NA - NO LOSSES | KALAMKAAR",
+        "url": "https://www.youtube.com/watch?v=ed9Ustk2g6w"
+      },
+      {
+        "name": "KR$NA - SAY MY NAME | ENGLISH VERSION | KALAMKAAR",
+        "url": "https://www.youtube.com/watch?v=HkCBpzw41vA"
+      },
+      {
+        "name": "KR$NA - VYANJAN (Hindi Alphabetic Rap)",
+        "url": "https://www.youtube.com/watch?v=CDbeB2-UCcQ"
+      },
+      {
+        "name": "KR$NA Ft. RAFTAAR  - Saza-E-Maut | Official Music Video | (Indian Drill)",
+        "url": "https://www.youtube.com/watch?v=o907r6NsK9s"
+      },
+      {
+        "name": "Hi-Rez - Playground Ft. KR$NA & KXNG Crooked (Music Video)",
+        "url": "https://www.youtube.com/watch?v=2UdLlIrXmcQ"
+      },
+      {
+        "name": "Alag - Official Music Video | KR$NA | J.P",
+        "url": "https://www.youtube.com/watch?v=3wPvaJDOhME"
+      },
+      {
+        "name": "RAJA KUMARI - ON FT. KR$NA (OFFICIAL VISUALIZER)",
+        "url": "https://www.youtube.com/watch?v=uIivTo4lPpA"
+      },
+      {
+        "name": "KR$NA - Window Shopper Freestyle",
+        "url": "https://www.youtube.com/watch?v=REc-DB5WaF8"
+      },
+      {
+        "name": "KIDSHOT - Meri Baari | Ft. KR$NA",
+        "url": "https://www.youtube.com/watch?v=5lUnEBK1dZw"
+      },
+      {
+        "name": "Still Here (Intro)",
+        "url": "https://www.youtube.com/watch?v=k5EKs_qdEsg"
+      },
+      {
+        "name": "AADAT : KR$NA | KALAMKAAR",
+        "url": "https://www.youtube.com/watch?v=3FSx60_XGiU"
+      },
+      {
+        "name": "KR$NA - MUQABLA | AK PROJEKTS",
+        "url": "https://www.youtube.com/watch?v=sgg7s1FfmCU"
+      },
+      {
+        "name": "Dream",
+        "url": "https://www.youtube.com/watch?v=5fyUWhvtmX4"
+      },
+      {
+        "name": "Jaanta Kyun - Official Music Video | KR$NA",
+        "url": "https://www.youtube.com/watch?v=wA_ckqKPePg"
+      },
+      {
+        "name": "KR$NA - Desi Wrap Up 2016 | @realkrsna",
+        "url": "https://www.youtube.com/watch?v=uCAe4jzGBv8"
+      },
+      {
+        "name": "Dhanda Nyoliwala - Zigane (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=bUk1YcCPfpQ"
+      },
+      {
+        "name": "Dhanda Nyoliwala - Not Guilty (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=E7ergOnpO1Q"
+      },
+      {
+        "name": "Black Ride (Official Music Video) Dhanda Nyoliwala | Hammy Muzic",
+        "url": "https://www.youtube.com/watch?v=67sWVZSuXnM"
+      },
+      {
+        "name": "Maruti (Official Video) Dhanda Nyoliwala | Miki Malang | Ron Likhari",
+        "url": "https://www.youtube.com/watch?v=_ijaEtNzZgw"
+      },
+      {
+        "name": "Dhanda Nyoliwala - Vomit On Paper ( Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=wzN4pApVUoo"
+      },
+      {
+        "name": "Dhanda Nyoliwala - Tension (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=bgGH0wcjUOA"
+      },
+      {
+        "name": "Dhanda Nyoliwala - No Fluke (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=fs0CcSN_VDw"
+      },
+      {
+        "name": "Dhanda Nyoliwala - Dil De Baithi (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=ZPa9YPL60Tw"
+      },
+      {
+        "name": "Dhanda Nyoliwala - Underground (Music Video) | Deepesh Goyal | VYRL Haryanvi",
+        "url": "https://www.youtube.com/watch?v=Aiyk2vzlGO8"
+      },
+      {
+        "name": "Dhanda Nyoliwala - Vomit On Paper (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=8CL7kkR9ovo"
+      },
+      {
+        "name": "Dhanda Nyoliwala - Forever (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=aElJNueyYT4"
+      },
+      {
+        "name": "Dhanda Nyoliwala - Jeelo Jeelo (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=syeOKB4JSoc"
+      },
+      {
+        "name": "Dhanda Nyoliwala - Illegal (Official Music Video) | New Haryanvi Song 2025 | DNW 1",
+        "url": "https://www.youtube.com/watch?v=c87ork6diZU"
+      },
+      {
+        "name": "Dhanda Nyoliwala - Knife Brows (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=69-yupf0pAY"
+      },
+      {
+        "name": "Dhanda Nyoliwala - Illegal (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=zX9GTYgVKls"
+      },
+      {
+        "name": "Dhanda Nyoliwala - Russian Bandana (Music Video) | Deepesh Goyal | VYRL Haryanvi",
+        "url": "https://www.youtube.com/watch?v=1OAjeECW90E"
+      },
+      {
+        "name": "Dhanda Nyoliwala - RUBICON (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=GT0rV3pV2fA"
+      },
+      {
+        "name": "Dhanda Nyoliwala - Mia Cara (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=O6KzTTvCEPA"
+      },
+      {
+        "name": "Dhanda Nyoliwala - Ha Ha Ha (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=Lvz8V-_0ds4"
+      },
+      {
+        "name": "Spellbound (Official Video) Dhanda Nyoliwala | Xvir Grewal",
+        "url": "https://www.youtube.com/watch?v=64DNtfaHS2Y"
+      },
+      {
+        "name": "Yogi Aulakh x Dhanda Nyoliwala - Jat Clan (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=jZ5jdYNBm3s"
+      },
+      {
+        "name": "Dhanda Nyoliwala - Death Row (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=jqAksRg_rkc"
+      },
+      {
+        "name": "Dhanda Nyoliwala - Unstoppable (Official Music Video) | New Haryanvi Song 2023",
+        "url": "https://www.youtube.com/watch?v=ZjNjY7pmfvo"
+      },
+      {
+        "name": "Dhanda Nyoliwala - Bonjour (Official Music Video) | New Haryanvi Songs Haryanavi 2023",
+        "url": "https://www.youtube.com/watch?v=4hyQU3_1j8Q"
+      },
+      {
+        "name": "Run This Town (Official Video) | Dhanda Nyoliwala | Xvir Grewal | New Haryanvi Songs Haryanavi 2023",
+        "url": "https://www.youtube.com/watch?v=-3t2Nj_yLwc"
+      },
+      {
+        "name": "Dhanda Nyoliwala - 4 Days (Official Music Video) | New Haryanvi Song 2023",
+        "url": "https://www.youtube.com/watch?v=trNgxcvqvII"
+      },
+      {
+        "name": "Dhanda Nyoliwala - Regret (Official Music Video) | New Sad Song 2023",
+        "url": "https://www.youtube.com/watch?v=yHTGRhDKPCw"
+      },
+      {
+        "name": "Lost In Wave - Dhanda Nyoliwala",
+        "url": "https://www.youtube.com/watch?v=IFX2yrQFms0"
+      },
+      {
+        "name": "Dhanda Nyoliwala - Up To U (Official Music Video) | New Rap Song 2022",
+        "url": "https://www.youtube.com/watch?v=T0H_LWLiOGk"
+      },
+      {
+        "name": "Backbite (Full Video) | Dhanda Nyoliwala | New Haryanvi Songs Haryanvi 2022",
+        "url": "https://www.youtube.com/watch?v=kDlF4cRscHo"
+      },
+      {
+        "name": "Bitch - Dhanda Nyoliwala | New Haryanvi Song 2022 | Latest Haryanvi Song 2022 | Fararmy Productions",
+        "url": "https://www.youtube.com/watch?v=a1PVTVWeVMQ"
+      },
+      {
+        "name": "First Haryanvi Drill | Dhanda Nyoliwala | New Haryanvi Songs Haryanavi 2022",
+        "url": "https://www.youtube.com/watch?v=BXJTiu5BRVE"
+      },
+      {
+        "name": "Foxy (Full Video) | Dhanda Nyoliwala | New Haryanvi Songs Haryanavi 2021 | Latest Songs 2021",
+        "url": "https://www.youtube.com/watch?v=VU7oIjiUffo"
+      },
+      {
+        "name": "Ruffian (Full Video) | Dhanda Nyoliwala | New Haryanvi Songs Haryanavi 2021 | New Rap Song 2021",
+        "url": "https://www.youtube.com/watch?v=ZmmytifDJco"
+      },
+      {
+        "name": "Baby | Dhanda Nyoliwala | New Haryanvi Songs Haryanavi 2021",
+        "url": "https://www.youtube.com/watch?v=6CGYoRAKmII"
+      },
+      {
+        "name": "Hood (Official Video) | Dhanda Nyoliwala | New Haryanvi Songs Haryanavi 2021",
+        "url": "https://www.youtube.com/watch?v=VXg59gu8P6E"
+      },
+      {
+        "name": "True (Full Video) | Dhanda Nyoliwala | New Haryanvi Songs Haryanavi 2021",
+        "url": "https://www.youtube.com/watch?v=AK2ZAqSpPRI"
+      },
+      {
+        "name": "26 Kisan | Dhanda Nyoliwala | Kisan Andolan | New Punjabi Song 2021 | Latest Haryanvi Songs 2021",
+        "url": "https://www.youtube.com/watch?v=5teYzn-iUpw"
+      },
+      {
+        "name": "Yamaha (Full Video) | Dhanda Nyoliwala Ft. Light Skin Jonas | New Haryanvi Songs Haryanavi 2021",
+        "url": "https://www.youtube.com/watch?v=9xA4LxFeYyY"
+      },
+      {
+        "name": "Khesi (Full Video) | Dhanda Nyoliwala | New Haryanvi Songs Haryanavi 2021",
+        "url": "https://www.youtube.com/watch?v=z4j-iOUMuQc"
+      },
+      {
+        "name": "Usool (Official Video) | Dhanda NyoliWala Ft. Light Skin Jonas | New Haryanvi Songs Haryanavi 2021",
+        "url": "https://www.youtube.com/watch?v=a3zdKN_auEM"
+      },
+      {
+        "name": "Afgan (Teaser) | Dhanda Nyoliwala Ft. Matty | New Haryanvi Songs Haryanavi 2020",
+        "url": "https://www.youtube.com/watch?v=Vu5s-S_Vhcw"
+      },
+      {
+        "name": "Dhanda Nyoliwala - Vomit On Paper (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=JNCtoaA9xOQ"
+      },
+      {
+        "name": "Dhanda Nyoliwala - Paradox (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=mWEr1Ait5Xw"
+      },
+      {
+        "name": "Dhanda Nyoliwala - Big Plans (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=xYUx6bsBXg8"
+      },
+      {
+        "name": "Dhanda Nyoliwala - Gaddafi (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=1eIsHDzbZtI"
+      },
+      {
+        "name": "Dhanda Nyoliwala - Panamera (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=ZYIWPnkXz5o"
+      },
+      {
+        "name": "KASHISH (Lyrics) - Ashish Bhatia, Kashish Ratnani, Omkar Singh",
+        "url": "https://www.youtube.com/watch?v=D92Wz60EIh4"
+      },
+      {
+        "name": "Banjaare - Bairan (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=OHlzKCPiDrE"
+      },
+      {
+        "name": "Sheesha - Mitta Ror, Swara Verma (Lyrics)",
+        "url": "https://www.youtube.com/watch?v=FC_yorh_czo"
+      },
+      {
+        "name": "Tune na jaana tere jaane se kya kya hua (Lyrics) The Last Letter - Maan Panu",
+        "url": "https://www.youtube.com/watch?v=TvtFJvEDQ-0"
+      },
+      {
+        "name": "Pextyle - Sanatani Phonk | Pex X Pandits",
+        "url": "https://www.youtube.com/watch?v=rxrNxF_SWzY"
+      },
+      {
+        "name": "Dewaane Hum Nahi Hote Deewani Raat Aati Hai (Lyrics) Aditya Yadav",
+        "url": "https://www.youtube.com/watch?v=oB33rOwaGEU"
+      },
+      {
+        "name": "Kesariya (Lyrics) Full Song - Brahmastra | Arijit Singh | Kesariya Tera Ishq Hai Piya",
+        "url": "https://www.youtube.com/watch?v=k6GjS_Hzg8I"
+      },
+      {
+        "name": "Deva Deva (Lyrics) - Brahmāstra | Arijit Singh | Om Deva Deva namah",
+        "url": "https://www.youtube.com/watch?v=i-rXB3hFLVo"
+      },
+      {
+        "name": "Amit Trivedi - Shauq (Lyrics) \"Bikharne Ka Mujhko Shauq Hai Bada Sameitega Mujhko Tu Bata Zara\"",
+        "url": "https://www.youtube.com/watch?v=4yJWwCVbi54"
+      },
+      {
+        "name": "Chaal chal tu apni me tujhe pehchan lunga (Lyrics) | Tu hai kahan | AUR",
+        "url": "https://www.youtube.com/watch?v=7dnvG7L9-MQ"
+      },
+      {
+        "name": "Ho yoon hi rone nahi doonga Main jab tak zinda tujhe Kuch hone nahi doonga (Lyrics) |  B Praak",
+        "url": "https://www.youtube.com/watch?v=1TDzmvG8EqI"
+      },
+      {
+        "name": "Tere rukh se apna raasta Mod ke chalaa Chandan hoon main (Lyrics) Channa Mereya | Arijit Singh",
+        "url": "https://www.youtube.com/watch?v=82o1Ai2YqQo"
+      },
+      {
+        "name": "Paagal pagal hain thode Baadal pagal hain dono Khulke barse bheegein aa zara (Lyrics) Pehle Bhi Main",
+        "url": "https://www.youtube.com/watch?v=sDZ2OAqj2PE"
+      },
+      {
+        "name": "Aahon Pe Baahon Pe Raahon Panaahon Pe Aahon Pe Baahon Pe Saahon Salahon Pe (Lyrics) O Maahi - Arijit",
+        "url": "https://www.youtube.com/watch?v=jiBSFxEZN9k"
+      },
+      {
+        "name": "Pankh - Dooriyan (Visualizer)",
+        "url": "https://www.youtube.com/watch?v=C6YZNQRAybM"
+      },
+      {
+        "name": "I'm motherfucking millionaire Foreign di deals mote dinars (Lyrics) MILLIONAIRE - Yo Yo Honey Singh‬",
+        "url": "https://www.youtube.com/watch?v=9d1YcqeAokA"
+      },
+      {
+        "name": "Ek jaisa haal tera mera Ishq hai misaal tera mera Behne lagi hai aaj (Lyrics) Kasturi - Arijit Singh",
+        "url": "https://www.youtube.com/watch?v=lplfiu1SsLo"
+      },
+      {
+        "name": "Dil tenu de ditta main taan soneya Jaan tere kadma ch rakhi hoyi ae (Lyrics) Hass Hass - Diljit, Sia",
+        "url": "https://www.youtube.com/watch?v=x8jCKbxcFGw"
+      },
+      {
+        "name": "Kushi X Lushcurry - Victory Anthem (Lyrics) Badi Baat Chit Industry Ke Logo Se",
+        "url": "https://www.youtube.com/watch?v=6JRWMtr3XUg"
+      },
+      {
+        "name": "Pankh - Raahein (Visualizer)",
+        "url": "https://www.youtube.com/watch?v=UxejhJoc7LU"
+      },
+      {
+        "name": "Bhola Bhaala Tha Sidha Sadha Tha Main Toh Naadaan Thaa (Lyrics) Mere Dholna 3.0 - Sonu Nigam",
+        "url": "https://www.youtube.com/watch?v=i_NO8U-idQA"
+      },
+      {
+        "name": "Paisa Hai Toh - Farzi (Lyrics) | Sachin-Jigar, Vishal Dadlani, Mellow D | Shahid Kapoor",
+        "url": "https://www.youtube.com/watch?v=Y33SyRjAKj8"
+      },
+      {
+        "name": "KING: Tu Mil Jaaye | Shah Rukh Khan, Deepika | Sachin-Jigar, Arijit, Ed Sheeran, Madhubanti, Kumaar",
+        "url": "https://www.youtube.com/watch?v=BPZkZpGMpXA"
+      },
+      {
+        "name": "Chunnari Chunnari - Let’s Go | Hai Jawani Toh Ishq Hona Hai | Varun, Mrunal, Pooja | Akshay & IP",
+        "url": "https://www.youtube.com/watch?v=J_d_Q3pTYcc"
+      },
+      {
+        "name": "EETHA - Ji Ji Re Ji (Video) Shraddha Kapoor | Ajay-Atul, Shreya G, Amitabh B | In Cinemas 4th Dec",
+        "url": "https://www.youtube.com/watch?v=0HPTMnDgH5U"
+      },
+      {
+        "name": "Aankhon Se Tune 2.0 | Bhai Tera Star Hai | Raghav, Niharika | Lijo, Dev, Palak, Kumar, Alka, Mohsin",
+        "url": "https://www.youtube.com/watch?v=LX2zshAgECQ"
+      },
+      {
+        "name": "Jhumka Patola | Yeh Prem Mol Liya| Ayushmann, Sharvari, Sooraj Barjatya| Himesh R, Shreya G, Sonia K",
+        "url": "https://www.youtube.com/watch?v=wODprPLcgvo"
+      },
+      {
+        "name": "Shararat | Dhurandhar | Ranveer, Aditya Dhar, Shashwat Sachdev, Jasmine, Madhubanti, Ayesha, Krystle",
+        "url": "https://www.youtube.com/watch?v=YyepU5ztLf4"
+      },
+      {
+        "name": "Bol Kaffara Kya Hoga - Ek Deewane Ki Deewaniyat | Harshvardhan, Sonam | Chetas, Neha, Farhan, Lijo",
+        "url": "https://www.youtube.com/watch?v=r_lxE7kF0Fo"
+      },
+      {
+        "name": "Lutt Le Gaya | Dhurandhar | Ranveer Singh, Akshaye Khanna, Shashwat Sachdev, Simran Choudhary",
+        "url": "https://www.youtube.com/watch?v=VWCBZpvjZfc"
+      },
+      {
+        "name": "VAARI JAAVAN (Full Video)| Dhurandhar The Revenge| Ranveer Singh| Shashwat Sachdev,Jyoti N,Jasmine S",
+        "url": "https://www.youtube.com/watch?v=GG1_DsScm6U"
+      },
+      {
+        "name": "Dhurandhar - Title Track | Ranveer Singh, Shashwat Sachdev, Hanumankind, Jasmine Sandlas,Aditya Dhar",
+        "url": "https://www.youtube.com/watch?v=1a5nyrMtRsk"
+      },
+      {
+        "name": "Ucha Lamba Kad Forever | Welcome to the Jungle | Akshay Kumar | Disha Patani | Vikram Montrose",
+        "url": "https://www.youtube.com/watch?v=3CDOd4GdcUQ"
+      },
+      {
+        "name": "Dhurandhar The Revenge - AARI AARI (Video)| Ranveer Singh | Shashwat Sachdev,Bombay Rockers|Aditya D",
+        "url": "https://www.youtube.com/watch?v=dESIGVxSSCE"
+      },
+      {
+        "name": "Thummak Thummak - THE VVAAN | Sidharth Malhotra & Tamannaah | Dev Negi, Akasa, Tanishk B, Shabbir A",
+        "url": "https://www.youtube.com/watch?v=W9mU_iKY0KI"
+      },
+      {
+        "name": "Bandhu 2.0 | Shahid, Kriti, Rashmika| Pritam | Kavita | Neeraj | Irshad K | Cocktail 2 | 19th June",
+        "url": "https://www.youtube.com/watch?v=0RxUcKE13ZI"
+      },
+      {
+        "name": "Hum Pyaar Karne Wale (Lyrical) |Dhurandhar The Revenge Shashwat Sachdev,Anuradha P,Udit N,Qveen",
+        "url": "https://www.youtube.com/watch?v=Th2Op6uvNXw"
+      },
+      {
+        "name": "Naal Nachna | Dhurandhar | Ranveer Singh, Sara Arjun, Shashwat Sachdev, Afsana Khan, Reble, Irshad",
+        "url": "https://www.youtube.com/watch?v=TFTnJzWRTJ8"
+      },
+      {
+        "name": "Mashooqa (Video) Shahid, Kriti, Rashmika | Pritam, Mahmood, Amitabh B, Raghav C, Ruaa K | Cocktail 2",
+        "url": "https://www.youtube.com/watch?v=7jMzMXpSOjs"
+      },
+      {
+        "name": "Dhamaal 4: SAREE MV | Sanju Rathod, Tanishk | Ajay Devgn, Ritiesh Deshmukh, Anjali, Arshad, Jaaved",
+        "url": "https://www.youtube.com/watch?v=zAEA3h529ZU"
+      },
+      {
+        "name": "Run Down The City - Monica | Dhurandhar | Ranveer S, Sara, Shashwat Sachdev, Reble, Asha Bhosle",
+        "url": "https://www.youtube.com/watch?v=aT4N7jn2Eww"
+      },
+      {
+        "name": "Dilbar Ki Aankhon Ka | Thamma | Nora F, Ayushmann K, Rashmika M |Sachin-Jigar, Rashmeet K, Amitabh B",
+        "url": "https://www.youtube.com/watch?v=pkLGczIXR1A"
+      },
+      {
+        "name": "Tamma Tamma (Lyrical) | Dhurandhar The Revenge |Ranveer Singh|Bappi Lahiri,Anuradha Paudwal,Indeevar",
+        "url": "https://www.youtube.com/watch?v=SSofpP1_6F0"
+      },
+      {
+        "name": "Nache Nache - Video Song | The RajaSaab | Prabhas, Malavika Mohan, Nidhhi Agerwal, Riddhi | Thaman S",
+        "url": "https://www.youtube.com/watch?v=P_c0Aojg0KY"
+      },
+      {
+        "name": "Dhamaal 4: QEHER - Guru Randhawa - Ajay Devgn, Arshad W, Ritiesh D, Jaaved J, Ketika S | Indra K",
+        "url": "https://www.youtube.com/watch?v=cyUnbQ2IK_w"
+      },
+      {
+        "name": "Tum Mere Na Huye (Video) Thamma | Ayushmann K, Rashmika M | Sachin-Jigar, Madhubanti B, Amitabh B",
+        "url": "https://www.youtube.com/watch?v=H6l0q4l2NLo"
+      },
+      {
+        "name": "PERFECT - Guru Randhawa, Varun Dhawan, Janhvi Kapoor | Sunny Sanskari Ki Tulsi Kumari",
+        "url": "https://www.youtube.com/watch?v=8e1S7Y5KAFM"
+      },
+      {
+        "name": "Wow | Hai Jawani Toh Ishq Hona Hai | Varun, Mrunal, Pooja | Tanishk | Harrdy | Kiran | Rony | Gill",
+        "url": "https://www.youtube.com/watch?v=SzTmJklgIM8"
+      },
+      {
+        "name": "The Ba***ds Of Bollywood: Ghafoor (Song) | Aryan K | Shashwat, Shilpa, Ujwal | Tamannaah, Farah Khan",
+        "url": "https://www.youtube.com/watch?v=WsllF4THOYk"
+      },
+      {
+        "name": "Ramba Ho | Dhurandhar | Ranveer Singh, Shashwat Sachdev, Madhubanti Bagchi",
+        "url": "https://www.youtube.com/watch?v=v84ZYg0mDyg"
+      },
+      {
+        "name": "Dhamaal 4: CHATNI (Song) | Ajay Devgn, Arshad,Ritiesh, Jaaved, Ravi Kishan | Neelkamal, Aditya,Mamta",
+        "url": "https://www.youtube.com/watch?v=gZWLEm4JLQk"
+      },
+      {
+        "name": "Tu Meri Main Tera Main Tera Tu Meri - Title Track | Kartik Aaryan, Ananya Panday, Vishal-Sheykhar",
+        "url": "https://www.youtube.com/watch?v=K6nBBkWXT-8"
+      },
+      {
+        "name": "ROOP DI RANI (Song) | PATI PATNI AUR WOH DO | Ayushmann,Wamiqa,Sara,Rakul,Guru R,Tanishk,Heer,Rajesh",
+        "url": "https://www.youtube.com/watch?v=F7kP6phFY5M"
+      },
+      {
+        "name": "O'Romeo: Paan Ki Dukaan (Song) | Shahid K,Disha P| Sajid N | Vishal B |Gulzar |Sukhwinder S |Rekha B",
+        "url": "https://www.youtube.com/watch?v=JJRuseHsoVk"
+      },
+      {
+        "name": "Vallah (Official Video) Shahid, Kriti, Rashmika | Pritam, Bayanni, Harrdy S, Amitabh B | Cocktail 2",
+        "url": "https://www.youtube.com/watch?v=JBOkML4Ld9g"
+      },
+      {
+        "name": "Ghoom Ghoom (Official Video) Hindi | Mirzapur The Movie |Sonal C | Rashmeet Kaur | Ray | Kumaar",
+        "url": "https://www.youtube.com/watch?v=qRlZbWsPnQI"
+      },
+      {
+        "name": "Ishq Kameena 2.0 | Baby Do Die Do | Huma, Rachit | Lijo, Anu | Sonu, Alka, Akasa, Mohsin, Dee,Sameer",
+        "url": "https://www.youtube.com/watch?v=_vfY0gCSP64"
+      },
+      {
+        "name": "Massacre Song | Music Video | ALPHA | Alia Bhatt, Sharvari | Rohansh & Abeer, Shilpa, Jonita, Kausar",
+        "url": "https://www.youtube.com/watch?v=q5HK8lXE_aE"
+      },
+      {
+        "name": "HUMNE WAHIN LAGAYA DIL | PATI PATNI AUR WOH DO | Ayushmann,Badshah,Krish-Kishore Mondal,Kunaal,Devv",
+        "url": "https://www.youtube.com/watch?v=YGP_TmZrG7M"
+      },
+      {
+        "name": "MAIN AUR TU (Video) | Dhurandhar The Revenge | Ranveer Singh | Shashwat S,Jasmine S,Reble | Aditya D",
+        "url": "https://www.youtube.com/watch?v=JSTIDkxtO5c"
+      },
+      {
+        "name": "DIL WAALE CHOR (Song) | PATI PATNI AUR WOH DO | Ayushmann K| Sara Ali K| Rochak K,Shreya G,Aditya R",
+        "url": "https://www.youtube.com/watch?v=SzhrbpidTIA"
+      },
+      {
+        "name": "Rang De Lal (Oye Oye) (Lyrical) | Dhurandhar The Revenge | Shashwat Sachdev,Kalyanji-Anandji,Jasmine",
+        "url": "https://www.youtube.com/watch?v=1Pu6hWkvVI8"
+      },
+      {
+        "name": "Fa9la - Flipperachi (Prod. by DJ Outlaw) (Official Audio) | فصلة - فليبراتشي",
+        "url": "https://www.youtube.com/watch?v=1XOJFuKHCck"
+      },
+      {
+        "name": "Didi (Sher-E-Baloch) (From \"Dhurandhar The Revenge\")",
+        "url": "https://www.youtube.com/watch?v=C7xkqKq9Z14"
+      },
+      {
+        "name": "Jag Se Laaj (Video) | Shahid, Kriti, Rashmika | Pritam, Shilpa, Aarvan, WiSH, Amitabh B | Cocktail 2",
+        "url": "https://www.youtube.com/watch?v=D1F-6BbhYAo"
+      },
+      {
+        "name": "3 Shaukk",
+        "url": "https://www.youtube.com/watch?v=F2UxnCDWcc4"
+      },
+      {
+        "name": "Saat Samundar Paar | TMMTMTTM | Kartik Aaryan | Ananya Panday | Karan Nawani | Quick Style |25th Dec",
+        "url": "https://www.youtube.com/watch?v=TDOxWAMYAvY"
+      },
+      {
+        "name": "Ez-Ez",
+        "url": "https://www.youtube.com/watch?v=DgdqPbV2fps"
+      },
+      {
+        "name": "Jab Talak (From “Cocktail 2”)",
+        "url": "https://www.youtube.com/watch?v=crjujVx0Irk"
+      },
+      {
+        "name": "Bindaas (From \"Rajini The Jailer 2\")",
+        "url": "https://www.youtube.com/watch?v=5B1sJybYMcU"
+      },
+      {
+        "name": "Hai Jawani Toh Ishq Hona Hai (Title Track)",
+        "url": "https://www.youtube.com/watch?v=aApToDlkBzc"
+      },
+      {
+        "name": "Maa Behen: Dhak Dhak Reloaded (Audio) | Madhuri D, Ravi K | Akshay & IP,Nupoor,Anuradha Paudwal,Udit",
+        "url": "https://www.youtube.com/watch?v=RuicPHcCpLs"
+      },
+      {
+        "name": "Aaj Ki Raat | Stree 2 | Tamannaah Bhatia | Sachin–Jigar | Madhubanti Bagchi | Divya K | Amitabh B",
+        "url": "https://www.youtube.com/watch?v=roz9sXFkTuE"
+      },
+      {
+        "name": "JAIYE SAJANA (Video): Dhurandhar The Revenge | Ranveer Singh | Shashwat S | Satinder S | Jasmine S",
+        "url": "https://www.youtube.com/watch?v=F2m4HPLvj-4"
+      },
+      {
+        "name": "Saiyaara Title Song | Ahaan Panday, Aneet Padda | Tanishk Bagchi, Faheem A, Arslan N | Irshad Kamil",
+        "url": "https://www.youtube.com/watch?v=BSJa1UytM8w"
+      },
+      {
+        "name": "LAAL PARI (Song): Yo Yo Honey Singh | Sajid Nadiadwala | Tarun Mansukhani | Housefull 5",
+        "url": "https://www.youtube.com/watch?v=KGn-erOG-Bs"
+      },
+      {
+        "name": "Gehra Hua | Dhurandhar | Ranveer Singh, Sara Arjun, Shashwat Sachdev, Arijit Singh, Irshad Kamil",
+        "url": "https://www.youtube.com/watch?v=GX9x62kFsVU"
+      },
+      {
+        "name": "DEEWANIYAT Title Track - Ek Deewane Ki Deewaniyat | Harshvardhan Sonam | Vishal ,KaushikGuddu,Kunaal",
+        "url": "https://www.youtube.com/watch?v=Qo4IOTAbGAM"
+      },
+      {
+        "name": "Jhoome Jo Pathaan Song | Shah Rukh Khan, Deepika | Vishal & Sheykhar, Arijit Singh, Sukriti, Kumaar",
+        "url": "https://www.youtube.com/watch?v=YxWlaYCA8MU"
+      },
+      {
+        "name": "Uyi Amma - Azaad | Aaman D, Rasha Thadani| Madhubanti Bagchi,Amit Trivedi,Amitabh| Bosco| Abhishek K",
+        "url": "https://www.youtube.com/watch?v=FZLadzn5i6Q"
+      },
+      {
+        "name": "Saiyaara Reprise - Female | Full Song | Ahaan, Aneet | Tanishk, Faheem, Arslan | Shreya | Irshad",
+        "url": "https://www.youtube.com/watch?v=asG7cwxi1sA"
+      },
+      {
+        "name": "Full Video: Raanjhan | Do Patti | Kriti Sanon, Shaheer Sheikh | Parampara Tandon | Sachet-Parampara",
+        "url": "https://www.youtube.com/watch?v=lBvbNxiVmZA"
+      },
+      {
+        "name": "Lut Gaye (Full Song) Emraan Hashmi, Yukti | Jubin N, Tanishk B, Manoj M | Bhushan K | Radhika-Vinay",
+        "url": "https://www.youtube.com/watch?v=sCbbMZ-q4-I"
+      },
+      {
+        "name": "Tauba Tauba | Bad Newz | Vicky Kaushal | Triptii Dimri | Karan Aujla",
+        "url": "https://www.youtube.com/watch?v=LK7-_dgAVQE"
+      },
+      {
+        "name": "Teri Baaton Mein Aisa Uljha Jiya (Title Track): Shahid Kapoor, Kriti Sanon | Raghav,Tanishk,Asees",
+        "url": "https://www.youtube.com/watch?v=XLqmL9cPN1E"
+      },
+      {
+        "name": "Besharam Rang Song | Pathaan | Shah Rukh Khan, Deepika Padukone | Vishal & Sheykhar | Shilpa, Kumaar",
+        "url": "https://www.youtube.com/watch?v=huxhqphtDrM"
+      },
+      {
+        "name": "JAWAN: Chaleya (Hindi) | Shah Rukh Khan | Nayanthara | Atlee | Anirudh | Arijit S, Shilpa R | Kumaar",
+        "url": "https://www.youtube.com/watch?v=VAdGW7QDJiU"
+      },
+      {
+        "name": "Barbaad Song | Saiyaara | Ahaan Panday, Aneet Padda | The Rish | Jubin Nautiyal",
+        "url": "https://www.youtube.com/watch?v=0v5eHPfy5Lk"
+      },
+      {
+        "name": "DILBAR Lyrical | Satyameva Jayate |John Abraham, Nora Fatehi,Tanishk B, Neha Kakkar,Dhvani, Ikka",
+        "url": "https://www.youtube.com/watch?v=JFcgOboQZ08"
+      },
+      {
+        "name": "Raataan Lambiyan – Official Video | Shershaah | Sidharth – Kiara | Tanishk B| Jubin Nautiyal  |Asees",
+        "url": "https://www.youtube.com/watch?v=gvyUuxdRdR4"
+      },
+      {
+        "name": "Full Song: KHAIRIYAT (BONUS TRACK) | CHHICHHORE | Sushant, Shraddha | Pritam, Amitabh B|Arijit Singh",
+        "url": "https://www.youtube.com/watch?v=hoNb6HuNmU0"
+      },
+      {
+        "name": "Ram Siya Ram (Lyrical) Adipurush | Prabhas | Sachet-Parampara,Manoj Muntashir S |Om Raut | Bhushan K",
+        "url": "https://www.youtube.com/watch?v=Tl4bQBfOtbg"
+      },
+      {
+        "name": "Mere Mehboob | Vicky Vidya Ka Woh Wala Video | Rajkummar | Triptii Dimri |Sachin-Jigar,Shilpa,Sachet",
+        "url": "https://www.youtube.com/watch?v=UdsO4SM4wKI"
+      },
+      {
+        "name": "Full Song: O SAKI SAKI | Batla House | Nora Fatehi, Tanishk B,Neha K,Tulsi K, B Praak,Vishal-Shekhar",
+        "url": "https://www.youtube.com/watch?v=_uUdJalMaF8"
+      },
+      {
+        "name": "ANIMAL:Pehle Bhi Main(Full Video) | Ranbir Kapoor,Tripti Dimri |Sandeep V |Vishal M,Raj S |Bhushan K",
+        "url": "https://www.youtube.com/watch?v=iAIBF2ngbWY"
+      },
+      {
+        "name": "Apna Bana Le - Bhediya | Varun Dhawan, Kriti Sanon| Sachin-Jigar, Arijit Singh, Amitabh Bhattacharya",
+        "url": "https://www.youtube.com/watch?v=ElZfdU54Cp8"
+      },
+      {
+        "name": "Heeriye (Official Video) Jasleen Royal ft Arijit Singh| Dulquer Salmaan| Aditya Sharma |Taani Tanvir",
+        "url": "https://www.youtube.com/watch?v=RLzC55ai0eo"
+      },
+      {
+        "name": "Baarish Ban Jaana (Official Video) Payal Dev, Stebin Ben | Hina Khan, Shaheer Sheikh | Kunaal Vermaa",
+        "url": "https://www.youtube.com/watch?v=KVh4KtUSW3A"
+      },
+      {
+        "name": "Dil Galti Kar Baitha Hai | Meet Bros Ft. Jubin Nautiyal | Mouni Roy | Manoj M | Ashish P | Bhushan K",
+        "url": "https://www.youtube.com/watch?v=1--qqQrimMA"
+      },
+      {
+        "name": "Kesariya - Brahmāstra | Ranbir Kapoor, Alia Bhatt | Pritam | Arijit Singh | Amitabh Bhattacharya| 4K",
+        "url": "https://www.youtube.com/watch?v=BddP6PYo2gs"
+      },
+      {
+        "name": "Aavan Jaavan Song | WAR 2 | Hrithik Roshan, Kiara Advani | Pritam, Arijit Singh, Nikhita | Amitabh B",
+        "url": "https://www.youtube.com/watch?v=enjkcCdAlXc"
+      },
+      {
+        "name": "Tere Vaaste | Zara Hatke Zara Bachke | Vicky Kaushal, Sara Ali Khan, Varun J, Sachin-Jigar,Amitabh B",
+        "url": "https://www.youtube.com/watch?v=X7WXHhokylc"
+      },
+      {
+        "name": "ANIMAL: SATRANGA(Song) Ranbir Kapoor,Rashmika|Sandeep V|Arijit,Shreyas P,Siddharth-Garima |Bhushan K",
+        "url": "https://www.youtube.com/watch?v=HrnrqYxYrbk"
+      },
+      {
+        "name": "Pardesiya - Param Sundari | Sidharth M, Janhvi K | Sachin-Jigar, Sonu Nigam, Krishnakali, Amitabh B",
+        "url": "https://www.youtube.com/watch?v=N4wK3NtVRT0"
+      },
+      {
+        "name": "Dunki: O Maahi (Full Video) | Shah Rukh Khan | Taapsee Pannu | Pritam | Arijit Singh | Irshad Kamil",
+        "url": "https://www.youtube.com/watch?v=Etkd-07gnxM"
+      },
+      {
+        "name": "Taras | Munjya | Sharvari & Abhay Verma | Sachin-Jigar, Jasmine Sandlas | Amitabh Bhattacharya",
+        "url": "https://www.youtube.com/watch?v=kfXy4W0aD40"
+      },
+      {
+        "name": "Tum Ho Toh Song | Saiyaara | Ahaan Panday, Aneet Padda | Vishal Mishra, Hansika Pareek | Raj Shekhar",
+        "url": "https://www.youtube.com/watch?v=rOUuGvJkBrQ"
+      },
+      {
+        "name": "Param Sundari -Official Video | Mimi | Kriti Sanon, Pankaj Tripathi | @ARRahman| Shreya Ghoshal",
+        "url": "https://www.youtube.com/watch?v=w4ClQO0FFQg"
+      },
+      {
+        "name": "Luka Chuppi: COCA COLA Song | Kartik A, Kriti S | Tony Kakkar Tanishk Bagchi Neha Kakkar Young Desi",
+        "url": "https://www.youtube.com/watch?v=_cPHiwPqbqo"
+      },
+      {
+        "name": "Ve Kamleya | Rocky Aur Rani Kii Prem Kahaani | Ranveer | Alia | Pritam | Amitabh | Arijit | Shreya",
+        "url": "https://www.youtube.com/watch?v=QXJyMpxd210"
+      },
+      {
+        "name": "Bijuria | Varun Dhawan, Janhvi Kapoor | Sonu, Tanishk, Ravi, Asees | Sunny Sanskari Ki Tulsi Kumari",
+        "url": "https://www.youtube.com/watch?v=nYLkyW2dDXU"
+      },
+      {
+        "name": "Ve Maahi | Kesari | Akshay Kumar & Parineeti Chopra | Arijit Singh & Asees Kaur | Tanishk Bagchi",
+        "url": "https://www.youtube.com/watch?v=j6muwUGdvXw"
+      },
+      {
+        "name": "SIMMBA: Tere Bin | Ranveer Singh, Sara Ali Khan | Tanishk Bagchi, Rahat Fateh Ali Khan, Asees Kaur",
+        "url": "https://www.youtube.com/watch?v=hejXc_FSYb8"
+      },
+      {
+        "name": "Ranjha – Official Video | Shershaah | Sidharth–Kiara | B Praak | Jasleen Royal | Romy | Anvita Dutt",
+        "url": "https://www.youtube.com/watch?v=V7LwfY5U5WI"
+      },
+      {
+        "name": "Is Qadar | Tulsi Kumar, Darshan Raval | Sachet-Parampara | Sayeed Quadri | Arvindr K | Bhushan K",
+        "url": "https://www.youtube.com/watch?v=TBlixHMv_GQ"
+      },
+      {
+        "name": "Kamariya - Official Music Video | Jackky Bhagnani, Kritika | Darshan Raval | Lijo Gorge | Dj Chetas",
+        "url": "https://www.youtube.com/watch?v=i0_m90T04uw"
+      },
+      {
+        "name": "Mere Mehboob Mere Sanam | Bad Newz | Vicky, Triptii, Ammy | Anu, Lijo-DJ Chetas, Udit, Alka, Javed",
+        "url": "https://www.youtube.com/watch?v=6bvqH0t7j2Y"
+      },
+      {
+        "name": "Sajni (Song): Arijit Singh, Ram Sampath | Laapataa Ladies | Aamir Khan Productions",
+        "url": "https://www.youtube.com/watch?v=k3g_WjLCsXM"
+      },
+      {
+        "name": "Dekhha Tenu - Lyrical Video | Mr. and Mrs. Mahi | Janhvi Kapoor, Rajkummar Rao | Mohammad Faiz |",
+        "url": "https://www.youtube.com/watch?v=RpE-hVumiDI"
+      },
+      {
+        "name": "Yo Yo Honey Singh: DIL CHORI (Video) Simar Kaur, Ishers | Hans Raj Hans | Sonu Ke Titu Ki Sweety",
+        "url": "https://www.youtube.com/watch?v=xWi8nDUjHGA"
+      },
+      {
+        "name": "Aayi Nai | Stree 2 | Shraddha Kapoor, Rajkummar Rao, Sachin-Jigar, Pawan Singh, Simran Choudhary",
+        "url": "https://www.youtube.com/watch?v=nFgsBxw-zWQ"
+      },
+      {
+        "name": "PAYAL SONG (Official Video): YO YO HONEY SINGH | NORA FATEHI | PARADOX | GLORY | BHUSHAN KUMAR",
+        "url": "https://www.youtube.com/watch?v=a-PAcmi5Kas"
+      },
+      {
+        "name": "Bom Diggy Diggy  (VIDEO) | Zack Knight | Jasmin Walia | Sonu Ke Titu Ki Sweety",
+        "url": "https://www.youtube.com/watch?v=yIIGQB6EMAM"
+      },
+      {
+        "name": "SIMMBA: Aankh Marey Lyrical | Ranveer Singh, Sara Ali Khan | Tanishk Bagchi, Mika Singh,Neha,Kumar S",
+        "url": "https://www.youtube.com/watch?v=vu5-aKf_QqA"
+      },
+      {
+        "name": "BADSHAH - Paani Paani (Official Video) | Jacqueline Fernandez | Official Music Video | Aastha Gill",
+        "url": "https://www.youtube.com/watch?v=nFjVlf2r9_Q"
+      },
+      {
+        "name": "BANGER (Official Music Video)  Badshah x Sharvi x Hiten ft Aveera Singh | #desihiphop #viralsong",
+        "url": "https://www.youtube.com/watch?v=sY45iA7PFS8"
+      },
+      {
+        "name": "RAID 2: NASHA (Song) | Tamannaah B, Ajay D, Riteish D | Jasmine Sandlas, Sachet T, Jaani | Bhushan K",
+        "url": "https://www.youtube.com/watch?v=QPSAjqjylTc"
+      },
+      {
+        "name": "𝐊𝐚𝐥𝐚 𝐂𝐡𝐚𝐬𝐡𝐦𝐚 🕶️ | Baar Baar Dekho | Sidharth M & Katrina Kaif | Badshah, Neha Kakkar, Prem & Hardeep",
+        "url": "https://www.youtube.com/watch?v=k4yXQkG2s1E"
+      },
+      {
+        "name": "Main Nikla Gaddi Leke | Gadar 2 | Sunny Deol, Ameesha P, Utkarsh| Mithoon, Udit N, Aditya N| Uttam S",
+        "url": "https://www.youtube.com/watch?v=2nK6WBcGPOw"
+      },
+      {
+        "name": "ANIMAL: ARJAN VAILLY | Ranbir Kapoor | Sandeep Vanga | Bhupinder B, Manan B | Bhushan K",
+        "url": "https://www.youtube.com/watch?v=zqGW6x_5N0k"
+      },
+      {
+        "name": "'Abhi Toh Party Shuru Hui Hai' Full Video Song | Khoobsurat | Badshah | Sonam Kapoor | Aastha",
+        "url": "https://www.youtube.com/watch?v=8LZgzAZ2lpQ"
+      },
+      {
+        "name": "Thodi Si Daaru (Official Music Video) | AP Dhillon | Shreya Ghoshal | Tara Sutaria",
+        "url": "https://www.youtube.com/watch?v=slM5s55Jz0k"
+      },
+      {
+        "name": "What Jhumka? | Rocky Aur Rani Kii Prem Kahaani | Ranveer | Alia | Pritam | Amitabh | Arijit | Jonita",
+        "url": "https://www.youtube.com/watch?v=87JIOAX3njM"
+      },
+      {
+        "name": "Makhna - Drive | Sushant Singh Rajput, Jacqueline Fernandez | Tanishk Bagchi, Asees Kaur",
+        "url": "https://www.youtube.com/watch?v=HqUeSjsYLNU"
+      },
+      {
+        "name": "Oh Mama! TETEMA (Song) | Rayvanny, Nora Fatehi | Shreya Ghoshal, Vishal Mishra, Sanjoy | Bhushan K",
+        "url": "https://www.youtube.com/watch?v=ge_UgErt4yo"
+      },
+      {
+        "name": "ISHARE TERE Song | Guru Randhawa, Dhvani Bhanushali | DirectorGifty | Bhushan Kumar",
+        "url": "https://www.youtube.com/watch?v=8nGFWWJLHio"
+      },
+      {
+        "name": "Badshah - Jugnu (Official Video) | Nikhita Gandhi | Akanksha Sharma",
+        "url": "https://www.youtube.com/watch?v=ksY3wb4vtlA"
+      },
+      {
+        "name": "Morni (Official Video) | Badshah | Sharvi Yadav | Preity Mukhundhan | Hiten",
+        "url": "https://www.youtube.com/watch?v=Zrt77f7nTqY"
+      },
+      {
+        "name": "Tesher x Jason Derulo - Jalebi Baby (Official Video)",
+        "url": "https://www.youtube.com/watch?v=CTmKrwFu7wg"
+      },
+      {
+        "name": "Bhool Bhulaiyaa 2 (Title Track) Kartik A, Kiara A, Tabu |Pritam, Tanishk, Neeraj, Anees B, Bhushan K",
+        "url": "https://www.youtube.com/watch?v=J1rOfVst-EQ"
+      },
+      {
+        "name": "Sajna Ve Sajna (Full Video) Rajkummar R, Shehnaaz G| Sunidhi, Divya | Vicky Vidya Ka Woh Wala Video",
+        "url": "https://www.youtube.com/watch?v=kuZ1hSfDrS4"
+      },
+      {
+        "name": "Naina | Crew | Diljit Dosanjh, Ft. Badshah | Tabu, Kareena Kapoor Khan, Kriti Sanon | Raj Ranjodh",
+        "url": "https://www.youtube.com/watch?v=3u6lLWGjFLY"
+      },
+      {
+        "name": "Manike:Thank God | Nora Fatehi, Sidharth M | Tanishk,Yohani,Jubin,Surya R | Rashmi Virag | Bhushan K",
+        "url": "https://www.youtube.com/watch?v=_B6T8O15Ohk"
+      }
+    ],
+    "PHONK": [
+      {
+        "name": "Phonk Mix 2025 ※ 1 HOUR AGGRESSIVE PHONK PLAYLIST ※ Фонка 2025",
+        "url": "https://www.youtube.com/watch?v=s-DLF26EKMA"
+      },
+      {
+        "name": "AURA ♾️ Best Phonk Mix 2025 ※ Aggressive Drift Phonk ※ Фонк",
+        "url": "https://www.youtube.com/watch?v=La8vPLMeG_8"
+      },
+      {
+        "name": "Best Phonk Mix 2025 ※ Aggressive Drift Phonk ※ Фонк 2025",
+        "url": "https://www.youtube.com/watch?v=uLRibg60B8g"
+      },
+      {
+        "name": "SUPER AGGRESSIVE PHONK 2025 ※ 1 HOUR PHONK MUSIC MIX ※ Фонка 2025",
+        "url": "https://www.youtube.com/watch?v=pdOR7dsywjU"
+      },
+      {
+        "name": "THE BEST PHONK MIX 2025 ※ 1 HOUR SLOWED PHONK PLAYLIST MIX ※ Фонк",
+        "url": "https://www.youtube.com/watch?v=uFIAVfPsl0Y"
+      },
+      {
+        "name": "Phonk Music Mix ※ Best Drift Phonk & TikTok Phonk ※ Фонк",
+        "url": "https://www.youtube.com/watch?v=ri012zs229s"
+      },
+      {
+        "name": "Phonk Music Mix ※ Playlist of Aggressive Phonk ※ Фонк 2025",
+        "url": "https://www.youtube.com/watch?v=kctSnul5k0M"
+      },
+      {
+        "name": "Phonk Music 2025 ※ SUPER AGGRESSIVE PHONK PLAYLIST MIX ※ Фонк",
+        "url": "https://www.youtube.com/watch?v=5YTltI56PAA"
+      },
+      {
+        "name": "Phonk Music Mix ※ The Best AURA ♾️ Phonk Mix Playlist ※ Фонк",
+        "url": "https://www.youtube.com/watch?v=peao7t0SMQY"
+      },
+      {
+        "name": "Phonk Music Mix ※ The Best Aggressive Phonk Mix Playlist ※ Фонк",
+        "url": "https://www.youtube.com/watch?v=vjAo1fO7evo"
+      },
+      {
+        "name": "Phonk Music Playlist = Songs that bring back memories 🔥",
+        "url": "https://www.youtube.com/watch?v=nkIdAsKvd_w"
+      },
+      {
+        "name": "Phonk Mix 2025 ※ 1 HOUR AGGRESSIVE PHONK SPED UP PLAYLIST ※ Фонка 2025",
+        "url": "https://www.youtube.com/watch?v=9aKV5Sq85Ak"
+      },
+      {
+        "name": "Phonk Music 2025 ※ AGGRESSIVE PHONK PLAYLIST MIX ※ Фонк",
+        "url": "https://www.youtube.com/watch?v=RmHAWi4kU7A"
+      },
+      {
+        "name": "Phonk Music 2025 ※ The Best Playlist of Aggressive Slowed Phonk 2025 ※ Фонк",
+        "url": "https://www.youtube.com/watch?v=l0iAVary7_o"
+      },
+      {
+        "name": "Phonk Music 2025 ※ Best Aggressive Drift Phonk ※ Фонка 2025",
+        "url": "https://www.youtube.com/watch?v=cblU1xeyZSQ"
+      },
+      {
+        "name": "Phonk Music 2025 ※ THE BEST AURA PHONK PLAYLIST ※ Фонк",
+        "url": "https://www.youtube.com/watch?v=aJMxnvFXkhQ"
+      },
+      {
+        "name": "Phonk Music 2024 ※ The Best Playlist of Aggressive Phonk 2024 ※ Фонк",
+        "url": "https://www.youtube.com/watch?v=vuINR3TVF-w"
+      },
+      {
+        "name": "Phonk Music 2025 ※ 𝘼𝙜𝙜𝙧𝙚𝙨𝙨𝙞𝙫𝙚 𝙥𝙝𝙤𝙣𝙠𝙨 𝙛𝙤𝙧 𝙩𝙧𝙖𝙞𝙣𝙞𝙣𝙜 𝙋𝙡𝙖𝙮𝙡𝙞𝙨𝙩 ※ Фонк",
+        "url": "https://www.youtube.com/watch?v=rtWcWA34Tic"
+      },
+      {
+        "name": "Phonk Music 2024 ※ The Best Aggressive Phonk Mix Playlist ※ Фонк",
+        "url": "https://www.youtube.com/watch?v=poDqLgY0nMc"
+      },
+      {
+        "name": "Phonk Music 2025 ※ Best Drift Phonk Playlist ※ Фонк",
+        "url": "https://www.youtube.com/watch?v=_BmioOwwU_Y"
+      },
+      {
+        "name": "Phonk Music 2025 ※ Best Aggressive Drift Phonk & TikTok Phonk ※ Фонк",
+        "url": "https://www.youtube.com/watch?v=etd1oJBJmiM"
+      },
+      {
+        "name": "Phonk Music 2024 ※ THE BEST AURA PHONK PLAYLIST ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=ibC6Ngra4-o"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Best Aggressive Phonk & Drift Phonk ※ Фонк",
+        "url": "https://www.youtube.com/watch?v=r-CxUJuh2Ms"
+      },
+      {
+        "name": "Phonk Music 2024 ※ The Best Aggressive Phonk Mix Playlist ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=MifnLhxYTmM"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Best Aggressive Drift Phonk ※ Фонка 2024",
+        "url": "https://www.youtube.com/watch?v=6v388mQUQ6Q"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Best Drift Phonk & TikTok Phonk ※ Фонк",
+        "url": "https://www.youtube.com/watch?v=9CuTk3bfbjI"
+      },
+      {
+        "name": "Phonk Music 2024 ※ The Best Aggressive Phonk Mix Playlist ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=sLqAQf8tAlU"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Best Aggressive Phonk & Drift Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=LXeMx-7sDlQ"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Best Aggressive Drift Phonk ※ Фонка 2024",
+        "url": "https://www.youtube.com/watch?v=R1jpFqCdKrc"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Best Aggressive Drift Phonk & TikTok Phonk ※ Фонк",
+        "url": "https://www.youtube.com/watch?v=RwzvWPUvh0s"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Best Aggressive Drift Phonk ※ Фонка 2024",
+        "url": "https://www.youtube.com/watch?v=FR149aZIbAA"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Best Aggressive Phonk & Drift Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=8IXiYJZI1yo"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Best Aggressive Nostalgic Phonk ※ Фонк",
+        "url": "https://www.youtube.com/watch?v=orfX_S62t0E"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Aggressive Drift Phonk & TikTok Phonk ※ Фонк",
+        "url": "https://www.youtube.com/watch?v=rnZLojQQxFs"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Best Drift Phonk & TikTok Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=EmiQEn-V0Sg"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Best Aggressive Phonk & TikTok Phonk ※ Фонк",
+        "url": "https://www.youtube.com/watch?v=pMZon03Id_A"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Best Drift Phonk & TikTok Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=quOs4CE58pk"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Best Aggressive Drift Phonk & TikTok Phonk ※ Фонк",
+        "url": "https://www.youtube.com/watch?v=TA42ndaDRp0"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Best Aggressive Drift Phonk & TikTok Phonk ※ Фонк",
+        "url": "https://www.youtube.com/watch?v=K9KfS7SGQHs"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Best Drift Phonk & TikTok Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=pWyh8EzytKA"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Best Drift Phonk & TikTok Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=W5Vifmi9tEs"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Aggressive Drift Phonk & TikTok Phonk ※ Фонка",
+        "url": "https://www.youtube.com/watch?v=kZyoDgGzxVU"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Best Drift Phonk & TikTok Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=EDZXYgis998"
+      },
+      {
+        "name": "Best Phonk Mix 2024 ※ Best Drift Phonk & TikTok Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=FxUkq2v9bb8"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Best Drift Phonk & TikTok Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=KjwNdEguy2o"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Best Drift Phonk & TikTok Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=RygvQYT-NpA"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Best Drift Phonk & TikTok Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=CnU5zysjA8k"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Best Drift Phonk & TikTok Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=amrrbiZcngM"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Best Drift Phonk & TikTok Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=V_F9GaeV8J8"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Best Aggressive Phonk & TikTok Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=qJVJSgpxC5g"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Best Drift Phonk & TikTok Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=KuQ3dECM438"
+      },
+      {
+        "name": "Best Phonk Mix 2024 ※ Best Drift Phonk & TikTok Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=YAb_V9phHbQ"
+      },
+      {
+        "name": "Phonk House Mix ※ Best Drift Phonk & TikTok Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=WYwFq5LvxCk"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Best Drift Phonk & TikTok Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=CXUZJxY0jFU"
+      },
+      {
+        "name": "Phonk House Mix ※ Best Drift Phonk & TikTok Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=mSbq3GJjPxs"
+      },
+      {
+        "name": "Best Phonk Mix 2024 ※ Aggressive Drift Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=xVidRWaYgKs"
+      },
+      {
+        "name": "1 HOUR NEW BRAZILIAN PHONK 2024 | THE BEST MIX [GYM, FUNK, TRENDING]",
+        "url": "https://www.youtube.com/watch?v=g08fIFL2m8I"
+      },
+      {
+        "name": "Best Phonk Mix 2024 ※ Aggressive Drift Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=gmwAjgiJt4c"
+      },
+      {
+        "name": "Phonk House Mix ※ Best Aggressive Drift Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=292zbClxqlk"
+      },
+      {
+        "name": "Best Phonk Mix 2024 ※ Aggressive Drift Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=cXoX-XzrQxU"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Aggressive Drift Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=Gk7EgK3OvTU"
+      },
+      {
+        "name": "Phonk House Mix ※ Best Aggressive Drift Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=rv0m26-0kq4"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Aggressive Drift Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=n8hhpJ82Mmc"
+      },
+      {
+        "name": "Best Phonk Mix 2024 ※ Aggressive Drift Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=Ij5FBgHlLso"
+      },
+      {
+        "name": "Phonk House Mix ※ Best Aggressive Drift Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=jApcZCI3eVc"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Aggressive Drift Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=1JwJGqoUkhk"
+      },
+      {
+        "name": "Best Phonk Mix 2024 ※ Aggressive Drift Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=1Mky_dIiCvI"
+      },
+      {
+        "name": "Best Phonk Mix 2024 ※ Aggressive Drift Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=SwNxkRrmPZQ"
+      },
+      {
+        "name": "Best Phonk Mix 2024 ※ Aggressive Drift Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=njZOnin5kxQ"
+      },
+      {
+        "name": "Phonk Music 2024 ※ Best Drift Phonk & TikTok Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=nC3h6c9KQLc"
+      },
+      {
+        "name": "Best Phonk Mix 2024 ※ Aggressive Drift Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=bmE-Nr9czIA"
+      },
+      {
+        "name": "Best Phonk Mix 2024 ※ Aggressive Drift Phonk ※ Фонк 2024",
+        "url": "https://www.youtube.com/watch?v=Z4CLHQDY5RM"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk ※ Memphis Cult - 9MM",
+        "url": "https://www.youtube.com/watch?v=d9Z8G_shkCw"
+      },
+      {
+        "name": "Phonk House Mix ※ Best Aggressive Drift Phonk ※ Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=tUiiT-dPRig"
+      },
+      {
+        "name": "Best Phonk Mix 2023 ※ Aggressive Drift Phonk ※ Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=wLfpuzJQMkk"
+      },
+      {
+        "name": "Best Phonk Mix 2023 ※ Aggressive Drift Phonk ※ Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=skmGyO_Bl6k"
+      },
+      {
+        "name": "Best Phonk Mix 2023 ※ Aggressive Drift Phonk ※ Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=qkxmkuTSBA8"
+      },
+      {
+        "name": "1 HOUR BRAZILIAN PHONK #5 ※ MUSIC PLAYLIST [PR PHONK, GYM, FUNK] / ORQUESTRA MALDITA (FUNK BR)",
+        "url": "https://www.youtube.com/watch?v=A0JgsYz99BE"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Best Drift Phonk & TikTok Phonk ※ Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=yQiNEtTJRBo"
+      },
+      {
+        "name": "1 HOUR MEXICAN PHONK ※ Hard Brazilian Phonk ※ Сборник сигма фонк треков",
+        "url": "https://www.youtube.com/watch?v=rBnnXjTh1VI"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk ※ Фонк 2023 [PR PHONK, GYM, FUNK]",
+        "url": "https://www.youtube.com/watch?v=GhgHikXJV70"
+      },
+      {
+        "name": "1 HOUR BEST BRAZILIAN PHONK for GYM #3 / Viral Aggressive Phonk Mix",
+        "url": "https://www.youtube.com/watch?v=aT6i9UsW2FM"
+      },
+      {
+        "name": "Phonk House Mix ※ Best Aggressive Drift Phonk ※ Фонк 2023 [PR PHONK, GYM, FUNK]",
+        "url": "https://www.youtube.com/watch?v=8VYYWR0r3rk"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk ※ Фонк 2023 [PR PHONK, GYM, FUNK]",
+        "url": "https://www.youtube.com/watch?v=5JnVqVhE3r8"
+      },
+      {
+        "name": "Phonk House Mix ※ Best Aggressive Drift Phonk ※ Фонк 2023 [PR PHONK, GYM, FUNK]",
+        "url": "https://www.youtube.com/watch?v=q-yci4RJOeM"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk ※ Фонк 2023 [PR PHONK, GYM, FUNK]",
+        "url": "https://www.youtube.com/watch?v=dM4WWJJO4fU"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk Sped Up ※ Фонк 2023 [SPED UP]",
+        "url": "https://www.youtube.com/watch?v=SKYmcDK8p9w"
+      },
+      {
+        "name": "1 HOUR BEST BRAZILIAN PHONK for GYM #2 / Viral Aggressive Phonk Mix",
+        "url": "https://www.youtube.com/watch?v=0WYbiOyFH6A"
+      },
+      {
+        "name": "1 HOUR SIGMA PHONK ※ Aggressive Drift Phonk ※ Сборник сигма фонк треков",
+        "url": "https://www.youtube.com/watch?v=NkFpqbO7qBI"
+      },
+      {
+        "name": "Phonk House Mix ※ Best Aggressive Drift Phonk ※ Фонк 2023 [PR PHONK, GYM, FUNK]",
+        "url": "https://www.youtube.com/watch?v=QODkb1sREBE"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk ※ Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=80B0vxaNAl0"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk ※ Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=EN-enCH0GIg"
+      },
+      {
+        "name": "Phonk House Mix ※ Best Aggressive Drift Phonk ※ Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=R5s-80eOZak"
+      },
+      {
+        "name": "1 HOUR BEST BRAZILIAN PHONK for GYM / Viral Aggressive Phonk Mix",
+        "url": "https://www.youtube.com/watch?v=I-sMmNrtc7s"
+      },
+      {
+        "name": "Phonk House Mix ※ Best Aggressive Drift Phonk ※ Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=PKOa6w3V5xA"
+      },
+      {
+        "name": "Brazilian Mix Phonk ※ Hard Brazilian Phonk ※ Aggressive Drift Phonk",
+        "url": "https://www.youtube.com/watch?v=OvzdEI6xYWw"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk ※ Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=vrTnyFqHQ6A"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk Sped Up ※ Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=0KN1W5HcLDw"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk ※ Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=kbfnCOHEY_Q"
+      },
+      {
+        "name": "Phonk House Mix ※ Best Aggressive Drift Phonk ※ Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=9H9qBMC-PJ8"
+      },
+      {
+        "name": "Phonk House Mix ※ Best Aggressive Drift Phonk ※ Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=1gtEhXmW-dc"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk ※ Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=ZySBL2K1XVI"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk ※ Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=dnKQ-Svvoxk"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk ※ Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=hGC9j9ZwHCU"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk ※ Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=_wmEcQFNpyk"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk ※ Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=T45du32oLFU"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk ※ Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=_15YwDSsK3U"
+      },
+      {
+        "name": "Brazilian Mix Phonk ※ Hard Brazilian Phonk ※ Aggressive Drift Phonk",
+        "url": "https://www.youtube.com/watch?v=dICsPuHtX9w"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk ※ Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=mYPohPp9EdA"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk ※ Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=p0YTcwBWPKY"
+      },
+      {
+        "name": "SIGMA PHONK MIX 2023 | Aggressive Drift Phonk 2023",
+        "url": "https://www.youtube.com/watch?v=Py7wNPgNd4Q"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Best Of Kordhell 2023 ※ Фонка (Murder In My Mind / Live Another Day / FATALITY)",
+        "url": "https://www.youtube.com/watch?v=CyRLiRgNPIU"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk ※ Фонка (MIDNIGHT / Sahara / NEON BLADE / Close Eyes)",
+        "url": "https://www.youtube.com/watch?v=99x6XPJ8ozY"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk ※ Фонка (MIDNIGHT / Sahara / NEON BLADE / Close Eyes)",
+        "url": "https://www.youtube.com/watch?v=DUEc-OS5BxM"
+      },
+      {
+        "name": "3 HOUR BRAZILIAN PHONK ※ PHONK PLAYLIST | Aggressive Phonk",
+        "url": "https://www.youtube.com/watch?v=BHUvmyw98sA"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk ※ 1 Hour Phonk | Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=cn_REammYfQ"
+      },
+      {
+        "name": "Brazilian Mix Phonk ※ Hard Brazilian Phonk ※ Aggressive Drift Phonk",
+        "url": "https://www.youtube.com/watch?v=lGYR1PhHvgk"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk ※ 1 Hour Phonk | Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=eOXK7aIWSEk"
+      },
+      {
+        "name": "Best Brazilian Phonk Mix 2023 ※ Hard Brazilian Phonk ※ Aggressive Drift Phonk",
+        "url": "https://www.youtube.com/watch?v=QGv9eNZak7o"
+      },
+      {
+        "name": "Brazilian Mix Phonk 2023 ※ Hard Brazilian Phonk ※ Aggressive Drift Phonk",
+        "url": "https://www.youtube.com/watch?v=9jlJ3B1SuYk"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk ※ 1 Hour Phonk | Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=-miKZcJyvdk"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk ※ 1 Hour Phonk | Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=XaDs3flVOCI"
+      },
+      {
+        "name": "BRAZILIAN PHONK MIX 2023 ※ Aggressive Drift Phonk ※ Brazilian Phonk Mano",
+        "url": "https://www.youtube.com/watch?v=CT1zYTHPYkg"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk ※ Phonk Playlist | Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=DTeSHfLcD_w"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk ※ Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=E7anASWnAJc"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk ※ Фонк 2023",
+        "url": "https://www.youtube.com/watch?v=U1za85jL2OE"
+      },
+      {
+        "name": "Phonk Music 2023 ※ Aggressive Drift Phonk ※ Фонка 2023",
+        "url": "https://www.youtube.com/watch?v=rJMMYy6nuhY"
+      },
+      {
+        "name": "AURA = ♾️ | 1 HOUR VIRAL PHONK/FUNK SONGS 2026 🔥 NOVEMBER TRENDING PLAYLIST",
+        "url": "https://www.youtube.com/watch?v=vZcsRoJanmE"
+      },
+      {
+        "name": "AURA = ♾️ | 1 HOUR VIRAL AURA MUSIC PLAYLIST 2026 🔥 TRENDING PHONK HITS",
+        "url": "https://www.youtube.com/watch?v=6aZqiKJ94oU"
+      },
+      {
+        "name": "AURA = ♾️ | 1 HOUR AURA MUSIC PLAYLIST 2025 🔥",
+        "url": "https://www.youtube.com/watch?v=Y_FnFdvKkV8"
+      },
+      {
+        "name": "AURA = ♾️ | 1 HOUR VIRAL PHONK/FUNK SONGS 2026 🔥 OCTOBER TRENDING PLAYLIST",
+        "url": "https://www.youtube.com/watch?v=DmXWmVNtITk"
+      },
+      {
+        "name": "AURA = ♾️ | TOP 50 MOST VIRAL PHONK/FUNK 2026 🔥PLAYLIST",
+        "url": "https://www.youtube.com/watch?v=WdD3ocBJ7ok"
+      },
+      {
+        "name": "AURA = ♾️ | 1 HOUR VIRAL AURA MUSIC PLAYLIST 2026 🔥 VIRAL PHONK HITS",
+        "url": "https://www.youtube.com/watch?v=Ig45DbVAV7M"
+      },
+      {
+        "name": "AURA = ♾️ | 1 HOUR VIRAL PHONK/FUNK SONGS 2026 | TRENDING PHONK IN AUGUST 2026",
+        "url": "https://www.youtube.com/watch?v=kU2EERaLTqI"
+      },
+      {
+        "name": "AURA = ♾️ | VIRAL AURA MUSIC PLAYLIST 2025 🔥",
+        "url": "https://www.youtube.com/watch?v=gz1GLVdIBFo"
+      },
+      {
+        "name": "AURA = ♾️ | 1 HOUR VIRAL PHONK/FUNK SONGS 2026 🔥 NOVEMBER TRENDING PLAYLIST",
+        "url": "https://www.youtube.com/watch?v=RnAExqiIyQo"
+      },
+      {
+        "name": "AURA = ♾️ | 1 HOUR VIRAL AURA MUSIC PLAYLIST 2026 🔥 TRENDING PHONK HITS",
+        "url": "https://www.youtube.com/watch?v=Wc9yYDhQvWQ"
+      },
+      {
+        "name": "AURA = ♾️ | VIRAL AURA MUSIC PLAYLIST 2025 🔥 1 HOUR",
+        "url": "https://www.youtube.com/watch?v=H_z0t5NQs7U"
+      },
+      {
+        "name": "AURA = ♾️ | VIRAL AURA MUSIC PLAYLIST 2025 🔥 1 HOUR",
+        "url": "https://www.youtube.com/watch?v=5QIstqUmQvM"
+      },
+      {
+        "name": "1 HOUR ⚡ VIRAL PHONK/FUNK SONGS 2026 | OCTOBER TRENDING PHONK PLAYLIST",
+        "url": "https://www.youtube.com/watch?v=iv2jDD_ppgo"
+      },
+      {
+        "name": "AURA = ♾️ | 1 HOUR VIRAL PHONK/FUNK SONGS 2026 🔥 OCTOBER TRENDING PLAYLIST",
+        "url": "https://www.youtube.com/watch?v=sQ28_aY9or4"
+      },
+      {
+        "name": "AURA = ♾️ | 1 HOUR VIRAL PHONK/FUNK SONGS 2026 🔥 OCTOBER TRENDING PLAYLIST",
+        "url": "https://www.youtube.com/watch?v=RmLF0HyHkwc"
+      },
+      {
+        "name": "AURA = ♾️ | 1 HOUR VIRAL AURA MUSIC PLAYLIST 2026 🔥 VIRAL PHONK HITS",
+        "url": "https://www.youtube.com/watch?v=0PHKOG3iEc4"
+      },
+      {
+        "name": "AURA = ♾️ | 1 HOUR VIRAL AURA MUSIC PLAYLIST 2026 🔥 BOUNCE PHONK MIX to BOOST YOUR AURA",
+        "url": "https://www.youtube.com/watch?v=P4_0XQeaMQ8"
+      },
+      {
+        "name": "AURA = ♾️ | 1 HOUR AURA MUSIC PLAYLIST 2025 🔥",
+        "url": "https://www.youtube.com/watch?v=Gje5wRMtqj4"
+      },
+      {
+        "name": "AURA = ∞ | MOST VIRAL AURA PHONK SONGS 2025 & 2026 🔥 GET YOUR INFINITY AURA",
+        "url": "https://www.youtube.com/watch?v=OdIFr3CtknE"
+      },
+      {
+        "name": "AURA = ♾️ | 1 HOUR VIRAL AURA MUSIC PLAYLIST 2026 🔥 TRENDING PHONK HITS",
+        "url": "https://www.youtube.com/watch?v=c2t7abhod10"
+      },
+      {
+        "name": "AURA = ♾️ | VIRAL AURA MUSIC PLAYLIST 2025 🔥 1 HOUR",
+        "url": "https://www.youtube.com/watch?v=4JJxE2K0OPA"
+      },
+      {
+        "name": "AURA = ♾️ | 1 HOUR VIRAL AURA MUSIC PLAYLIST 2026 🔥 BOUNCE PHONK MIX to BOOST YOUR AURA",
+        "url": "https://www.youtube.com/watch?v=ou0pxN9hpmc"
+      },
+      {
+        "name": "AURA = ♾️ | 1 HOUR VIRAL AURA MUSIC PLAYLIST 2026 🔥 TRENDING PHONK HITS",
+        "url": "https://www.youtube.com/watch?v=PqZ4Wjwcq9g"
+      },
+      {
+        "name": "AURA = ♾️ | 30 MIN AURA MUSIC PLAYLIST 2025",
+        "url": "https://www.youtube.com/watch?v=hFkyUTNVis8"
+      },
+      {
+        "name": "AURA = ♾️ | 23 MIN AURA MUSIC PLAYLIST 2025  [FUNK, GYM, AGGRESSIVE]",
+        "url": "https://www.youtube.com/watch?v=dzVa7gpOuP4"
+      },
+      {
+        "name": "AURA = ♾️ | 1 HOUR VIRAL PHONK/FUNK SONGS 2026 | SEPTEMBER TRENDING PLAYLIST 🔥",
+        "url": "https://www.youtube.com/watch?v=urX7cODJPjU"
+      },
+      {
+        "name": "NO BATIDÃO (Slowed)",
+        "url": "https://www.youtube.com/watch?v=zeKCzmAKKP4"
+      },
+      {
+        "name": "Raya (Slowed)",
+        "url": "https://www.youtube.com/watch?v=xY0ZyU6TGeQ"
+      },
+      {
+        "name": "MONTAGEM NADA - ZXVN",
+        "url": "https://www.youtube.com/watch?v=Fp0UWqgRavY"
+      },
+      {
+        "name": "MONTAGEM ALQUIMIA (SLOWED) - h6itam, n7san7os & Mc Menor Do Alvorada",
+        "url": "https://www.youtube.com/watch?v=wFUAYxi9zpo"
+      },
+      {
+        "name": "FUNK POWER (ULTRA SLOWED)",
+        "url": "https://www.youtube.com/watch?v=CltCF4Aw4fI"
+      },
+      {
+        "name": "MONTAGEM GUERREIRO (Slowed)",
+        "url": "https://www.youtube.com/watch?v=vJA3bHNjX0M"
+      },
+      {
+        "name": "SEM PRESSA (SLOWED)",
+        "url": "https://www.youtube.com/watch?v=S41oeKL7woE"
+      },
+      {
+        "name": "TURAN 2 - ASTXR, zxguss",
+        "url": "https://www.youtube.com/watch?v=lBmpcDd9Yk0"
+      },
+      {
+        "name": "MONTAGEM ESTRAGO (SLOWED)",
+        "url": "https://www.youtube.com/watch?v=_STNQDKHmOk"
+      },
+      {
+        "name": "PRAIA (Slowed) - Pakto",
+        "url": "https://www.youtube.com/watch?v=brLNBcbRHyY"
+      },
+      {
+        "name": "PROVOCAR - Munh0, DESYR",
+        "url": "https://www.youtube.com/watch?v=yXCNVTYiqL8"
+      },
+      {
+        "name": "MONTAGEM ELDER (SUPER SLOWED)",
+        "url": "https://www.youtube.com/watch?v=tAcnQYvPl1s"
+      },
+      {
+        "name": "BATIDAO FUNK (SUPER SLOWED) - ZXKAI x Rezcaze x MC Kaique SP x KINGXND",
+        "url": "https://www.youtube.com/watch?v=aVrxbSbyIgU"
+      },
+      {
+        "name": "HEAVENLY JUMPSTYLE (Tiktok Version) - TWXNY x Sxilwix x INNXCENCE",
+        "url": "https://www.youtube.com/watch?v=EDw86_4uLyA"
+      },
+      {
+        "name": "X-COOL! (Slowed)",
+        "url": "https://www.youtube.com/watch?v=YNsfnUbHcwQ"
+      },
+      {
+        "name": "PYRE",
+        "url": "https://www.youtube.com/watch?v=sqTt23EXVOM"
+      },
+      {
+        "name": "Velas Negras (Slowed) - 2ndMoonx",
+        "url": "https://www.youtube.com/watch?v=N2QDYN2XRJo"
+      },
+      {
+        "name": "MI AMOR - bxkq x axeos",
+        "url": "https://www.youtube.com/watch?v=ZYkag7xOq40"
+      },
+      {
+        "name": "MONTAGEM SENHORA",
+        "url": "https://www.youtube.com/watch?v=lQO3e4wSEMM"
+      },
+      {
+        "name": "MONTAGEM FINAL",
+        "url": "https://www.youtube.com/watch?v=OWfN9N1WLH4"
+      },
+      {
+        "name": "MONTAGEM DUNE",
+        "url": "https://www.youtube.com/watch?v=Vfsh6klaYSs"
+      },
+      {
+        "name": "VOCE NA MIRA JUMPSTYLE - Sxilwix, Hwungii & DJ VGK1",
+        "url": "https://www.youtube.com/watch?v=C1zrKNRlJKI"
+      },
+      {
+        "name": "MONTAGEM XUE (Chinese Funk + Phonk) DJ VGK1, 0hex",
+        "url": "https://www.youtube.com/watch?v=yqFfDbaVf8g"
+      },
+      {
+        "name": "MONTAGEM MIZUKI (JAPANESE FUNK) - ZIRECT x ZXVN",
+        "url": "https://www.youtube.com/watch?v=B_JXN8OIsp4"
+      },
+      {
+        "name": "MONTAGEM ODORI / JAPANESE FUNK",
+        "url": "https://www.youtube.com/watch?v=IZFo1FpFpjY"
+      },
+      {
+        "name": "PISA NO ASFALTO",
+        "url": "https://www.youtube.com/watch?v=dno0DBaT-Rc"
+      },
+      {
+        "name": "MONTAGEM CASSANDRA (SUPER SLOWED)",
+        "url": "https://www.youtube.com/watch?v=2_NK11oipys"
+      },
+      {
+        "name": "jgrz - Sombra y Corazón (Phonk)",
+        "url": "https://www.youtube.com/watch?v=IMjEpCPS-D8"
+      },
+      {
+        "name": "MONTAGEM REDENÇÃO",
+        "url": "https://www.youtube.com/watch?v=hWTeke5oRbw"
+      },
+      {
+        "name": "MONTAGEM MISTERIOSO (SLOWED) - INFINITIX x CRVNER x D4R.IO",
+        "url": "https://www.youtube.com/watch?v=5brBgdakcX8"
+      },
+      {
+        "name": "MONTAGEM PEGADORA (Slowed)",
+        "url": "https://www.youtube.com/watch?v=4E4VaL5krv8"
+      },
+      {
+        "name": "MONTAGEM UNKNOWN",
+        "url": "https://www.youtube.com/watch?v=gvGQ27rWmg0"
+      },
+      {
+        "name": "FUNK TAKA (SLOWED)",
+        "url": "https://www.youtube.com/watch?v=Ac_1ZTZGTRo"
+      },
+      {
+        "name": "FUNK ABNORMAL (SLOWED)",
+        "url": "https://www.youtube.com/watch?v=_tmdD6P0oGE"
+      },
+      {
+        "name": "TURAN - ASTXR",
+        "url": "https://www.youtube.com/watch?v=YruYIBn9BJE"
+      },
+      {
+        "name": "ACIDO III (SLOWED) - UdieNnx x Mc Denny",
+        "url": "https://www.youtube.com/watch?v=6MdFZgsUYHA"
+      },
+      {
+        "name": "MONTAGEM CAOTICA (Slowed)",
+        "url": "https://www.youtube.com/watch?v=K2saIoMngnA"
+      },
+      {
+        "name": "Montagem Supersonic",
+        "url": "https://www.youtube.com/watch?v=lM4v4sq8ypo"
+      },
+      {
+        "name": "SEMPERO (Super Slowed)",
+        "url": "https://www.youtube.com/watch?v=__x-M7KlkBc"
+      },
+      {
+        "name": "LUZ ROJA (Slowed)",
+        "url": "https://www.youtube.com/watch?v=_GL6beebCuU"
+      },
+      {
+        "name": "Fim De Tarde (Slowed)",
+        "url": "https://www.youtube.com/watch?v=3jmvpFM-1fE"
+      },
+      {
+        "name": "MONTAGEM BAILÃO",
+        "url": "https://www.youtube.com/watch?v=yHcHGyg-mY0"
+      },
+      {
+        "name": "YALA (Slowed)",
+        "url": "https://www.youtube.com/watch?v=x6ZLAhtcU1w"
+      },
+      {
+        "name": "MONTAGEM ALURA (Super Slowed)",
+        "url": "https://www.youtube.com/watch?v=66-AfCf6rIY"
+      },
+      {
+        "name": "TIKI TIKI (Slowed)",
+        "url": "https://www.youtube.com/watch?v=bEYiPCbHAtM"
+      },
+      {
+        "name": "VAI VAI TRAIR",
+        "url": "https://www.youtube.com/watch?v=356OilwxvcY"
+      },
+      {
+        "name": "SEM ESCAPAR",
+        "url": "https://www.youtube.com/watch?v=05qhu_3w-Os"
+      },
+      {
+        "name": "LUA NA PRAÇA",
+        "url": "https://www.youtube.com/watch?v=LDUW_gseMNQ"
+      },
+      {
+        "name": "MATADORA",
+        "url": "https://www.youtube.com/watch?v=YIYBhDeQfT0"
+      },
+      {
+        "name": "PASSO BEM SOLTO (Slowed)",
+        "url": "https://www.youtube.com/watch?v=NT4eF9YsYnM"
+      },
+      {
+        "name": "LUNA BALA (Slowed)",
+        "url": "https://www.youtube.com/watch?v=dukNdSgaLtc"
+      },
+      {
+        "name": "Sombra y Corazón",
+        "url": "https://www.youtube.com/watch?v=W1hHYxecwVw"
+      },
+      {
+        "name": "MONTAGEM XONADA",
+        "url": "https://www.youtube.com/watch?v=L8u_z4AaXRs"
+      },
+      {
+        "name": "ACELERADA",
+        "url": "https://www.youtube.com/watch?v=awsCmcCSxFU"
+      },
+      {
+        "name": "APROVAÇÃO",
+        "url": "https://www.youtube.com/watch?v=dEnnT8eYc7o"
+      },
+      {
+        "name": "HEAVENLY JUMPSTYLE (Slowed)",
+        "url": "https://www.youtube.com/watch?v=DWv8ZkHpCx4"
+      },
+      {
+        "name": "MONTAGEM FLY (Slowed)",
+        "url": "https://www.youtube.com/watch?v=V1eqaOgczu4"
+      },
+      {
+        "name": "PERMISO",
+        "url": "https://www.youtube.com/watch?v=jpk8G1RWz5E"
+      },
+      {
+        "name": "In The Chaos",
+        "url": "https://www.youtube.com/watch?v=QROkdebU1gs"
+      },
+      {
+        "name": "MONTAGEM SANTA FE 2",
+        "url": "https://www.youtube.com/watch?v=31mfKG8uOm8"
+      },
+      {
+        "name": "TAKA LA DENTRO",
+        "url": "https://www.youtube.com/watch?v=7C2b1EvvpUY"
+      },
+      {
+        "name": "HOMAGE FUNK (SUPER SLOWED)",
+        "url": "https://www.youtube.com/watch?v=EDqNynGHzQk"
+      },
+      {
+        "name": "Phonk Music 2023 🔥 Aggressive Drift Phonk 🔥 Фонка (MIDNIGHT/Sahara/NEON BLADE/Close Eyes)",
+        "url": "https://www.youtube.com/watch?v=GBrHghh9mgM"
+      },
+      {
+        "name": "AURA = ♾️ | VIRAL PHONK/FUNK SONGS PLAYLIST 2026 🔥 TRENDING PHONK HITS",
+        "url": "https://www.youtube.com/watch?v=CDyUPqxKVXI"
+      }
+    ],
+    "ANGELCORE": [
+      {
+        "name": "pussypodium",
+        "url": "https://www.youtube.com/watch?v=rQvsCP38DJk"
+      },
+      {
+        "name": "Deathscar",
+        "url": "https://www.youtube.com/watch?v=-JaG6aZiQZ4"
+      },
+      {
+        "name": "angelvoid (slowed)",
+        "url": "https://www.youtube.com/watch?v=OVlwxMrkBNU"
+      },
+      {
+        "name": "No Hope",
+        "url": "https://www.youtube.com/watch?v=B3Ejdxiz6Nc"
+      },
+      {
+        "name": "seraphvoid (slowed)",
+        "url": "https://www.youtube.com/watch?v=tqxvgMpxUfA"
+      },
+      {
+        "name": "Glitchkiss",
+        "url": "https://www.youtube.com/watch?v=PIYy_vwQY_k"
+      },
+      {
+        "name": "Get Away",
+        "url": "https://www.youtube.com/watch?v=_8R7CFDKluU"
+      },
+      {
+        "name": "archangel (Slowed)",
+        "url": "https://www.youtube.com/watch?v=mkhRRLRUqLY"
+      },
+      {
+        "name": "halcyon",
+        "url": "https://www.youtube.com/watch?v=Xpm77ETSC0c"
+      },
+      {
+        "name": "Wish For Me (Slowed Version)",
+        "url": "https://www.youtube.com/watch?v=BrT855Oq734"
+      },
+      {
+        "name": "Deathscar (Slowed Version)",
+        "url": "https://www.youtube.com/watch?v=UX_A84rpwFQ"
+      },
+      {
+        "name": "velvety (Slowed)",
+        "url": "https://www.youtube.com/watch?v=Mo-y4ZvmYSE"
+      },
+      {
+        "name": "seraphvoid",
+        "url": "https://www.youtube.com/watch?v=nA7bDsC97FI"
+      },
+      {
+        "name": "kittycore (slowed)",
+        "url": "https://www.youtube.com/watch?v=OMOMYtbLSA4"
+      },
+      {
+        "name": "Dying Core",
+        "url": "https://www.youtube.com/watch?v=SfEWnKFhOXA"
+      },
+      {
+        "name": "Agitated - Ultra Slowed",
+        "url": "https://www.youtube.com/watch?v=pg38JS4_ImE"
+      },
+      {
+        "name": "seamripper (Slowed)",
+        "url": "https://www.youtube.com/watch?v=jcSvoe5hsD8"
+      },
+      {
+        "name": "YOUR TOUCH",
+        "url": "https://www.youtube.com/watch?v=bmzEcMkS-G8"
+      },
+      {
+        "name": "pentagramma",
+        "url": "https://www.youtube.com/watch?v=eUkcinhh6C4"
+      },
+      {
+        "name": "Tortured Memory",
+        "url": "https://www.youtube.com/watch?v=zO1nehuFEvs"
+      },
+      {
+        "name": "Seraphis",
+        "url": "https://www.youtube.com/watch?v=eZrkVsexIQA"
+      },
+      {
+        "name": "starly (Slowed)",
+        "url": "https://www.youtube.com/watch?v=VkyNqGsfJdM"
+      },
+      {
+        "name": "Recrush",
+        "url": "https://www.youtube.com/watch?v=yYlfCI8moyI"
+      },
+      {
+        "name": "Stay Strange",
+        "url": "https://www.youtube.com/watch?v=kspfiEtTjIE"
+      },
+      {
+        "name": "decay",
+        "url": "https://www.youtube.com/watch?v=o8Ul5W9bRsk"
+      },
+      {
+        "name": "Black Light - Ultra Slowed",
+        "url": "https://www.youtube.com/watch?v=KtzvjEdijtE"
+      },
+      {
+        "name": "ABSENCE",
+        "url": "https://www.youtube.com/watch?v=vAWJwi1pTLE"
+      },
+      {
+        "name": "THAT FEELING",
+        "url": "https://www.youtube.com/watch?v=w-0jKwHz9lk"
+      },
+      {
+        "name": "poison tearz",
+        "url": "https://www.youtube.com/watch?v=CGWtugBXdl4"
+      },
+      {
+        "name": "seraphvoid (super slowed)",
+        "url": "https://www.youtube.com/watch?v=H7Hn4vgVWEg"
+      },
+      {
+        "name": "Wish For Me",
+        "url": "https://www.youtube.com/watch?v=oLvp3ZSH3aI"
+      },
+      {
+        "name": "raspberret",
+        "url": "https://www.youtube.com/watch?v=U4U7od3WQZk"
+      },
+      {
+        "name": "Black n White",
+        "url": "https://www.youtube.com/watch?v=Ja47I2g7k2E"
+      },
+      {
+        "name": "Dirty Little Secret - Ultra Slowed",
+        "url": "https://www.youtube.com/watch?v=-j1yMt9DH6Y"
+      },
+      {
+        "name": "shades",
+        "url": "https://www.youtube.com/watch?v=pWkzhV5B4UE"
+      },
+      {
+        "name": "Left behind (Slowed)",
+        "url": "https://www.youtube.com/watch?v=jthpASmGbSw"
+      },
+      {
+        "name": "with you",
+        "url": "https://www.youtube.com/watch?v=QxhWHACAgMk"
+      },
+      {
+        "name": "dark veil",
+        "url": "https://www.youtube.com/watch?v=n0fv_k0dsEg"
+      },
+      {
+        "name": "Deadly",
+        "url": "https://www.youtube.com/watch?v=yl9ZToHBBCs"
+      },
+      {
+        "name": "glamorgeddon (Slowed)",
+        "url": "https://www.youtube.com/watch?v=Ekv9FYSqkEI"
+      },
+      {
+        "name": "If You Care",
+        "url": "https://www.youtube.com/watch?v=PricrvAqF5E"
+      },
+      {
+        "name": "Autobahn Nights",
+        "url": "https://www.youtube.com/watch?v=BbfQymKn5EE"
+      },
+      {
+        "name": "archangel 2",
+        "url": "https://www.youtube.com/watch?v=pYsPYkBTEUE"
+      },
+      {
+        "name": "catwalk",
+        "url": "https://www.youtube.com/watch?v=QJMs5ktJzGY"
+      },
+      {
+        "name": "lost",
+        "url": "https://www.youtube.com/watch?v=NEsNj_DJqEU"
+      },
+      {
+        "name": "soulless",
+        "url": "https://www.youtube.com/watch?v=uYfCfpN3_1c"
+      },
+      {
+        "name": "Firstclass Misery",
+        "url": "https://www.youtube.com/watch?v=WbVL41inErk"
+      },
+      {
+        "name": "Left behind",
+        "url": "https://www.youtube.com/watch?v=uUcr-ZxHH4k"
+      },
+      {
+        "name": "kittycore",
+        "url": "https://www.youtube.com/watch?v=6gGNv6ywPtc"
+      },
+      {
+        "name": "GLOWDUST",
+        "url": "https://www.youtube.com/watch?v=I8Uu0OcdEOk"
+      },
+      {
+        "name": "Agitated",
+        "url": "https://www.youtube.com/watch?v=ImIIZAbSy8c"
+      },
+      {
+        "name": "starly (Ultra Slowed)",
+        "url": "https://www.youtube.com/watch?v=x_7zkQO0lPs"
+      },
+      {
+        "name": "Suzerain",
+        "url": "https://www.youtube.com/watch?v=mUPXmSKm0yw"
+      },
+      {
+        "name": "seraphvoid (ultra slowed)",
+        "url": "https://www.youtube.com/watch?v=sNaj5nPk-mQ"
+      },
+      {
+        "name": "Sanctuary",
+        "url": "https://www.youtube.com/watch?v=cyY7Us_Xmng"
+      },
+      {
+        "name": "Blackwail",
+        "url": "https://www.youtube.com/watch?v=3V1nV_5E09U"
+      },
+      {
+        "name": "Catalyst",
+        "url": "https://www.youtube.com/watch?v=GVlisQH7yfE"
+      },
+      {
+        "name": "Black Light",
+        "url": "https://www.youtube.com/watch?v=6pgWMKZ6va8"
+      },
+      {
+        "name": "with you (Slowed)",
+        "url": "https://www.youtube.com/watch?v=x6jpWX_iXgA"
+      },
+      {
+        "name": "mine",
+        "url": "https://www.youtube.com/watch?v=RFmW1Hr7ZOk"
+      },
+      {
+        "name": "663mistrust",
+        "url": "https://www.youtube.com/watch?v=tA1-0ezJrqM"
+      },
+      {
+        "name": "Deathwish",
+        "url": "https://www.youtube.com/watch?v=BYJYAgsHtWI"
+      },
+      {
+        "name": "If You Care (Slowed)",
+        "url": "https://www.youtube.com/watch?v=UGjfhqhHANE"
+      },
+      {
+        "name": "You Can Follow",
+        "url": "https://www.youtube.com/watch?v=-GbQhuRq3II"
+      },
+      {
+        "name": "Ghost Radio",
+        "url": "https://www.youtube.com/watch?v=z-R8ygDnFUs"
+      },
+      {
+        "name": "Aurawalk",
+        "url": "https://www.youtube.com/watch?v=zf38x0F6bQQ"
+      },
+      {
+        "name": "Destruction Age (Slowed)",
+        "url": "https://www.youtube.com/watch?v=yckDvFB8mYs"
+      },
+      {
+        "name": "afterlife",
+        "url": "https://www.youtube.com/watch?v=8nqzWmUp1pM"
+      },
+      {
+        "name": "gelida",
+        "url": "https://www.youtube.com/watch?v=9Maqa13KhEQ"
+      },
+      {
+        "name": "Gothomania (feat. Jay Karin)",
+        "url": "https://www.youtube.com/watch?v=HMQjBsQQP1w"
+      },
+      {
+        "name": "Neonique",
+        "url": "https://www.youtube.com/watch?v=QgjNtCYRWoA"
+      },
+      {
+        "name": "Virus",
+        "url": "https://www.youtube.com/watch?v=hiBKZ2UV2f8"
+      },
+      {
+        "name": "jessie (Slowed)",
+        "url": "https://www.youtube.com/watch?v=-K2Q1lD4Fn4"
+      },
+      {
+        "name": "Stereolink",
+        "url": "https://www.youtube.com/watch?v=dlDNT3lbaL8"
+      },
+      {
+        "name": "angelvoid [super slowed · angelcore]",
+        "url": "https://www.youtube.com/watch?v=4Gi7C3Ke4Bc"
+      },
+      {
+        "name": "Griefcore",
+        "url": "https://www.youtube.com/watch?v=8GDiYU7bq4M"
+      },
+      {
+        "name": "addiction",
+        "url": "https://www.youtube.com/watch?v=0G3xwKGlfoc"
+      },
+      {
+        "name": "Skins (Ultra Slowed + Reverb)",
+        "url": "https://www.youtube.com/watch?v=6nO8PdirGvk"
+      },
+      {
+        "name": "worry (ultra slowed)",
+        "url": "https://www.youtube.com/watch?v=lCKU-tI-upI"
+      },
+      {
+        "name": "Solitude - Slowed",
+        "url": "https://www.youtube.com/watch?v=EkOcSF8QdYI"
+      },
+      {
+        "name": "AVANGARD (Ultra Slowed + Reverb)",
+        "url": "https://www.youtube.com/watch?v=3QqwjYC3EAg"
+      },
+      {
+        "name": "Sleepwalker (Slowed)",
+        "url": "https://www.youtube.com/watch?v=cLupeDNMauk"
+      },
+      {
+        "name": "wiv - i love u. (slowed + reverb)",
+        "url": "https://www.youtube.com/watch?v=lRx9WNTOi44"
+      },
+      {
+        "name": "acies",
+        "url": "https://www.youtube.com/watch?v=dZ2_JoUH3XU"
+      },
+      {
+        "name": "losing touch",
+        "url": "https://www.youtube.com/watch?v=92BTVy78P0E"
+      },
+      {
+        "name": "soulless (Slowed)",
+        "url": "https://www.youtube.com/watch?v=IRsxXw38WKc"
+      },
+      {
+        "name": "Drain (Slowed)",
+        "url": "https://www.youtube.com/watch?v=ldY7pAb0H5I"
+      },
+      {
+        "name": "Angel Echo (Slowed)",
+        "url": "https://www.youtube.com/watch?v=MulaI8s6nX8"
+      },
+      {
+        "name": "STRUCT (Slowed)",
+        "url": "https://www.youtube.com/watch?v=aOysIaPMKvE"
+      },
+      {
+        "name": "Sublime (Ultra Slowed)",
+        "url": "https://www.youtube.com/watch?v=vFtuwE8NxKk"
+      },
+      {
+        "name": "archangel (Ultra Slowed)",
+        "url": "https://www.youtube.com/watch?v=zomUPed1KiA"
+      },
+      {
+        "name": "deadrose (Ultra Slowed)",
+        "url": "https://www.youtube.com/watch?v=ZIUK3QwPVdo"
+      },
+      {
+        "name": "INSOMNIA",
+        "url": "https://www.youtube.com/watch?v=421zgFxPhZo"
+      },
+      {
+        "name": "emily (slowed)",
+        "url": "https://www.youtube.com/watch?v=XLvPGqFF4Nc"
+      },
+      {
+        "name": "archangel 2 (Slowed)",
+        "url": "https://www.youtube.com/watch?v=hNDjZ2_RCYM"
+      },
+      {
+        "name": "Suffocation - Crystal Castles but the intro is heavenly ( by prod.yvngchim // Slowed down)",
+        "url": "https://www.youtube.com/watch?v=8pyC0Wyrhrw"
+      },
+      {
+        "name": "Interlinked (Slowed)",
+        "url": "https://www.youtube.com/watch?v=IRr35PDkU8g"
+      },
+      {
+        "name": "Thelema",
+        "url": "https://www.youtube.com/watch?v=uNfsuth3J74"
+      }
+    ],
+    "PUNJABI": [
+      {
+        "name": "ASSAY PASSAY - TALWIINDER | DROPPED OUT (OFFICIAL MUSIC VIDEO)",
+        "url": "https://www.youtube.com/watch?v=G9BEPYH9vqs"
+      },
+      {
+        "name": "TALWIINDER - TERA CHERA (feat. HASAN RAHEEM) Prod. by NDS",
+        "url": "https://www.youtube.com/watch?v=RyYojfwl4Js"
+      },
+      {
+        "name": "TALWIINDER - MISS ME WITH THAT (Official Video) PUSH KAHLON | BOWDHITYA",
+        "url": "https://www.youtube.com/watch?v=0eTB7pbQ-Rk"
+      },
+      {
+        "name": "TALWIINDER - DIL MERA PT. 2 (Official Video) prod. by 30KEY!",
+        "url": "https://www.youtube.com/watch?v=K1UtHznqhPk"
+      },
+      {
+        "name": "Afusic - Pal Pal with @Talwiinder  (Official Visualiser) Prod. @AliSoomroMusic",
+        "url": "https://www.youtube.com/watch?v=AbkEmIgJMcU"
+      },
+      {
+        "name": "HASEEN - TALWIINDER, NDS, RIPPY (Official Visualizer)",
+        "url": "https://www.youtube.com/watch?v=IltsOcCj1Ak"
+      },
+      {
+        "name": "Talwiinder - KHAYAAL (prod. by NDS) | Official Music Video",
+        "url": "https://www.youtube.com/watch?v=GCvt9C4FLgA"
+      },
+      {
+        "name": "Talwiinder - NASHA (Visualizer) | Prod. by Vision",
+        "url": "https://www.youtube.com/watch?v=HQ9rgpqBLjw"
+      },
+      {
+        "name": "TU (Official Music Video): TALWIINDER | JACKIE SHROFF | NEELAM KOTHARI | SANJOY | BHUSHAN KUMAR",
+        "url": "https://www.youtube.com/watch?v=4dkss90fdPc"
+      },
+      {
+        "name": "Talwiinder - GALLAN 4 (Lyrical Video)",
+        "url": "https://www.youtube.com/watch?v=ZQBgxRuJQqg"
+      },
+      {
+        "name": "​ @Talwiinder   – Khayaal | NDS | Official Music Video | Viral Song",
+        "url": "https://www.youtube.com/watch?v=JFUoE0ArWd4"
+      },
+      {
+        "name": "Talwiinder - KAMMO JI (Prod. Parth Parashar) | Punjabi Lofi",
+        "url": "https://www.youtube.com/watch?v=I1nMJ6M6F50"
+      },
+      {
+        "name": "Talwiinder - DIL MERA (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=nYYF6rMirlE"
+      },
+      {
+        "name": "Talwiinder - SAVE ME (Visualizer)",
+        "url": "https://www.youtube.com/watch?v=wAsSETeE8QY"
+      },
+      {
+        "name": "Talwiinder - RAAZ (Official Visualizer) | Prod. by @ISHHwav",
+        "url": "https://www.youtube.com/watch?v=b9D97ybeuAk"
+      },
+      {
+        "name": "PANCHII - TALWIINDER, NDS (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=y4MWfw0o_uU"
+      },
+      {
+        "name": "Talwiinder - TELL ME (Prod. by Prxphecy) | DRIPBASIC",
+        "url": "https://www.youtube.com/watch?v=-b-xdEb4PxU"
+      },
+      {
+        "name": "Talwiinder x Sneh x Rippy - HER (Official Video) || The Ikath Collective, Dropped Out",
+        "url": "https://www.youtube.com/watch?v=868laZvHrpo"
+      },
+      {
+        "name": "Talwiinder, NDS - KHOYA (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=2Q5TVhvoKFs"
+      },
+      {
+        "name": "TALWIINDER - HASEEN (feat. SIMAR) | NDS | RIPPY | BOWDHITYA (VISUALIZER)",
+        "url": "https://www.youtube.com/watch?v=wCTmWy43HgM"
+      },
+      {
+        "name": "NAKHRE - TALWIINDER, NDS (Official Music Video) UGH | BOWDHITYA",
+        "url": "https://www.youtube.com/watch?v=rwcccPOPdEs"
+      },
+      {
+        "name": "Talwiinder - DIL TE DIMAG  (Official Audio) | Rippy",
+        "url": "https://www.youtube.com/watch?v=dXNxWBJbNPM"
+      },
+      {
+        "name": "Talwiinder - KITAAB (Prod. VISION) | HappyD Productions",
+        "url": "https://www.youtube.com/watch?v=8gBESV61a2s"
+      },
+      {
+        "name": "TALWIINDER x REAL BOSS x NDS - ANONYMOUS (Official Video)",
+        "url": "https://www.youtube.com/watch?v=fgqGriwD8nk"
+      },
+      {
+        "name": "AGG BANKE - Talwiinder, Harsh Likhari, Kidjaywest (prod. NDS)- lyrical video",
+        "url": "https://www.youtube.com/watch?v=cAI756zC15g"
+      },
+      {
+        "name": "AJA - TALWIINDER, NDS (Official Video) | UGH CREW | MIISFIIT",
+        "url": "https://www.youtube.com/watch?v=PhB1lP4oCFo"
+      },
+      {
+        "name": "Talwiinder x Hasan Raheem x NDS - BACH KE (Official Video)",
+        "url": "https://www.youtube.com/watch?v=seInEsArwqE"
+      },
+      {
+        "name": "Talwiinder - YAAD (official Video) | Finest Creation",
+        "url": "https://www.youtube.com/watch?v=3DoIf7ECwQE"
+      },
+      {
+        "name": "Talwiinder - BE MINE (Visualizer) | Prod. by Happydproductions",
+        "url": "https://www.youtube.com/watch?v=aHE1aO--AQA"
+      },
+      {
+        "name": "Talwiinder - HAAL (Visualizer) | Prod. by Retro Blxxd",
+        "url": "https://www.youtube.com/watch?v=4pukUTosKGk"
+      },
+      {
+        "name": "AGG BANKE - Talwiinder, Harsh Likhari, Kidjaywest (prod. NDS) | Official Music Video",
+        "url": "https://www.youtube.com/watch?v=yJrtDe5nmHw"
+      },
+      {
+        "name": "Talwiinder - GAAH | Rippy (Official Audio) Punjabi Drill",
+        "url": "https://www.youtube.com/watch?v=fOI8J6BpLHw"
+      },
+      {
+        "name": "Talwiinder - AKHIYAN (Prod. Syndrome)",
+        "url": "https://www.youtube.com/watch?v=OcWj9R0TGsg"
+      },
+      {
+        "name": "Talwiinder - Baarish Da Mausam (Lyrical) Rippy | (Prod. by Push Kahlon) | DRIPBASIC",
+        "url": "https://www.youtube.com/watch?v=UFANkyWOEdk"
+      },
+      {
+        "name": "Talwiinder - Your Eyes (Visualizer) | Prod. by Prxphecy",
+        "url": "https://www.youtube.com/watch?v=DN34asb07CQ"
+      },
+      {
+        "name": "Talwiinder, NDS - CONVERSATION (feat. Annural Khalid)",
+        "url": "https://www.youtube.com/watch?v=eG9ZC2hgRrs"
+      },
+      {
+        "name": "HER - Talwiinder, Sneh, NDS, Rippy (Official Visualizer) The Ikath Collective, Dropped Out",
+        "url": "https://www.youtube.com/watch?v=RcWTea-_0NA"
+      },
+      {
+        "name": "Talwiinder - SAVE ME (Lyrical Video)",
+        "url": "https://www.youtube.com/watch?v=NP2qM77rjZA"
+      },
+      {
+        "name": "TUNNEL VISION - TALWIINDER // NDS [Official Audio] MISFIT",
+        "url": "https://www.youtube.com/watch?v=x7Ftg_6YkjM"
+      },
+      {
+        "name": "Talwiinder - Phir Bhi (Cover) Hindi Lofi",
+        "url": "https://www.youtube.com/watch?v=YzrUThw6dHE"
+      },
+      {
+        "name": "Talwiinder, NDS, Mxdnxght - ANDAAZ  [Visualizer] Sidrenders",
+        "url": "https://www.youtube.com/watch?v=vX3I9hdmBRE"
+      },
+      {
+        "name": "Talwiinder - TOGETHER (Prod. by Retro Blxxd) | (Official Audio) | Punjabi Lofi",
+        "url": "https://www.youtube.com/watch?v=5m_IM_cWh6Y"
+      },
+      {
+        "name": "Talwiinder x Hasu x Sneh - SAJJNA (Official Video) | The Ikath Collective | Startbad Studios",
+        "url": "https://www.youtube.com/watch?v=tyq8tMHHdsM"
+      },
+      {
+        "name": "TALWIINDER - HASEEN (ACOUSTIC) NDS | RIPPY | BOWDHITYA (Official Video)",
+        "url": "https://www.youtube.com/watch?v=g4bkdOtrKVY"
+      },
+      {
+        "name": "Talwiinder - Phir Mohabbat (cover)",
+        "url": "https://www.youtube.com/watch?v=HfgY6Hx9F6A"
+      },
+      {
+        "name": "Talwiinder - LOOK AT THEM (Prod. Masand Music)",
+        "url": "https://www.youtube.com/watch?v=Kx9rIA40tIs"
+      },
+      {
+        "name": "AKHIYAN - TALWIINDER, NDS (Official Video) MISFIT",
+        "url": "https://www.youtube.com/watch?v=iig_jfloEB4"
+      },
+      {
+        "name": "KASHNI - TALWIINDER // SIMAR // NDS  [Official Audio] MISFIT",
+        "url": "https://www.youtube.com/watch?v=_CR29MGHjNA"
+      },
+      {
+        "name": "JAAM - Talwiinder x TMDA (Visualizer)",
+        "url": "https://www.youtube.com/watch?v=8-hybt6C-Us"
+      },
+      {
+        "name": "Talwiinder - NASHA (Live) | NDS | @PopShift",
+        "url": "https://www.youtube.com/watch?v=2E5dmBUPoBg"
+      },
+      {
+        "name": "Talwiinder - Paani Diyan Challan (COVER) | Push Kahlon",
+        "url": "https://www.youtube.com/watch?v=3MbXvxP3Gy8"
+      },
+      {
+        "name": "DIL WICH - TALWIINDER // NDS  [Official Audio] MISFIT",
+        "url": "https://www.youtube.com/watch?v=Tb8IX6fi09s"
+      },
+      {
+        "name": "NEED - TALWIINDER // HARNOOR // NDS  [Official Audio] MISFIT",
+        "url": "https://www.youtube.com/watch?v=dmT1FLBnios"
+      },
+      {
+        "name": "Talwiinder - DON'T CARE (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=BS0GNrNh0Tg"
+      },
+      {
+        "name": "TERE BIN  - TALWIINDER // AMARI  // NDS  [Official Audio] MISFIT",
+        "url": "https://www.youtube.com/watch?v=LaRB3zWFtBE"
+      },
+      {
+        "name": "@Kidjaywest  x Talwiinder x Sneh - PAJ NA (Official Video) The Ikath Collective | UGH Crew",
+        "url": "https://www.youtube.com/watch?v=lca5XDVvgnY"
+      },
+      {
+        "name": "DIL DI GALL - TALWIINDER // NDS [Official Audio] MISFIT",
+        "url": "https://www.youtube.com/watch?v=uCJtYnNFqiU"
+      },
+      {
+        "name": "Talwiinder - MIDNIGHT DRIVE (Visualizer) Nowhere but Here | New Punjabi Song 2021",
+        "url": "https://www.youtube.com/watch?v=Emq_z7m2VOs"
+      },
+      {
+        "name": "TERA CHERA - TALWIINDER // HASAN RAHEEM // NDS  [Official Audio] MISFIT",
+        "url": "https://www.youtube.com/watch?v=VekYKr_b1ZM"
+      },
+      {
+        "name": "Talwiinder - TIME (Official Audio) | Rippy",
+        "url": "https://www.youtube.com/watch?v=VM18lmFr-og"
+      },
+      {
+        "name": "Talwiinder - JOR (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=w3DxPLkdEdI"
+      },
+      {
+        "name": "Talwiinder - FLY AWAY (Prod. Retro Blxxd)",
+        "url": "https://www.youtube.com/watch?v=1jlQr8V03ZM"
+      },
+      {
+        "name": "SAJJNA - TALWIINDER // ARSH HEER // NDS  [Official Audio] MISFIT",
+        "url": "https://www.youtube.com/watch?v=_qos0GFPb7g"
+      },
+      {
+        "name": "Talwiinder - TENU LAGGA (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=wIVn_rdUCYk"
+      },
+      {
+        "name": "Talwiinder x NDS - Someone Like Me (Revibe)",
+        "url": "https://www.youtube.com/watch?v=8ZtE4adeCSg"
+      },
+      {
+        "name": "@INDERZY , TALWIINDER - DEAL 2 (Official Audio) Punjabi Drill",
+        "url": "https://www.youtube.com/watch?v=P2KKKrHNLQw"
+      },
+      {
+        "name": "Talwiinder - JAAN (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=GxSYMdlWNTU"
+      },
+      {
+        "name": "Talwiinder x Mxdxnght x Hasu - FOCUS | The Ikath Collective | DRIPBASIC",
+        "url": "https://www.youtube.com/watch?v=u88wDBBp2cE"
+      },
+      {
+        "name": "Talwiinder x Sneh - SAMAJH NA AAVE (Official Audio) | The Ikath Collective",
+        "url": "https://www.youtube.com/watch?v=Y091OTDxkxA"
+      },
+      {
+        "name": "KEHRI DUNIYA - TALWIINDER // NDS [Official Audio] MISFIT",
+        "url": "https://www.youtube.com/watch?v=ISUQMqokG2A"
+      },
+      {
+        "name": "Talwiinder - YAAD (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=EreQLJ7Tgb0"
+      },
+      {
+        "name": "MERA - TALWIINDER // KIDJAYWEST // NDS  [Official Audio] MISFIT",
+        "url": "https://www.youtube.com/watch?v=riQ2zWiYjvI"
+      },
+      {
+        "name": "LUKAKE -  TALWIINDER // PRANAVI // NDS  [Official Audio] MISFIT",
+        "url": "https://www.youtube.com/watch?v=uRqKg84JJi8"
+      },
+      {
+        "name": "SAY SOMETHING - TALWIINDER // SUPREME SIDHU // NDS  [Official Audio] MISFIT",
+        "url": "https://www.youtube.com/watch?v=fPfaUAdxHu4"
+      },
+      {
+        "name": "AKHIYAN - TALWIINDER // NDS  [Official Audio] MISFIT",
+        "url": "https://www.youtube.com/watch?v=Mhg8r3RepJU"
+      },
+      {
+        "name": "Haseen [ LoFi + Slowed + Reverb ] Talwinder @Talwiinder New 2025 songs |A~F~S~A~N~Y|",
+        "url": "https://www.youtube.com/watch?v=A3mQ_SWJ8u0"
+      },
+      {
+        "name": "TALWIINDER - KAATILANA (Official Video) PUSH KAHLON | RIPPY | BOWDHITYA",
+        "url": "https://www.youtube.com/watch?v=3E012y-FEV4"
+      },
+      {
+        "name": "Shubh - Baller (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=xR3V5Ow2dTI"
+      },
+      {
+        "name": "Shubh - Bandana (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=j2zxCw3voU8"
+      },
+      {
+        "name": "Shubh - Cheques (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=4tywp83zkmk"
+      },
+      {
+        "name": "Shubh - Elevated (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=I1nX5EuvwzE"
+      },
+      {
+        "name": "Shubh - King Shit (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=d2ofxg8pHfQ"
+      },
+      {
+        "name": "Shubh - MVP (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=gP4k_iruyAM"
+      },
+      {
+        "name": "No Love (Official Audio) - Shubh",
+        "url": "https://www.youtube.com/watch?v=6RrEQJNZwPQ"
+      },
+      {
+        "name": "Shubh - One Love (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=0pWsCiBvLOk"
+      },
+      {
+        "name": "Shubh - Still Rollin (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=0mCVpUDCkEk"
+      },
+      {
+        "name": "We Rollin (Official Audio) - Shubh",
+        "url": "https://www.youtube.com/watch?v=RLhuPD2ASKE"
+      },
+      {
+        "name": "Shubh - You and Me (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=IAvw60x0Kn4"
+      },
+      {
+        "name": "BROWN MUNDE - AP DHILLON | GURINDER GILL | SHINDA KAHLON (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=VNs_cCtdbPc"
+      },
+      {
+        "name": "DIL NU - AP DHILLON | SHINDA KAHLON (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=p2EdDiiVHh4"
+      },
+      {
+        "name": "Excuses (Official Video) | AP Dhillon | Gurinder Gill | Intense",
+        "url": "https://www.youtube.com/watch?v=vX2cDW8LUWk"
+      },
+      {
+        "name": "INSANE - AP DHILLON | GURINDER GILL | SHINDA KAHLON (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=cqP8I5aaud8"
+      },
+      {
+        "name": "Lifestyle",
+        "url": "https://www.youtube.com/watch?v=Gr1jPcSHPA8"
+      },
+      {
+        "name": "Summer High",
+        "url": "https://www.youtube.com/watch?v=CnBX7_ErLvA"
+      },
+      {
+        "name": "TOXIC - AP DHILLON | INTENSE (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=7v0_uipNGao"
+      },
+      {
+        "name": "True Stories -  AP Dhillon | Shinda Kahlon (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=-wFTG_f-W4c"
+      },
+      {
+        "name": "With You - AP Dhillon (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=mZQH8CPQ-wo"
+      },
+      {
+        "name": "Shubh - Safety Off (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=Y5HIqjf3rek"
+      },
+      {
+        "name": "Admirin' You (Official Video) Karan Aujla | Ikky | Making Memories | Latest Punjabi Songs 2023",
+        "url": "https://www.youtube.com/watch?v=k85UB5b6pJU"
+      },
+      {
+        "name": "Bachke Bachke (Full Video) Karan Aujla I Ikky | Latest Punjabi Songs 2023",
+        "url": "https://www.youtube.com/watch?v=fRJ03btNsao"
+      },
+      {
+        "name": "NOTHING LASTS - KARAN AUJLA, DIVINE | Official Music Video",
+        "url": "https://www.youtube.com/watch?v=DvdFsbJFBfA"
+      },
+      {
+        "name": "SOFTLY (Official Music Video) KARAN AUJLA | IKKY | LATEST PUNJABI SONGS 2023",
+        "url": "https://www.youtube.com/watch?v=cWMxCE2HTag"
+      },
+      {
+        "name": "Straight Ballin'",
+        "url": "https://www.youtube.com/watch?v=8288RvzNYbM"
+      },
+      {
+        "name": "Aam Jahe Munde | Parmish Verma feat Pardhaan | Desi Crew | Laddi Chahal",
+        "url": "https://www.youtube.com/watch?v=muds1gFUTN8"
+      },
+      {
+        "name": "Parmish Verma Ft. Paradox - Check It Out (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=RiZL2j5mIPw"
+      },
+      {
+        "name": "AP Dhillon - Old Money (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=6gmiDJZx_GU"
+      },
+      {
+        "name": "Real Talk",
+        "url": "https://www.youtube.com/watch?v=ccRFbcSpCeE"
+      },
+      {
+        "name": "Diljit Dosanjh: Born To Shine (Official Music Video) G.O.A.T",
+        "url": "https://www.youtube.com/watch?v=dCmp56tSSmA"
+      },
+      {
+        "name": "Hass Hass (Official Video) Diljit X Sia",
+        "url": "https://www.youtube.com/watch?v=jADTdg-o8i0"
+      },
+      {
+        "name": "KHUTTI | Official Music Video | Diljit Dosanjh x Saweetie",
+        "url": "https://www.youtube.com/watch?v=3JABJHlY4Tw"
+      },
+      {
+        "name": "Diljit Dosanjh: Kinni Kinni (Official Audio) GHOST | Thiarajxtt, Raj Ranjodh",
+        "url": "https://www.youtube.com/watch?v=ejYe2GwBEJ0"
+      },
+      {
+        "name": "Diljit Dosanjh | Lemonade | Intense | Raj Ranjodh | Drive Thru",
+        "url": "https://www.youtube.com/watch?v=ZVgergj8Xe4"
+      },
+      {
+        "name": "Diljit Dosanjh: Lalkaara (Video) Feat. Sultaan | GHOST | Intense, Raj Ranjodh",
+        "url": "https://www.youtube.com/watch?v=-mgGnx1p3b8"
+      },
+      {
+        "name": "White Brown Black - Avvy Sra | Karan Aujla | Jaani | Amanninder Singh | Desi Melodies",
+        "url": "https://www.youtube.com/watch?v=BtQp2U6hJII"
+      },
+      {
+        "name": "WAVY (OFFICIAL VIDEO) KARAN AUJLA | LATEST PUNJABI SONGS 2024",
+        "url": "https://www.youtube.com/watch?v=XTp5jaRU3Ws"
+      },
+      {
+        "name": "Aaye Haaye (Official Video) | Karan Aujla, Nora Fatehi, Neha Kakkar, Jay Trak | Bhushan Kumar",
+        "url": "https://www.youtube.com/watch?v=uChhQpHMmXE"
+      },
+      {
+        "name": "AP Dhillon ft. Ayra Starr - Bora Bora (Official Music Video) ft. Ayra Starr",
+        "url": "https://www.youtube.com/watch?v=xARHpBzxFNI"
+      },
+      {
+        "name": "Shubh - Fell For You (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=SiKfBBoF51w"
+      },
+      {
+        "name": "Wavy X Baller Mashup | Shubh | Karan Aujla | Latest Punjabi Songs 2024 |  Afterhour Music",
+        "url": "https://www.youtube.com/watch?v=vygx1Ijqm90"
+      },
+      {
+        "name": "AP Dhillon & Shinda Kahlon - STFU (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=tDMuhR3CgGM"
+      },
+      {
+        "name": "For A Reason (Official Video) Karan Aujla | Tania  | Ikky | Latest Punjabi Songs 2025",
+        "url": "https://www.youtube.com/watch?v=-YlmnPh-6rE"
+      },
+      {
+        "name": "Karan Aujla | Ikky - Boyfriend (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=RYXUA32Dx4k"
+      },
+      {
+        "name": "Anuv Jain - AFSOS ft. AP Dhillon (Official Visualizer)",
+        "url": "https://www.youtube.com/watch?v=2FhgKp_lfJQ"
+      },
+      {
+        "name": "MAJHAIL (OFFICIAL VIDEO) | AP DHILLON | GURINDER GILL | MANNI SANDHU | LATEST PUNJABI SONGS 2020",
+        "url": "https://www.youtube.com/watch?v=yzIyufV6ADk"
+      },
+      {
+        "name": "Ma Belle - AP Dhillon (ft. Amari) [Official Music Video]",
+        "url": "https://www.youtube.com/watch?v=6piRLp7BV8o"
+      },
+      {
+        "name": "FOREIGNS - AP DHILLON | GURINDER GILL | MONEY MUSIK (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=jWz5on5N14E"
+      },
+      {
+        "name": "AADAT (Official Video): YO YO HONEY SINGH | AP DHILLON | VAANI KAPOOR | 51 GLORIOUS DAYS | BHUSHAN K",
+        "url": "https://www.youtube.com/watch?v=lcw4TDMBjZA"
+      },
+      {
+        "name": "SAADA PYAAR - AP DHILLON | MONEY MUSIK (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=L6fr053Z_pU"
+      },
+      {
+        "name": "DROPTOP - AP Dhillon | Gurinder Gill | Gminxr (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=YINxH2VLP-A"
+      },
+      {
+        "name": "FARAAR - GURINDER GILL | SHINDA KAHLON | AP DHILLON",
+        "url": "https://www.youtube.com/watch?v=vqyIYTVFNck"
+      },
+      {
+        "name": "SUMMER HIGH - AP DHILLON (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=nqUN530Rgtw"
+      },
+      {
+        "name": "GOAT - AP DHILLON | GURINDER GILL | MONEY MUSIK (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=dy05ncw9iGg"
+      },
+      {
+        "name": "OLD MONEY | AP DHILLON | SALMAN KHAN | SANJAY DUTT | SHINDA KAHLON (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=-K-WY0WRT48"
+      },
+      {
+        "name": "DESIRES - AP DHILLON | GURINDER GILL (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=3ONzh3tf884"
+      },
+      {
+        "name": "Arrogant | AP Dhillon | Shinda Kahlon (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=UkOPtbo73Ws"
+      },
+      {
+        "name": "Feels (Official Video) AP Dhillon | Gurinder Gill | Gminxr | Latest Punjabi Song 2020",
+        "url": "https://www.youtube.com/watch?v=pUUhoS4WigM"
+      },
+      {
+        "name": "WO NOOR - AP DHILLON (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=HrcjFEK58ik"
+      },
+      {
+        "name": "Thinking Of You (Full Performance) | AP Dhillon",
+        "url": "https://www.youtube.com/watch?v=CbvjhmFVMvA"
+      },
+      {
+        "name": "TAKEOVER - AP DHILLON | GURINDER GILL | AR PAISLEY | MONEY MUSIK (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=brMvIdDrOhk"
+      },
+      {
+        "name": "Most Wanted - AP Dhillon | Gurinder Gill | Gminxr | (Official Video)",
+        "url": "https://www.youtube.com/watch?v=OImvWUHfNo8"
+      },
+      {
+        "name": "ALL NIGHT (LIVE) - AP DHILLON | SHINDA KAHLON (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=Vd7F5VHz5BI"
+      },
+      {
+        "name": "Deadly - AP Dhillon | Gminxr (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=rDH0kjE6enE"
+      },
+      {
+        "name": "SPACESHIP - AP DHILLON | SHINDA KAHLON | GMINXR (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=RatDV50alQE"
+      },
+      {
+        "name": "CHANCES - AP DHILLON | GURINDER GILL | MONEY MUSIK (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=NhgQVF4WvyI"
+      },
+      {
+        "name": "FATE - AP DHILLON | GURINDER GILL | SHINDA KAHLON | MONEY MUSIK (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=HEsT6hS59i4"
+      },
+      {
+        "name": "SLEEPLESS - AP Dhillon (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=sdhsp6NaB-A"
+      },
+      {
+        "name": "AP Dhillon & Shinda Kahlon - By My Side (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=N8dexd1PqEw"
+      },
+      {
+        "name": "MAJHE AALE  - AP DHILLON | GURINDER GILL | SHINDA KAHLON | GMINXR (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=MmRuAiznEsU"
+      },
+      {
+        "name": "TERE TE - AP DHILLON | GURINDER GILL (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=fG70qm6usR8"
+      },
+      {
+        "name": "AP Dhillon - 315 (feat. Shinda Kahlon & Jazzy B) (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=HfYzeyxNH6U"
+      },
+      {
+        "name": "AP Dhillon - Without Me (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=ma_dtgS_W_w"
+      },
+      {
+        "name": "Top Boy | AP Dhillon | (Official Video)",
+        "url": "https://www.youtube.com/watch?v=aDE_ecFcwWM"
+      },
+      {
+        "name": "Hustlin'",
+        "url": "https://www.youtube.com/watch?v=x7CQk79BQTE"
+      },
+      {
+        "name": "WAR - AP DHILLON | GURINDER GILL | MANU (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=l6ChXByZsOA"
+      },
+      {
+        "name": "FREE SMOKE - AP DHILLON | GURINDER GILL (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=cXAyRBfHM5Y"
+      },
+      {
+        "name": "AGAINST ALL ODDS - AP DHILLON | GURINDER GILL | SHINDA KAHLON | GMINXR",
+        "url": "https://www.youtube.com/watch?v=mmted4E2Pvs"
+      },
+      {
+        "name": "FINAL THOUGHTS - AP DHILLON | SHINDA KAHLON | GMINXR (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=NpGq-yW-R6U"
+      },
+      {
+        "name": "FAKE - AP DHILLON",
+        "url": "https://www.youtube.com/watch?v=FkgAdHM_kCk"
+      },
+      {
+        "name": "AFTER MIDNIGHT - AP DHILLON (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=LlJxnlFDRz4"
+      },
+      {
+        "name": "Raatan Lambiyan (Official Music Video) | AP Dhillon | Shinda Kahlon",
+        "url": "https://www.youtube.com/watch?v=6w0rHWNxneA"
+      },
+      {
+        "name": "AP Dhillon - Losing Myself (feat. Gunna) (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=M9UbwzDm4wI"
+      },
+      {
+        "name": "HILLS - AP DHILLON (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=UwRo4iZZb0I"
+      },
+      {
+        "name": "REAL TALK - AP Dhillon | Shinda Kahlon (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=6r4ckHlQH4c"
+      },
+      {
+        "name": "Kirsaan - AP Dhillon | Gurinder Gill | Gminxr (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=pVpJ3JnGDzI"
+      },
+      {
+        "name": "DRIP - AP DHILLON | GURINDER GILL | DUVY | MONEY MUSIK (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=XHPSxtLCloY"
+      },
+      {
+        "name": "AP Dhillon - To Be Continued... (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=NDtyKKbRbjc"
+      },
+      {
+        "name": "Scars - AP Dhillon (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=kXt-XVTGhto"
+      },
+      {
+        "name": "AP Dhillon & Shinda Kahlon - HITMEN (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=wiKCVac9N78"
+      },
+      {
+        "name": "Problems Over Peace - AP Dhillon | Stormzy (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=OcoEM04ThsU"
+      },
+      {
+        "name": "Lifestyle - AP Dhillon | Shinda Kahlon (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=0-67daqE4xU"
+      },
+      {
+        "name": "Steel Banglez - NEVER LET YOU GO (feat AP Dhillon & Omah Lay) [Official Lyric Visualizer]",
+        "url": "https://www.youtube.com/watch?v=h6usBnR0Ewk"
+      },
+      {
+        "name": "AP Dhillon - Distance (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=1ZDAhrjMLtM"
+      },
+      {
+        "name": "AP Dhillon - Brownprint (feat. Shinda Kahlon) (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=BVi_9_uE1jg"
+      },
+      {
+        "name": "AP Dhillon - Sweet Flower (feat. Syra) (Official Audio)",
+        "url": "https://www.youtube.com/watch?v=sYYjiilNSGI"
+      },
+      {
+        "name": "AP Dhillon & Syra - OKAY (Official Lyric Video)",
+        "url": "https://www.youtube.com/watch?v=7wyDGJwndt8"
+      },
+      {
+        "name": "Twisted Personality",
+        "url": "https://www.youtube.com/watch?v=_Yg1T7CFt-o"
+      },
+      {
+        "name": "BORN WINNER",
+        "url": "https://www.youtube.com/watch?v=c_zb6SSQju0"
+      },
+      {
+        "name": "LOW FADE (Music Video) KARAN AUJLA",
+        "url": "https://www.youtube.com/watch?v=3j7bhOvW6jw"
+      },
+      {
+        "name": "At Peace (Official Video) Karan Aujla | Latest Punjabi Songs 2025",
+        "url": "https://www.youtube.com/watch?v=jVVwYXV22zg"
+      },
+      {
+        "name": "MF GABHRU! (Official Video) KARAN AUJLA | IKKY | Latest Punjabi Songs 2025",
+        "url": "https://www.youtube.com/watch?v=Fbv6-50S1lc"
+      },
+      {
+        "name": "COURTSIDE (OFFICIAL MUSIC VIDEO) KARAN AUJLA  | LATEST PUNJABI SONGS 2025",
+        "url": "https://www.youtube.com/watch?v=Z8IRRphKFZA"
+      },
+      {
+        "name": "Winning Speech (Music Video) Karan Aujla | Mxrci | Latest Punjabi Songs 2024",
+        "url": "https://www.youtube.com/watch?v=vsWxs1tuwDk"
+      },
+      {
+        "name": "Badshah X Karan Aujla - God Damn (Official Video) | Hiten | Ek THA RAJA",
+        "url": "https://www.youtube.com/watch?v=au5uNkCKzaY"
+      },
+      {
+        "name": "Shut Ur Mouth (Official Video) | Jassi Khalar | Latest Punjabi Songs 2024 | New Punjabi Songs 2024",
+        "url": "https://www.youtube.com/watch?v=cqiMjjqHHwk"
+      },
+      {
+        "name": "IDK HOW (MUSIC VIDEO) KARAN AUJLA  | FOUR ME EP  | LATEST PUNJABI SONGS 2024",
+        "url": "https://www.youtube.com/watch?v=fqTR0UUL-OQ"
+      },
+      {
+        "name": "Goin Off (Official Video) Karan Aujla | Mxrci | Latest Punjabi Songs 2024",
+        "url": "https://www.youtube.com/watch?v=pLQw0DbubdM"
+      },
+      {
+        "name": "Jee Ni Lagda (Full Video) Karan Aujla I Making Memories I Ikky |  Latest Punjabi Songs 2023",
+        "url": "https://www.youtube.com/watch?v=BXNxrT59MzQ"
+      },
+      {
+        "name": "Dabbi Kale Maal di | Full Video | Jassi Khalar | Romeoz | Tr King Music Latest New Punjabi Song 2022",
+        "url": "https://www.youtube.com/watch?v=4M4UPRwJDyI"
+      },
+      {
+        "name": "Take It Easy (Official Video) Karan Aujla. | Ikky | Four You EP | Latest Punjabi Songs 2023",
+        "url": "https://www.youtube.com/watch?v=Guq9Vl8dK30"
+      },
+      {
+        "name": "52 Bars  (Official Video) Karan Aujla | Ikky | Four You EP | First Song | Latest Punjabi Songs 2023",
+        "url": "https://www.youtube.com/watch?v=4DfVxVeqk2o"
+      },
+      {
+        "name": "Try Me (Official Video) Karan Aujla | Ikky | Making Memories | Latest Punjabi Songs 2023",
+        "url": "https://www.youtube.com/watch?v=6wkwmDzZ3n4"
+      },
+      {
+        "name": "On Top (Full Video) Karan Aujla | Yeah Proof | New Punjabi Songs 2022",
+        "url": "https://www.youtube.com/watch?v=aFWDOFg7X2A"
+      },
+      {
+        "name": "HINT (Full Video) Karan Aujla | Rupan Bal | Jay Trak | Latest Punjabi Songs 2019",
+        "url": "https://www.youtube.com/watch?v=cHwQowOzAf0"
+      },
+      {
+        "name": "WYTB (Full Video) Karan Aujla ft Gurlej Akhtar | New Punjabi Songs 2022",
+        "url": "https://www.youtube.com/watch?v=RuDsBrSczis"
+      },
+      {
+        "name": "KARAN AUJLA : Chu Gon Do ? | Tru-Skool | Rupan Bal | New Punjabi Song 2021| Latest Punjabi Song 2021",
+        "url": "https://www.youtube.com/watch?v=ZjLU7eZZeQg"
+      },
+      {
+        "name": "Badshah X Karan Aujla - Players (Official Video) | 3:00 AM Sessions",
+        "url": "https://www.youtube.com/watch?v=CeFQO9MQNqs"
+      },
+      {
+        "name": "Don't Look (4K Video) Karan Aujla | Rupan Bal | Jay Trak | Latest Punjabi Songs 2019",
+        "url": "https://www.youtube.com/watch?v=6Pd-3nvYDRk"
+      },
+      {
+        "name": "Password ( Official Video ) Ravi Warraich  Preet Sandhu | New Punjabi Song 2024",
+        "url": "https://www.youtube.com/watch?v=Vw6xUYHabhc"
+      },
+      {
+        "name": "Gangsta - Karan Aujla Ft. YG | Rupan Bal | Yeah Proof (Official Music Video)",
+        "url": "https://www.youtube.com/watch?v=doVZWonpAF0"
+      },
+      {
+        "name": "YKWIM (FULL VIDEO) KARAN AUJLA I KR$NA I RUPAN BAL I LATEST PUNJABI SONG 2022",
+        "url": "https://www.youtube.com/watch?v=rHMZleMG628"
+      },
+      {
+        "name": "Mexico Koka | Karan Aujla (Full Video) Mahira Sharma Latest Punjabi Song 2021",
+        "url": "https://www.youtube.com/watch?v=2sAzb3kraoQ"
+      },
+      {
+        "name": "Kya Baat Aa : Karan Aujla (Official Video) Tania | Desi Crew | Latest Punjabi Songs",
+        "url": "https://www.youtube.com/watch?v=x-KbnJ9fvJc"
+      },
+      {
+        "name": "Don't Worry (Full Video) Karan Aujla | Gurlez Akhtar I Deep Jandu  | Latest Punjabi Songs 2018",
+        "url": "https://www.youtube.com/watch?v=oA0TDB0Lg5Y"
+      },
+      {
+        "name": "NA NA NA (Full Video) Karan Aujla | Rupan Bal | Latest Punjabi Songs 2019",
+        "url": "https://www.youtube.com/watch?v=x-kqEhvvAYc"
+      },
+      {
+        "name": "Chitta Kurta (Full video) Karan Aujla feat. Gurlez Akhtar | Deep jandu | Punjabi Songs 2019",
+        "url": "https://www.youtube.com/watch?v=o9PY6NsB3_E"
+      },
+      {
+        "name": "Jhanjar (Full Video) Karan Aujla | Desi Crew | Latest Punjabi Songs 2020",
+        "url": "https://www.youtube.com/watch?v=ZnGMxARIxoY"
+      },
+      {
+        "name": "FACTS (Full Video) Karan Aujla | Deep Jandu | Latest Punjabi Songs 2019",
+        "url": "https://www.youtube.com/watch?v=6GskI4tLX00"
+      },
+      {
+        "name": "Haan Haige aa (FULL VIDEO) KARAN AUJLA ft. Gurlez Akhtar I Rupan Bal I Avvy Sra I Latest Song 2020",
+        "url": "https://www.youtube.com/watch?v=pQysG_I0i0k"
+      },
+      {
+        "name": "KARAN AUJLA : IT AIN'T LEGAL | Gurlej Akhtar | Tru-Skool | Rupan Bal | Latest Punjabi Songs 2021",
+        "url": "https://www.youtube.com/watch?v=e8a4YuRgGdU"
+      },
+      {
+        "name": "Hukam (Full Video) Karan Aujla I Latest Punjabi Songs 2021 I Rehaan Records",
+        "url": "https://www.youtube.com/watch?v=XhwRbwUHrCM"
+      },
+      {
+        "name": "Sheikh (Full Video) Karan Aujla I Rupan Bal I Manna I Latest Punjabi Songs 2020",
+        "url": "https://www.youtube.com/watch?v=4uMchksQJng"
+      },
+      {
+        "name": "King Life (Full Video) Jassi Khalar | Lucky Balian | Sukh Saab New Punjabi Songs 2021| TR King Music",
+        "url": "https://www.youtube.com/watch?v=vjNJeM-YcwI"
+      },
+      {
+        "name": "KARAN AUJLA : Addi Sunni | Tru-Skool | BTFU | New Punjabi Song 2021 | Latest Punjabi Songs 2021",
+        "url": "https://www.youtube.com/watch?v=sHI5Mil_nAY"
+      }
+    ]
+  }
+}
